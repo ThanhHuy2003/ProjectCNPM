@@ -37,7 +37,6 @@
       <HintPath>packages\Krypton.Toolkit.70.22.11.312\lib\net48\Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -51,51 +50,105 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
+    <Compile Include="App\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormTD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTD.Designer.cs">
-      <DependentUpon>FormTD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormKM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormKM.Designer.cs">
-      <DependentUpon>FormKM.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="App\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="App\Login\UCDK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Login\UCDK.Designer.cs">
+      <DependentUpon>UCDK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\UCCD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\UCCD.Designer.cs">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\ThucDon\CardTD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\ThucDon\CardTD.Designer.cs">
+      <DependentUpon>CardTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\UCCH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\UCCH.Designer.cs">
+      <DependentUpon>UCCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Login\UCDN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Login\UCDN.Designer.cs">
+      <DependentUpon>UCDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\UCKM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\UCKM.Designer.cs">
+      <DependentUpon>UCKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\UCMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\UCMain.Designer.cs">
+      <DependentUpon>UCMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\ThucDon\UCTD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\ThucDon\UCTD.Designer.cs">
+      <DependentUpon>UCTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\UCTTCN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\UCTTCN.Designer.cs">
+      <DependentUpon>UCTTCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="App\Main\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormTD.resx">
-      <DependentUpon>FormTD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormKM.resx">
-      <DependentUpon>FormKM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="App\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="App\Login\UCDK.resx">
+      <DependentUpon>UCDK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThucDon\CardTD.resx">
+      <DependentUpon>CardTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\UCCH.resx">
+      <DependentUpon>UCCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Login\UCDN.resx">
+      <DependentUpon>UCDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\UCKM.resx">
+      <DependentUpon>UCKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\UCMain.resx">
+      <DependentUpon>UCMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThucDon\UCTD.resx">
+      <DependentUpon>UCTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCTTCN.resx">
+      <DependentUpon>UCTTCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -153,6 +206,15 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Language.png" />
+    <None Include="Resources\TT.png" />
+    <None Include="Resources\imageedit_8_3852496439-removebg-preview1.png" />
+    <None Include="Resources\imageedit_8_3852496439-removebg-preview.png" />
+    <None Include="Resources\imageedit_6_6776574693-removebg-preview.png" />
+    <None Include="Resources\imageedit_6_6776574693.png" />
+    <None Include="Resources\imageedit_4_9781102328-removebg-preview.png" />
+    <None Include="Resources\imageedit_4_9781102328.png" />
+    <None Include="Resources\setting.png" />
     <None Include="Resources\ImageSlider4.jpg" />
     <None Include="Resources\ImageSlider5.jpg" />
     <None Include="Resources\ImageSlider3.jpg" />
@@ -164,6 +226,10 @@
     <None Include="Resources\Eye-removebg-preview.png" />
     <None Include="Resources\Eye1.png" />
     <None Include="Resources\Eye2.png" />
+    <None Include="Resources\account.png" />
+    <None Include="Resources\DH.png" />
+    <None Include="Resources\BM.png" />
+    <None Include="Resources\Edit.png" />
     <Content Include="Resources\Group 56.png" />
     <Content Include="Resources\Icon_close_form.png" />
   </ItemGroup>
