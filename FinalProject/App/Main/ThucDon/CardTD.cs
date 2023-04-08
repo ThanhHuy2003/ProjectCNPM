@@ -39,5 +39,18 @@ namespace FinalProject.App.Main.ThucDon
             setChoice(CountItem1, SubItem1, false);
 
         }
+        #region Properties
+
+        private string _title;
+        private string _description;
+        private Image _pic;
+
+        [Category("Custom Props")]
+        public string Title { get { return _title; } set { _title = value; lblName.Text = value; } }
+        [Category("Custom Props")]
+        public string Description { get { return _description; } set { _description = value; lblPrice.Text = value; } }
+        [Category("Custom Props")]
+        public Image Picture { get { return _pic; } set { _pic = value; pictureBox9.Image = value; } }
+        #endregion
     }
 }
