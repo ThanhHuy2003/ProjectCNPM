@@ -40,7 +40,6 @@ D:\Download\52100106-N8_18.3\N8_18.3\Homepage\obj\Debug\FinalProject.csproj.Asse
 D:\Download\52100106-N8_18.3\N8_18.3\Homepage\obj\Debug\FinalProject.csproj.SuggestedBindingRedirects.cache
 D:\Download\52100106-N8_18.3\N8_18.3\Homepage\obj\Debug\FinalProject.exe
 D:\Download\52100106-N8_18.3\N8_18.3\Homepage\obj\Debug\FinalProject.pdb
-D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.Login.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.UCTD.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.UCCD.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.UCKM.resources
@@ -50,3 +49,4 @@ D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.UCTTC
 D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.Login.UCDK.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.Main.ThucDon.CardTD.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.UCDN.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject\obj\Debug\FinalProject.App.Login.Login.resources

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,24 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static FinalProject.Main;
 
 namespace FinalProject.App.Login
 {
-    public partial class Login : Form
+    public partial class Login2 : KryptonForm
     {
-        public static String name = "DN";
-        public Login()
+        public Login2()
         {
             InitializeComponent();
         }
-        private UCDN uCDN;
-        private void Login2_Load(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Func.togglePanel(this, panel_login, name);
             MinimizeBox = false;
             MaximizeBox= false;
-            
         }
+
     }
 }

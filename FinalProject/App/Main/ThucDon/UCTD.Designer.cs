@@ -92,7 +92,7 @@
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCTD";
-            this.Size = new System.Drawing.Size(1230, 1290);
+            this.Size = new System.Drawing.Size(1213, 818);
             this.Load += new System.EventHandler(this.UCTD_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

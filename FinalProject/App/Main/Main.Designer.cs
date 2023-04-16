@@ -37,14 +37,10 @@
             this.menu_active = new Krypton.Toolkit.KryptonPanel();
             this.btnTD = new Krypton.Toolkit.KryptonButton();
             this.btnAcc = new Krypton.Toolkit.KryptonButton();
-            this.kryptonPanel18 = new Krypton.Toolkit.KryptonPanel();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.CloseApp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel18)).BeginInit();
-            this.kryptonPanel18.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -66,7 +62,7 @@
             // btnCD
             // 
             this.btnCD.CornerRoundingRadius = -1F;
-            this.btnCD.Location = new System.Drawing.Point(23, 715);
+            this.btnCD.Location = new System.Drawing.Point(24, 709);
             this.btnCD.Name = "btnCD";
             this.btnCD.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCD.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -289,57 +285,31 @@
             this.btnAcc.Values.Text = "Account";
             this.btnAcc.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // kryptonPanel18
-            // 
-            this.kryptonPanel18.Controls.Add(this.CloseApp);
-            this.kryptonPanel18.Location = new System.Drawing.Point(267, 1);
-            this.kryptonPanel18.MaximumSize = new System.Drawing.Size(1450, 40);
-            this.kryptonPanel18.Name = "kryptonPanel18";
-            this.kryptonPanel18.Size = new System.Drawing.Size(1236, 33);
-            this.kryptonPanel18.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(203)))));
-            this.kryptonPanel18.TabIndex = 29;
-            this.kryptonPanel18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel18_MouseDown);
-            this.kryptonPanel18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel18_MouseMove);
-            this.kryptonPanel18.MouseUp += new System.Windows.Forms.MouseEventHandler(this.kryptonPanel18_MouseUp);
-            // 
             // panel_main
             // 
             this.panel_main.AutoScroll = true;
-            this.panel_main.Location = new System.Drawing.Point(267, 35);
+            this.panel_main.Location = new System.Drawing.Point(267, -2);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1230, 860);
+            this.panel_main.Size = new System.Drawing.Size(1230, 897);
             this.panel_main.TabIndex = 30;
-            // 
-            // CloseApp
-            // 
-            this.CloseApp.BackgroundImage = global::FinalProject.Properties.Resources.Icon_close_form;
-            this.CloseApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CloseApp.Location = new System.Drawing.Point(1186, 0);
-            this.CloseApp.Name = "CloseApp";
-            this.CloseApp.Size = new System.Drawing.Size(48, 33);
-            this.CloseApp.TabIndex = 10;
-            this.CloseApp.UseVisualStyleBackColor = true;
-            this.CloseApp.Click += new System.EventHandler(this.CloseApp_Click);
             // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1500, 800);
+            this.ClientSize = new System.Drawing.Size(1483, 811);
             this.Controls.Add(this.panel_main);
-            this.Controls.Add(this.kryptonPanel18);
             this.Controls.Add(this.kryptonPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1500, 800);
-            this.MinimumSize = new System.Drawing.Size(1500, 800);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel18)).EndInit();
-            this.kryptonPanel18.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -354,8 +324,6 @@
         private Krypton.Toolkit.KryptonButton btnGH;
         private Krypton.Toolkit.KryptonButton btnCH;
         private Krypton.Toolkit.KryptonButton btnTB;
-        private System.Windows.Forms.Button CloseApp;
-        private Krypton.Toolkit.KryptonPanel kryptonPanel18;
         private Krypton.Toolkit.KryptonButton btnCD;
         private System.Windows.Forms.Panel panel_main;
     }

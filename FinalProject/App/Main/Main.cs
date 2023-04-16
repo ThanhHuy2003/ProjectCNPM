@@ -1,4 +1,5 @@
 ﻿using FinalProject.App;
+using FinalProject.App.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace FinalProject
 {
     public partial class Main : Form
     {
+        Func func = new Func();
         public Main()
         {
             InitializeComponent();
@@ -26,20 +28,20 @@ namespace FinalProject
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTD.Location.Y);
-            this.togglePanelMain("TD");
+            Func.togglePanel(this, panel_main, "TD");
         }
         private void btnKM_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnKM.Location.Y);
-            this.togglePanelMain("KM");
+            Func.togglePanel(this, panel_main, "KM");
         }
 
         private void btnCH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCH.Location.Y);
-            this.togglePanelMain("CH");
+            Func.togglePanel(this, panel_main, "CH");
         }
 
         private void btnGH_Click(object sender, EventArgs e)
@@ -63,7 +65,7 @@ namespace FinalProject
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
-            this.togglePanelMain("CD");
+            Func.togglePanel(this, panel_main, "CD");
         }
         int mov;
         int movX;
@@ -88,32 +90,131 @@ namespace FinalProject
             mov = 0;
         }
 
-        private void kryptonLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
-        
-        private void kryptonLabel2_Click(object sender, EventArgs e)
-        {
-        }
-
-        
-
-        private void SearchTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void Main_Load(object sender, EventArgs e)
         {
-            this.togglePanelMain("Main");
+            Func.togglePanel(this, panel_main, "Main");
         }
+        public class Func
+        {
+            private static UCTD uCTD;
+            private static UCMain uCMain;
+            private static UCKM uCKM;
+            private static UCCD uCCD;
+            private static UCCH uCCH;
+            private static UCDN uCDN;
+            private static UCDK uCDK;
+            public static void togglePanel(Form form,Panel panel,String panelName)
+            {
+                panel.Controls.Clear();
+                panel.AutoScroll = true;
+                switch (panelName)
+                {
+                    case "Main":
+                        if (uCMain == null)
+                        {
+                            uCMain = new UCMain();
+                            panel.Controls.Add(uCMain);
+                            uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCMain.Location = new System.Drawing.Point(0, 0);
+                            form.Size = new System.Drawing.Size(1550, 900);
+                            uCMain.TabIndex = 0;
+                            uCMain.AutoScroll = true;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCMain);
+                        }
+                        break;
+                    case "TD":
+                        if (uCTD == null)
+                        {
+                            uCTD = new UCTD();
+                            panel.Controls.Add(uCTD);
+                            uCTD.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTD.Location = new System.Drawing.Point(0, 0);
+                            form.Size = new System.Drawing.Size(1550, 900);
+                            uCTD.TabIndex = 0;
+                            uCTD.AutoScroll = true;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTD);
+                        }
+                        break;
+                    case "KM":
+                        if (uCKM == null)
+                        {
+                            uCKM = new UCKM();
+                            panel.Controls.Add(uCKM);
+                            uCKM.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCKM.Location = new System.Drawing.Point(0, 0);
+                            uCKM.Name = "uCKM";
+                            form.Size = new System.Drawing.Size(1550, 900);
+                            uCKM.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCKM);
+                        }
+                        break;
+                    case "CD":
+                        if (uCCD == null)
+                        {
+                            uCCD = new UCCD();
+                            panel.Controls.Add(uCCD);
+                            uCCD.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCCD.Location = new System.Drawing.Point(0, 0);
+                            uCCD.Name = "uCCD";
+                            form.Size = new System.Drawing.Size(1550, 900);
+                            uCCD.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCCD);
+                        }
+                        break;
+                    case "CH":
+                        if (uCCH == null)
+                        {
+                            uCCH = new UCCH();
+                            panel.Controls.Add(uCCH);
+                            uCCH.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCCH.Location = new System.Drawing.Point(0, 0);
+                            uCCH.Name = "uCCH";
+                            form.Size = new System.Drawing.Size(1550, 900);
+                            uCCH.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCCH);
+                        }
+                        break;
+                    case "DN":
 
-        private UCTD uCTD;
-        private UCMain uCMain;
-        private UCKM uCKM;
-        private UCCD uCCD;
-        private UCCH uCCH;
-        public void togglePanelMain(String panelName)
+                            uCDN = new UCDN();
+                            panel.Controls.Add(uCDN);
+                            uCDN.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCDN.Location = new System.Drawing.Point(0, 0);
+                            uCDN.Name = "uCDN";
+                            form.Size = new System.Drawing.Size(1100, 750);
+                            uCDN.TabIndex = 0;
+                        break;
+                    case "DK":
+                            uCDK = new UCDK();
+                            panel.Controls.Add(uCDK);
+                            uCDK.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCDK.Location = new System.Drawing.Point(0, 0);
+                            uCDK.Name = "uCDK";
+                            uCDK.TabIndex = 0;
+
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        
+/*        public void togglePanelMain(String panelName)
         {
             this.panel_main.Controls.Clear();
             this.panel_main.AutoScroll= true;
@@ -200,7 +301,7 @@ namespace FinalProject
                     break;
             }
         }
-        
+*/        
 
 
 
