@@ -1,6 +1,7 @@
 ﻿create database FinalProject
+GO
 use FinalProject
-
+GO
 create table LoginDataTable
 (
     userID varchar(8) not null,
@@ -11,8 +12,8 @@ create table LoginDataTable
     userPassword varchar(32) not null,
     primary key(userID)
 )
-
-create procedure ProcUserData
+GO
+create procedure ProcLoginDataTable
     @fullName nvarchar(25),
     @emailAddress varchar(40),
     @contactAddress nvarchar(150),
@@ -33,17 +34,18 @@ begin
     insert into LoginDataTable(userID, fullName, emailAddress, contactAddress, userName, userPassword)
     values (@userID, @fullName, @emailAddress, @contactAddress, @userName, @userPassword);
 end;
-
-exec ProcUserData N'Nguyễn Thành Nhật Tân', 'nguyennthanhhnhatttann@gmail.com', N'Hồ Chí Minh', 'nguyenthanhnhattan', 'nguyennthanhhnhatttann'
-exec ProcUserData N'Vương Thanh Huy', 'vuonggthanhhhuyy@gmail.com', N'Trà Vinh', 'vuongthanhhuy', 'vuonggthanhhhuyy'
-
+GO
+exec ProcLoginDataTable N'Nguyễn Thành Nhật Tân', 'nguyennthanhhnhatttann@gmail.com', N'Hồ Chí Minh', 'nguyenthanhnhattan', 'nguyennthanhhnhatttann'
+exec ProcLoginDataTable N'Vương Thanh Huy', 'vuonggthanhhhuyy@gmail.com', N'Trà Vinh', 'vuongthanhhuy', 'vuonggthanhhhuyy'
+GO
 select * from LoginDataTable
-
-Create table Cities(
+GO
+Create table Cities
+(
     ID int IDENTITY primary key,
     provinceName Nvarchar(50) unique
 )
-
+GO
 insert into Cities(provinceName) values
 (N'(Contact address)'),
 (N'An Giang'),
@@ -110,9 +112,9 @@ insert into Cities(provinceName) values
 (N'Vĩnh Long'),
 (N'Vĩnh Phúc'),
 (N'Yên Bái') 
-
+GO
 select * from Cities
-
+GO
 create table MenuDataTable
 (
 	dishID varchar(8) not null,
@@ -122,7 +124,7 @@ create table MenuDataTable
     dishQuantity int not null default 0,
     primary key(dishID)
 )
-
+GO
 create procedure ProcMenuData
 	@dishPicture varchar(100),
     @dishName nvarchar(50),
@@ -143,11 +145,8 @@ begin
     insert into MenuDataTable
     values (@dishID, @dishPicture, @dishName, @dishDescription, @dishQuantity);
 end;
-
+GO
 exec ProcMenuData 'https://cf.shopee.vn/file/d81610a333292a3fef2096c52e67d57a', N'Gà chiên nước mắm', N'Sự giòn từ gà chiên kết hợp vị nước mắm mặn ngọt', 10
-
-select * from MenuDataTable
-
 exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 99
 exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/2-lava-taro.jpg?v=46kppg', N'Viên Khoai Môn Kim Sa', N'Viên khoai môn chiên giòn nhân phô mai', 15
 exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/2-Hash-Browns.jpg?v=46kppg', N'Bánh Khoai Tây Chiên', N'Khoai tây chiên bánh tròn', 10
@@ -172,3 +171,5 @@ exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/6-Chewy-Chee
 exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/3-Mashies-Vegie.jpg?v=46kppg', N'3 Mashies Nhân Rau Củ', N'3 Viên chiên mashies nhân rau củ', 14
 exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/Pepsi-Can.jpg?v=46kppg', N'Pepsi Lon', N'1 Phép', 123
 exec ProcMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/7Up-Can.jpg?v=46kppg', N'7Up Lon', N'Pepsi Black Lime Lon', 110
+GO
+select * from MenuDataTable
