@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static FinalProject.Main;
+using FinalProject.DTO;
+using FinalProject.BLL;
 
 namespace FinalProject.App
 {
@@ -30,7 +32,6 @@ namespace FinalProject.App
             panel_DK.Location = new System.Drawing.Point(0, 0);
             Func.togglePanel(login2, panel_DK,"DK");
             login2.Controls.Remove(uCDN);
-
         }
 
         private void UsernameText_Enter(object sender, EventArgs e)
@@ -93,8 +94,35 @@ namespace FinalProject.App
         private void UCDN_Clicked(object sender, EventArgs e)
         {
             lblSignIn.Select();
-
         }
 
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            User tk = new User();
+            tk.userName = UsernameText.Text;
+            tk.userPassword = PasswordText.Text;
+            LoginBLL tkBLL = new LoginBLL();
+            if(tkBLL.checkLoginData_Login_BLL(tk) == "Vui lòng nhập tên tài khoản")
+            {
+                MessageBox.Show("Vui lòng nhập tên tài khoản");
+                return;
+            }
+            else if (tkBLL.checkLoginData_Login_BLL(tk) == "Vui lòng nhập mật khẩu")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu");
+                return;
+            }
+            else if (tkBLL.checkLoginData_Login_BLL(tk) == "Thông tin đăng nhập không chính xác!")
+            {
+                MessageBox.Show("Thông tin đăng nhập không chính xác!");
+                return;
+            }
+            else
+            {
+                // Còn check role sau đó dùng tài khoản truy cập vào giao diện bên trong, dtb sẽ gửi toàn bộ data liên quan tài khoản
+                MessageBox.Show("Đăng nhập thành công");
+                return;
+            }
+        }
     }
 }

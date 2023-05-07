@@ -117,6 +117,10 @@
     <Compile Include="App\Main\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="DAL\DatabaseAccess.cs" />
+    <Compile Include="DAL\LoginDAL.cs" />
+    <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="App\Login\Login.resx">
@@ -234,5 +238,6 @@
     <Content Include="Resources\Group 56.png" />
     <Content Include="Resources\Icon_close_form.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

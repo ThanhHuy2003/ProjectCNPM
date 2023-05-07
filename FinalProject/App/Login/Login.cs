@@ -24,7 +24,6 @@ namespace FinalProject.App.Login
             Func.togglePanel(this, panel_login, name);
             MinimizeBox = false;
             MaximizeBox= false;
-            
         }
     }
 }

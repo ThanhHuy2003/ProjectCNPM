@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.DTO;
+using FinalProject.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -81,21 +83,22 @@ namespace FinalProject.App.Login
                 ContactText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-        private void ProvinceText_Enter(object sender, EventArgs e)
+        // Phone number k tab đc
+        private void PhoneNumberText_Enter(object sender, EventArgs e)
         {
-            if (ProvinceText.Text == "Province")
+            if (PhoneNumberText.Text == "Phone number")
             {
-                ProvinceText.Text = "";
-                ProvinceText.StateActive.Content.Color1 = Color.Black;
+                PhoneNumberText.Text = "";
+                PhoneNumberText.StateActive.Content.Color1 = Color.Black;
             }
         }
 
-        private void ProvinceText_Leave(object sender, EventArgs e)
+        private void PhoneNumberText_Leave(object sender, EventArgs e)
         {
-            if (ProvinceText.Text == "")
+            if (PhoneNumberText.Text == "")
             {
-                ProvinceText.Text = "Province";
-                ProvinceText.StateActive.Content.Color1 = Color.Silver;
+                PhoneNumberText.Text = "Phone number";
+                PhoneNumberText.StateActive.Content.Color1 = Color.Silver;
             }
         }
         private void UserNameText_Enter(object sender, EventArgs e)
@@ -157,6 +160,76 @@ namespace FinalProject.App.Login
         private void UCDK_Clicked(object sender, EventArgs e)
         {
             lblSignUp.Select();
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            User newTK = new User();
+            newTK.fullName = FullNameText.Text;
+            newTK.emailAddress = EmailText.Text;
+            newTK.contactAddress = ContactText.Text;
+            newTK.phoneNumber = PhoneNumberText.Text;
+            newTK.userName = UserNameText.Text;
+            newTK.userPassword = PasswordText.Text;
+            LoginBLL newTKBLL = new LoginBLL();
+            string temp = newTKBLL.SignUp_Login_BLL(newTK);
+            if (temp == "Vui lòng nhập họ tên đầy đủ")
+            {
+                MessageBox.Show("Vui lòng nhập họ tên đầy đủ");
+                return;
+            }
+            else if (temp == "Vui lòng nhập email")
+            {
+                MessageBox.Show("Vui lòng nhập email");
+                return;
+            }
+            else if (temp == "Vui lòng nhập email hợp lệ")
+            {
+                MessageBox.Show("Vui lòng nhập email hợp lệ");
+                return;
+            }
+            else if (temp == "Vui lòng nhập địa chỉ liên lạc")
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ liên lạc");
+                return;
+            }
+            else if (temp == "Vui lòng nhập số điện thoại")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại");
+                return;
+            }
+            else if (temp == "Vui lòng nhập tên tài khoản")
+            {
+                MessageBox.Show("Vui lòng nhập tên tài khoản");
+                return;
+            }
+            else if (temp == "Vui lòng nhập mật khẩu")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu");
+                return;
+            }
+            else if (temp == "Tài khoản đã được đăng ký trước đây")
+            {
+                MessageBox.Show("Tài khoản đã được đăng ký trước đây");
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Đăng ký tài khoản thành công");
+                return;
+            }
+        }
+
+        private void PhoneNumberText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
