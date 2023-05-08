@@ -1,5 +1,8 @@
 ﻿using FinalProject.App;
 using FinalProject.App.Login;
+using FinalProject.App.Main;
+/*using FinalProject.App.Main.CaiDat;
+*/using FinalProject.App.Main.ThucDon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,26 +25,26 @@ namespace FinalProject
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-           
+
         }
         private void btnTD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTD.Location.Y);
-            Func.togglePanel(this, panel_main, "TD");
+            Func.togglePanel(panel_main, "TD");
         }
         private void btnKM_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnKM.Location.Y);
-            Func.togglePanel(this, panel_main, "KM");
+            Func.togglePanel(panel_main, "KM");
         }
 
         private void btnCH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCH.Location.Y);
-            Func.togglePanel(this, panel_main, "CH");
+            Func.togglePanel(panel_main, "CH");
         }
 
         private void btnGH_Click(object sender, EventArgs e)
@@ -65,34 +68,13 @@ namespace FinalProject
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
-            Func.togglePanel(this, panel_main, "CD");
-        }
-        int mov;
-        int movX;
-        int movY;
-        private void kryptonPanel18_MouseDown(object sender, MouseEventArgs e)
-        {
-            mov = 1;
-            movX = e.X;
-            movY = e.Y;
+            Func.togglePanel(panel_main, "CD");
         }
 
-        private void kryptonPanel18_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mov == 1)
-            {
-                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
-            }
-        }
-
-        private void kryptonPanel18_MouseUp(object sender, MouseEventArgs e)
-        {
-            mov = 0;
-        }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            Func.togglePanel(this, panel_main, "Main");
+            Func.togglePanel(panel_main, "Main");
         }
         public class Func
         {
@@ -103,7 +85,11 @@ namespace FinalProject
             private static UCCH uCCH;
             private static UCDN uCDN;
             private static UCDK uCDK;
-            public static void togglePanel(Form form,Panel panel,String panelName)
+            private static CardTD cardTD;
+            /*private static CardDH cardDH;
+            private static CardKM cardKM;
+            private static CardKM2 cardKM2;*/
+            public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
                 panel.AutoScroll = true;
@@ -116,7 +102,7 @@ namespace FinalProject
                             panel.Controls.Add(uCMain);
                             uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCMain.Location = new System.Drawing.Point(0, 0);
-                            form.Size = new System.Drawing.Size(1550, 900);
+                            //form.Size = new System.Drawing.Size(1250, 900);
                             uCMain.TabIndex = 0;
                             uCMain.AutoScroll = true;
                         }
@@ -132,7 +118,7 @@ namespace FinalProject
                             panel.Controls.Add(uCTD);
                             uCTD.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCTD.Location = new System.Drawing.Point(0, 0);
-                            form.Size = new System.Drawing.Size(1550, 900);
+                            // form.Size = new System.Drawing.Size(1250, 900);
                             uCTD.TabIndex = 0;
                             uCTD.AutoScroll = true;
                         }
@@ -149,7 +135,6 @@ namespace FinalProject
                             uCKM.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCKM.Location = new System.Drawing.Point(0, 0);
                             uCKM.Name = "uCKM";
-                            form.Size = new System.Drawing.Size(1550, 900);
                             uCKM.TabIndex = 0;
                         }
                         else
@@ -165,7 +150,6 @@ namespace FinalProject
                             uCCD.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCCD.Location = new System.Drawing.Point(0, 0);
                             uCCD.Name = "uCCD";
-                            form.Size = new System.Drawing.Size(1550, 900);
                             uCCD.TabIndex = 0;
                         }
                         else
@@ -181,7 +165,7 @@ namespace FinalProject
                             uCCH.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCCH.Location = new System.Drawing.Point(0, 0);
                             uCCH.Name = "uCCH";
-                            form.Size = new System.Drawing.Size(1550, 900);
+                            //form.Size = new System.Drawing.Size(1250, 900);
                             uCCH.TabIndex = 0;
                         }
                         else
@@ -191,122 +175,92 @@ namespace FinalProject
                         break;
                     case "DN":
 
-                            uCDN = new UCDN();
-                            panel.Controls.Add(uCDN);
-                            uCDN.Dock = System.Windows.Forms.DockStyle.Fill;
-                            uCDN.Location = new System.Drawing.Point(0, 0);
-                            uCDN.Name = "uCDN";
-                            form.Size = new System.Drawing.Size(1100, 750);
-                            uCDN.TabIndex = 0;
+                        uCDN = new UCDN();
+                        panel.Controls.Add(uCDN);
+                        uCDN.Dock = System.Windows.Forms.DockStyle.Fill;
+                        uCDN.Location = new System.Drawing.Point(0, 0);
+                        uCDN.Name = "uCDN";
+                        //form.Size = new System.Drawing.Size(1100, 750);
+                        uCDN.TabIndex = 0;
                         break;
                     case "DK":
-                            uCDK = new UCDK();
-                            panel.Controls.Add(uCDK);
-                            uCDK.Dock = System.Windows.Forms.DockStyle.Fill;
-                            uCDK.Location = new System.Drawing.Point(0, 0);
-                            uCDK.Name = "uCDK";
-                            uCDK.TabIndex = 0;
+                        uCDK = new UCDK();
+                        panel.Controls.Add(uCDK);
+                        uCDK.Dock = System.Windows.Forms.DockStyle.Fill;
+                        uCDK.Location = new System.Drawing.Point(0, 0);
+                        uCDK.Name = "uCDK";
+                        uCDK.TabIndex = 0;
 
                         break;
+                    case "CardTD":
+                        if (cardTD == null)
+                        {
+                            cardTD = new CardTD();
+                            panel.Controls.Add(cardTD);
+                            cardTD.Dock = System.Windows.Forms.DockStyle.Fill;
+                            cardTD.Location = new System.Drawing.Point(0, 0);
+                            cardTD.Name = "cardTD";
+                            cardTD.TabIndex = 0;
+                            cardTD.AutoScroll = true;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(cardTD);
+                        }
+                        break;
+                    /*case "CardDH":
+                        if (cardDH == null)
+                        {
+                            cardDH = new CardDH();
+                            panel.Controls.Add(cardDH);
+                            cardDH.Dock = System.Windows.Forms.DockStyle.Fill;
+                            cardDH.Location = new System.Drawing.Point(0, 0);
+                            cardDH.Name = "cardDH";
+                        }
+                        else
+                        {
+                            panel.Controls.Add(cardDH);
+                        }
+                        break;*/
+                    /*case "CardKM":
+                        if (cardKM == null)
+                        {
+                            cardKM = new CardKM();
+                            panel.Controls.Add(cardKM);
+                            cardKM.Dock = System.Windows.Forms.DockStyle.Fill;
+                            cardKM.Location = new System.Drawing.Point(0, 0);
+                            cardKM.Name = "cardKM";
+                        }
+                        else
+                        {
+                            panel.Controls.Add(cardKM);
+                        }
+                        break;*/
+                    /*case "CardKM2":
+                        if (cardKM == null)
+                        {
+                            cardKM2 = new CardKM2();
+                            panel.Controls.Add(cardKM2);
+                            cardKM2.Dock = System.Windows.Forms.DockStyle.Fill;
+                            cardKM2.Location = new System.Drawing.Point(0, 0);
+                            cardKM2.Name = "cardKM";
+                        }
+                        else
+                        {
+                            panel.Controls.Add(cardKM2);
+                        }
+                        break;*/
                     default:
                         break;
                 }
             }
         }
-        
-/*        public void togglePanelMain(String panelName)
-        {
-            this.panel_main.Controls.Clear();
-            this.panel_main.AutoScroll= true;
-            switch (panelName)
-            {
-                case "TD":
-                    if(this.uCTD == null)
-                    {
-                        this.uCTD= new UCTD();
-                        this.panel_main.Controls.Add(uCTD);
-                        this.uCTD.Dock = System.Windows.Forms.DockStyle.Fill;
-                        this.uCTD.Location = new System.Drawing.Point(0, 0);
-                        this.uCTD.Name = "uCTD";
-                        this.Size = new System.Drawing.Size(1200, 800);
-                        this.uCTD.TabIndex = 0;
-                        this.uCTD.AutoScroll= true;
-                    }
-                    else
-                    {
-                        this.panel_main.Controls.Add(uCTD);
-                    }
-                    break;
-                case "Main":
-                    if (this.uCMain == null)
-                    {
-                        this.uCMain = new UCMain();
-                        this.panel_main.Controls.Add(uCMain);
-                        this.uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
-                        this.uCMain.Name = "uCMain";
-                        this.Size = new System.Drawing.Size(1200, 800);
-                        this.uCMain.TabIndex = 0;
-                    }
-                    else
-                    {
-                        this.panel_main.Controls.Add(uCMain);
-                    }
-                    break;
-                case "KM":
-                    if (this.uCKM == null)
-                    {
-                        this.uCKM = new UCKM();
-                        this.panel_main.Controls.Add(uCKM);
-                        this.uCKM.Dock = System.Windows.Forms.DockStyle.Fill;
-                        this.uCKM.Name = "uCKM";
-                        this.Size = new System.Drawing.Size(1200, 800);
-                        this.uCKM.TabIndex = 0;
-                    }
-                    else
-                    {
-                        this.panel_main.Controls.Add(uCKM);
-                    }
-                    break;
-                case "CD":
-                    if (this.uCCD == null)
-                    {
-                        this.uCCD = new UCCD();
-                        this.panel_main.Controls.Add(uCCD);
-                        this.uCCD.Dock = System.Windows.Forms.DockStyle.Fill;
-                        this.uCCD.Name = "uCCD";
-                        this.Size = new System.Drawing.Size(1200, 800);
-                        this.uCCD.TabIndex = 0;
-                    }
-                    else
-                    {
-                        this.panel_main.Controls.Add(uCCD);
-                    }
-                    break;
-                case "CH":
-                    if (this.uCCH == null)
-                    {
-                        this.uCCH = new UCCH();
-                        this.panel_main.Controls.Add(uCCH);
-                        this.uCCH.Dock = System.Windows.Forms.DockStyle.Fill;
-                        this.uCCH.Name = "uCCH";
-                        this.Size = new System.Drawing.Size(1200, 800);
-                        this.uCCH.TabIndex = 0;
-                    }
-                    else
-                    {
-                        this.panel_main.Controls.Add(uCCH);
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
-*/        
 
 
 
-        
-        
+
+
+
 
 
     }

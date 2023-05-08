@@ -21,7 +21,7 @@ namespace FinalProject.App.Login
         private UCDN uCDN;
         private void Login2_Load(object sender, EventArgs e)
         {
-            Func.togglePanel(this, panel_login, name);
+            Func.togglePanel(panel_login, name);
             MinimizeBox = false;
             MaximizeBox= false;
         }

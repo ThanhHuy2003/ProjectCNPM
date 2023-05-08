@@ -30,7 +30,7 @@ namespace FinalProject.App
             panel_DK.Visible = true;
             panel_DK.Size = new System.Drawing.Size(525,710);
             panel_DK.Location = new System.Drawing.Point(0, 0);
-            Func.togglePanel(login2, panel_DK,"DK");
+            Func.togglePanel(panel_DK,"DK");
             login2.Controls.Remove(uCDN);
         }
 
