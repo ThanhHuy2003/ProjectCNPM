@@ -1,8 +1,8 @@
 ﻿using FinalProject.App;
 using FinalProject.App.Login;
 using FinalProject.App.Main;
-/*using FinalProject.App.Main.CaiDat;
-*/using FinalProject.App.Main.ThucDon;
+using FinalProject.App.Main.CaiDat;
+using FinalProject.App.Main.ThucDon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -86,9 +86,9 @@ namespace FinalProject
             private static UCDN uCDN;
             private static UCDK uCDK;
             private static CardTD cardTD;
-            /*private static CardDH cardDH;
+            private static CardDH cardDH;
             private static CardKM cardKM;
-            private static CardKM2 cardKM2;*/
+            private static CardKM2 cardKM2;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -208,7 +208,7 @@ namespace FinalProject
                             panel.Controls.Add(cardTD);
                         }
                         break;
-                    /*case "CardDH":
+                    case "CardDH":
                         if (cardDH == null)
                         {
                             cardDH = new CardDH();
@@ -221,8 +221,8 @@ namespace FinalProject
                         {
                             panel.Controls.Add(cardDH);
                         }
-                        break;*/
-                    /*case "CardKM":
+                        break;
+                    case "CardKM":
                         if (cardKM == null)
                         {
                             cardKM = new CardKM();
@@ -235,8 +235,8 @@ namespace FinalProject
                         {
                             panel.Controls.Add(cardKM);
                         }
-                        break;*/
-                    /*case "CardKM2":
+                        break;
+                    case "CardKM2":
                         if (cardKM == null)
                         {
                             cardKM2 = new CardKM2();
@@ -249,7 +249,7 @@ namespace FinalProject
                         {
                             panel.Controls.Add(cardKM2);
                         }
-                        break;*/
+                        break;
                     default:
                         break;
                 }

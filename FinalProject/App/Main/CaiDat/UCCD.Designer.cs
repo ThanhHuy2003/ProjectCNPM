@@ -1,4 +1,4 @@
-﻿namespace FinalProject.App
+﻿namespace FinalProject.App.Main.CaiDat
 {
     partial class UCCD
     {
@@ -28,308 +28,947 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picBM = new System.Windows.Forms.PictureBox();
-            this.BtnBM = new Krypton.Toolkit.KryptonButton();
-            this.picLg = new System.Windows.Forms.PictureBox();
-            this.BtnLg = new Krypton.Toolkit.KryptonButton();
-            this.picTT = new System.Windows.Forms.PictureBox();
-            this.BtnTT = new Krypton.Toolkit.KryptonButton();
-            this.picUD = new System.Windows.Forms.PictureBox();
-            this.BtnUD = new Krypton.Toolkit.KryptonButton();
-            this.picDH = new System.Windows.Forms.PictureBox();
-            this.btnDH = new Krypton.Toolkit.KryptonButton();
-            this.picEditAcc = new System.Windows.Forms.PictureBox();
-            this.btnEditAcc = new Krypton.Toolkit.KryptonButton();
-            this.panelCD = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.picBM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEditAcc)).BeginInit();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabTTCN = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblQQ = new System.Windows.Forms.Label();
+            this.lblNS = new System.Windows.Forms.Label();
+            this.lblUpFile = new System.Windows.Forms.Label();
+            this.btnUpFile = new Krypton.Toolkit.KryptonButton();
+            this.btnSave = new Krypton.Toolkit.KryptonButton();
+            this.btnDC = new Krypton.Toolkit.KryptonButton();
+            this.txtDC = new Krypton.Toolkit.KryptonTextBox();
+            this.btnQQ = new Krypton.Toolkit.KryptonButton();
+            this.txtQQ = new Krypton.Toolkit.KryptonTextBox();
+            this.btnSDT = new Krypton.Toolkit.KryptonButton();
+            this.txtSDT = new Krypton.Toolkit.KryptonTextBox();
+            this.btnEmail = new Krypton.Toolkit.KryptonButton();
+            this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
+            this.btnNS = new Krypton.Toolkit.KryptonButton();
+            this.txtNS = new Krypton.Toolkit.KryptonTextBox();
+            this.btnHoTen = new Krypton.Toolkit.KryptonButton();
+            this.txtHoten = new Krypton.Toolkit.KryptonTextBox();
+            this.lblDC = new System.Windows.Forms.Label();
+            this.lblSDT = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.labelHoten = new System.Windows.Forms.Label();
+            this.tabDH = new System.Windows.Forms.TabPage();
+            this.panelDH = new System.Windows.Forms.Panel();
+            this.btnDHHT = new Krypton.Toolkit.KryptonButton();
+            this.btnLS = new Krypton.Toolkit.KryptonButton();
+            this.tabUD = new System.Windows.Forms.TabPage();
+            this.panelKM = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.tabPTTT = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.radbtnMoney = new Krypton.Toolkit.KryptonRadioButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radbtnMomo = new Krypton.Toolkit.KryptonRadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tabCNN = new System.Windows.Forms.TabPage();
+            this.tabBMDK = new System.Windows.Forms.TabPage();
+            this.picAvt = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabControl1.SuspendLayout();
+            this.tabTTCN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            this.tabDH.SuspendLayout();
+            this.tabUD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelKM)).BeginInit();
+            this.tabPTTT.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // picBM
+            // tabControl1
             // 
-            this.picBM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picBM.Image = global::FinalProject.Properties.Resources.BM;
-            this.picBM.Location = new System.Drawing.Point(161, 612);
-            this.picBM.Name = "picBM";
-            this.picBM.Size = new System.Drawing.Size(30, 31);
-            this.picBM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picBM.TabIndex = 36;
-            this.picBM.TabStop = false;
+            this.tabControl1.Controls.Add(this.tabTTCN);
+            this.tabControl1.Controls.Add(this.tabDH);
+            this.tabControl1.Controls.Add(this.tabUD);
+            this.tabControl1.Controls.Add(this.tabPTTT);
+            this.tabControl1.Controls.Add(this.tabCNN);
+            this.tabControl1.Controls.Add(this.tabBMDK);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(943, 803);
+            this.tabControl1.TabIndex = 1;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
-            // BtnBM
+            // tabTTCN
             // 
-            this.BtnBM.CornerRoundingRadius = -1F;
-            this.BtnBM.Location = new System.Drawing.Point(132, 598);
-            this.BtnBM.Name = "BtnBM";
-            this.BtnBM.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnBM.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnBM.Size = new System.Drawing.Size(1016, 64);
-            this.BtnBM.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnBM.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnBM.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.BtnBM.StateCommon.Content.Padding = new System.Windows.Forms.Padding(70, -1, -1, -1);
-            this.BtnBM.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBM.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.BtnBM.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnBM.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnBM.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
-            this.BtnBM.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterRight;
-            this.BtnBM.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.tabTTCN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabTTCN.Controls.Add(this.label12);
+            this.tabTTCN.Controls.Add(this.kryptonComboBox1);
+            this.tabTTCN.Controls.Add(this.label3);
+            this.tabTTCN.Controls.Add(this.lblQQ);
+            this.tabTTCN.Controls.Add(this.lblNS);
+            this.tabTTCN.Controls.Add(this.lblUpFile);
+            this.tabTTCN.Controls.Add(this.btnUpFile);
+            this.tabTTCN.Controls.Add(this.btnSave);
+            this.tabTTCN.Controls.Add(this.btnDC);
+            this.tabTTCN.Controls.Add(this.txtDC);
+            this.tabTTCN.Controls.Add(this.btnQQ);
+            this.tabTTCN.Controls.Add(this.txtQQ);
+            this.tabTTCN.Controls.Add(this.btnSDT);
+            this.tabTTCN.Controls.Add(this.txtSDT);
+            this.tabTTCN.Controls.Add(this.btnEmail);
+            this.tabTTCN.Controls.Add(this.txtEmail);
+            this.tabTTCN.Controls.Add(this.btnNS);
+            this.tabTTCN.Controls.Add(this.txtNS);
+            this.tabTTCN.Controls.Add(this.btnHoTen);
+            this.tabTTCN.Controls.Add(this.txtHoten);
+            this.tabTTCN.Controls.Add(this.lblDC);
+            this.tabTTCN.Controls.Add(this.lblSDT);
+            this.tabTTCN.Controls.Add(this.lblEmail);
+            this.tabTTCN.Controls.Add(this.labelHoten);
+            this.tabTTCN.Controls.Add(this.picAvt);
+            this.tabTTCN.Location = new System.Drawing.Point(4, 29);
+            this.tabTTCN.Name = "tabTTCN";
+            this.tabTTCN.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTTCN.Size = new System.Drawing.Size(935, 770);
+            this.tabTTCN.TabIndex = 0;
+            this.tabTTCN.Text = "Thông tin cá nhân";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(702, 29);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(99, 16);
+            this.label12.TabIndex = 70;
+            this.label12.Text = "Chọn ngôn ngữ:";
+            // 
+            // kryptonComboBox1
+            // 
+            this.kryptonComboBox1.CornerRoundingRadius = 20F;
+            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kryptonComboBox1.DropDownWidth = 91;
+            this.kryptonComboBox1.InputControlStyle = Krypton.Toolkit.InputControlStyle.PanelClient;
+            this.kryptonComboBox1.IntegralHeight = false;
+            this.kryptonComboBox1.Items.AddRange(new object[] {
+            "Tiếng Việt",
+            "English"});
+            this.kryptonComboBox1.Location = new System.Drawing.Point(820, 21);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
+            this.kryptonComboBox1.Size = new System.Drawing.Size(103, 33);
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.BtnBM.StateNormal.Border.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.BtnBM.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.TopMiddle;
-            this.BtnBM.StateNormal.Border.Rounding = 30F;
-            this.BtnBM.TabIndex = 35;
-            this.BtnBM.Values.Text = "Bảo mật và điều khoản";
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 20F;
+            this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonComboBox1.TabIndex = 69;
             // 
-            // picLg
+            // label3
             // 
-            this.picLg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picLg.Image = global::FinalProject.Properties.Resources.Language;
-            this.picLg.Location = new System.Drawing.Point(161, 519);
-            this.picLg.Name = "picLg";
-            this.picLg.Size = new System.Drawing.Size(26, 26);
-            this.picLg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picLg.TabIndex = 34;
-            this.picLg.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(156, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 24);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "Hình đại diện:";
             // 
-            // BtnLg
+            // lblQQ
             // 
-            this.BtnLg.CornerRoundingRadius = -1F;
-            this.BtnLg.Location = new System.Drawing.Point(132, 500);
-            this.BtnLg.Name = "BtnLg";
-            this.BtnLg.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnLg.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnLg.Size = new System.Drawing.Size(1016, 64);
-            this.BtnLg.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnLg.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnLg.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.BtnLg.StateCommon.Content.Padding = new System.Windows.Forms.Padding(70, -1, -1, -1);
-            this.BtnLg.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLg.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.BtnLg.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnLg.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnLg.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
-            this.BtnLg.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterRight;
-            this.BtnLg.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.lblQQ.AutoSize = true;
+            this.lblQQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.lblQQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblQQ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblQQ.Location = new System.Drawing.Point(164, 569);
+            this.lblQQ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQQ.Name = "lblQQ";
+            this.lblQQ.Size = new System.Drawing.Size(100, 24);
+            this.lblQQ.TabIndex = 67;
+            this.lblQQ.Text = "Quê quán:";
+            // 
+            // lblNS
+            // 
+            this.lblNS.AutoSize = true;
+            this.lblNS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.lblNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblNS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblNS.Location = new System.Drawing.Point(164, 339);
+            this.lblNS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNS.Name = "lblNS";
+            this.lblNS.Size = new System.Drawing.Size(99, 24);
+            this.lblNS.TabIndex = 66;
+            this.lblNS.Text = "Ngày sinh:";
+            // 
+            // lblUpFile
+            // 
+            this.lblUpFile.AutoSize = true;
+            this.lblUpFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.lblUpFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.lblUpFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
+            this.lblUpFile.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblUpFile.Location = new System.Drawing.Point(586, 209);
+            this.lblUpFile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUpFile.Name = "lblUpFile";
+            this.lblUpFile.Size = new System.Drawing.Size(61, 13);
+            this.lblUpFile.TabIndex = 65;
+            this.lblUpFile.Text = "Chọn file:";
+            // 
+            // btnUpFile
+            // 
+            this.btnUpFile.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnUpFile.CornerRoundingRadius = 0F;
+            this.btnUpFile.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnUpFile.Location = new System.Drawing.Point(557, 196);
+            this.btnUpFile.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpFile.Name = "btnUpFile";
+            this.btnUpFile.Size = new System.Drawing.Size(40, 33);
+            this.btnUpFile.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.btnUpFile.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.btnUpFile.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.btnUpFile.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.btnUpFile.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.BtnLg.StateNormal.Border.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.BtnLg.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.TopMiddle;
-            this.BtnLg.StateNormal.Border.Rounding = 30F;
-            this.BtnLg.TabIndex = 33;
-            this.BtnLg.Values.Text = "Đổi ngôn ngữ";
+            this.btnUpFile.StateCommon.Border.Rounding = 0F;
+            this.btnUpFile.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnUpFile.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnUpFile.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpFile.TabIndex = 64;
+            this.btnUpFile.Values.Image = global::FinalProject.Properties.Resources.import;
+            this.btnUpFile.Values.Text = "";
             // 
-            // picTT
+            // btnSave
             // 
-            this.picTT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picTT.Image = global::FinalProject.Properties.Resources.TT;
-            this.picTT.Location = new System.Drawing.Point(161, 420);
-            this.picTT.Name = "picTT";
-            this.picTT.Size = new System.Drawing.Size(30, 21);
-            this.picTT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picTT.TabIndex = 32;
-            this.picTT.TabStop = false;
-            // 
-            // BtnTT
-            // 
-            this.BtnTT.CornerRoundingRadius = -1F;
-            this.BtnTT.Location = new System.Drawing.Point(132, 400);
-            this.BtnTT.Name = "BtnTT";
-            this.BtnTT.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnTT.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnTT.Size = new System.Drawing.Size(1016, 64);
-            this.BtnTT.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnTT.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnTT.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.BtnTT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(70, -1, -1, -1);
-            this.BtnTT.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTT.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.BtnTT.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnTT.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnTT.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
-            this.BtnTT.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterRight;
-            this.BtnTT.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnSave.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnSave.CornerRoundingRadius = 20F;
+            this.btnSave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSave.Location = new System.Drawing.Point(411, 729);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(88, 37);
+            this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.BtnTT.StateNormal.Border.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.BtnTT.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.TopMiddle;
-            this.BtnTT.StateNormal.Border.Rounding = 30F;
-            this.BtnTT.TabIndex = 31;
-            this.BtnTT.Values.Text = "Phương thức thanh toán";
+            this.btnSave.StateCommon.Border.Rounding = 20F;
+            this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSave.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnSave.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnSave.TabIndex = 63;
+            this.btnSave.Values.Text = "Lưu";
             // 
-            // picUD
+            // btnDC
             // 
-            this.picUD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picUD.Image = global::FinalProject.Properties.Resources.imageedit_3_4291617034_transformed2;
-            this.picUD.Location = new System.Drawing.Point(152, 314);
-            this.picUD.Name = "picUD";
-            this.picUD.Size = new System.Drawing.Size(46, 40);
-            this.picUD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picUD.TabIndex = 30;
-            this.picUD.TabStop = false;
-            // 
-            // BtnUD
-            // 
-            this.BtnUD.CornerRoundingRadius = -1F;
-            this.BtnUD.Location = new System.Drawing.Point(132, 304);
-            this.BtnUD.Name = "BtnUD";
-            this.BtnUD.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnUD.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnUD.Size = new System.Drawing.Size(1016, 64);
-            this.BtnUD.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnUD.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnUD.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.BtnUD.StateCommon.Content.Padding = new System.Windows.Forms.Padding(70, -1, -1, -1);
-            this.BtnUD.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUD.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.BtnUD.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnUD.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.BtnUD.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
-            this.BtnUD.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterRight;
-            this.BtnUD.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnDC.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnDC.CornerRoundingRadius = 0F;
+            this.btnDC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDC.Location = new System.Drawing.Point(740, 673);
+            this.btnDC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDC.Name = "btnDC";
+            this.btnDC.Size = new System.Drawing.Size(40, 33);
+            this.btnDC.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnDC.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnDC.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.BtnUD.StateNormal.Border.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.BtnUD.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.TopMiddle;
-            this.BtnUD.StateNormal.Border.Rounding = 30F;
-            this.BtnUD.TabIndex = 29;
-            this.BtnUD.Values.Text = "Ưu đãi";
+            this.btnDC.StateCommon.Border.Rounding = 0F;
+            this.btnDC.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDC.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDC.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDC.TabIndex = 62;
+            this.btnDC.Values.Image = global::FinalProject.Properties.Resources.Edit;
+            this.btnDC.Values.Text = "";
             // 
-            // picDH
+            // txtDC
             // 
-            this.picDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picDH.Image = global::FinalProject.Properties.Resources.DH;
-            this.picDH.Location = new System.Drawing.Point(152, 220);
-            this.picDH.Name = "picDH";
-            this.picDH.Size = new System.Drawing.Size(46, 40);
-            this.picDH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picDH.TabIndex = 28;
-            this.picDH.TabStop = false;
-            // 
-            // btnDH
-            // 
-            this.btnDH.CornerRoundingRadius = -1F;
-            this.btnDH.Location = new System.Drawing.Point(132, 210);
-            this.btnDH.Name = "btnDH";
-            this.btnDH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnDH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnDH.Size = new System.Drawing.Size(1016, 64);
-            this.btnDH.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnDH.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnDH.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnDH.StateCommon.Content.Padding = new System.Windows.Forms.Padding(70, -1, -1, -1);
-            this.btnDH.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDH.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.btnDH.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnDH.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnDH.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
-            this.btnDH.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterRight;
-            this.btnDH.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtDC.Enabled = false;
+            this.txtDC.Location = new System.Drawing.Point(160, 671);
+            this.txtDC.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDC.Name = "txtDC";
+            this.txtDC.Size = new System.Drawing.Size(630, 40);
+            this.txtDC.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDH.StateNormal.Border.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.btnDH.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.TopMiddle;
-            this.btnDH.StateNormal.Border.Rounding = 30F;
-            this.btnDH.TabIndex = 27;
-            this.btnDH.Values.Text = "Đơn hàng";
+            this.txtDC.StateCommon.Border.Rounding = 20F;
+            this.txtDC.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDC.TabIndex = 61;
             // 
-            // picEditAcc
+            // btnQQ
             // 
-            this.picEditAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picEditAcc.Image = global::FinalProject.Properties.Resources.imageedit_6_6776574693_removebg_preview;
-            this.picEditAcc.Location = new System.Drawing.Point(152, 126);
-            this.picEditAcc.Name = "picEditAcc";
-            this.picEditAcc.Size = new System.Drawing.Size(46, 40);
-            this.picEditAcc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picEditAcc.TabIndex = 26;
-            this.picEditAcc.TabStop = false;
-            // 
-            // btnEditAcc
-            // 
-            this.btnEditAcc.CornerRoundingRadius = -1F;
-            this.btnEditAcc.Location = new System.Drawing.Point(132, 115);
-            this.btnEditAcc.Name = "btnEditAcc";
-            this.btnEditAcc.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnEditAcc.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnEditAcc.Size = new System.Drawing.Size(1016, 64);
-            this.btnEditAcc.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnEditAcc.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnEditAcc.StateCommon.Content.Padding = new System.Windows.Forms.Padding(70, -1, -1, -1);
-            this.btnEditAcc.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditAcc.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.btnEditAcc.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnEditAcc.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.btnEditAcc.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.btnEditAcc.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterRight;
-            this.btnEditAcc.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnQQ.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnQQ.CornerRoundingRadius = 0F;
+            this.btnQQ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnQQ.Location = new System.Drawing.Point(740, 596);
+            this.btnQQ.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQQ.Name = "btnQQ";
+            this.btnQQ.Size = new System.Drawing.Size(40, 33);
+            this.btnQQ.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnQQ.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnQQ.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnEditAcc.StateNormal.Border.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
-            this.btnEditAcc.StateNormal.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.TopMiddle;
-            this.btnEditAcc.StateNormal.Border.Rounding = 30F;
-            this.btnEditAcc.TabIndex = 25;
-            this.btnEditAcc.Values.Text = "Thông tin cá nhân";
-            this.btnEditAcc.Click += new System.EventHandler(this.btnEditAcc_Click);
+            this.btnQQ.StateCommon.Border.Rounding = 0F;
+            this.btnQQ.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnQQ.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnQQ.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQQ.TabIndex = 60;
+            this.btnQQ.Values.Image = global::FinalProject.Properties.Resources.Edit;
+            this.btnQQ.Values.Text = "";
             // 
-            // panelCD
+            // txtQQ
             // 
-            this.panelCD.BackColor = System.Drawing.Color.White;
-            this.panelCD.Location = new System.Drawing.Point(24, 14);
-            this.panelCD.Name = "panelCD";
-            this.panelCD.Size = new System.Drawing.Size(432, 79);
-            this.panelCD.TabIndex = 37;
+            this.txtQQ.Enabled = false;
+            this.txtQQ.Location = new System.Drawing.Point(160, 595);
+            this.txtQQ.Margin = new System.Windows.Forms.Padding(2);
+            this.txtQQ.Name = "txtQQ";
+            this.txtQQ.Size = new System.Drawing.Size(630, 40);
+            this.txtQQ.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtQQ.StateCommon.Border.Rounding = 20F;
+            this.txtQQ.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQQ.TabIndex = 59;
+            // 
+            // btnSDT
+            // 
+            this.btnSDT.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnSDT.CornerRoundingRadius = 0F;
+            this.btnSDT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSDT.Location = new System.Drawing.Point(740, 521);
+            this.btnSDT.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSDT.Name = "btnSDT";
+            this.btnSDT.Size = new System.Drawing.Size(40, 33);
+            this.btnSDT.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnSDT.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnSDT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSDT.StateCommon.Border.Rounding = 0F;
+            this.btnSDT.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSDT.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnSDT.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSDT.TabIndex = 58;
+            this.btnSDT.Values.Image = global::FinalProject.Properties.Resources.Edit;
+            this.btnSDT.Values.Text = "";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Enabled = false;
+            this.txtSDT.Location = new System.Drawing.Point(160, 519);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(630, 40);
+            this.txtSDT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtSDT.StateCommon.Border.Rounding = 20F;
+            this.txtSDT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.TabIndex = 57;
+            // 
+            // btnEmail
+            // 
+            this.btnEmail.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnEmail.CornerRoundingRadius = 0F;
+            this.btnEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEmail.Location = new System.Drawing.Point(740, 441);
+            this.btnEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(40, 33);
+            this.btnEmail.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnEmail.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnEmail.StateCommon.Border.Rounding = 0F;
+            this.btnEmail.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnEmail.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnEmail.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmail.TabIndex = 56;
+            this.btnEmail.Values.Image = global::FinalProject.Properties.Resources.Edit;
+            this.btnEmail.Values.Text = "";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Enabled = false;
+            this.txtEmail.Location = new System.Drawing.Point(160, 439);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(630, 40);
+            this.txtEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtEmail.StateCommon.Border.Rounding = 20F;
+            this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.TabIndex = 55;
+            // 
+            // btnNS
+            // 
+            this.btnNS.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnNS.CornerRoundingRadius = 0F;
+            this.btnNS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnNS.Location = new System.Drawing.Point(740, 367);
+            this.btnNS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNS.Name = "btnNS";
+            this.btnNS.Size = new System.Drawing.Size(40, 33);
+            this.btnNS.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnNS.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnNS.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnNS.StateCommon.Border.Rounding = 0F;
+            this.btnNS.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnNS.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnNS.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNS.TabIndex = 54;
+            this.btnNS.Values.Image = global::FinalProject.Properties.Resources.Edit;
+            this.btnNS.Values.Text = "";
+            // 
+            // txtNS
+            // 
+            this.txtNS.Enabled = false;
+            this.txtNS.Location = new System.Drawing.Point(160, 365);
+            this.txtNS.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNS.Name = "txtNS";
+            this.txtNS.Size = new System.Drawing.Size(630, 40);
+            this.txtNS.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtNS.StateCommon.Border.Rounding = 20F;
+            this.txtNS.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNS.TabIndex = 53;
+            // 
+            // btnHoTen
+            // 
+            this.btnHoTen.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.btnHoTen.CornerRoundingRadius = 0F;
+            this.btnHoTen.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnHoTen.Location = new System.Drawing.Point(740, 287);
+            this.btnHoTen.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHoTen.Name = "btnHoTen";
+            this.btnHoTen.Size = new System.Drawing.Size(40, 33);
+            this.btnHoTen.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnHoTen.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnHoTen.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnHoTen.StateCommon.Border.Rounding = 0F;
+            this.btnHoTen.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHoTen.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHoTen.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoTen.TabIndex = 52;
+            this.btnHoTen.Values.Image = global::FinalProject.Properties.Resources.Edit;
+            this.btnHoTen.Values.Text = "";
+            // 
+            // txtHoten
+            // 
+            this.txtHoten.Enabled = false;
+            this.txtHoten.Location = new System.Drawing.Point(160, 285);
+            this.txtHoten.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHoten.Name = "txtHoten";
+            this.txtHoten.Size = new System.Drawing.Size(630, 40);
+            this.txtHoten.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtHoten.StateCommon.Border.Rounding = 20F;
+            this.txtHoten.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoten.TabIndex = 51;
+            // 
+            // lblDC
+            // 
+            this.lblDC.AutoSize = true;
+            this.lblDC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.lblDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblDC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblDC.Location = new System.Drawing.Point(164, 645);
+            this.lblDC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDC.Name = "lblDC";
+            this.lblDC.Size = new System.Drawing.Size(72, 24);
+            this.lblDC.TabIndex = 50;
+            this.lblDC.Text = "Địa chỉ:";
+            // 
+            // lblSDT
+            // 
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblSDT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSDT.Location = new System.Drawing.Point(164, 493);
+            this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(126, 24);
+            this.lblSDT.TabIndex = 49;
+            this.lblSDT.Text = "Số điện thoại:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblEmail.Location = new System.Drawing.Point(164, 413);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(62, 24);
+            this.lblEmail.TabIndex = 48;
+            this.lblEmail.Text = "Email:";
+            // 
+            // labelHoten
+            // 
+            this.labelHoten.AutoSize = true;
+            this.labelHoten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.labelHoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.labelHoten.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelHoten.Location = new System.Drawing.Point(164, 255);
+            this.labelHoten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHoten.Name = "labelHoten";
+            this.labelHoten.Size = new System.Drawing.Size(71, 24);
+            this.labelHoten.TabIndex = 47;
+            this.labelHoten.Text = "Họ tên:";
+            // 
+            // tabDH
+            // 
+            this.tabDH.AutoScroll = true;
+            this.tabDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabDH.Controls.Add(this.panelDH);
+            this.tabDH.Controls.Add(this.btnDHHT);
+            this.tabDH.Controls.Add(this.btnLS);
+            this.tabDH.Location = new System.Drawing.Point(4, 29);
+            this.tabDH.Name = "tabDH";
+            this.tabDH.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDH.Size = new System.Drawing.Size(947, 774);
+            this.tabDH.TabIndex = 1;
+            this.tabDH.Text = "Đơn hàng";
+            // 
+            // panelDH
+            // 
+            this.panelDH.BackColor = System.Drawing.Color.White;
+            this.panelDH.Location = new System.Drawing.Point(19, 141);
+            this.panelDH.Name = "panelDH";
+            this.panelDH.Size = new System.Drawing.Size(904, 159);
+            this.panelDH.TabIndex = 2;
+            // 
+            // btnDHHT
+            // 
+            this.btnDHHT.CornerRoundingRadius = 30F;
+            this.btnDHHT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDHHT.Location = new System.Drawing.Point(470, 27);
+            this.btnDHHT.Name = "btnDHHT";
+            this.btnDHHT.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnDHHT.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnDHHT.Size = new System.Drawing.Size(180, 46);
+            this.btnDHHT.StateCommon.Back.Color1 = System.Drawing.Color.Silver;
+            this.btnDHHT.StateCommon.Back.Color2 = System.Drawing.Color.Silver;
+            this.btnDHHT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDHHT.StateCommon.Border.Rounding = 30F;
+            this.btnDHHT.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnDHHT.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.btnDHHT.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnDHHT.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnDHHT.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDHHT.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDHHT.TabIndex = 1;
+            this.btnDHHT.Values.Text = "Đơn hàng hiện tại";
+            // 
+            // btnLS
+            // 
+            this.btnLS.CornerRoundingRadius = 30F;
+            this.btnLS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnLS.Location = new System.Drawing.Point(224, 27);
+            this.btnLS.Name = "btnLS";
+            this.btnLS.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnLS.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnLS.Size = new System.Drawing.Size(180, 46);
+            this.btnLS.StateCommon.Back.Color1 = System.Drawing.Color.Silver;
+            this.btnLS.StateCommon.Back.Color2 = System.Drawing.Color.Silver;
+            this.btnLS.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnLS.StateCommon.Border.Rounding = 30F;
+            this.btnLS.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnLS.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.btnLS.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLS.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLS.TabIndex = 0;
+            this.btnLS.Values.Text = "Lịch sử";
+            // 
+            // tabUD
+            // 
+            this.tabUD.AutoScroll = true;
+            this.tabUD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabUD.Controls.Add(this.panelKM);
+            this.tabUD.Controls.Add(this.kryptonLabel1);
+            this.tabUD.Location = new System.Drawing.Point(4, 29);
+            this.tabUD.Name = "tabUD";
+            this.tabUD.Size = new System.Drawing.Size(947, 774);
+            this.tabUD.TabIndex = 2;
+            this.tabUD.Text = "Ưu đãi";
+            // 
+            // panelKM
+            // 
+            this.panelKM.Location = new System.Drawing.Point(34, 80);
+            this.panelKM.Margin = new System.Windows.Forms.Padding(2);
+            this.panelKM.Name = "panelKM";
+            this.panelKM.Size = new System.Drawing.Size(864, 204);
+            this.panelKM.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelKM.TabIndex = 10;
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(67, 34);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(396, 29);
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 0;
+            this.kryptonLabel1.Values.Text = "Chọn voucher để áp dụng khuyến mãi:";
+            // 
+            // tabPTTT
+            // 
+            this.tabPTTT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabPTTT.Controls.Add(this.panel3);
+            this.tabPTTT.Controls.Add(this.panel1);
+            this.tabPTTT.Location = new System.Drawing.Point(4, 29);
+            this.tabPTTT.Name = "tabPTTT";
+            this.tabPTTT.Size = new System.Drawing.Size(947, 774);
+            this.tabPTTT.TabIndex = 3;
+            this.tabPTTT.Text = "Phương thức thanh toán";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.radbtnMoney);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Location = new System.Drawing.Point(22, 412);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(899, 295);
+            this.panel3.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label11.Location = new System.Drawing.Point(100, 24);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(119, 31);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Tiền mặt";
+            // 
+            // radbtnMoney
+            // 
+            this.radbtnMoney.Location = new System.Drawing.Point(448, 243);
+            this.radbtnMoney.Name = "radbtnMoney";
+            this.radbtnMoney.Size = new System.Drawing.Size(18, 12);
+            this.radbtnMoney.TabIndex = 12;
+            this.radbtnMoney.Values.Text = "";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
+            this.panel4.Location = new System.Drawing.Point(3, 73);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(896, 2);
+            this.panel4.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label7.Location = new System.Drawing.Point(101, 149);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(347, 25);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Thanh toán dễ dàng, linh động hơn";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label9.Location = new System.Drawing.Point(29, 186);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(115, 31);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Quản lý:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(100, 236);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(321, 25);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Chọn làm phương thức mặc định";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label10.Location = new System.Drawing.Point(29, 105);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 31);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Chi tiết:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.radbtnMomo);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(22, 63);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(899, 295);
+            this.panel1.TabIndex = 0;
+            // 
+            // radbtnMomo
+            // 
+            this.radbtnMomo.Location = new System.Drawing.Point(448, 233);
+            this.radbtnMomo.Name = "radbtnMomo";
+            this.radbtnMomo.Size = new System.Drawing.Size(18, 12);
+            this.radbtnMomo.TabIndex = 7;
+            this.radbtnMomo.Values.Text = "";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label6.Location = new System.Drawing.Point(101, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(217, 25);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Trạng thái: hoạt động";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(100, 226);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(321, 25);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Chọn làm phương thức mặc định";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(29, 176);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(115, 31);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Quản lý:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(29, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 31);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Chi tiết:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(100, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ví MoMo";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
+            this.panel2.Location = new System.Drawing.Point(3, 73);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(896, 2);
+            this.panel2.TabIndex = 0;
+            // 
+            // tabCNN
+            // 
+            this.tabCNN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabCNN.Location = new System.Drawing.Point(4, 29);
+            this.tabCNN.Name = "tabCNN";
+            this.tabCNN.Size = new System.Drawing.Size(947, 774);
+            this.tabCNN.TabIndex = 4;
+            this.tabCNN.Text = "Chọn ngôn ngữ";
+            // 
+            // tabBMDK
+            // 
+            this.tabBMDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabBMDK.Location = new System.Drawing.Point(4, 29);
+            this.tabBMDK.Name = "tabBMDK";
+            this.tabBMDK.Size = new System.Drawing.Size(947, 774);
+            this.tabBMDK.TabIndex = 5;
+            this.tabBMDK.Text = "Bảo mật và điều khoản";
+            // 
+            // picAvt
+            // 
+            this.picAvt.Image = global::FinalProject.Properties.Resources.avt;
+            this.picAvt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.picAvt.Location = new System.Drawing.Point(381, 29);
+            this.picAvt.Margin = new System.Windows.Forms.Padding(2);
+            this.picAvt.Name = "picAvt";
+            this.picAvt.Size = new System.Drawing.Size(167, 193);
+            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvt.TabIndex = 46;
+            this.picAvt.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FinalProject.Properties.Resources.moneylogo;
+            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox2.Location = new System.Drawing.Point(24, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FinalProject.Properties.Resources.MoMo_Logo;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // UCCD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panelCD);
-            this.Controls.Add(this.picBM);
-            this.Controls.Add(this.BtnBM);
-            this.Controls.Add(this.picLg);
-            this.Controls.Add(this.BtnLg);
-            this.Controls.Add(this.picTT);
-            this.Controls.Add(this.BtnTT);
-            this.Controls.Add(this.picUD);
-            this.Controls.Add(this.BtnUD);
-            this.Controls.Add(this.picDH);
-            this.Controls.Add(this.btnDH);
-            this.Controls.Add(this.picEditAcc);
-            this.Controls.Add(this.btnEditAcc);
+            this.Controls.Add(this.tabControl1);
             this.Name = "UCCD";
-            this.Size = new System.Drawing.Size(1281, 777);
-            ((System.ComponentModel.ISupportInitialize)(this.picBM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEditAcc)).EndInit();
+            this.Size = new System.Drawing.Size(957, 811);
+            this.tabControl1.ResumeLayout(false);
+            this.tabTTCN.ResumeLayout(false);
+            this.tabTTCN.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            this.tabDH.ResumeLayout(false);
+            this.tabUD.ResumeLayout(false);
+            this.tabUD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelKM)).EndInit();
+            this.tabPTTT.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picBM;
-        private Krypton.Toolkit.KryptonButton BtnBM;
-        private System.Windows.Forms.PictureBox picLg;
-        private Krypton.Toolkit.KryptonButton BtnLg;
-        private System.Windows.Forms.PictureBox picTT;
-        private Krypton.Toolkit.KryptonButton BtnTT;
-        private System.Windows.Forms.PictureBox picUD;
-        private Krypton.Toolkit.KryptonButton BtnUD;
-        private System.Windows.Forms.PictureBox picDH;
-        private Krypton.Toolkit.KryptonButton btnDH;
-        private System.Windows.Forms.PictureBox picEditAcc;
-        private Krypton.Toolkit.KryptonButton btnEditAcc;
-        private System.Windows.Forms.Panel panelCD;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabTTCN;
+        private System.Windows.Forms.Label label12;
+        private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblQQ;
+        private System.Windows.Forms.Label lblNS;
+        private System.Windows.Forms.Label lblUpFile;
+        private Krypton.Toolkit.KryptonButton btnUpFile;
+        private Krypton.Toolkit.KryptonButton btnSave;
+        private Krypton.Toolkit.KryptonButton btnDC;
+        private Krypton.Toolkit.KryptonTextBox txtDC;
+        private Krypton.Toolkit.KryptonButton btnQQ;
+        private Krypton.Toolkit.KryptonTextBox txtQQ;
+        private Krypton.Toolkit.KryptonButton btnSDT;
+        private Krypton.Toolkit.KryptonTextBox txtSDT;
+        private Krypton.Toolkit.KryptonButton btnEmail;
+        private Krypton.Toolkit.KryptonTextBox txtEmail;
+        private Krypton.Toolkit.KryptonButton btnNS;
+        private Krypton.Toolkit.KryptonTextBox txtNS;
+        private Krypton.Toolkit.KryptonButton btnHoTen;
+        private Krypton.Toolkit.KryptonTextBox txtHoten;
+        private System.Windows.Forms.Label lblDC;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label labelHoten;
+        private System.Windows.Forms.PictureBox picAvt;
+        private System.Windows.Forms.TabPage tabDH;
+        private System.Windows.Forms.Panel panelDH;
+        private Krypton.Toolkit.KryptonButton btnDHHT;
+        private Krypton.Toolkit.KryptonButton btnLS;
+        private System.Windows.Forms.TabPage tabUD;
+        private Krypton.Toolkit.KryptonPanel panelKM;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private System.Windows.Forms.TabPage tabPTTT;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label11;
+        private Krypton.Toolkit.KryptonRadioButton radbtnMoney;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel1;
+        private Krypton.Toolkit.KryptonRadioButton radbtnMomo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TabPage tabCNN;
+        private System.Windows.Forms.TabPage tabBMDK;
     }
 }

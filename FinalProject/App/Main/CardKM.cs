@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App
+namespace FinalProject.App.Main
 {
-    public partial class UCTTCN : UserControl
+    public partial class CardKM : UserControl
     {
-        public UCTTCN()
+        public CardKM()
         {
             InitializeComponent();
-        }
-
-        private void EditTxtFullName_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

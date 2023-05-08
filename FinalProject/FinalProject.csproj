@@ -63,11 +63,29 @@
     <Compile Include="App\Login\UCDK.Designer.cs">
       <DependentUpon>UCDK.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Main\CaiDat\CardDH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\CardDH.Designer.cs">
+      <DependentUpon>CardDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\CardKM2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\CaiDat\CardKM2.Designer.cs">
+      <DependentUpon>CardKM2.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Main\CaiDat\UCCD.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="App\Main\CaiDat\UCCD.Designer.cs">
       <DependentUpon>UCCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\CardKM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\CardKM.Designer.cs">
+      <DependentUpon>CardKM.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\ThucDon\CardTD.cs">
       <SubType>UserControl</SubType>
@@ -105,12 +123,6 @@
     <Compile Include="App\Main\ThucDon\UCTD.Designer.cs">
       <DependentUpon>UCTD.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\CaiDat\UCTTCN.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="App\Main\CaiDat\UCTTCN.Designer.cs">
-      <DependentUpon>UCTTCN.cs</DependentUpon>
-    </Compile>
     <Compile Include="App\Main\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,8 +141,17 @@
     <EmbeddedResource Include="App\Login\UCDK.resx">
       <DependentUpon>UCDK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\CardDH.resx">
+      <DependentUpon>CardDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\CardKM2.resx">
+      <DependentUpon>CardKM2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CardKM.resx">
+      <DependentUpon>CardKM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThucDon\CardTD.resx">
       <DependentUpon>CardTD.cs</DependentUpon>
@@ -149,9 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThucDon\UCTD.resx">
       <DependentUpon>UCTD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\CaiDat\UCTTCN.resx">
-      <DependentUpon>UCTTCN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -211,6 +229,9 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\moneylogo1.png" />
+    <None Include="Resources\MoMo_Logo2.png" />
+    <None Include="Resources\MoMo_Logo1.png" />
     <None Include="Resources\Language.png" />
     <None Include="Resources\TT.png" />
     <None Include="Resources\imageedit_8_3852496439-removebg-preview1.png" />
