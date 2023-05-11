@@ -22,11 +22,6 @@ namespace FinalProject
         {
             InitializeComponent();
         }
-
-        private void kryptonButton1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void btnTD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
@@ -39,30 +34,25 @@ namespace FinalProject
             this.menu_active.Location = new Point(1, btnKM.Location.Y);
             Func.togglePanel(panel_main, "KM");
         }
-
         private void btnCH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCH.Location.Y);
             Func.togglePanel(panel_main, "CH");
         }
-
         private void btnGH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
         }
-
         private void CloseApp_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void btnTB_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTB.Location.Y);
-
         }
         private void btnCD_Click(object sender, EventArgs e)
         {
@@ -70,8 +60,6 @@ namespace FinalProject
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
             Func.togglePanel(panel_main, "CD");
         }
-
-
         private void Main_Load(object sender, EventArgs e)
         {
             Func.togglePanel(panel_main, "Main");
@@ -102,7 +90,6 @@ namespace FinalProject
                             panel.Controls.Add(uCMain);
                             uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCMain.Location = new System.Drawing.Point(0, 0);
-                            //form.Size = new System.Drawing.Size(1250, 900);
                             uCMain.TabIndex = 0;
                             uCMain.AutoScroll = true;
                         }
@@ -118,7 +105,6 @@ namespace FinalProject
                             panel.Controls.Add(uCTD);
                             uCTD.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCTD.Location = new System.Drawing.Point(0, 0);
-                            // form.Size = new System.Drawing.Size(1250, 900);
                             uCTD.TabIndex = 0;
                             uCTD.AutoScroll = true;
                         }
@@ -165,7 +151,6 @@ namespace FinalProject
                             uCCH.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCCH.Location = new System.Drawing.Point(0, 0);
                             uCCH.Name = "uCCH";
-                            //form.Size = new System.Drawing.Size(1250, 900);
                             uCCH.TabIndex = 0;
                         }
                         else
@@ -180,7 +165,6 @@ namespace FinalProject
                         uCDN.Dock = System.Windows.Forms.DockStyle.Fill;
                         uCDN.Location = new System.Drawing.Point(0, 0);
                         uCDN.Name = "uCDN";
-                        //form.Size = new System.Drawing.Size(1100, 750);
                         uCDN.TabIndex = 0;
                         break;
                     case "DK":
@@ -190,7 +174,6 @@ namespace FinalProject
                         uCDK.Location = new System.Drawing.Point(0, 0);
                         uCDK.Name = "uCDK";
                         uCDK.TabIndex = 0;
-
                         break;
                     case "CardTD":
                         if (cardTD == null)
@@ -255,13 +238,5 @@ namespace FinalProject
                 }
             }
         }
-
-
-
-
-
-
-
-
     }
 }

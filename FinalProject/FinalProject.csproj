@@ -81,6 +81,12 @@
     <Compile Include="App\Main\CaiDat\UCCD.Designer.cs">
       <DependentUpon>UCCD.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Main\CardCH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\CardCH.Designer.cs">
+      <DependentUpon>CardCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Main\CardKM.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,10 +137,16 @@
     </Compile>
     <Compile Include="BLL\CookTableBLL.cs" />
     <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="BLL\PromotionTableBLL.cs" />
+    <Compile Include="BLL\StoreAddressTableBLL.cs" />
     <Compile Include="DAL\CookTableDAL.cs" />
     <Compile Include="DAL\DatabaseAccess.cs" />
     <Compile Include="DAL\LoginDAL.cs" />
+    <Compile Include="DAL\PromotionTableDAL.cs" />
+    <Compile Include="DAL\StoreAddressTableDAL.cs" />
     <Compile Include="DTO\MenuItem.cs" />
+    <Compile Include="DTO\PromotionItem.cs" />
+    <Compile Include="DTO\StoreAddressItem.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CardCH.resx">
+      <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>

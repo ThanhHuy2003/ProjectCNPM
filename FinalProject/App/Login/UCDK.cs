@@ -29,7 +29,6 @@ namespace FinalProject.App.Login
             Func.togglePanel(panel_DN, "DN");
             login2.Controls.Remove(uCDK);
         }
-
         private void FullNameText_Enter(object sender, EventArgs e)
         {
             if (FullNameText.Text == "Full name")
@@ -38,7 +37,6 @@ namespace FinalProject.App.Login
                 FullNameText.StateActive.Content.Color1 = Color.Black;
             }
         }
-
         private void FullNameText_Leave(object sender, EventArgs e)
         {
             if (FullNameText.Text == "")
@@ -47,7 +45,6 @@ namespace FinalProject.App.Login
                 FullNameText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-
         private void EmailText_Enter(object sender, EventArgs e)
         {
             if (EmailText.Text == "Email")
@@ -56,7 +53,6 @@ namespace FinalProject.App.Login
                 EmailText.StateActive.Content.Color1 = Color.Black;
             }
         }
-
         private void EmailText_Leave(object sender, EventArgs e)
         {
             if (EmailText.Text == "")
@@ -65,7 +61,6 @@ namespace FinalProject.App.Login
                 EmailText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-
         private void ContactText_Enter(object sender, EventArgs e)
         {
             if (ContactText.Text == "Contact address")
@@ -74,7 +69,6 @@ namespace FinalProject.App.Login
                 ContactText.StateActive.Content.Color1 = Color.Black;
             }
         }
-
         private void ContactText_Leave(object sender, EventArgs e)
         {
             if (ContactText.Text == "")
@@ -83,7 +77,6 @@ namespace FinalProject.App.Login
                 ContactText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-        // Phone number k tab đc
         private void PhoneNumberText_Enter(object sender, EventArgs e)
         {
             if (PhoneNumberText.Text == "Phone number")
@@ -92,7 +85,6 @@ namespace FinalProject.App.Login
                 PhoneNumberText.StateActive.Content.Color1 = Color.Black;
             }
         }
-
         private void PhoneNumberText_Leave(object sender, EventArgs e)
         {
             if (PhoneNumberText.Text == "")
@@ -109,7 +101,6 @@ namespace FinalProject.App.Login
                 UserNameText.StateActive.Content.Color1 = Color.Black;
             }
         }
-
         private void UserNameText_Leave(object sender, EventArgs e)
         {
             if (UserNameText.Text == "")
@@ -118,7 +109,6 @@ namespace FinalProject.App.Login
                 UserNameText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-
         private void PasswordText_Enter(object sender, EventArgs e)
         {
             if (PasswordText.Text == "Password")
@@ -128,7 +118,6 @@ namespace FinalProject.App.Login
                 PasswordText.UseSystemPasswordChar = true;
             }
         }
-
         private void PasswordText_Leave(object sender, EventArgs e)
         {
             if (PasswordText.Text == "")
@@ -137,7 +126,6 @@ namespace FinalProject.App.Login
                 PasswordText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-
         private void Eye2_Click(object sender, EventArgs e)
         {
             if (PasswordText.Text.Length > 0)
@@ -146,13 +134,11 @@ namespace FinalProject.App.Login
                 PasswordText.UseSystemPasswordChar = false;
             }
         }
-
         private void Blind2_Click(object sender, EventArgs e)
         {
             Eye2.BringToFront();
             PasswordText.UseSystemPasswordChar = true;
         }
-
         private void UCDK_Load(object sender, EventArgs e)
         {
             lblSignUp.Select();
@@ -161,18 +147,21 @@ namespace FinalProject.App.Login
         {
             lblSignUp.Select();
         }
-
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             User newTK = new User();
+
             newTK.fullName = FullNameText.Text;
             newTK.emailAddress = EmailText.Text;
             newTK.contactAddress = ContactText.Text;
             newTK.phoneNumber = PhoneNumberText.Text;
             newTK.userName = UserNameText.Text;
             newTK.userPassword = PasswordText.Text;
+
             LoginBLL newTKBLL = new LoginBLL();
+
             string temp = newTKBLL.signUp_Login_BLL(newTK);
+
             if (temp == "Vui lòng nhập họ tên đầy đủ")
             {
                 MessageBox.Show("Vui lòng nhập họ tên đầy đủ");
@@ -219,7 +208,6 @@ namespace FinalProject.App.Login
                 return;
             }
         }
-
         private void PhoneNumberText_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))

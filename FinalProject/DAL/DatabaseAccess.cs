@@ -88,5 +88,31 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        // populateMenuData_Food_DA_DAL()
+        // populateMenuData_Drink_DA_DAL()
+        public DataTable populatePromotionData_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from PromotionData";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public DataTable populateStoreAddressData_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from StoreAddress";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
     }
 }

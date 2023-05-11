@@ -23,17 +23,14 @@ namespace FinalProject.App
             InitializeComponent();
         }
         private UCDN uCDN;
-
         private void linkDK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             panel_DK.Visible = true;
             panel_DK.Size = new System.Drawing.Size(525,710);
             panel_DK.Location = new System.Drawing.Point(0, 0);
             Func.togglePanel(panel_DK,"DK");
             login2.Controls.Remove(uCDN);
         }
-
         private void UsernameText_Enter(object sender, EventArgs e)
         {
             if (UsernameText.Text == "Username")
@@ -42,7 +39,6 @@ namespace FinalProject.App
                 UsernameText.StateActive.Content.Color1 = Color.Black;
             }
         }
-
         private void UsernameText_Leave(object sender, EventArgs e)
         {
             if (UsernameText.Text == "")
@@ -51,7 +47,6 @@ namespace FinalProject.App
                 UsernameText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-
         private void PasswordText_Enter(object sender, EventArgs e)
         {
             if (PasswordText.Text == "Password")
@@ -61,7 +56,6 @@ namespace FinalProject.App
                 PasswordText.UseSystemPasswordChar= true;
             }
         }
-
         private void PasswordText_Leave(object sender, EventArgs e)
         {
             if (PasswordText.Text == "")
@@ -70,7 +64,6 @@ namespace FinalProject.App
                 PasswordText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-
         private void Eye_Click(object sender, EventArgs e)
         {
             if (PasswordText.Text.Length > 0)
@@ -79,13 +72,11 @@ namespace FinalProject.App
                 PasswordText.UseSystemPasswordChar = false;
             }
         }
-
         private void Blind_Click(object sender, EventArgs e)
         {
             Eye.BringToFront();
             PasswordText.UseSystemPasswordChar = true;
         }
-
         private void UCDN_Load(object sender, EventArgs e)
         {
             lblSignIn.Select();
@@ -95,13 +86,15 @@ namespace FinalProject.App
         {
             lblSignIn.Select();
         }
-
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             User tk = new User();
+
             tk.userName = UsernameText.Text;
             tk.userPassword = PasswordText.Text;
+
             LoginBLL tkBLL = new LoginBLL();
+
             if(tkBLL.checkLoginData_Login_BLL(tk) == "Vui lòng nhập tên tài khoản")
             {
                 MessageBox.Show("Vui lòng nhập tên tài khoản");
@@ -119,7 +112,6 @@ namespace FinalProject.App
             }
             else
             {
-                // Còn check role sau đó dùng tài khoản truy cập vào giao diện bên trong, dtb sẽ gửi toàn bộ data liên quan tài khoản
                 MessageBox.Show("Đăng nhập thành công");
                 return;
             }

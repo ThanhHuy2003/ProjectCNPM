@@ -20,11 +20,7 @@ namespace FinalProject.App.Main.CaiDat
         }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedIndex == 0)
-            {
-
-            }
-            else if (tabControl1.SelectedIndex == 1)
+            if (tabControl1.SelectedIndex == 1)
             {
                 btnLS.Select();
                 Func.togglePanel(panelDH, "CardDH");

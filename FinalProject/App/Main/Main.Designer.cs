@@ -283,7 +283,6 @@
             this.btnAcc.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnAcc.TabIndex = 0;
             this.btnAcc.Values.Text = "Account";
-            this.btnAcc.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // panel_main
             // 

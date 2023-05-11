@@ -57,13 +57,13 @@
             this.kryptonPanel27.Location = new System.Drawing.Point(3, 2);
             this.kryptonPanel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel27.Name = "kryptonPanel27";
-            this.kryptonPanel27.Size = new System.Drawing.Size(337, 392);
+            this.kryptonPanel27.Size = new System.Drawing.Size(337, 361);
             this.kryptonPanel27.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel27.TabIndex = 25;
             // 
             // lblVND
             // 
-            this.lblVND.Location = new System.Drawing.Point(195, 248);
+            this.lblVND.Location = new System.Drawing.Point(195, 225);
             this.lblVND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblVND.Name = "lblVND";
             this.lblVND.Size = new System.Drawing.Size(79, 40);
@@ -75,7 +75,7 @@
             // btnTTN
             // 
             this.btnTTN.CornerRoundingRadius = 30F;
-            this.btnTTN.Location = new System.Drawing.Point(176, 337);
+            this.btnTTN.Location = new System.Drawing.Point(176, 313);
             this.btnTTN.Margin = new System.Windows.Forms.Padding(4);
             this.btnTTN.Name = "btnTTN";
             this.btnTTN.Size = new System.Drawing.Size(157, 42);
@@ -94,7 +94,7 @@
             // btnTVG
             // 
             this.btnTVG.CornerRoundingRadius = 30F;
-            this.btnTVG.Location = new System.Drawing.Point(3, 337);
+            this.btnTVG.Location = new System.Drawing.Point(3, 313);
             this.btnTVG.Margin = new System.Windows.Forms.Padding(4);
             this.btnTVG.Name = "btnTVG";
             this.btnTVG.Size = new System.Drawing.Size(157, 42);
@@ -112,7 +112,7 @@
             // 
             // lblPrice
             // 
-            this.lblPrice.Location = new System.Drawing.Point(43, 248);
+            this.lblPrice.Location = new System.Drawing.Point(42, 225);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(118, 40);
@@ -124,7 +124,7 @@
             // SubItem1
             // 
             this.SubItem1.CornerRoundingRadius = -1F;
-            this.SubItem1.Location = new System.Drawing.Point(88, 292);
+            this.SubItem1.Location = new System.Drawing.Point(88, 269);
             this.SubItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubItem1.Name = "SubItem1";
             this.SubItem1.Size = new System.Drawing.Size(49, 38);
@@ -151,7 +151,7 @@
             // PlusItem1
             // 
             this.PlusItem1.CornerRoundingRadius = -1F;
-            this.PlusItem1.Location = new System.Drawing.Point(195, 292);
+            this.PlusItem1.Location = new System.Drawing.Point(195, 269);
             this.PlusItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlusItem1.Name = "PlusItem1";
             this.PlusItem1.Size = new System.Drawing.Size(49, 38);
@@ -187,7 +187,7 @@
             // 
             // CountItem1
             // 
-            this.CountItem1.Location = new System.Drawing.Point(155, 292);
+            this.CountItem1.Location = new System.Drawing.Point(156, 269);
             this.CountItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CountItem1.Name = "CountItem1";
             this.CountItem1.Size = new System.Drawing.Size(24, 39);
@@ -224,7 +224,7 @@
             this.Controls.Add(this.kryptonPanel27);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CardTD";
-            this.Size = new System.Drawing.Size(343, 396);
+            this.Size = new System.Drawing.Size(343, 365);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel27)).EndInit();
             this.kryptonPanel27.ResumeLayout(false);
             this.kryptonPanel27.PerformLayout();

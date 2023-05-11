@@ -16,28 +16,29 @@ namespace FinalProject.App.Main.ThucDon
         {
             InitializeComponent();
         }
-
         public void setChoice(Krypton.Toolkit.KryptonLabel lbl, Krypton.Toolkit.KryptonButton btn, Boolean flag)
         {
             int n = Int32.Parse(lbl.Text);
             if (flag)
+            {
                 lbl.Text = (n + 1).ToString();
+            }
             else
             {
                 if (n > 0)
+                {
                     lbl.Text = (n - 1).ToString();
+                }
             }
         }
         private void PlusItem1_Click(object sender, EventArgs e)
         {
             setChoice(CountItem1, PlusItem1, true);
-
         }
 
         private void SubItem1_Click(object sender, EventArgs e)
         {
             setChoice(CountItem1, SubItem1, false);
-
         }
         #region Properties
 

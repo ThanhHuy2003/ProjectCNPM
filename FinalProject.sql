@@ -1,7 +1,9 @@
 ﻿drop database if exists FinalProject
 go
+
 create database FinalProject
 go
+
 use FinalProject
 go
 
@@ -282,9 +284,9 @@ begin
 end
 go
 
-exec InsertStoreAddress 'https://www.lotteria.vn/grs-static/images/lotteria_logo.svg', N'Cửa hàng HTDT1', N'119 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
-exec InsertStoreAddress 'https://www.lotteria.vn/grs-static/images/lotteria_logo.svg', N'Cửa hàng HTDT2', N'118 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
-exec InsertStoreAddress 'https://www.lotteria.vn/grs-static/images/lotteria_logo.svg', N'Cửa hàng HTDT3', N'117 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
+exec InsertStoreAddress 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Cửa hàng HTDT1', N'119 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
+exec InsertStoreAddress 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Cửa hàng HTDT2', N'118 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
+exec InsertStoreAddress 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Cửa hàng HTDT3', N'117 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
 go
 
 create table NotificationData
@@ -325,7 +327,7 @@ exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg
 exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', N'Món nước tươi mát cùng mùa hè nhiệt huyết', '2023-05-07'
 go
 
--- Thiếu bảng lịch sử giao dịch --
+
 
 select * from LoginData
 select * from MenuData
