@@ -12,13 +12,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using FinalProject.DTO;
+using FinalProject.DAL;
+using FinalProject.BLL;
+using FinalProject.App;
 
 namespace FinalProject.App
 {
     public partial class UCTD : UserControl
     {
-        String strConn = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
-        public static Image ResizeImage(Image image, int width, int height)
+        public UCTD()
+        {
+            InitializeComponent();
+        }
+        public Image resizeImage(Image image, int width, int height)
         {
             var destRect = new Rectangle(0, 0, width, height);
             var destImage = new Bitmap(width, height);
@@ -42,15 +49,10 @@ namespace FinalProject.App
 
             return destImage;
         }
-        public UCTD()
-        {
-            InitializeComponent();
-        }
-
         private void UCTD_Load(object sender, EventArgs e)
         {
             //togglePanelMain("Card");
-            populateItems();
+            populateMenuData_Combo_CookTable_UCTD();
         }
         /*CardTD cardTD;
 
@@ -81,60 +83,38 @@ namespace FinalProject.App
                     break;
             }
         }*/
-        private void populateItems()
+        private void populateMenuData_Combo_CookTable_UCTD()
         {
-            SqlConnection conn = new SqlConnection(strConn);
-            conn.Open();
-            String sSQL = "SELECT * FROM MenuDataTable";
-            SqlCommand cmd = new SqlCommand(sSQL, conn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            CookTableBLL cookTableBLL = new CookTableBLL();
+            if (cookTableBLL.populateMenuData_Combo_CookTable_BLL() != null)
             {
-                foreach (DataRow row in dt.Rows)
+                foreach (DataRow row in cookTableBLL.populateMenuData_Combo_CookTable_BLL().Rows)
                 {
-
-                    string dPicture = row["dishPicture"].ToString();
-                    string dName = row["dishName"].ToString();
-                    string dDescription = row["dishDescription"].ToString();
+                    FinalProject.DTO.MenuItem newMenuItem = new FinalProject.DTO.MenuItem();
+                    newMenuItem.dishID = row["dishID"].ToString();
+                    newMenuItem.dishPicture = row["dishPicture"].ToString();
+                    newMenuItem.dishName = row["dishName"].ToString();
+                    newMenuItem.dishDescription = row["dishDescription"].ToString();
+                    newMenuItem.dishPrice = int.Parse(row["dishPrice"].ToString());
+                    newMenuItem.dishType = row["dishType"].ToString();
                     CardTD Item = new CardTD();
-                    var request = WebRequest.Create(dPicture);
+                    var request = WebRequest.Create(newMenuItem.dishPicture);
 
                     using (var response = request.GetResponse())
                     using (var stream = response.GetResponseStream())
                     {
                         Item.Picture = Bitmap.FromStream(stream);
-                        Item.Picture = ResizeImage(Item.Picture, 255, 126);
+                        Item.Picture = resizeImage(Item.Picture, 255, 143);
                     }
-                    Item.Title = dName;
-                    Item.Description = dDescription;
+                    Item.Title = newMenuItem.dishName;
+                    Item.Price = newMenuItem.dishPrice;
 
-                    this.flowPanel.Controls.Add(Item);
-
-                    /*CardTD[] listItems = new CardTD[1];
-                    for (int i = 0; i < listItems.Length; i++)
-                    {
-                        listItems[i] = new CardTD();
-                        var request = WebRequest.Create(dPicture);
-
-                        using (var response = request.GetResponse())
-                        using (var stream = response.GetResponseStream())
-                        {
-                            listItems[i].Picture = Bitmap.FromStream(stream);
-                            listItems[i].Picture = ResizeImage(listItems[i].Picture, 255, 126);
-                        }
-                        listItems[i].Title = dName;
-                        listItems[i].Description = dDescription;
-
-                        this.panelCard.Controls.Add(listItems[i]);
-
-                    }*/
+                    this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
             else
             {
-                MessageBox.Show("No Data");
+                MessageBox.Show("Không có dữ liệu MenuData");
             }
         }
 

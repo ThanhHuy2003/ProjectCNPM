@@ -13,9 +13,9 @@ namespace FinalProject.DAL
         {
             return checkLoginData_DA_DAL(tk);
         }
-        public string SignUp_Login_DAL(User newUser)
+        public string signUp_Login_DAL(User newUser)
         {
-            return SignUp_DA_DAL(newUser);
+            return signUp_DA_DAL(newUser);
         }
     }
 }

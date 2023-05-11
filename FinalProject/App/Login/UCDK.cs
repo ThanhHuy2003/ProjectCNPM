@@ -172,7 +172,7 @@ namespace FinalProject.App.Login
             newTK.userName = UserNameText.Text;
             newTK.userPassword = PasswordText.Text;
             LoginBLL newTKBLL = new LoginBLL();
-            string temp = newTKBLL.SignUp_Login_BLL(newTK);
+            string temp = newTKBLL.signUp_Login_BLL(newTK);
             if (temp == "Vui lòng nhập họ tên đầy đủ")
             {
                 MessageBox.Show("Vui lòng nhập họ tên đầy đủ");

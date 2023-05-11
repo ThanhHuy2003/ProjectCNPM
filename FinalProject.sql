@@ -162,7 +162,7 @@ create table MenuData
 	dishPicture varchar(500) not null,
     dishName nvarchar(500) not null,
     dishDescription nvarchar(500) not null,
-    dishQuantity int not null,
+    dishPrice int not null,
 	dishType varchar(500) not null,
     primary key(dishID)
 )
@@ -172,7 +172,7 @@ create procedure InsertMenuData
     @dishPicture varchar(500),
     @dishName nvarchar(500),
     @dishDescription nvarchar(500),
-    @dishQuantity int,
+    @dishPrice int,
 	@dishType varchar(500)
 as
 begin
@@ -188,13 +188,23 @@ begin
 		end
 		set @newDishID = 'DID' + @maxDishID 
 	end
-    insert into MenuData(dishID, dishPicture, dishName, dishDescription, dishQuantity, dishType) values (@newDishID, @dishPicture, @dishName, @dishDescription, @dishQuantity, @dishType)
+    insert into MenuData(dishID, dishPicture, dishName, dishDescription, dishPrice, dishType) values (@newDishID, @dishPicture, @dishName, @dishDescription, @dishPrice, @dishType)
 end
 go
 
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 99, 'food'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Comnbo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 20, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/Pepsi-Can.jpg?v=46kppg', N'Pepsi Lon', N'Nước ngọt có gas', 123, 'drink'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/Pepsi-Can.jpg?v=46kppg', N'Pepsi Lon', N'Nước ngọt có gas', 129000, 'drink'
 go
 
 create table PromotionData

@@ -177,3 +177,7 @@ D:\Tailieu\code\CNPM\Final Project\FinalProject2\ProjectCNPMLyThuyet\FinalProjec
 D:\Tailieu\code\CNPM\Final Project\FinalProject2\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CaiDat.CardKM2.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject2\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CaiDat.UCCD.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject2\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CardKM.resources
+D:\TDT\Nam2\hk2_nam2\CNPM\Lý thuyết\Git\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CaiDat.CardDH.resources
+D:\TDT\Nam2\hk2_nam2\CNPM\Lý thuyết\Git\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CaiDat.CardKM2.resources
+D:\TDT\Nam2\hk2_nam2\CNPM\Lý thuyết\Git\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CaiDat.UCCD.resources
+D:\TDT\Nam2\hk2_nam2\CNPM\Lý thuyết\Git\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.CardKM.resources

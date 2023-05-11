@@ -12,7 +12,7 @@ namespace FinalProject.BLL
     internal class LoginBLL
     {
         LoginDAL loginDAL = new LoginDAL();
-        public bool IsValidEmail(string email)
+        public bool isValidEmail(string email)
         {
             var trimmedEmail = email.Trim();
             if (trimmedEmail.EndsWith("."))
@@ -41,7 +41,7 @@ namespace FinalProject.BLL
             }
             return loginDAL.checkLoginData_Login_DAL(tk);
         }
-        public string SignUp_Login_BLL(User newUser)
+        public string signUp_Login_BLL(User newUser)
         {
             if (newUser.fullName == "" || newUser.fullName == "Full name")
             {
@@ -51,7 +51,7 @@ namespace FinalProject.BLL
             {
                 return "Vui lòng nhập email";
             }
-            else if (IsValidEmail(newUser.emailAddress) == false)
+            else if (isValidEmail(newUser.emailAddress) == false)
             {
                 return "Vui lòng nhập email hợp lệ";
             }
@@ -71,7 +71,7 @@ namespace FinalProject.BLL
             {
                 return "Vui lòng nhập mật khẩu";
             }
-            return loginDAL.SignUp_Login_DAL(newUser);
+            return loginDAL.signUp_Login_DAL(newUser);
         }
     }
 }

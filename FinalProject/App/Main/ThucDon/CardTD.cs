@@ -42,13 +42,13 @@ namespace FinalProject.App.Main.ThucDon
         #region Properties
 
         private string _title;
-        private string _description;
+        private int _price;
         private Image _pic;
 
         [Category("Custom Props")]
         public string Title { get { return _title; } set { _title = value; lblName.Text = value; } }
         [Category("Custom Props")]
-        public string Description { get { return _description; } set { _description = value; lblPrice.Text = value; } }
+        public int Price { get { return _price; } set { _price = value; lblPrice.Text = value.ToString(); } }
         [Category("Custom Props")]
         public Image Picture { get { return _pic; } set { _pic = value; pictureBox9.Image = value; } }
         #endregion

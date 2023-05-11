@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProject.DTO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using FinalProject.App.Main.ThucDon;
+using System.Drawing;
+using System.Net;
 
 namespace FinalProject.DAL
 {
@@ -43,7 +46,7 @@ namespace FinalProject.DAL
             }
             return userName;
         }
-        public string SignUp_DA_DAL(User newUser)
+        public string signUp_DA_DAL(User newUser)
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
@@ -72,6 +75,18 @@ namespace FinalProject.DAL
                 conn.Close();
                 return "Tài khoản đã được đăng ký trước đây";
             }
+        }
+        public DataTable populateMenuData_Combo_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from MenuData where dishType = 'combo'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
         }
     }
 }
