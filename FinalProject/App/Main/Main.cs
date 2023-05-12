@@ -1,4 +1,5 @@
 ﻿using FinalProject.App;
+using FinalProject.App.Admin;
 using FinalProject.App.Login;
 using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
@@ -45,10 +46,7 @@ namespace FinalProject
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
         }
-        private void CloseApp_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+
         private void btnTB_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
@@ -77,6 +75,9 @@ namespace FinalProject
             private static CardDH cardDH;
             private static CardKM cardKM;
             private static CardKM2 cardKM2;
+            private static UCTK uCTK;
+            private static UCKMAdmin uCKMAdmin;
+            private static UCDT uCDT;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -231,6 +232,51 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(cardKM2);
+                        }
+                        break;
+                    case "TK":
+                        if (uCTK == null)
+                        {
+                            uCTK = new UCTK();
+                            panel.Controls.Add(uCTK);
+                            uCTK.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTK.Location = new System.Drawing.Point(0, 0);
+                            uCTK.Name = "uCTK";
+                            uCTK.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTK);
+                        }
+                        break;
+                    case "KMAdmin":
+                        if (uCKMAdmin == null)
+                        {
+                            uCKMAdmin = new UCKMAdmin();
+                            panel.Controls.Add(uCKMAdmin);
+                            uCKMAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCKMAdmin.Location = new System.Drawing.Point(0, 0);
+                            uCKMAdmin.Name = "uCKMAdmin";
+                            uCKMAdmin.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCKMAdmin);
+                        }
+                        break;
+                    case "DT":
+                        if (uCDT == null)
+                        {
+                            uCDT = new UCDT();
+                            panel.Controls.Add(uCDT);
+                            uCDT.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCDT.Location = new System.Drawing.Point(0, 0);
+                            uCDT.Name = "uCDT";
+                            uCDT.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCDT);
                         }
                         break;
                     default:

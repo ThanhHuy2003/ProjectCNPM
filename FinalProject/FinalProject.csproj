@@ -51,6 +51,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\Admin\CardKMAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\CardKMAdmin.Designer.cs">
+      <DependentUpon>CardKMAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\MainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\MainAdmin.Designer.cs">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\UCKMAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\UCKMAdmin.Designer.cs">
+      <DependentUpon>UCKMAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\UCDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\UCDT.Designer.cs">
+      <DependentUpon>UCDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\UCTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\UCTK.Designer.cs">
+      <DependentUpon>UCTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +180,30 @@
     <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="App\Admin\CardKMAdmin.resx">
+      <DependentUpon>CardKMAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\CardKMAdmin.vi.resx">
+      <DependentUpon>CardKMAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\MainAdmin.resx">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UCDT.vi.resx">
+      <DependentUpon>UCDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UCKMAdmin.resx">
+      <DependentUpon>UCKMAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UCDT.resx">
+      <DependentUpon>UCDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UCTK.resx">
+      <DependentUpon>UCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UCTK.vi.resx">
+      <DependentUpon>UCTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +301,17 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\searchh.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\search_preview_rev_11.png" />
+    <None Include="Resources\search_preview_rev_1.png" />
+    <None Include="Resources\imageedit_15_4692041741_preview_rev_1.png" />
+    <None Include="Resources\imageedit_4_3352732708.png" />
+    <None Include="Resources\imageedit_4_3352732708-removebg-preview.png" />
+    <None Include="Resources\imageedit_4_2594588756.png" />
+    <None Include="Resources\imageedit_2_9412216040-removebg-preview1.png" />
+    <None Include="Resources\imageedit_2_9412216040-removebg-preview.png" />
+    <None Include="Resources\imageedit_2_5889740345.png" />
     <None Include="Resources\moneylogo1.png" />
     <None Include="Resources\MoMo_Logo2.png" />
     <None Include="Resources\MoMo_Logo1.png" />
@@ -274,6 +339,16 @@
     <None Include="Resources\DH.png" />
     <None Include="Resources\BM.png" />
     <None Include="Resources\Edit.png" />
+    <None Include="Resources\account1.png" />
+    <None Include="Resources\account %282%29.png" />
+    <None Include="Resources\accountt.png" />
+    <None Include="Resources\acountt.png" />
+    <None Include="Resources\account__2_-removebg-preview.png" />
+    <None Include="Resources\doanhthu.png" />
+    <None Include="Resources\doanhthu1.png" />
+    <None Include="Resources\doanhthu2.png" />
+    <None Include="Resources\account__2_-removebg-preview_preview_rev_1.png" />
+    <None Include="Resources\acc.png" />
     <Content Include="Resources\Group 56.png" />
     <Content Include="Resources\Icon_close_form.png" />
   </ItemGroup>
