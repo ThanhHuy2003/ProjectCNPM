@@ -124,7 +124,7 @@
             // btnTB
             // 
             this.btnTB.CornerRoundingRadius = -1F;
-            this.btnTB.Location = new System.Drawing.Point(24, 468);
+            this.btnTB.Location = new System.Drawing.Point(24, 292);
             this.btnTB.Name = "btnTB";
             this.btnTB.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTB.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -154,7 +154,7 @@
             // btnGH
             // 
             this.btnGH.CornerRoundingRadius = -1F;
-            this.btnGH.Location = new System.Drawing.Point(24, 379);
+            this.btnGH.Location = new System.Drawing.Point(24, 381);
             this.btnGH.Name = "btnGH";
             this.btnGH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnGH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -185,7 +185,7 @@
             // btnCH
             // 
             this.btnCH.CornerRoundingRadius = -1F;
-            this.btnCH.Location = new System.Drawing.Point(24, 290);
+            this.btnCH.Location = new System.Drawing.Point(24, 467);
             this.btnCH.Name = "btnCH";
             this.btnCH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));

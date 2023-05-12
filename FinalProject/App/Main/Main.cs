@@ -78,6 +78,7 @@ namespace FinalProject
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
             private static UCDT uCDT;
+            private static UCAddKM uCAddKM;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -261,6 +262,7 @@ namespace FinalProject
                         }
                         else
                         {
+                            panel.Controls.Clear();
                             panel.Controls.Add(uCKMAdmin);
                         }
                         break;
@@ -277,6 +279,21 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCDT);
+                        }
+                        break;
+                    case "AddKM":
+                        if (uCAddKM == null)
+                        {
+                            uCAddKM = new UCAddKM();
+                            panel.Controls.Add(uCAddKM);
+                            uCAddKM.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCAddKM.Location = new System.Drawing.Point(0, 0);
+                            uCAddKM.Name = "uCAddKM";
+                            uCAddKM.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCAddKM);
                         }
                         break;
                     default:

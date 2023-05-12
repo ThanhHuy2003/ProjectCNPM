@@ -33,6 +33,7 @@
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.picSearch = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlAddKM = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +77,7 @@
             this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 6;
             this.kryptonButton1.Values.Text = "Thêm";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // picSearch
             // 
@@ -95,18 +97,27 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(946, 619);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
-            // UCKMAdmincs
+            // pnlAddKM
+            // 
+            this.pnlAddKM.Location = new System.Drawing.Point(589, 21);
+            this.pnlAddKM.Name = "pnlAddKM";
+            this.pnlAddKM.Size = new System.Drawing.Size(74, 46);
+            this.pnlAddKM.TabIndex = 8;
+            // 
+            // UCKMAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pnlAddKM);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.lblKM);
-            this.Name = "UCKMAdmincs";
+            this.Name = "UCKMAdmin";
             this.Size = new System.Drawing.Size(1080, 800);
+            this.Load += new System.EventHandler(this.UCKMAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,5 +131,6 @@
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel pnlAddKM;
     }
 }

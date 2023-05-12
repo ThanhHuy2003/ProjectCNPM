@@ -51,10 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\Admin\CardKMAdmin.cs">
+    <Compile Include="App\Admin\KhuyenMai\UCAddKM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\CardKMAdmin.Designer.cs">
+    <Compile Include="App\Admin\KhuyenMai\UCAddKM.Designer.cs">
+      <DependentUpon>UCAddKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\KhuyenMai\CardKMAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\KhuyenMai\CardKMAdmin.Designer.cs">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\MainAdmin.cs">
@@ -63,10 +69,10 @@
     <Compile Include="App\Admin\MainAdmin.Designer.cs">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UCKMAdmin.cs">
+    <Compile Include="App\Admin\KhuyenMai\UCKMAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\UCKMAdmin.Designer.cs">
+    <Compile Include="App\Admin\KhuyenMai\UCKMAdmin.Designer.cs">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\UCDT.cs">
@@ -180,10 +186,13 @@
     <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="App\Admin\CardKMAdmin.resx">
+    <EmbeddedResource Include="App\Admin\KhuyenMai\UCAddKM.resx">
+      <DependentUpon>UCAddKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\KhuyenMai\CardKMAdmin.resx">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\CardKMAdmin.vi.resx">
+    <EmbeddedResource Include="App\Admin\KhuyenMai\CardKMAdmin.vi.resx">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\MainAdmin.resx">
@@ -192,7 +201,7 @@
     <EmbeddedResource Include="App\Admin\UCDT.vi.resx">
       <DependentUpon>UCDT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCKMAdmin.resx">
+    <EmbeddedResource Include="App\Admin\KhuyenMai\UCKMAdmin.resx">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\UCDT.resx">

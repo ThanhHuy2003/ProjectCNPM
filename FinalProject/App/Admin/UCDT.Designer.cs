@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblCNN = new System.Windows.Forms.Label();
             this.cbCNN = new Krypton.Toolkit.KryptonComboBox();
             this.lblDT1 = new System.Windows.Forms.Label();
@@ -61,8 +61,11 @@
             this.cbCNN.IntegralHeight = false;
             this.cbCNN.Location = new System.Drawing.Point(277, 15);
             this.cbCNN.Name = "cbCNN";
+            this.cbCNN.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.cbCNN.Size = new System.Drawing.Size(282, 41);
             this.cbCNN.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.cbCNN.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.cbCNN.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.cbCNN.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -92,6 +95,7 @@
             // 
             // kryptonDateTimePicker1
             // 
+            this.kryptonDateTimePicker1.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.kryptonDateTimePicker1.CornerRoundingRadius = -1F;
             this.kryptonDateTimePicker1.Location = new System.Drawing.Point(277, 102);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
@@ -102,6 +106,7 @@
             // 
             // kryptonDateTimePicker2
             // 
+            this.kryptonDateTimePicker2.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.kryptonDateTimePicker2.CornerRoundingRadius = -1F;
             this.kryptonDateTimePicker2.Location = new System.Drawing.Point(277, 169);
             this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
@@ -147,22 +152,22 @@
             // 
             // Ngày
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.Ngày.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.Ngày.DefaultCellStyle = dataGridViewCellStyle3;
             this.Ngày.HeaderText = "Thời gian ";
             this.Ngày.Name = "Ngày";
             this.Ngày.Width = 475;
             // 
             // Column1
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column1.HeaderText = "Tổng tiền ";
             this.Column1.Name = "Column1";
             this.Column1.Width = 475;

@@ -220,3 +220,5 @@ D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProjec
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.UCKMAdmin.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.UCDT.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.UCDT.vi.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.CardAddKM.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.UCAddKM.resources

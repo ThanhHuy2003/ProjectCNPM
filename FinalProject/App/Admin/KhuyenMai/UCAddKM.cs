@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject.App.Admin
 {
-    public partial class UCKMAdmin : UserControl
+    public partial class UCAddKM : UserControl
     {
-        public UCKMAdmin()
+        public UCAddKM()
         {
             InitializeComponent();
         }
