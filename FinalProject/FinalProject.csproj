@@ -207,17 +207,25 @@
     <Compile Include="App\Main\ThongBao\UCTB.Designer.cs">
       <DependentUpon>UCTB.cs</DependentUpon>
     </Compile>
+    <Compile Include="BLL\AdminNotificationBLL.cs" />
+    <Compile Include="BLL\AdminRevenueBLL.cs" />
+    <Compile Include="BLL\AdminUserBLL.cs" />
     <Compile Include="BLL\CookTableBLL.cs" />
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\PromotionTableBLL.cs" />
     <Compile Include="BLL\StoreAddressTableBLL.cs" />
+    <Compile Include="DAL\NotificationDAL.cs" />
     <Compile Include="DAL\CookTableDAL.cs" />
     <Compile Include="DAL\DatabaseAccess.cs" />
     <Compile Include="DAL\LoginDAL.cs" />
     <Compile Include="DAL\PromotionTableDAL.cs" />
+    <Compile Include="DAL\RevenueCRUD_DAL.cs" />
     <Compile Include="DAL\StoreAddressTableDAL.cs" />
+    <Compile Include="DAL\UserCRUD_DAL.cs" />
     <Compile Include="DTO\MenuItem.cs" />
+    <Compile Include="DTO\Notification.cs" />
     <Compile Include="DTO\PromotionItem.cs" />
+    <Compile Include="DTO\Revenue.cs" />
     <Compile Include="DTO\StoreAddressItem.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
@@ -315,6 +323,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\FinalProject.DTO.MenuItem.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.PromotionItem.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.Revenue.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.StoreAddressItem.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

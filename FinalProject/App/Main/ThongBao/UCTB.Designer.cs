@@ -28,30 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.menuNotification = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // menuNotification
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 24);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(967, 642);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.menuNotification.Location = new System.Drawing.Point(49, 30);
+            this.menuNotification.Margin = new System.Windows.Forms.Padding(4);
+            this.menuNotification.Name = "menuNotification";
+            this.menuNotification.Size = new System.Drawing.Size(1289, 790);
+            this.menuNotification.TabIndex = 0;
             // 
             // UCTB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.menuNotification);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCTB";
-            this.Size = new System.Drawing.Size(1050, 750);
+            this.Size = new System.Drawing.Size(1400, 923);
+            this.Load += new System.EventHandler(this.UCTB_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel menuNotification;
     }
 }
