@@ -327,7 +327,14 @@ exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg
 exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', N'Món nước tươi mát cùng mùa hè nhiệt huyết', '2023-05-07'
 go
 
-
+CREATE TABLE revenue (
+    storeId varchar(8) NOT NULL,
+    amount int,
+    dateCreate date NOT NULL,
+    FOREIGN KEY (storeID) REFERENCES StoreAddress(storeID)
+);
+insert into revenue
+values('SID00002',180000,'5-13-2023')
 
 select * from LoginData
 select * from MenuData
