@@ -148,14 +148,14 @@
   <data name="Eye2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eye2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_preview_rev_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_preview_rev_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="HinhKM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HinhKM1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_close_form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\icon_close_form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +184,8 @@
   <data name="ImageSlider" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ImageSlider.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_preview_rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_preview_rev_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="-" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -195,9 +195,6 @@
   </data>
   <data name="imageedit_15_4692041741_preview_rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_15_4692041741_preview_rev_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MoMo_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MoMo_Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imageedit_1_5904764936-transformed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_1_5904764936-transformed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,9 +220,6 @@
   <data name="imageedit_4_9781102328" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_4_9781102328.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MoMo_Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MoMo_Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="[removal.ai]_tmp-641434d157788" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\[removal.ai]_tmp-641434d157788.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,11 +232,11 @@
   <data name="moneylogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moneylogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="searchh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searchh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Language" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Language.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,10 +250,10 @@
   <data name="acc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\acc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_close_form" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icon_close_form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MoMo_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoMo_Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="searchh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\searchh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo-_-lotteria-800-x-515px-scaled_preview_rev_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

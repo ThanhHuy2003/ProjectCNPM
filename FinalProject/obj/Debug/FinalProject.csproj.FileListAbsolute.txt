@@ -226,3 +226,6 @@ D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProjec
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.ThongBao.CardTBAdmin.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.ThongBao.TBDetailAdmin.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.ThongBao.UCTBAdmin.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.ThongBao.CardTB.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.UCTB.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Main.ThongBao.TBDetail.resources

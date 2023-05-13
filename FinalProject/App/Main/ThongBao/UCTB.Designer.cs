@@ -1,6 +1,6 @@
-﻿namespace FinalProject.App
+﻿namespace FinalProject.App.Main
 {
-    partial class UCCH
+    partial class UCTB
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,49 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblCH = new Krypton.Toolkit.KryptonLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // lblCH
-            // 
-            this.lblCH.Location = new System.Drawing.Point(38, 20);
-            this.lblCH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lblCH.Name = "lblCH";
-            this.lblCH.Size = new System.Drawing.Size(343, 30);
-            this.lblCH.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblCH.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCH.TabIndex = 0;
-            this.lblCH.Values.Text = "Các cửa hàng tại TP.Hồ Chí Minh";
-            // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(44, 54);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1142, 563);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(967, 642);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // UCCH
+            // UCTB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.lblCH);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "UCCH";
-            this.Size = new System.Drawing.Size(1230, 900);
-            this.Load += new System.EventHandler(this.UCCH_Load);
+            this.Name = "UCTB";
+            this.Size = new System.Drawing.Size(1050, 750);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Krypton.Toolkit.KryptonLabel lblCH;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

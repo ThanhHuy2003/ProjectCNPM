@@ -39,6 +39,7 @@
             this.DGVDT = new Krypton.Toolkit.KryptonDataGridView();
             this.Ngày = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearch = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.cbCNN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVDT)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +78,7 @@
             // 
             this.lblDT1.AutoSize = true;
             this.lblDT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblDT1.Location = new System.Drawing.Point(46, 104);
+            this.lblDT1.Location = new System.Drawing.Point(46, 107);
             this.lblDT1.Name = "lblDT1";
             this.lblDT1.Size = new System.Drawing.Size(176, 24);
             this.lblDT1.TabIndex = 2;
@@ -87,7 +88,7 @@
             // 
             this.lblDT2.AutoSize = true;
             this.lblDT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblDT2.Location = new System.Drawing.Point(46, 171);
+            this.lblDT2.Location = new System.Drawing.Point(541, 107);
             this.lblDT2.Name = "lblDT2";
             this.lblDT2.Size = new System.Drawing.Size(96, 24);
             this.lblDT2.TabIndex = 3;
@@ -97,10 +98,10 @@
             // 
             this.kryptonDateTimePicker1.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.kryptonDateTimePicker1.CornerRoundingRadius = -1F;
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(277, 102);
+            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(277, 105);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
             this.kryptonDateTimePicker1.ShowUpDown = true;
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(200, 29);
+            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(226, 29);
             this.kryptonDateTimePicker1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDateTimePicker1.TabIndex = 6;
             // 
@@ -108,10 +109,10 @@
             // 
             this.kryptonDateTimePicker2.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.kryptonDateTimePicker2.CornerRoundingRadius = -1F;
-            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(277, 169);
+            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(654, 105);
             this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
             this.kryptonDateTimePicker2.ShowUpDown = true;
-            this.kryptonDateTimePicker2.Size = new System.Drawing.Size(200, 29);
+            this.kryptonDateTimePicker2.Size = new System.Drawing.Size(228, 29);
             this.kryptonDateTimePicker2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDateTimePicker2.TabIndex = 7;
             // 
@@ -120,9 +121,9 @@
             this.DGVDT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ngày,
             this.Column1});
-            this.DGVDT.Location = new System.Drawing.Point(34, 246);
+            this.DGVDT.Location = new System.Drawing.Point(50, 181);
             this.DGVDT.Name = "DGVDT";
-            this.DGVDT.Size = new System.Drawing.Size(1012, 528);
+            this.DGVDT.Size = new System.Drawing.Size(985, 593);
             this.DGVDT.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.DGVDT.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.DGVDT.StateCommon.DataCell.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -172,11 +173,29 @@
             this.Column1.Name = "Column1";
             this.Column1.Width = 475;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.CornerRoundingRadius = 30F;
+            this.btnSearch.Location = new System.Drawing.Point(904, 95);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(131, 49);
+            this.btnSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.StateCommon.Border.Rounding = 30F;
+            this.btnSearch.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSearch.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.TabIndex = 9;
+            this.btnSearch.Values.Text = "Tra cứu";
+            // 
             // UCDT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.DGVDT);
             this.Controls.Add(this.kryptonDateTimePicker2);
             this.Controls.Add(this.kryptonDateTimePicker1);
@@ -204,5 +223,6 @@
         private Krypton.Toolkit.KryptonDataGridView DGVDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngày;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private Krypton.Toolkit.KryptonButton btnSearch;
     }
 }

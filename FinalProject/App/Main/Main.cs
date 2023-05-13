@@ -59,8 +59,13 @@ namespace FinalProject
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
             Func.togglePanel(panel_main, "CD");
         }
+        private void btnlogo_Click(object sender, EventArgs e)
+        {
+            Func.togglePanel(panel_main, "Main");
+        }
         private void Main_Load(object sender, EventArgs e)
         {
+            btnlogo.Select();
             Func.togglePanel(panel_main, "Main");
         }
         public class Func
@@ -302,5 +307,7 @@ namespace FinalProject
                 }
             }
         }
+
+        
     }
 }
