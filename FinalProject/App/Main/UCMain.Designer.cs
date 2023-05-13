@@ -66,14 +66,17 @@
             this.panel1.Controls.Add(this.ImageSlider3);
             this.panel1.Controls.Add(this.ImageSlider4);
             this.panel1.Controls.Add(this.ImageSlider5);
-            this.panel1.Location = new System.Drawing.Point(44, 20);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1173, 413);
+            this.panel1.Size = new System.Drawing.Size(1232, 380);
             this.panel1.TabIndex = 27;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Radbutton5
             // 
-            this.Radbutton5.Location = new System.Drawing.Point(740, 387);
+            this.Radbutton5.Location = new System.Drawing.Point(736, 335);
+            this.Radbutton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Radbutton5.Name = "Radbutton5";
             this.Radbutton5.Size = new System.Drawing.Size(18, 12);
             this.Radbutton5.TabIndex = 7;
@@ -83,7 +86,8 @@
             // 
             this.Radbutton.AutoCheck = false;
             this.Radbutton.Checked = true;
-            this.Radbutton.Location = new System.Drawing.Point(457, 387);
+            this.Radbutton.Location = new System.Drawing.Point(524, 335);
+            this.Radbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Radbutton.Name = "Radbutton";
             this.Radbutton.Size = new System.Drawing.Size(18, 12);
             this.Radbutton.TabIndex = 3;
@@ -91,7 +95,8 @@
             // 
             // Radbutton4
             // 
-            this.Radbutton4.Location = new System.Drawing.Point(667, 387);
+            this.Radbutton4.Location = new System.Drawing.Point(681, 335);
+            this.Radbutton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Radbutton4.Name = "Radbutton4";
             this.Radbutton4.Size = new System.Drawing.Size(18, 12);
             this.Radbutton4.TabIndex = 6;
@@ -99,7 +104,8 @@
             // 
             // Radbutton3
             // 
-            this.Radbutton3.Location = new System.Drawing.Point(593, 387);
+            this.Radbutton3.Location = new System.Drawing.Point(626, 335);
+            this.Radbutton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Radbutton3.Name = "Radbutton3";
             this.Radbutton3.Size = new System.Drawing.Size(18, 12);
             this.Radbutton3.TabIndex = 5;
@@ -107,7 +113,8 @@
             // 
             // Radbutton2
             // 
-            this.Radbutton2.Location = new System.Drawing.Point(522, 387);
+            this.Radbutton2.Location = new System.Drawing.Point(573, 335);
+            this.Radbutton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Radbutton2.Name = "Radbutton2";
             this.Radbutton2.Size = new System.Drawing.Size(18, 12);
             this.Radbutton2.TabIndex = 4;
@@ -116,9 +123,10 @@
             // LastSlider
             // 
             this.LastSlider.CornerRoundingRadius = -1F;
-            this.LastSlider.Location = new System.Drawing.Point(292, 160);
+            this.LastSlider.Location = new System.Drawing.Point(400, 151);
+            this.LastSlider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LastSlider.Name = "LastSlider";
-            this.LastSlider.Size = new System.Drawing.Size(31, 38);
+            this.LastSlider.Size = new System.Drawing.Size(23, 31);
             this.LastSlider.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(122)))));
             this.LastSlider.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
             this.LastSlider.StateNormal.Back.Image = global::FinalProject.Properties.Resources.LastSlider;
@@ -130,9 +138,10 @@
             // NextSlider
             // 
             this.NextSlider.CornerRoundingRadius = -1F;
-            this.NextSlider.Location = new System.Drawing.Point(857, 160);
+            this.NextSlider.Location = new System.Drawing.Point(824, 151);
+            this.NextSlider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NextSlider.Name = "NextSlider";
-            this.NextSlider.Size = new System.Drawing.Size(31, 38);
+            this.NextSlider.Size = new System.Drawing.Size(23, 31);
             this.NextSlider.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(122)))));
             this.NextSlider.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
             this.NextSlider.StateNormal.Back.Image = global::FinalProject.Properties.Resources.NextSlider;
@@ -144,9 +153,10 @@
             // ImageSlider
             // 
             this.ImageSlider.Image = global::FinalProject.Properties.Resources.ImageSlider;
-            this.ImageSlider.Location = new System.Drawing.Point(394, 12);
+            this.ImageSlider.Location = new System.Drawing.Point(477, 31);
+            this.ImageSlider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageSlider.Name = "ImageSlider";
-            this.ImageSlider.Size = new System.Drawing.Size(404, 346);
+            this.ImageSlider.Size = new System.Drawing.Size(303, 281);
             this.ImageSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImageSlider.TabIndex = 0;
             this.ImageSlider.TabStop = false;
@@ -154,9 +164,10 @@
             // ImageSlider2
             // 
             this.ImageSlider2.Image = global::FinalProject.Properties.Resources.ImageSlider2;
-            this.ImageSlider2.Location = new System.Drawing.Point(394, 12);
+            this.ImageSlider2.Location = new System.Drawing.Point(477, 31);
+            this.ImageSlider2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageSlider2.Name = "ImageSlider2";
-            this.ImageSlider2.Size = new System.Drawing.Size(404, 346);
+            this.ImageSlider2.Size = new System.Drawing.Size(303, 281);
             this.ImageSlider2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImageSlider2.TabIndex = 8;
             this.ImageSlider2.TabStop = false;
@@ -165,9 +176,10 @@
             // ImageSlider3
             // 
             this.ImageSlider3.Image = global::FinalProject.Properties.Resources.ImageSlider3;
-            this.ImageSlider3.Location = new System.Drawing.Point(394, 12);
+            this.ImageSlider3.Location = new System.Drawing.Point(477, 31);
+            this.ImageSlider3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageSlider3.Name = "ImageSlider3";
-            this.ImageSlider3.Size = new System.Drawing.Size(404, 346);
+            this.ImageSlider3.Size = new System.Drawing.Size(303, 281);
             this.ImageSlider3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImageSlider3.TabIndex = 9;
             this.ImageSlider3.TabStop = false;
@@ -176,9 +188,10 @@
             // ImageSlider4
             // 
             this.ImageSlider4.Image = global::FinalProject.Properties.Resources.ImageSlider4;
-            this.ImageSlider4.Location = new System.Drawing.Point(394, 12);
+            this.ImageSlider4.Location = new System.Drawing.Point(477, 31);
+            this.ImageSlider4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageSlider4.Name = "ImageSlider4";
-            this.ImageSlider4.Size = new System.Drawing.Size(404, 346);
+            this.ImageSlider4.Size = new System.Drawing.Size(303, 281);
             this.ImageSlider4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImageSlider4.TabIndex = 10;
             this.ImageSlider4.TabStop = false;
@@ -187,9 +200,10 @@
             // ImageSlider5
             // 
             this.ImageSlider5.Image = global::FinalProject.Properties.Resources.ImageSlider5;
-            this.ImageSlider5.Location = new System.Drawing.Point(394, 12);
+            this.ImageSlider5.Location = new System.Drawing.Point(477, 31);
+            this.ImageSlider5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageSlider5.Name = "ImageSlider5";
-            this.ImageSlider5.Size = new System.Drawing.Size(404, 346);
+            this.ImageSlider5.Size = new System.Drawing.Size(303, 281);
             this.ImageSlider5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImageSlider5.TabIndex = 11;
             this.ImageSlider5.TabStop = false;
@@ -201,30 +215,33 @@
             this.LabelCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.LabelCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.LabelCombo.ForeColor = System.Drawing.Color.White;
-            this.LabelCombo.Location = new System.Drawing.Point(54, 452);
+            this.LabelCombo.Location = new System.Drawing.Point(49, 387);
+            this.LabelCombo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelCombo.Name = "LabelCombo";
-            this.LabelCombo.Size = new System.Drawing.Size(439, 58);
+            this.LabelCombo.Size = new System.Drawing.Size(351, 46);
             this.LabelCombo.TabIndex = 31;
             this.LabelCombo.Text = "Thực đơn hôm nay";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(64, 529);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 453);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1153, 379);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1143, 308);
             this.flowLayoutPanel1.TabIndex = 32;
             // 
             // UCMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LabelCombo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCMain";
-            this.Size = new System.Drawing.Size(1261, 926);
+            this.Size = new System.Drawing.Size(1230, 883);
             this.Load += new System.EventHandler(this.UCMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

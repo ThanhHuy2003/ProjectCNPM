@@ -75,6 +75,12 @@
     <Compile Include="App\Admin\KhuyenMai\UCKMAdmin.Designer.cs">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Admin\TaiKhoan\EditTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\TaiKhoan\EditTK.Designer.cs">
+      <DependentUpon>EditTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Admin\ThongBao\CardTBAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,16 +99,16 @@
     <Compile Include="App\Admin\ThongBao\UCTBAdmin.Designer.cs">
       <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UCDT.cs">
+    <Compile Include="App\Admin\DoanhThu\UCDT.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\UCDT.Designer.cs">
+    <Compile Include="App\Admin\DoanhThu\UCDT.Designer.cs">
       <DependentUpon>UCDT.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UCTK.cs">
+    <Compile Include="App\Admin\TaiKhoan\UCTK.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\UCTK.Designer.cs">
+    <Compile Include="App\Admin\TaiKhoan\UCTK.Designer.cs">
       <DependentUpon>UCTK.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Login\Login.cs">
@@ -242,6 +248,9 @@
     <EmbeddedResource Include="App\Admin\MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\TaiKhoan\EditTK.resx">
+      <DependentUpon>EditTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\ThongBao\CardTBAdmin.resx">
       <DependentUpon>CardTBAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,19 +260,19 @@
     <EmbeddedResource Include="App\Admin\ThongBao\UCTBAdmin.resx">
       <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCDT.vi.resx">
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.vi.resx">
       <DependentUpon>UCDT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\KhuyenMai\UCKMAdmin.resx">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCDT.resx">
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.resx">
       <DependentUpon>UCDT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCTK.resx">
+    <EmbeddedResource Include="App\Admin\TaiKhoan\UCTK.resx">
       <DependentUpon>UCTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCTK.vi.resx">
+    <EmbeddedResource Include="App\Admin\TaiKhoan\UCTK.vi.resx">
       <DependentUpon>UCTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Login\Login.resx">

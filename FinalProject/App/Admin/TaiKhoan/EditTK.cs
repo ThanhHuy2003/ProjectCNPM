@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App.Admin.ThongBao
+namespace FinalProject.App.Admin.TaiKhoan
 {
-    public partial class UCTBAdmin : UserControl
+    public partial class EditTK : Form
     {
-        public UCTBAdmin()
+        public EditTK()
         {
             InitializeComponent();
-        }
-        Form frm = new TBDetailAdmin();
-        private void btnAddTB_Click(object sender, EventArgs e)
-        {
-            frm.ShowDialog();
         }
     }
 }

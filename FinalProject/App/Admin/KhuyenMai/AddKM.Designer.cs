@@ -33,7 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblKM = new System.Windows.Forms.Label();
             this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.cbCCN = new Krypton.Toolkit.KryptonComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,9 +42,12 @@
             // 
             // txtTD
             // 
-            this.txtTD.Location = new System.Drawing.Point(326, 78);
+            this.txtTD.Location = new System.Drawing.Point(327, 74);
             this.txtTD.Name = "txtTD";
             this.txtTD.Size = new System.Drawing.Size(595, 43);
+            this.txtTD.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.txtTD.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.txtTD.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.txtTD.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -55,7 +57,7 @@
             // btnSelectFile
             // 
             this.btnSelectFile.CornerRoundingRadius = 30F;
-            this.btnSelectFile.Location = new System.Drawing.Point(326, 15);
+            this.btnSelectFile.Location = new System.Drawing.Point(327, 11);
             this.btnSelectFile.Name = "btnSelectFile";
             this.btnSelectFile.Size = new System.Drawing.Size(122, 40);
             this.btnSelectFile.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -75,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(51, 165);
+            this.label3.Location = new System.Drawing.Point(52, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 24);
             this.label3.TabIndex = 13;
@@ -85,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(51, 91);
+            this.label2.Location = new System.Drawing.Point(52, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 24);
             this.label2.TabIndex = 12;
@@ -95,26 +97,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(51, 25);
+            this.label1.Location = new System.Drawing.Point(52, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Poster:";
             // 
-            // lblKM
-            // 
-            this.lblKM.AutoSize = true;
-            this.lblKM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblKM.Location = new System.Drawing.Point(10, -29);
-            this.lblKM.Name = "lblKM";
-            this.lblKM.Size = new System.Drawing.Size(192, 24);
-            this.lblKM.TabIndex = 10;
-            this.lblKM.Text = "Tạo thêm khuyến mãi";
-            // 
             // btnAdd
             // 
             this.btnAdd.CornerRoundingRadius = 30F;
-            this.btnAdd.Location = new System.Drawing.Point(405, 581);
+            this.btnAdd.Location = new System.Drawing.Point(406, 577);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(122, 40);
             this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -137,11 +129,13 @@
             this.cbCCN.DropDownWidth = 574;
             this.cbCCN.InputControlStyle = Krypton.Toolkit.InputControlStyle.PanelClient;
             this.cbCCN.IntegralHeight = false;
-            this.cbCCN.Location = new System.Drawing.Point(327, 458);
+            this.cbCCN.Location = new System.Drawing.Point(328, 454);
             this.cbCCN.Name = "cbCCN";
             this.cbCCN.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007SilverLightMode;
             this.cbCCN.Size = new System.Drawing.Size(594, 41);
             this.cbCCN.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.cbCCN.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.cbCCN.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.cbCCN.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -153,7 +147,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(51, 475);
+            this.label4.Location = new System.Drawing.Point(52, 471);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 24);
             this.label4.TabIndex = 17;
@@ -162,10 +156,13 @@
             // txtND
             // 
             this.txtND.AllowDrop = true;
-            this.txtND.Location = new System.Drawing.Point(326, 152);
+            this.txtND.Location = new System.Drawing.Point(327, 148);
             this.txtND.Multiline = true;
             this.txtND.Name = "txtND";
             this.txtND.Size = new System.Drawing.Size(595, 268);
+            this.txtND.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.txtND.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.txtND.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.txtND.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -183,7 +180,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblKM);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.cbCCN);
             this.Controls.Add(this.label4);
@@ -205,7 +201,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblKM;
         private Krypton.Toolkit.KryptonButton btnAdd;
         private Krypton.Toolkit.KryptonComboBox cbCCN;
         private System.Windows.Forms.Label label4;

@@ -51,7 +51,6 @@ namespace FinalProject.App.Admin
                 newUser.contactAddress = dtgvTK.Rows[rowIndex].Cells[3].Value.ToString();
                 newUser.phoneNumber = dtgvTK.Rows[rowIndex].Cells[4].Value.ToString();
                 newUser.userName = dtgvTK.Rows[rowIndex].Cells[5].Value.ToString();
-                newUser.userPassword = dtgvTK.Rows[rowIndex].Cells[6].Value.ToString();
                 newUser.userRole = dtgvTK.Rows[rowIndex].Cells[7].Value.ToString();
                 ehe.addUser(newUser);
             }
@@ -68,7 +67,6 @@ namespace FinalProject.App.Admin
             newUser.contactAddress = dtgvTK.Rows[rowIndex].Cells[3].Value.ToString();
             newUser.phoneNumber = dtgvTK.Rows[rowIndex].Cells[4].Value.ToString();
             newUser.userName = dtgvTK.Rows[rowIndex].Cells[5].Value.ToString();
-            newUser.userPassword = dtgvTK.Rows[rowIndex].Cells[6].Value.ToString();
             newUser.userRole = dtgvTK.Rows[rowIndex].Cells[7].Value.ToString();
             ehe.updateUser(newUser);
         }
