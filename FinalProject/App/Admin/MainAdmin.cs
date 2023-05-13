@@ -32,7 +32,7 @@ namespace FinalProject.App.Admin
 
         private void btnTB_Click(object sender, EventArgs e)
         {
-
+            Func.togglePanel(pnlAdmin, "TBAdmin");
         }
 
         private void btnCH_Click(object sender, EventArgs e)

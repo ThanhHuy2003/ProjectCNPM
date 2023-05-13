@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App.Admin
+namespace FinalProject.App.Admin.KhuyenMai
 {
-    public partial class UCAddKM : UserControl
+    public partial class AddKM : Form
     {
-        public UCAddKM()
+        public AddKM()
         {
             InitializeComponent();
         }

@@ -51,11 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\Admin\KhuyenMai\UCAddKM.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="App\Admin\KhuyenMai\AddKM.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Admin\KhuyenMai\UCAddKM.Designer.cs">
-      <DependentUpon>UCAddKM.cs</DependentUpon>
+    <Compile Include="App\Admin\KhuyenMai\AddKM.Designer.cs">
+      <DependentUpon>AddKM.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\KhuyenMai\CardKMAdmin.cs">
       <SubType>UserControl</SubType>
@@ -74,6 +74,24 @@
     </Compile>
     <Compile Include="App\Admin\KhuyenMai\UCKMAdmin.Designer.cs">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\CardTBAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\CardTBAdmin.Designer.cs">
+      <DependentUpon>CardTBAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\TBDetailAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\TBDetailAdmin.Designer.cs">
+      <DependentUpon>TBDetailAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\UCTBAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\UCTBAdmin.Designer.cs">
+      <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\UCDT.cs">
       <SubType>UserControl</SubType>
@@ -186,8 +204,8 @@
     <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="App\Admin\KhuyenMai\UCAddKM.resx">
-      <DependentUpon>UCAddKM.cs</DependentUpon>
+    <EmbeddedResource Include="App\Admin\KhuyenMai\AddKM.resx">
+      <DependentUpon>AddKM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\KhuyenMai\CardKMAdmin.resx">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
@@ -197,6 +215,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ThongBao\CardTBAdmin.resx">
+      <DependentUpon>CardTBAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ThongBao\TBDetailAdmin.resx">
+      <DependentUpon>TBDetailAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ThongBao\UCTBAdmin.resx">
+      <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\UCDT.vi.resx">
       <DependentUpon>UCDT.cs</DependentUpon>

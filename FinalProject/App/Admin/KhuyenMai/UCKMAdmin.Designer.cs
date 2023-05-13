@@ -30,10 +30,9 @@
         {
             this.lblKM = new System.Windows.Forms.Label();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.picSearch = new System.Windows.Forms.PictureBox();
+            this.btnAddKM = new Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlAddKM = new System.Windows.Forms.Panel();
+            this.picSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,22 +61,29 @@
             this.kryptonTextBox1.TabIndex = 4;
             this.kryptonTextBox1.Text = "Search";
             // 
-            // kryptonButton1
+            // btnAddKM
             // 
-            this.kryptonButton1.CornerRoundingRadius = 30F;
-            this.kryptonButton1.Location = new System.Drawing.Point(884, 21);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(132, 46);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnAddKM.CornerRoundingRadius = 30F;
+            this.btnAddKM.Location = new System.Drawing.Point(884, 21);
+            this.btnAddKM.Name = "btnAddKM";
+            this.btnAddKM.Size = new System.Drawing.Size(132, 46);
+            this.btnAddKM.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.btnAddKM.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.btnAddKM.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 30F;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.TabIndex = 6;
-            this.kryptonButton1.Values.Text = "Thêm";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.btnAddKM.StateCommon.Border.Rounding = 30F;
+            this.btnAddKM.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddKM.TabIndex = 6;
+            this.btnAddKM.Values.Text = "Thêm";
+            this.btnAddKM.Click += new System.EventHandler(this.btnAddKM_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(69, 134);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(946, 619);
+            this.flowLayoutPanel1.TabIndex = 7;
             // 
             // picSearch
             // 
@@ -90,34 +96,18 @@
             this.picSearch.TabIndex = 5;
             this.picSearch.TabStop = false;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(69, 134);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(946, 619);
-            this.flowLayoutPanel1.TabIndex = 7;
-            // 
-            // pnlAddKM
-            // 
-            this.pnlAddKM.Location = new System.Drawing.Point(589, 21);
-            this.pnlAddKM.Name = "pnlAddKM";
-            this.pnlAddKM.Size = new System.Drawing.Size(74, 46);
-            this.pnlAddKM.TabIndex = 8;
-            // 
             // UCKMAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pnlAddKM);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.kryptonButton1);
+            this.Controls.Add(this.btnAddKM);
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.lblKM);
             this.Name = "UCKMAdmin";
             this.Size = new System.Drawing.Size(1080, 800);
-            this.Load += new System.EventHandler(this.UCKMAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -129,8 +119,7 @@
         private System.Windows.Forms.Label lblKM;
         private System.Windows.Forms.PictureBox picSearch;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonButton btnAddKM;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel pnlAddKM;
     }
 }

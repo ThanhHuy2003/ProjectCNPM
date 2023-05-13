@@ -1,4 +1,5 @@
-﻿using FinalProject.App.Login;
+﻿using FinalProject.App.Admin.KhuyenMai;
+using FinalProject.App.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,24 +16,16 @@ namespace FinalProject.App.Admin
     public partial class UCKMAdmin : UserControl
     {
         MainAdmin main = new MainAdmin();
-        private UCKMAdmin uCKMAdmin;
         public UCKMAdmin()
         {
             InitializeComponent();
         }
+        Form frm  = new AddKM();
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void btnAddKM_Click(object sender, EventArgs e)
         {
-            pnlAddKM.Visible = true;
-            pnlAddKM.Size = new System.Drawing.Size(1080, 800);
-            pnlAddKM.Location = new System.Drawing.Point(0, 0);
-            Func.togglePanel(pnlAddKM, "AddKM");
-            main.Controls.Remove(uCKMAdmin);
+            frm.ShowDialog();
         }
 
-        private void UCKMAdmin_Load(object sender, EventArgs e)
-        {
-            pnlAddKM.Visible = false;
-        }
     }
 }

@@ -222,3 +222,7 @@ D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProjec
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.UCDT.vi.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.CardAddKM.resources
 D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.UCAddKM.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.KhuyenMai.AddKM.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.ThongBao.CardTBAdmin.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.ThongBao.TBDetailAdmin.resources
+D:\Tailieu\code\CNPM\Final Project\FinalProject3\ProjectCNPMLyThuyet\FinalProject\obj\Debug\FinalProject.App.Admin.ThongBao.UCTBAdmin.resources

@@ -1,5 +1,6 @@
 ﻿using FinalProject.App;
 using FinalProject.App.Admin;
+using FinalProject.App.Admin.ThongBao;
 using FinalProject.App.Login;
 using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
@@ -78,7 +79,7 @@ namespace FinalProject
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
             private static UCDT uCDT;
-            private static UCAddKM uCAddKM;
+            private static UCTBAdmin uCTBAdmin;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -281,19 +282,19 @@ namespace FinalProject
                             panel.Controls.Add(uCDT);
                         }
                         break;
-                    case "AddKM":
-                        if (uCAddKM == null)
+                    case "TBAdmin":
+                        if (uCTBAdmin == null)
                         {
-                            uCAddKM = new UCAddKM();
-                            panel.Controls.Add(uCAddKM);
-                            uCAddKM.Dock = System.Windows.Forms.DockStyle.Fill;
-                            uCAddKM.Location = new System.Drawing.Point(0, 0);
-                            uCAddKM.Name = "uCAddKM";
-                            uCAddKM.TabIndex = 0;
+                            uCTBAdmin = new UCTBAdmin();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCTBAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTBAdmin.Location = new System.Drawing.Point(0, 0);
+                            uCTBAdmin.Name = "uCTBAdmin";
+                            uCTBAdmin.TabIndex = 0;
                         }
                         else
                         {
-                            panel.Controls.Add(uCAddKM);
+                            panel.Controls.Add(uCTBAdmin);
                         }
                         break;
                     default:
