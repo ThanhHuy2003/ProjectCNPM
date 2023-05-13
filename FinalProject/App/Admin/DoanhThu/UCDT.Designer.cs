@@ -1,4 +1,5 @@
-﻿namespace FinalProject.App.Admin
+﻿using FinalProject.DTO;
+namespace FinalProject.App.Admin
 {
     partial class UCDT
     {
