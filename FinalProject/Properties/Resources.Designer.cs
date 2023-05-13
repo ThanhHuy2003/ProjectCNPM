@@ -413,6 +413,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap KM {
+            get {
+                object obj = ResourceManager.GetObject("KM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Language {
             get {
                 object obj = ResourceManager.GetObject("Language", resourceCulture);
@@ -443,9 +453,9 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoMo_Logo {
+        internal static System.Drawing.Bitmap logo___lotteria_800_x_515px_scaled_preview_rev_11 {
             get {
-                object obj = ResourceManager.GetObject("MoMo_Logo", resourceCulture);
+                object obj = ResourceManager.GetObject("logo-_-lotteria-800-x-515px-scaled_preview_rev_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,9 +463,9 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoMo_Logo1 {
+        internal static System.Drawing.Bitmap MoMo_Logo {
             get {
-                object obj = ResourceManager.GetObject("MoMo_Logo1", resourceCulture);
+                object obj = ResourceManager.GetObject("MoMo_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,36 +486,6 @@ namespace FinalProject.Properties {
         internal static System.Drawing.Bitmap NextSlider {
             get {
                 object obj = ResourceManager.GetObject("NextSlider", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap search {
-            get {
-                object obj = ResourceManager.GetObject("search", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap search_preview_rev_1 {
-            get {
-                object obj = ResourceManager.GetObject("search_preview_rev_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap search_preview_rev_11 {
-            get {
-                object obj = ResourceManager.GetObject("search_preview_rev_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.App.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,12 +26,13 @@ namespace FinalProject.App.Admin
 
         private void btnKM_Click(object sender, EventArgs e)
         {
+            
             Func.togglePanel(pnlAdmin, "KMAdmin");
         }
 
         private void btnTB_Click(object sender, EventArgs e)
         {
-
+            Func.togglePanel(pnlAdmin, "TBAdmin");
         }
 
         private void btnCH_Click(object sender, EventArgs e)

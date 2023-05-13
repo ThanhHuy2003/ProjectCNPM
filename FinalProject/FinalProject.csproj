@@ -51,10 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\Admin\CardKMAdmin.cs">
+    <Compile Include="App\Admin\KhuyenMai\AddKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\KhuyenMai\AddKM.Designer.cs">
+      <DependentUpon>AddKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\KhuyenMai\CardKMAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\CardKMAdmin.Designer.cs">
+    <Compile Include="App\Admin\KhuyenMai\CardKMAdmin.Designer.cs">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\MainAdmin.cs">
@@ -63,22 +69,46 @@
     <Compile Include="App\Admin\MainAdmin.Designer.cs">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UCKMAdmin.cs">
+    <Compile Include="App\Admin\KhuyenMai\UCKMAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\UCKMAdmin.Designer.cs">
+    <Compile Include="App\Admin\KhuyenMai\UCKMAdmin.Designer.cs">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UCDT.cs">
+    <Compile Include="App\Admin\TaiKhoan\EditTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\TaiKhoan\EditTK.Designer.cs">
+      <DependentUpon>EditTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\CardTBAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\UCDT.Designer.cs">
+    <Compile Include="App\Admin\ThongBao\CardTBAdmin.Designer.cs">
+      <DependentUpon>CardTBAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\TBDetailAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\TBDetailAdmin.Designer.cs">
+      <DependentUpon>TBDetailAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\UCTBAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\ThongBao\UCTBAdmin.Designer.cs">
+      <DependentUpon>UCTBAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\DoanhThu\UCDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Admin\DoanhThu\UCDT.Designer.cs">
       <DependentUpon>UCDT.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UCTK.cs">
+    <Compile Include="App\Admin\TaiKhoan\UCTK.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\UCTK.Designer.cs">
+    <Compile Include="App\Admin\TaiKhoan\UCTK.Designer.cs">
       <DependentUpon>UCTK.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Login\Login.cs">
@@ -117,11 +147,23 @@
     <Compile Include="App\Main\CardCH.Designer.cs">
       <DependentUpon>CardCH.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\CardKM.cs">
+    <Compile Include="App\Main\KhuyenMai\CardKM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Main\CardKM.Designer.cs">
+    <Compile Include="App\Main\KhuyenMai\CardKM.Designer.cs">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\ThongBao\CardTB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\ThongBao\CardTB.Designer.cs">
+      <DependentUpon>CardTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\ThongBao\TBDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Main\ThongBao\TBDetail.Designer.cs">
+      <DependentUpon>TBDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\ThucDon\CardTD.cs">
       <SubType>UserControl</SubType>
@@ -141,10 +183,10 @@
     <Compile Include="App\Login\UCDN.Designer.cs">
       <DependentUpon>UCDN.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\UCKM.cs">
+    <Compile Include="App\Main\KhuyenMai\UCKM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Main\UCKM.Designer.cs">
+    <Compile Include="App\Main\KhuyenMai\UCKM.Designer.cs">
       <DependentUpon>UCKM.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\UCMain.cs">
@@ -165,43 +207,72 @@
     <Compile Include="App\Main\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Main\ThongBao\UCTB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\ThongBao\UCTB.Designer.cs">
+      <DependentUpon>UCTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\AdminNotificationBLL.cs" />
+    <Compile Include="BLL\AdminRevenueBLL.cs" />
+    <Compile Include="BLL\AdminUserBLL.cs" />
     <Compile Include="BLL\CookTableBLL.cs" />
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\PromotionTableBLL.cs" />
     <Compile Include="BLL\StoreAddressTableBLL.cs" />
+    <Compile Include="DAL\NotificationDAL.cs" />
     <Compile Include="DAL\CookTableDAL.cs" />
     <Compile Include="DAL\DatabaseAccess.cs" />
     <Compile Include="DAL\LoginDAL.cs" />
     <Compile Include="DAL\PromotionTableDAL.cs" />
+    <Compile Include="DAL\RevenueCRUD_DAL.cs" />
     <Compile Include="DAL\StoreAddressTableDAL.cs" />
+    <Compile Include="DAL\UserCRUD_DAL.cs" />
     <Compile Include="DTO\MenuItem.cs" />
+    <Compile Include="DTO\Notification.cs" />
     <Compile Include="DTO\PromotionItem.cs" />
+    <Compile Include="DTO\Revenue.cs" />
     <Compile Include="DTO\StoreAddressItem.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="App\Admin\CardKMAdmin.resx">
+    <EmbeddedResource Include="App\Admin\KhuyenMai\AddKM.resx">
+      <DependentUpon>AddKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\KhuyenMai\CardKMAdmin.resx">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\CardKMAdmin.vi.resx">
+    <EmbeddedResource Include="App\Admin\KhuyenMai\CardKMAdmin.vi.resx">
       <DependentUpon>CardKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCDT.vi.resx">
+    <EmbeddedResource Include="App\Admin\TaiKhoan\EditTK.resx">
+      <DependentUpon>EditTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ThongBao\CardTBAdmin.resx">
+      <DependentUpon>CardTBAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ThongBao\TBDetailAdmin.resx">
+      <DependentUpon>TBDetailAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ThongBao\UCTBAdmin.resx">
+      <DependentUpon>UCTBAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.vi.resx">
       <DependentUpon>UCDT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCKMAdmin.resx">
+    <EmbeddedResource Include="App\Admin\KhuyenMai\UCKMAdmin.resx">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCDT.resx">
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.resx">
       <DependentUpon>UCDT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCTK.resx">
+    <EmbeddedResource Include="App\Admin\TaiKhoan\UCTK.resx">
       <DependentUpon>UCTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UCTK.vi.resx">
+    <EmbeddedResource Include="App\Admin\TaiKhoan\UCTK.vi.resx">
       <DependentUpon>UCTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Login\Login.resx">
@@ -222,8 +293,14 @@
     <EmbeddedResource Include="App\Main\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\CardKM.resx">
+    <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
+      <DependentUpon>CardTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThongBao\TBDetail.resx">
+      <DependentUpon>TBDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThucDon\CardTD.resx">
       <DependentUpon>CardTD.cs</DependentUpon>
@@ -234,7 +311,7 @@
     <EmbeddedResource Include="App\Login\UCDN.resx">
       <DependentUpon>UCDN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\UCKM.resx">
+    <EmbeddedResource Include="App\Main\KhuyenMai\UCKM.resx">
       <DependentUpon>UCKM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\UCMain.resx">
@@ -246,12 +323,20 @@
     <EmbeddedResource Include="App\Main\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThongBao\UCTB.resx">
+      <DependentUpon>UCTB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\FinalProject.DTO.MenuItem.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.PromotionItem.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.Revenue.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.StoreAddressItem.datasource" />
+    <None Include="Properties\DataSources\FinalProject.DTO.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -301,6 +386,9 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_11.png" />
+    <None Include="Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_1.png" />
+    <None Include="Resources\KM.png" />
     <None Include="Resources\searchh.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\search_preview_rev_11.png" />

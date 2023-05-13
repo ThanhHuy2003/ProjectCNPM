@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -174,6 +175,17 @@ namespace FinalProject.App
             {
                 MessageBox.Show("Không có dữ liệu MenuData");
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Point startPoint = new Point(615, 0);
+            Point endPoint = new Point(615, 380);
+
+            LinearGradientBrush lgb =
+                new LinearGradientBrush(startPoint, endPoint, Color.FromArgb(255, 255, 170, 122), Color.FromArgb(255, 255, 255, 255));
+            Graphics g = e.Graphics;
+            g.FillRectangle(lgb, 0, 0, 1230, 380);
         }
     }
 }

@@ -54,6 +54,7 @@
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.labelHoten = new System.Windows.Forms.Label();
+            this.picAvt = new System.Windows.Forms.PictureBox();
             this.tabDH = new System.Windows.Forms.TabPage();
             this.panelDH = new System.Windows.Forms.Panel();
             this.btnDHHT = new Krypton.Toolkit.KryptonButton();
@@ -63,6 +64,7 @@
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.tabPTTT = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.radbtnMoney = new Krypton.Toolkit.KryptonRadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -77,23 +79,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tabCNN = new System.Windows.Forms.TabPage();
-            this.tabBMDK = new System.Windows.Forms.TabPage();
-            this.picAvt = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tabBMDK = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabTTCN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
             this.tabDH.SuspendLayout();
             this.tabUD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelKM)).BeginInit();
             this.tabPTTT.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,7 +102,6 @@
             this.tabControl1.Controls.Add(this.tabDH);
             this.tabControl1.Controls.Add(this.tabUD);
             this.tabControl1.Controls.Add(this.tabPTTT);
-            this.tabControl1.Controls.Add(this.tabCNN);
             this.tabControl1.Controls.Add(this.tabBMDK);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
@@ -550,6 +548,18 @@
             this.labelHoten.TabIndex = 47;
             this.labelHoten.Text = "Họ tên:";
             // 
+            // picAvt
+            // 
+            this.picAvt.Image = global::FinalProject.Properties.Resources.avt;
+            this.picAvt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.picAvt.Location = new System.Drawing.Point(381, 29);
+            this.picAvt.Margin = new System.Windows.Forms.Padding(2);
+            this.picAvt.Name = "picAvt";
+            this.picAvt.Size = new System.Drawing.Size(167, 193);
+            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvt.TabIndex = 46;
+            this.picAvt.TabStop = false;
+            // 
             // tabDH
             // 
             this.tabDH.AutoScroll = true;
@@ -560,7 +570,7 @@
             this.tabDH.Location = new System.Drawing.Point(4, 29);
             this.tabDH.Name = "tabDH";
             this.tabDH.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDH.Size = new System.Drawing.Size(947, 774);
+            this.tabDH.Size = new System.Drawing.Size(935, 770);
             this.tabDH.TabIndex = 1;
             this.tabDH.Text = "Đơn hàng";
             // 
@@ -626,7 +636,7 @@
             this.tabUD.Controls.Add(this.kryptonLabel1);
             this.tabUD.Location = new System.Drawing.Point(4, 29);
             this.tabUD.Name = "tabUD";
-            this.tabUD.Size = new System.Drawing.Size(947, 774);
+            this.tabUD.Size = new System.Drawing.Size(935, 770);
             this.tabUD.TabIndex = 2;
             this.tabUD.Text = "Ưu đãi";
             // 
@@ -656,7 +666,7 @@
             this.tabPTTT.Controls.Add(this.panel1);
             this.tabPTTT.Location = new System.Drawing.Point(4, 29);
             this.tabPTTT.Name = "tabPTTT";
-            this.tabPTTT.Size = new System.Drawing.Size(947, 774);
+            this.tabPTTT.Size = new System.Drawing.Size(935, 770);
             this.tabPTTT.TabIndex = 3;
             this.tabPTTT.Text = "Phương thức thanh toán";
             // 
@@ -675,6 +685,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(899, 295);
             this.panel3.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FinalProject.Properties.Resources.moneylogo;
+            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox2.Location = new System.Drawing.Point(24, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // label11
             // 
@@ -826,55 +847,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Ví MoMo";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
-            this.panel2.Location = new System.Drawing.Point(3, 73);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 2);
-            this.panel2.TabIndex = 0;
-            // 
-            // tabCNN
-            // 
-            this.tabCNN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.tabCNN.Location = new System.Drawing.Point(4, 29);
-            this.tabCNN.Name = "tabCNN";
-            this.tabCNN.Size = new System.Drawing.Size(947, 774);
-            this.tabCNN.TabIndex = 4;
-            this.tabCNN.Text = "Chọn ngôn ngữ";
-            // 
-            // tabBMDK
-            // 
-            this.tabBMDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.tabBMDK.Location = new System.Drawing.Point(4, 29);
-            this.tabBMDK.Name = "tabBMDK";
-            this.tabBMDK.Size = new System.Drawing.Size(947, 774);
-            this.tabBMDK.TabIndex = 5;
-            this.tabBMDK.Text = "Bảo mật và điều khoản";
-            // 
-            // picAvt
-            // 
-            this.picAvt.Image = global::FinalProject.Properties.Resources.avt;
-            this.picAvt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.picAvt.Location = new System.Drawing.Point(381, 29);
-            this.picAvt.Margin = new System.Windows.Forms.Padding(2);
-            this.picAvt.Name = "picAvt";
-            this.picAvt.Size = new System.Drawing.Size(167, 193);
-            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAvt.TabIndex = 46;
-            this.picAvt.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::FinalProject.Properties.Resources.moneylogo;
-            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 14);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FinalProject.Properties.Resources.MoMo_Logo;
@@ -885,6 +857,23 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
+            this.panel2.Location = new System.Drawing.Point(3, 73);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(896, 2);
+            this.panel2.TabIndex = 0;
+            // 
+            // tabBMDK
+            // 
+            this.tabBMDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabBMDK.Location = new System.Drawing.Point(4, 29);
+            this.tabBMDK.Name = "tabBMDK";
+            this.tabBMDK.Size = new System.Drawing.Size(935, 770);
+            this.tabBMDK.TabIndex = 5;
+            this.tabBMDK.Text = "Bảo mật và điều khoản";
             // 
             // UCCD
             // 
@@ -897,6 +886,7 @@
             this.tabTTCN.ResumeLayout(false);
             this.tabTTCN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
             this.tabDH.ResumeLayout(false);
             this.tabUD.ResumeLayout(false);
             this.tabUD.PerformLayout();
@@ -904,10 +894,9 @@
             this.tabPTTT.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -968,7 +957,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TabPage tabCNN;
         private System.Windows.Forms.TabPage tabBMDK;
     }
 }

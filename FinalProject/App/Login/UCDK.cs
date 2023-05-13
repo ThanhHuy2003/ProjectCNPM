@@ -61,22 +61,6 @@ namespace FinalProject.App.Login
                 EmailText.StateActive.Content.Color1 = Color.Silver;
             }
         }
-        private void ContactText_Enter(object sender, EventArgs e)
-        {
-            if (ContactText.Text == "Contact address")
-            {
-                ContactText.Text = "";
-                ContactText.StateActive.Content.Color1 = Color.Black;
-            }
-        }
-        private void ContactText_Leave(object sender, EventArgs e)
-        {
-            if (ContactText.Text == "")
-            {
-                ContactText.Text = "Contact address";
-                ContactText.StateActive.Content.Color1 = Color.Silver;
-            }
-        }
         private void PhoneNumberText_Enter(object sender, EventArgs e)
         {
             if (PhoneNumberText.Text == "Phone number")
@@ -153,7 +137,7 @@ namespace FinalProject.App.Login
 
             newTK.fullName = FullNameText.Text;
             newTK.emailAddress = EmailText.Text;
-            newTK.contactAddress = ContactText.Text;
+            //newTK.contactAddress = ContactText.Text;
             newTK.phoneNumber = PhoneNumberText.Text;
             newTK.userName = UserNameText.Text;
             newTK.userPassword = PasswordText.Text;

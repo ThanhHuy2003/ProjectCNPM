@@ -1,5 +1,6 @@
 ﻿using FinalProject.App;
 using FinalProject.App.Admin;
+using FinalProject.App.Admin.ThongBao;
 using FinalProject.App.Login;
 using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
@@ -58,8 +59,13 @@ namespace FinalProject
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
             Func.togglePanel(panel_main, "CD");
         }
+        private void btnlogo_Click(object sender, EventArgs e)
+        {
+            Func.togglePanel(panel_main, "Main");
+        }
         private void Main_Load(object sender, EventArgs e)
         {
+            btnlogo.Select();
             Func.togglePanel(panel_main, "Main");
         }
         public class Func
@@ -78,6 +84,7 @@ namespace FinalProject
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
             private static UCDT uCDT;
+            private static UCTBAdmin uCTBAdmin;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -261,6 +268,7 @@ namespace FinalProject
                         }
                         else
                         {
+                            panel.Controls.Clear();
                             panel.Controls.Add(uCKMAdmin);
                         }
                         break;
@@ -279,10 +287,27 @@ namespace FinalProject
                             panel.Controls.Add(uCDT);
                         }
                         break;
+                    case "TBAdmin":
+                        if (uCTBAdmin == null)
+                        {
+                            uCTBAdmin = new UCTBAdmin();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCTBAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTBAdmin.Location = new System.Drawing.Point(0, 0);
+                            uCTBAdmin.Name = "uCTBAdmin";
+                            uCTBAdmin.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTBAdmin);
+                        }
+                        break;
                     default:
                         break;
                 }
             }
         }
+
+        
     }
 }

@@ -28,32 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.panel = new Krypton.Toolkit.KryptonPanel();
+            this.btnlogo = new Krypton.Toolkit.KryptonButton();
             this.btnKM = new Krypton.Toolkit.KryptonButton();
             this.btnTB = new Krypton.Toolkit.KryptonButton();
             this.btnCH = new Krypton.Toolkit.KryptonButton();
             this.menu_active = new Krypton.Toolkit.KryptonPanel();
             this.btnTD = new Krypton.Toolkit.KryptonButton();
-            this.btnAcc = new Krypton.Toolkit.KryptonButton();
             this.pnlAdmin = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel)).BeginInit();
+            this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonPanel1
+            // panel
             // 
-            this.kryptonPanel1.Controls.Add(this.btnKM);
-            this.kryptonPanel1.Controls.Add(this.btnTB);
-            this.kryptonPanel1.Controls.Add(this.btnCH);
-            this.kryptonPanel1.Controls.Add(this.menu_active);
-            this.kryptonPanel1.Controls.Add(this.btnTD);
-            this.kryptonPanel1.Controls.Add(this.btnAcc);
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(267, 803);
-            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.kryptonPanel1.TabIndex = 1;
+            this.panel.Controls.Add(this.btnlogo);
+            this.panel.Controls.Add(this.btnKM);
+            this.panel.Controls.Add(this.btnTB);
+            this.panel.Controls.Add(this.btnCH);
+            this.panel.Controls.Add(this.menu_active);
+            this.panel.Controls.Add(this.btnTD);
+            this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(267, 803);
+            this.panel.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.panel.TabIndex = 1;
+            // 
+            // btnlogo
+            // 
+            this.btnlogo.CornerRoundingRadius = -1F;
+            this.btnlogo.Location = new System.Drawing.Point(1, 0);
+            this.btnlogo.Name = "btnlogo";
+            this.btnlogo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnlogo.Size = new System.Drawing.Size(267, 89);
+            this.btnlogo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnlogo.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnlogo.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
+            this.btnlogo.StateNormal.Back.Image = global::FinalProject.Properties.Resources.logo___lotteria_800_x_515px_scaled_preview_rev_11;
+            this.btnlogo.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.btnlogo.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnlogo.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnlogo.StateNormal.Content.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnlogo.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogo.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnlogo.StatePressed.Back.Image = global::FinalProject.Properties.Resources.logo___lotteria_800_x_515px_scaled_preview_rev_11;
+            this.btnlogo.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnlogo.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnlogo.StateTracking.Back.Image = global::FinalProject.Properties.Resources.logo___lotteria_800_x_515px_scaled_preview_rev_11;
+            this.btnlogo.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnlogo.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnlogo.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnlogo.StateTracking.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.None;
+            this.btnlogo.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnlogo.TabIndex = 14;
+            this.btnlogo.Values.Text = "";
             // 
             // btnKM
             // 
@@ -190,34 +242,6 @@
             this.btnTD.Values.Text = "Tài khoản";
             this.btnTD.Click += new System.EventHandler(this.btnTD_Click);
             // 
-            // btnAcc
-            // 
-            this.btnAcc.CornerRoundingRadius = 40F;
-            this.btnAcc.Location = new System.Drawing.Point(10, 11);
-            this.btnAcc.Name = "btnAcc";
-            this.btnAcc.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnAcc.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnAcc.Size = new System.Drawing.Size(226, 64);
-            this.btnAcc.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnAcc.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnAcc.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAcc.StateCommon.Border.Rounding = 40F;
-            this.btnAcc.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnAcc.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnAcc.StateNormal.Back.Image = global::FinalProject.Properties.Resources.avt;
-            this.btnAcc.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Control;
-            this.btnAcc.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.btnAcc.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAcc.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAcc.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcc.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnAcc.TabIndex = 0;
-            this.btnAcc.Values.Text = "Account";
-            // 
             // pnlAdmin
             // 
             this.pnlAdmin.BackColor = System.Drawing.Color.White;
@@ -232,13 +256,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 801);
             this.Controls.Add(this.pnlAdmin);
-            this.Controls.Add(this.kryptonPanel1);
+            this.Controls.Add(this.panel);
             this.Name = "MainAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainAdmin";
             this.Load += new System.EventHandler(this.MainAdmin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
-            this.kryptonPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel)).EndInit();
+            this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).EndInit();
             this.ResumeLayout(false);
 
@@ -246,13 +270,13 @@
 
         #endregion
 
-        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private Krypton.Toolkit.KryptonPanel panel;
         private Krypton.Toolkit.KryptonButton btnKM;
         private Krypton.Toolkit.KryptonButton btnTB;
         private Krypton.Toolkit.KryptonButton btnCH;
         private Krypton.Toolkit.KryptonPanel menu_active;
         private Krypton.Toolkit.KryptonButton btnTD;
-        private Krypton.Toolkit.KryptonButton btnAcc;
         private System.Windows.Forms.Panel pnlAdmin;
+        private Krypton.Toolkit.KryptonButton btnlogo;
     }
 }
