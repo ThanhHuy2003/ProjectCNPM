@@ -308,11 +308,13 @@
     <Compile Include="BLL\AdminNotificationBLL.cs" />
     <Compile Include="BLL\AdminRevenueBLL.cs" />
     <Compile Include="BLL\AdminUserBLL.cs" />
+    <Compile Include="BLL\CartTableBLL.cs" />
     <Compile Include="BLL\CookTableBLL.cs" />
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\NotificationTableBLL.cs" />
     <Compile Include="BLL\PromotionTableBLL.cs" />
     <Compile Include="BLL\StoreAddressTableBLL.cs" />
+    <Compile Include="DAL\CartTableDAL.cs" />
     <Compile Include="DAL\NotificationDAL.cs" />
     <Compile Include="DAL\CookTableDAL.cs" />
     <Compile Include="DAL\DatabaseAccess.cs" />
@@ -321,6 +323,7 @@
     <Compile Include="DAL\RevenueCRUD_DAL.cs" />
     <Compile Include="DAL\StoreAddressTableDAL.cs" />
     <Compile Include="DAL\UserCRUD_DAL.cs" />
+    <Compile Include="DTO\CartDataItem.cs" />
     <Compile Include="DTO\MenuItem.cs" />
     <Compile Include="DTO\Notification.cs" />
     <Compile Include="DTO\PromotionItem.cs" />

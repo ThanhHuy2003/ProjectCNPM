@@ -4,7 +4,9 @@ using FinalProject.App.Admin.ThongBao;
 using FinalProject.App.Login;
 using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
+using FinalProject.App.Main.GioHang;
 using FinalProject.App.Main.ThucDon;
+using FinalProject.App.Staff.GioHang;
 using FinalProject.App.Staff.KhuyenMai;
 using FinalProject.App.Staff.ThucDon;
 using System;
@@ -48,6 +50,7 @@ namespace FinalProject
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
+            Func.togglePanel(panel_main, "GH");
         }
 
         private void btnTB_Click(object sender, EventArgs e)
@@ -93,6 +96,7 @@ namespace FinalProject
             //Staff
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
+            private static UCGH uCGH;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -157,6 +161,21 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCTB);
+                        }
+                        break;
+                    case "GH":
+                        if (uCGH == null)
+                        {
+                            uCGH = new UCGH();
+                            panel.Controls.Add(uCGH);
+                            uCGH.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCGH.Location = new System.Drawing.Point(0, 0);
+                            uCGH.Name = "uCGH";
+                            uCGH.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCGH);
                         }
                         break;
                     case "CD":

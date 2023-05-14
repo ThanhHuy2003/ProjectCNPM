@@ -41,10 +41,10 @@
             // 
             // lblVND
             // 
-            this.lblVND.Location = new System.Drawing.Point(395, 51);
-            this.lblVND.Margin = new System.Windows.Forms.Padding(2);
+            this.lblVND.Location = new System.Drawing.Point(527, 63);
+            this.lblVND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblVND.Name = "lblVND";
-            this.lblVND.Size = new System.Drawing.Size(65, 32);
+            this.lblVND.Size = new System.Drawing.Size(79, 40);
             this.lblVND.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblVND.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
             this.lblVND.TabIndex = 47;
@@ -53,9 +53,10 @@
             // btnClear
             // 
             this.btnClear.CornerRoundingRadius = 30F;
-            this.btnClear.Location = new System.Drawing.Point(1114, 4);
+            this.btnClear.Location = new System.Drawing.Point(1485, 5);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(38, 30);
+            this.btnClear.Size = new System.Drawing.Size(51, 37);
             this.btnClear.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnClear.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnClear.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -69,13 +70,14 @@
             this.btnClear.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.btnClear.TabIndex = 46;
             this.btnClear.Values.Text = "x";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lblPrice
             // 
-            this.lblPrice.Location = new System.Drawing.Point(281, 51);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.lblPrice.Location = new System.Drawing.Point(375, 63);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(96, 32);
+            this.lblPrice.Size = new System.Drawing.Size(118, 40);
             this.lblPrice.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblPrice.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
             this.lblPrice.TabIndex = 44;
@@ -84,10 +86,10 @@
             // SubItem1
             // 
             this.SubItem1.CornerRoundingRadius = -1F;
-            this.SubItem1.Location = new System.Drawing.Point(290, 105);
-            this.SubItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.SubItem1.Location = new System.Drawing.Point(387, 129);
+            this.SubItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubItem1.Name = "SubItem1";
-            this.SubItem1.Size = new System.Drawing.Size(37, 31);
+            this.SubItem1.Size = new System.Drawing.Size(49, 38);
             this.SubItem1.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.SubItem1.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.SubItem1.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -106,14 +108,15 @@
             this.SubItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.SubItem1.TabIndex = 43;
             this.SubItem1.Values.Text = "-";
+            this.SubItem1.Click += new System.EventHandler(this.SubItem1_Click);
             // 
             // PlusItem1
             // 
             this.PlusItem1.CornerRoundingRadius = -1F;
-            this.PlusItem1.Location = new System.Drawing.Point(370, 105);
-            this.PlusItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.PlusItem1.Location = new System.Drawing.Point(493, 129);
+            this.PlusItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlusItem1.Name = "PlusItem1";
-            this.PlusItem1.Size = new System.Drawing.Size(37, 31);
+            this.PlusItem1.Size = new System.Drawing.Size(49, 38);
             this.PlusItem1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.PlusItem1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.PlusItem1.StateNormal.Back.Color1 = System.Drawing.Color.White;
@@ -142,13 +145,14 @@
             this.PlusItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.PlusItem1.TabIndex = 42;
             this.PlusItem1.Values.Text = "+";
+            this.PlusItem1.Click += new System.EventHandler(this.PlusItem1_Click);
             // 
             // CountItem1
             // 
-            this.CountItem1.Location = new System.Drawing.Point(341, 105);
-            this.CountItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.CountItem1.Location = new System.Drawing.Point(455, 129);
+            this.CountItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CountItem1.Name = "CountItem1";
-            this.CountItem1.Size = new System.Drawing.Size(21, 32);
+            this.CountItem1.Size = new System.Drawing.Size(24, 39);
             this.CountItem1.StateCommon.ShortText.Font = new System.Drawing.Font("Dubai Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CountItem1.TabIndex = 40;
             this.CountItem1.Values.Text = "0";
@@ -156,10 +160,10 @@
             // lblName
             // 
             this.lblName.AutoSize = false;
-            this.lblName.Location = new System.Drawing.Point(281, 4);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2);
+            this.lblName.Location = new System.Drawing.Point(375, 5);
+            this.lblName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(568, 43);
+            this.lblName.Size = new System.Drawing.Size(757, 53);
             this.lblName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.TabIndex = 41;
@@ -169,7 +173,7 @@
             // 
             this.pictureBox9.Image = global::FinalProject.Properties.Resources.image_1;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(255, 143);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -178,7 +182,7 @@
             // 
             // CardGH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblVND);
@@ -189,8 +193,9 @@
             this.Controls.Add(this.CountItem1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox9);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CardGH";
-            this.Size = new System.Drawing.Size(1155, 142);
+            this.Size = new System.Drawing.Size(1540, 175);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

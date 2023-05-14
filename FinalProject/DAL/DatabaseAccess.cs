@@ -88,6 +88,26 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        public DataTable populateCartData_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from CartData";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public void deleteCartItem_DA_DAL(string id)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "delete from CartData where dishID = '" + id +  "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.ExecuteNonQuery();
+        }
         public DataTable populatePromotionData_DA_DAL()
         {
             SqlConnection conn = new SqlConnection(strConn);

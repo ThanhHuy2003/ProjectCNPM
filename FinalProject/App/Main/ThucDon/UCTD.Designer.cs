@@ -38,9 +38,10 @@
             // btnAll
             // 
             this.btnAll.CornerRoundingRadius = 30F;
-            this.btnAll.Location = new System.Drawing.Point(297, 21);
+            this.btnAll.Location = new System.Drawing.Point(396, 26);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(145, 52);
+            this.btnAll.Size = new System.Drawing.Size(193, 64);
             this.btnAll.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAll.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAll.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -51,13 +52,15 @@
             this.btnAll.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAll.TabIndex = 49;
             this.btnAll.Values.Text = "All";
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnFood
             // 
             this.btnFood.CornerRoundingRadius = 30F;
-            this.btnFood.Location = new System.Drawing.Point(599, 21);
+            this.btnFood.Location = new System.Drawing.Point(799, 26);
+            this.btnFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(145, 52);
+            this.btnFood.Size = new System.Drawing.Size(193, 64);
             this.btnFood.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnFood.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnFood.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -68,13 +71,15 @@
             this.btnFood.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFood.TabIndex = 48;
             this.btnFood.Values.Text = "Food";
+            this.btnFood.Click += new System.EventHandler(this.btnGa_Click);
             // 
             // btnDrink
             // 
             this.btnDrink.CornerRoundingRadius = 30F;
-            this.btnDrink.Location = new System.Drawing.Point(750, 21);
+            this.btnDrink.Location = new System.Drawing.Point(1000, 26);
+            this.btnDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDrink.Name = "btnDrink";
-            this.btnDrink.Size = new System.Drawing.Size(183, 52);
+            this.btnDrink.Size = new System.Drawing.Size(244, 64);
             this.btnDrink.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDrink.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDrink.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -85,13 +90,15 @@
             this.btnDrink.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrink.TabIndex = 47;
             this.btnDrink.Values.Text = "Drink";
+            this.btnDrink.Click += new System.EventHandler(this.btnOther_Click);
             // 
             // btnCombo
             // 
             this.btnCombo.CornerRoundingRadius = 30F;
-            this.btnCombo.Location = new System.Drawing.Point(448, 21);
+            this.btnCombo.Location = new System.Drawing.Point(597, 26);
+            this.btnCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCombo.Name = "btnCombo";
-            this.btnCombo.Size = new System.Drawing.Size(145, 52);
+            this.btnCombo.Size = new System.Drawing.Size(193, 64);
             this.btnCombo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCombo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCombo.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -102,19 +109,20 @@
             this.btnCombo.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCombo.TabIndex = 46;
             this.btnCombo.Values.Text = "Combo";
+            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 88);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 108);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1174, 710);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1565, 874);
             this.flowLayoutPanel1.TabIndex = 45;
             // 
             // UCTD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
@@ -123,9 +131,9 @@
             this.Controls.Add(this.btnDrink);
             this.Controls.Add(this.btnCombo);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCTD";
-            this.Size = new System.Drawing.Size(1220, 818);
+            this.Size = new System.Drawing.Size(1627, 1007);
             this.Load += new System.EventHandler(this.UCTD_Load);
             this.ResumeLayout(false);
 
