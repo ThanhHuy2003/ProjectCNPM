@@ -79,7 +79,7 @@
             this.kryptonPanel1.Controls.Add(this.btnTT);
             this.kryptonPanel1.Controls.Add(this.label3);
             this.kryptonPanel1.Controls.Add(this.label2);
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 1596);
+            this.kryptonPanel1.Location = new System.Drawing.Point(54, 818);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(1627, 128);
@@ -470,7 +470,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1585, 1681);
+            this.Size = new System.Drawing.Size(1585, 1660);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

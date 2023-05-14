@@ -107,6 +107,7 @@ namespace FinalProject.DAL
             String sSQL = "delete from CartData where dishID = '" + id +  "'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.ExecuteNonQuery();
+            conn.Close();
         }
         public DataTable populatePromotionData_DA_DAL()
         {

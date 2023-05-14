@@ -66,11 +66,13 @@ namespace FinalProject.App.Main.GioHang
         [Category("Custom Props")]
         public int Quantity { get { return _quantity; } set { _quantity = value; CountItem1.Text = value.ToString(); } }
         #endregion
-
+        public event EventHandler ButtonClicked;
         private void btnClear_Click(object sender, EventArgs e)
         {
             CartTableBLL cartTableBLL = new CartTableBLL();
             cartTableBLL.deleteCartItem_CartTable_BLL(this.ID);
+            ButtonClicked?.Invoke(this, e);
+
         }
     }
 }

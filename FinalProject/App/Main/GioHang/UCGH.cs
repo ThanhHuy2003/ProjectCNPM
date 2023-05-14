@@ -77,16 +77,17 @@ namespace FinalProject.App.Main.GioHang
                     Item.Title = newCartDataItem.dishName;
                     Item.Price = newCartDataItem.dishPrice;
                     Item.Quantity = newCartDataItem.totalQuantity;
+                    Item.ButtonClicked += ChildControl_ButtonClicked;
 
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
-            else
-            {
-                MessageBox.Show("Không có dữ liệu CartData");
-            }
         }
-
+        private void ChildControl_ButtonClicked(object sender, EventArgs e)
+        {
+            label1.Focus();
+            populateCartData_CartTable_UCTD();
+        }
         private void UCGH_Load(object sender, EventArgs e)
         {
             populateCartData_CartTable_UCTD();
