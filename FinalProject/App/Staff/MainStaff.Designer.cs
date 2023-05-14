@@ -1,6 +1,6 @@
-﻿namespace FinalProject
+﻿namespace FinalProject.App.Staff
 {
-    partial class Main
+    partial class MainStaff
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,10 @@
             this.btnlogo = new Krypton.Toolkit.KryptonButton();
             this.btnCD = new Krypton.Toolkit.KryptonButton();
             this.btnKM = new Krypton.Toolkit.KryptonButton();
-            this.btnTB = new Krypton.Toolkit.KryptonButton();
             this.btnGH = new Krypton.Toolkit.KryptonButton();
-            this.btnCH = new Krypton.Toolkit.KryptonButton();
             this.menu_active = new Krypton.Toolkit.KryptonPanel();
             this.btnTD = new Krypton.Toolkit.KryptonButton();
-            this.panel_main = new System.Windows.Forms.Panel();
+            this.pnlMainStaff = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).BeginInit();
@@ -48,16 +46,14 @@
             this.kryptonPanel1.Controls.Add(this.btnlogo);
             this.kryptonPanel1.Controls.Add(this.btnCD);
             this.kryptonPanel1.Controls.Add(this.btnKM);
-            this.kryptonPanel1.Controls.Add(this.btnTB);
             this.kryptonPanel1.Controls.Add(this.btnGH);
-            this.kryptonPanel1.Controls.Add(this.btnCH);
             this.kryptonPanel1.Controls.Add(this.menu_active);
             this.kryptonPanel1.Controls.Add(this.btnTD);
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, -5);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(267, 907);
+            this.kryptonPanel1.Size = new System.Drawing.Size(267, 812);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.kryptonPanel1.TabIndex = 0;
+            this.kryptonPanel1.TabIndex = 1;
             // 
             // btnlogo
             // 
@@ -110,12 +106,11 @@
             this.btnlogo.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnlogo.TabIndex = 13;
             this.btnlogo.Values.Text = "";
-            this.btnlogo.Click += new System.EventHandler(this.btnlogo_Click);
             // 
             // btnCD
             // 
             this.btnCD.CornerRoundingRadius = -1F;
-            this.btnCD.Location = new System.Drawing.Point(24, 709);
+            this.btnCD.Location = new System.Drawing.Point(24, 723);
             this.btnCD.Name = "btnCD";
             this.btnCD.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnCD.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -146,7 +141,6 @@
             this.btnCD.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnCD.TabIndex = 12;
             this.btnCD.Values.Text = "Cài đặt";
-            this.btnCD.Click += new System.EventHandler(this.btnCD_Click);
             // 
             // btnKM
             // 
@@ -184,45 +178,10 @@
             this.btnKM.Values.Text = "Khuyến mãi";
             this.btnKM.Click += new System.EventHandler(this.btnKM_Click);
             // 
-            // btnTB
-            // 
-            this.btnTB.CornerRoundingRadius = -1F;
-            this.btnTB.Location = new System.Drawing.Point(25, 311);
-            this.btnTB.Name = "btnTB";
-            this.btnTB.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
-            this.btnTB.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
-            this.btnTB.Size = new System.Drawing.Size(243, 89);
-            this.btnTB.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.btnTB.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTB.StateNormal.Back.Image = global::FinalProject.Properties.Resources._removal_ai__tmp_641434d157788;
-            this.btnTB.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Control;
-            this.btnTB.StateNormal.Content.Padding = new System.Windows.Forms.Padding(50, -1, -1, -1);
-            this.btnTB.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.btnTB.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTB.StatePressed.Back.Image = global::FinalProject.Properties.Resources._removal_ai__tmp_641434d157788;
-            this.btnTB.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnTB.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StatePressed.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnTB.StateTracking.Back.Image = global::FinalProject.Properties.Resources._removal_ai__tmp_641434d157788;
-            this.btnTB.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnTB.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnTB.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnTB.TabIndex = 10;
-            this.btnTB.Values.Text = "Thông báo";
-            this.btnTB.Click += new System.EventHandler(this.btnTB_Click);
-            // 
             // btnGH
             // 
             this.btnGH.CornerRoundingRadius = -1F;
-            this.btnGH.Location = new System.Drawing.Point(25, 400);
+            this.btnGH.Location = new System.Drawing.Point(25, 311);
             this.btnGH.Name = "btnGH";
             this.btnGH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnGH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -253,44 +212,6 @@
             this.btnGH.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnGH.TabIndex = 6;
             this.btnGH.Values.Text = "Giỏ hàng";
-            this.btnGH.Click += new System.EventHandler(this.btnGH_Click);
-            // 
-            // btnCH
-            // 
-            this.btnCH.CornerRoundingRadius = -1F;
-            this.btnCH.Location = new System.Drawing.Point(25, 486);
-            this.btnCH.Name = "btnCH";
-            this.btnCH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
-            this.btnCH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
-            this.btnCH.Size = new System.Drawing.Size(243, 89);
-            this.btnCH.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnCH.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnCH.StateNormal.Back.Image = global::FinalProject.Properties.Resources.imageedit_2_8623276470_removebg_preview4;
-            this.btnCH.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
-            this.btnCH.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.btnCH.StateNormal.Content.Padding = new System.Windows.Forms.Padding(50, -1, -1, -1);
-            this.btnCH.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.btnCH.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCH.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.btnCH.StatePressed.Back.Image = global::FinalProject.Properties.Resources.imageedit_2_8623276470_removebg_preview4;
-            this.btnCH.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnCH.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StatePressed.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnCH.StateTracking.Back.Image = global::FinalProject.Properties.Resources.imageedit_2_8623276470_removebg_preview4;
-            this.btnCH.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnCH.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnCH.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnCH.TabIndex = 5;
-            this.btnCH.Values.Text = "Cửa hàng";
-            this.btnCH.Click += new System.EventHandler(this.btnCH_Click);
             // 
             // menu_active
             // 
@@ -339,28 +260,27 @@
             this.btnTD.Values.Text = "Thực đơn";
             this.btnTD.Click += new System.EventHandler(this.btnTD_Click);
             // 
-            // panel_main
+            // pnlMainStaff
             // 
-            this.panel_main.AutoScroll = true;
-            this.panel_main.Location = new System.Drawing.Point(263, -2);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1220, 900);
-            this.panel_main.TabIndex = 30;
+            this.pnlMainStaff.AutoScroll = true;
+            this.pnlMainStaff.Location = new System.Drawing.Point(267, -1);
+            this.pnlMainStaff.Name = "pnlMainStaff";
+            this.pnlMainStaff.Size = new System.Drawing.Size(1218, 813);
+            this.pnlMainStaff.TabIndex = 31;
             // 
-            // Main
+            // MainStaff
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1484, 811);
-            this.Controls.Add(this.panel_main);
+            this.Controls.Add(this.pnlMainStaff);
             this.Controls.Add(this.kryptonPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Main";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "MainStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
-            this.Load += new System.EventHandler(this.Main_Load);
+            this.Text = "MainStaff";
+            this.Load += new System.EventHandler(this.MainStaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).EndInit();
@@ -371,14 +291,12 @@
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private Krypton.Toolkit.KryptonButton btnTD;
-        private Krypton.Toolkit.KryptonButton btnKM;
-        private Krypton.Toolkit.KryptonPanel menu_active;
-        private Krypton.Toolkit.KryptonButton btnGH;
-        private Krypton.Toolkit.KryptonButton btnCH;
-        private Krypton.Toolkit.KryptonButton btnTB;
-        private Krypton.Toolkit.KryptonButton btnCD;
-        private System.Windows.Forms.Panel panel_main;
         private Krypton.Toolkit.KryptonButton btnlogo;
+        private Krypton.Toolkit.KryptonButton btnCD;
+        private Krypton.Toolkit.KryptonButton btnKM;
+        private Krypton.Toolkit.KryptonButton btnGH;
+        private Krypton.Toolkit.KryptonPanel menu_active;
+        private Krypton.Toolkit.KryptonButton btnTD;
+        private System.Windows.Forms.Panel pnlMainStaff;
     }
 }

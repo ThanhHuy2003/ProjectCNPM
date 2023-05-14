@@ -5,6 +5,8 @@ using FinalProject.App.Login;
 using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
 using FinalProject.App.Main.ThucDon;
+using FinalProject.App.Staff.KhuyenMai;
+using FinalProject.App.Staff.ThucDon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +73,7 @@ namespace FinalProject
         }
         public class Func
         {
+            //User
             private static UCTD uCTD;
             private static UCMain uCMain;
             private static UCKM uCKM;
@@ -81,12 +84,15 @@ namespace FinalProject
             private static CardTD cardTD;
             private static CardDH cardDH;
             private static CardKM cardKM;
-            private static CardKM2 cardKM2;
+            //Admin
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
             private static UCDT uCDT;
             private static UCTBAdmin uCTBAdmin;
             private static UCTB uCTB;
+            //Staff
+            private static UCTDStaff uCTDStaff;
+            private static UCKMStaff uCKMStaff;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -244,20 +250,6 @@ namespace FinalProject
                             panel.Controls.Add(cardKM);
                         }
                         break;
-                    case "CardKM2":
-                        if (cardKM == null)
-                        {
-                            cardKM2 = new CardKM2();
-                            panel.Controls.Add(cardKM2);
-                            cardKM2.Dock = System.Windows.Forms.DockStyle.Fill;
-                            cardKM2.Location = new System.Drawing.Point(0, 0);
-                            cardKM2.Name = "cardKM";
-                        }
-                        else
-                        {
-                            panel.Controls.Add(cardKM2);
-                        }
-                        break;
                     case "TK":
                         if (uCTK == null)
                         {
@@ -317,6 +309,36 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCTBAdmin);
+                        }
+                        break;
+                    case "TDStaff":
+                        if (uCTDStaff == null)
+                        {
+                            uCTDStaff = new UCTDStaff();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCTDStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTDStaff.Location = new System.Drawing.Point(0, 0);
+                            uCTDStaff.Name = "uCTDStaff";
+                            uCTDStaff.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTDStaff);
+                        }
+                        break;
+                    case "KMStaff":
+                        if (uCKMStaff == null)
+                        {
+                            uCKMStaff = new UCKMStaff();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCKMStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCKMStaff.Location = new System.Drawing.Point(0, 0);
+                            uCKMStaff.Name = "uCKMStaff";
+                            uCKMStaff.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCKMStaff);
                         }
                         break;
                     default:

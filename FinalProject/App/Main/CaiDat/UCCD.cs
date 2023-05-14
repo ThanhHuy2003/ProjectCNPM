@@ -25,10 +25,6 @@ namespace FinalProject.App.Main.CaiDat
                 btnLS.Select();
                 Func.togglePanel(panelDH, "CardDH");
             }
-            else if (tabControl1.SelectedIndex == 2)
-            {
-                Func.togglePanel(panelKM, "CardKM2");
-            }
         }
     }
 }

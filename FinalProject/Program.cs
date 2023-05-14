@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProject.App.Admin;
 using FinalProject.App.Login;
+using FinalProject.App.Staff;
 using Krypton.Toolkit;
 
 namespace FinalProject

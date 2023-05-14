@@ -155,23 +155,29 @@
     <Compile Include="App\Main\CaiDat\CardDH.Designer.cs">
       <DependentUpon>CardDH.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\CaiDat\CardKM2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="App\Main\CaiDat\CardKM2.Designer.cs">
-      <DependentUpon>CardKM2.cs</DependentUpon>
-    </Compile>
     <Compile Include="App\Main\CaiDat\UCCD.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="App\Main\CaiDat\UCCD.Designer.cs">
       <DependentUpon>UCCD.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\CardCH.cs">
+    <Compile Include="App\Main\CuaHang\CardCH.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Main\CardCH.Designer.cs">
+    <Compile Include="App\Main\CuaHang\CardCH.Designer.cs">
       <DependentUpon>CardCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\GioHang\CardGH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\GioHang\CardGH.Designer.cs">
+      <DependentUpon>CardGH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\GioHang\UCGH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\GioHang\UCGH.Designer.cs">
+      <DependentUpon>UCGH.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\KhuyenMai\CardKM.cs">
       <SubType>UserControl</SubType>
@@ -197,10 +203,10 @@
     <Compile Include="App\Main\ThucDon\CardTD.Designer.cs">
       <DependentUpon>CardTD.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\UCCH.cs">
+    <Compile Include="App\Main\CuaHang\UCCH.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Main\UCCH.Designer.cs">
+    <Compile Include="App\Main\CuaHang\UCCH.Designer.cs">
       <DependentUpon>UCCH.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Login\UCDN.cs">
@@ -238,6 +244,66 @@
     </Compile>
     <Compile Include="App\Main\ThongBao\UCTB.Designer.cs">
       <DependentUpon>UCTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\GioHang\CardGH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\GioHang\CardGH.Designer.cs">
+      <DependentUpon>CardGH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\GioHang\UCGHStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\GioHang\UCGHStaff.Designer.cs">
+      <DependentUpon>UCGHStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\HoaDon\CardHD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\HoaDon\CardHD.Designer.cs">
+      <DependentUpon>CardHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\HoaDon\HDDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Staff\HoaDon\HDDetail.Designer.cs">
+      <DependentUpon>HDDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\HoaDon\UCHD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\HoaDon\UCHD.Designer.cs">
+      <DependentUpon>UCHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\KhuyenMai\CardKMStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\KhuyenMai\CardKMStaff.Designer.cs">
+      <DependentUpon>CardKMStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\KhuyenMai\UCKMStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\KhuyenMai\UCKMStaff.Designer.cs">
+      <DependentUpon>UCKMStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\MainStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Staff\MainStaff.Designer.cs">
+      <DependentUpon>MainStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\ThucDon\CardTDStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\ThucDon\CardTDStaff.Designer.cs">
+      <DependentUpon>CardTDStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Staff\ThucDon\UCTDStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\ThucDon\UCTDStaff.Designer.cs">
+      <DependentUpon>UCTDStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="BLL\AdminNotificationBLL.cs" />
     <Compile Include="BLL\AdminRevenueBLL.cs" />
@@ -311,14 +377,17 @@
     <EmbeddedResource Include="App\Main\CaiDat\CardDH.resx">
       <DependentUpon>CardDH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\CaiDat\CardKM2.resx">
-      <DependentUpon>CardKM2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\CardCH.resx">
+    <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\CardGH.resx">
+      <DependentUpon>CardGH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\UCGH.resx">
+      <DependentUpon>UCGH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
@@ -332,7 +401,7 @@
     <EmbeddedResource Include="App\Main\ThucDon\CardTD.resx">
       <DependentUpon>CardTD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\UCCH.resx">
+    <EmbeddedResource Include="App\Main\CuaHang\UCCH.resx">
       <DependentUpon>UCCH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Login\UCDN.resx">
@@ -352,6 +421,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\UCTB.resx">
       <DependentUpon>UCTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\GioHang\CardGH.resx">
+      <DependentUpon>CardGH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\GioHang\UCGHStaff.resx">
+      <DependentUpon>UCGHStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\HoaDon\CardHD.resx">
+      <DependentUpon>CardHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\HoaDon\HDDetail.resx">
+      <DependentUpon>HDDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\HoaDon\UCHD.resx">
+      <DependentUpon>UCHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\KhuyenMai\CardKMStaff.resx">
+      <DependentUpon>CardKMStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\KhuyenMai\UCKMStaff.resx">
+      <DependentUpon>UCKMStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\MainStaff.resx">
+      <DependentUpon>MainStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\ThucDon\CardTDStaff.resx">
+      <DependentUpon>CardTDStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\ThucDon\UCTDStaff.resx">
+      <DependentUpon>UCTDStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -413,6 +512,8 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Lich.png" />
+    <None Include="Resources\voucher.png" />
     <None Include="Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_11.png" />
     <None Include="Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_1.png" />
     <None Include="Resources\KM.png" />

@@ -336,7 +336,9 @@ begin
 end
 go
 
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', 'abc', 'xyz'
+exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Lotteria đi đầu xu thế sử dụng nước sốt nhập khẩu 100% từ Hàn Quốc cùng nguyên liệu tươi sạch, nguồn gốc rõ ràng, đảm bảo vệ sinh an toàn thực phẩm, mang những món ăn chất lượng, tuyệt vời đến với khách hàng.
+
+Phiếu quà tặng có giá trị tương đương tiền mặt, được dùng để thanh toán cho hóa đơn trên 50.000đ. ', 'xyz'
 exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', 'abc', 'xyz'
 go
 

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App.Main.CaiDat
+namespace FinalProject.App.Staff.HoaDon
 {
-    public partial class CardKM2 : UserControl
+    public partial class CardHD : UserControl
     {
-        public CardKM2()
+        public CardHD()
         {
             InitializeComponent();
         }
