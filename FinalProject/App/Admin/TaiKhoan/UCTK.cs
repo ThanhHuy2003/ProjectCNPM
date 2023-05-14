@@ -1,4 +1,5 @@
-﻿using FinalProject.BLL;
+﻿using FinalProject.App.Admin.TaiKhoan;
+using FinalProject.BLL;
 using FinalProject.DTO;
 using Krypton.Toolkit;
 using System;
@@ -36,24 +37,10 @@ namespace FinalProject.App.Admin
             String value = dtgvTK.Rows[rowIndex].Cells[columnIndex].Value.ToString();
             ehe.deleteUser(value);
         }
-
+        Form frm = new EditTK();
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AdminUserBLL ehe = new AdminUserBLL();
-            int rowIndex = dtgvTK.SelectedCells[0].RowIndex;
-            User newUser = new User();
-            if (dtgvTK.Rows[rowIndex].Cells[1].Value == null || dtgvTK.Rows[rowIndex].Cells[2].Value == null || dtgvTK.Rows[rowIndex].Cells[3].Value == null || dtgvTK.Rows[rowIndex].Cells[4].Value == null || dtgvTK.Rows[rowIndex].Cells[5].Value == null || dtgvTK.Rows[rowIndex].Cells[6].Value == null || dtgvTK.Rows[rowIndex].Cells[7].Value == null)
-                MessageBox.Show("Nhap thieu kia");
-            else
-            {
-                newUser.fullName = dtgvTK.Rows[rowIndex].Cells[1].Value.ToString();
-                newUser.emailAddress = dtgvTK.Rows[rowIndex].Cells[2].Value.ToString();
-                newUser.contactAddress = dtgvTK.Rows[rowIndex].Cells[3].Value.ToString();
-                newUser.phoneNumber = dtgvTK.Rows[rowIndex].Cells[4].Value.ToString();
-                newUser.userName = dtgvTK.Rows[rowIndex].Cells[5].Value.ToString();
-                newUser.userRole = dtgvTK.Rows[rowIndex].Cells[7].Value.ToString();
-                ehe.addUser(newUser);
-            }
+            frm.ShowDialog();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

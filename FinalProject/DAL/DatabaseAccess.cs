@@ -167,14 +167,13 @@ namespace FinalProject.DAL
             MessageBox.Show("Update id :" + user.userID);
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username, userPassword=@userpassword where userID=@id";
+            String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username where userID=@id";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@name", user.fullName);
             cmd.Parameters.AddWithValue("@email", user.emailAddress);
             cmd.Parameters.AddWithValue("@contact", user.contactAddress);
             cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
             cmd.Parameters.AddWithValue("@username", user.userName);
-            cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
             cmd.Parameters.AddWithValue("@id", user.userID);
             cmd.ExecuteNonQuery();
             conn.Close();
