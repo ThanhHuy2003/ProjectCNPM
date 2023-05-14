@@ -63,7 +63,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1209, 153);
+            this.label2.Location = new System.Drawing.Point(1141, 153);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 29);
@@ -90,7 +90,7 @@
             this.Controls.Add(this.lblChitiet);
             this.Controls.Add(this.lblTB);
             this.Controls.Add(this.picNotification);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CardTB";
             this.Size = new System.Drawing.Size(1389, 192);
             ((System.ComponentModel.ISupportInitialize)(this.picNotification)).EndInit();

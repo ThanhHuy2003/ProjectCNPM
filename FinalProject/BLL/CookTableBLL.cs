@@ -14,15 +14,15 @@ namespace FinalProject.BLL
     internal class CookTableBLL
     {
         CookTableDAL cookTableDAL = new CookTableDAL();
-        public DataTable populateMenuData_Combo_CookTable_BLL()
+        public DataTable populateMenuData_CookTable_BLL(string type)
         {
-            if (cookTableDAL.populateMenuData_Combo_CookTable_DAL().Rows.Count <= 0)
+            if (cookTableDAL.populateMenuData_CookTable_DAL(type).Rows.Count <= 0)
             {
                 return null;
             }
             else
             {
-                return cookTableDAL.populateMenuData_Combo_CookTable_DAL();
+                return cookTableDAL.populateMenuData_CookTable_DAL(type);
             }
         }
     }

@@ -76,11 +76,11 @@ namespace FinalProject.DAL
                 return "Tài khoản đã được đăng ký trước đây";
             }
         }
-        public DataTable populateMenuData_Combo_DA_DAL()
+        public DataTable populateMenuData_DA_DAL(string type)
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "select * from MenuData where dishType = 'combo'";
+            String sSQL = "select * from MenuData where dishType = '" + type + "'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -88,8 +88,6 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
-        // populateMenuData_Food_DA_DAL()
-        // populateMenuData_Drink_DA_DAL()
         public DataTable populatePromotionData_DA_DAL()
         {
             SqlConnection conn = new SqlConnection(strConn);
@@ -272,7 +270,19 @@ namespace FinalProject.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "SELECT * from notification";
+            String sSQL = "SELECT * from NotificationData";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public DataTable getNotificationItem_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "SELECT * from NotificationDataDetail";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

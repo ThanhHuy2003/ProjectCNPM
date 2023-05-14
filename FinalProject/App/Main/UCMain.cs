@@ -125,18 +125,20 @@ namespace FinalProject.App
 
         private void UCMain_Load(object sender, EventArgs e)
         {
-            populateMenuData_Combo_CookTable_UCTD();
+            populateMenuData_CookTable_UCTD();
         }
-        private void populateMenuData_Combo_CookTable_UCTD()
+        private void populateMenuData_CookTable_UCTD()
         {
+            flowLayoutPanel1.Controls.Clear();
+
             CookTableBLL cookTableBLL = new CookTableBLL();
 
-            if (cookTableBLL.populateMenuData_Combo_CookTable_BLL() != null)
+            if (cookTableBLL.populateMenuData_CookTable_BLL("combo") != null)
             {
                 int i = 0;
-                foreach (DataRow row in cookTableBLL.populateMenuData_Combo_CookTable_BLL().Rows)
+                foreach (DataRow row in cookTableBLL.populateMenuData_CookTable_BLL("combo").Rows)
                 {
-                    if (i < 3)
+                    if (i < 4)
                     {
                         FinalProject.DTO.MenuItem newMenuItem = new FinalProject.DTO.MenuItem();
 

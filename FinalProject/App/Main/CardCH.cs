@@ -32,5 +32,10 @@ namespace FinalProject.App.Main
         [Category("Custom Props")]
         public string Date { get { return _date; } set { _date = value; kryptonLabel1.Text = value; } }
         #endregion
+
+        private void ButtonKM1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

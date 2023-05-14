@@ -294,17 +294,29 @@ create table NotificationData
 	notificationID varchar(8) not null,
 	notificationPicture varchar(500) not null,
     notificationName nvarchar(500) not null,
-    notificationDescription nvarchar(500) not null,
     notificationDate datetime not null,
     primary key(notificationID)
+)
+go
+
+create table NotificationDataDetail
+(
+	notificationID varchar(8) not null,
+	notificationPictureDetail varchar(500) not null,
+    notificationDescription nvarchar(4000) not null,
+	notificationFocus nvarchar(4000),
+    primary key(notificationID),
+	foreign key(notificationID) references NotificationData(notificationID)
 )
 go
 
 create procedure InsertNotificationData
     @notificationPicture varchar(500),
     @notificationName nvarchar(500),
-    @notificationDescription nvarchar(500),
-    @notificationDate datetime
+    @notificationDate datetime,
+	@notificationPictureDetail varchar(500),
+	@notificationDescription nvarchar(4000),
+	@notificationFocus nvarchar(4000)
 as
 begin
     declare @newnNotificationID char(8)
@@ -319,12 +331,13 @@ begin
 		end
 		set @newnNotificationID = 'NID' + @maxNotificationID 
 	end
-    insert into NotificationData(notificationID, notificationPicture, notificationName, notificationDescription, notificationDate) values (@newnNotificationID, @notificationPicture, @notificationName, @notificationDescription, @notificationDate)
+    insert into NotificationData(notificationID, notificationPicture, notificationName, notificationDate) values (@newnNotificationID, @notificationPicture, @notificationName, @notificationDate)
+	insert into NotificationDataDetail(notificationID, notificationPictureDetail, notificationDescription, notificationFocus) values (@newnNotificationID, @notificationPictureDetail, @notificationDescription, @notificationFocus)
 end
 go
 
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', N'Món gà rán nóng giòn cùng mùa hè nóng nực', '2023-05-07'
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', N'Món nước tươi mát cùng mùa hè nhiệt huyết', '2023-05-07'
+exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', 'abc', 'xyz'
+exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', 'abc', 'xyz'
 go
 
 CREATE TABLE revenue (
@@ -337,8 +350,15 @@ insert into revenue
 values('SID00002',180000,'5-13-2023')
 
 select * from LoginData
+-- proc InsertLoginData
 select * from MenuData
+-- proc InsertMenuData
 select * from NotificationData
+-- proc InsertNotificationData
+select * from NotificationDataDetail
 select * from PromotionData
+-- proc InsertPromotionData
 select * from Province
+select * from revenue
 select * from StoreAddress
+-- proc InsertStoreAddress

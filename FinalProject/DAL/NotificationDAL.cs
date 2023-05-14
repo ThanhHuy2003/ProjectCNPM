@@ -14,5 +14,9 @@ namespace FinalProject.DAL
         {
             return getAllNotification_DA_DAL();
         }
+        public DataTable getNotificationItem_DAL()
+        {
+            return getNotificationItem_DA_DAL();
+        }
     }
 }

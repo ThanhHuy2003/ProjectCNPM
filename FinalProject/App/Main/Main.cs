@@ -52,6 +52,7 @@ namespace FinalProject
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTB.Location.Y);
+            Func.togglePanel(panel_main, "TB");
         }
         private void btnCD_Click(object sender, EventArgs e)
         {
@@ -85,6 +86,7 @@ namespace FinalProject
             private static UCKMAdmin uCKMAdmin;
             private static UCDT uCDT;
             private static UCTBAdmin uCTBAdmin;
+            private static UCTB uCTB;
             public static void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
@@ -134,6 +136,21 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCKM);
+                        }
+                        break;
+                    case "TB":
+                        if (uCTB == null)
+                        {
+                            uCTB = new UCTB();
+                            panel.Controls.Add(uCTB);
+                            uCTB.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTB.Location = new System.Drawing.Point(0, 0);
+                            uCTB.Name = "uCTB";
+                            uCTB.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTB);
                         }
                         break;
                     case "CD":

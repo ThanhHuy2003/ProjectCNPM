@@ -11,9 +11,9 @@ namespace FinalProject.DAL
 {
     internal class CookTableDAL: DatabaseAccess
     {
-        public DataTable populateMenuData_Combo_CookTable_DAL()
+        public DataTable populateMenuData_CookTable_DAL(string type)
         {
-            return populateMenuData_Combo_DA_DAL();
+            return populateMenuData_DA_DAL(type);
         }
     }
 }

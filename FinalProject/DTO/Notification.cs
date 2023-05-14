@@ -11,7 +11,6 @@ namespace FinalProject.DTO
         public String notificationID {get; set;}
         public String notificationPicture { get; set;} 
         public String notificationName { get; set;}
-        public String notificationDescription { get; set;}
         public String notificationDate { get; set;}
     }
 }
