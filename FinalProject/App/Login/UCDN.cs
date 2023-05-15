@@ -23,6 +23,7 @@ namespace FinalProject.App
             InitializeComponent();
         }
         private UCDN uCDN;
+        Func Func;
         private void linkDK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             panel_DK.Visible = true;

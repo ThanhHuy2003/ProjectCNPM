@@ -24,68 +24,68 @@ namespace FinalProject
 {
     public partial class Main : Form
     {
-        private string userIDLogin;
-        Func func;
-        public Main(string userIDLogin)
-        {
-            InitializeComponent();
-            this.userIDLogin = userIDLogin;
-            func = new Func(this);
-        }
+        private string userIDLogin = "asdsad"; 
+        Func func = new Func();
         public Main()
         {
             InitializeComponent();
+            func = new Func(this);
         }
+
         private void btnTD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTD.Location.Y);
-            Func.togglePanel(panel_main, "TD");
+            func.togglePanel(panel_main, "TD");
         }
         private void btnKM_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnKM.Location.Y);
-            Func.togglePanel(panel_main, "KM");
+            func.togglePanel(panel_main, "KM");
         }
         private void btnCH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCH.Location.Y);
-            Func.togglePanel(panel_main, "CH");
+            func.togglePanel(panel_main, "CH");
         }
         private void btnGH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
-            Func.togglePanel(panel_main, "GH");
+            func.togglePanel(panel_main, "GH");
         }
 
         private void btnTB_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTB.Location.Y);
-            Func.togglePanel(panel_main, "TB");
+            func.togglePanel(panel_main, "TB");
         }
         private void btnCD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
-            Func.togglePanel(panel_main, "CD");
+            func.togglePanel(panel_main, "CD");
         }
         private void btnlogo_Click(object sender, EventArgs e)
         {
-            Func.togglePanel(panel_main, "Main");
+            func.togglePanel(panel_main, "Main");
         }
         private void Main_Load(object sender, EventArgs e)
         {
             btnlogo.Select();
-            Func.togglePanel(panel_main, "Main");
+            func.togglePanel(panel_main, "Main");
         }
         public class Func
         {
-            private Main main;
 
+            private Main main;
+            public Func()
+            {
+
+            }
             public Func(Main main)
             {
                 this.main = main;
@@ -111,7 +111,7 @@ namespace FinalProject
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
             private static UCGH uCGH;
-            public static void togglePanel(Panel panel, String panelName)
+            public void togglePanel(Panel panel, String panelName)
             {
                 panel.Controls.Clear();
                 panel.AutoScroll = true;
@@ -180,7 +180,8 @@ namespace FinalProject
                     case "GH":
                         if (uCGH == null)
                         {
-                            uCGH = new UCGH(main.userIDLogin);
+                            MessageBox.Show(main.userIDLogin);
+                            uCGH = new UCGH();
                             panel.Controls.Add(uCGH);
                             uCGH.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCGH.Location = new System.Drawing.Point(0, 0);

@@ -18,6 +18,7 @@ namespace FinalProject.App.Main.CaiDat
         {
             InitializeComponent();
         }
+        Func Func;
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tabControl1.SelectedIndex == 1)
