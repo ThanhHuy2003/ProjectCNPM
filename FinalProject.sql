@@ -156,6 +156,105 @@ exec InsertUserLoginData N'Vương Thanh Huy', 'vuongthanhhuy@gmail.com', N'Trà
 exec InsertUserLoginData N'Nguyễn Thành Nhật Tân', 'nguyenthanhnhattan@gmail.com', N'Trà Vinh', '0898495911', 'nguyennthanhhnhatttannn', 'nguyenthanhnhattan2003'
 exec InsertAdminLoginData N'Phùng Thị Thủy Tiên', 'phungthithuytien@gmail.com', N'Đắk Nông', '0868429676', 'phunggthiithuyytiennn', 'phungthithuytien2003'
 exec InsertAdminLoginData N'Nguyễn Trung Dũng', 'nguyentrungdung@gmail.com', N'Nghệ An', '0377485395', 'nguyenntrunggdunggg', 'nguyentrungdung2003'
+exec InsertUserLoginData N'Lauren Vargas','fmcconnell@example.com',N'An Giang','0868429601','christopher33','I+U1jSf(&2'
+exec InsertUserLoginData N'Joseph Schmitt','mchen@example.org',N'An Giang','0868429602','brittanythomas','McxXOz@O(1'
+exec InsertUserLoginData N'Bradley Baldwin','otorres@example.org',N'An Giang','0868429603','ronald76','H3PVnukh&q'
+exec InsertUserLoginData N'Kevin Torres','guerrerolori@example.net',N'Bạc Liêu','0868429604','adamsdiane','As%53ILsUJ'
+exec InsertUserLoginData N'Andrew Hunt','meganpeterson@example.com',N'Bạc Liêu','0868429605','grodriguez','Cq7OgQd5%L'
+exec InsertUserLoginData N'Isaac Beard','wattsjamie@example.net',N'Bạc Liêu','0868429606','petersonallison','9Io8P3Gf%0'
+exec InsertUserLoginData N'Jason Sosa','joshua89@example.org',N'Bạc Liêu','0868429607','russelljones','!o7oF_XloK'
+exec InsertUserLoginData N'Mary Murillo','jenniferthompson@example.net',N'Bắc Giang','0868429608','johnpowell','$^UVpWDy_0'
+exec InsertUserLoginData N'Erin Ruiz','amber16@example.net',N'Bắc Giang','0868429609','matthew20','iLc2U#sh_j'
+exec InsertUserLoginData N'Timothy Pitts','zachary83@example.org',N'Bắc Giang','0868429610','william23','Yj2%64El@J'
+exec InsertUserLoginData N'Mason Roberts','robertrobertson@example.net',N'Bắc Kạn','0868429611','danielwilson','&^%68XJgOz'
+exec InsertUserLoginData N'Joseph Price','awalker@example.com',N'Bắc Kạn','0868429612','haley70','6S3NOhth!D'
+exec InsertUserLoginData N'Katherine Wilson','zavalacolleen@example.org',N'Bắc Kạn','0868429613','brownmatthew','*v8wKv$nYe'
+exec InsertUserLoginData N'Ricky Moore','benjaminjohnson@example.com',N'Bắc Kạn','0868429614','branchgrant','d*Zl$3tn!R'
+exec InsertUserLoginData N'Craig Davis','becky03@example.org',N'Bắc Kạn','0868429615','brasmussen','%sP1unI)B3'
+exec InsertUserLoginData N'Matthew Martinez','staffordchristine@example.org',N'Bắc Ninh','0868429616','victoriaadkins','DPC@d2#c+7'
+exec InsertUserLoginData N'Ann Smith','isabel20@example.net',N'Bắc Ninh','0868429617','edwardschristian','8nRVVuUx%d'
+exec InsertUserLoginData N'Linda King','watkinsandrew@example.net',N'Bắc Ninh','0868429618','jjohnson','Q!1)TXObtN'
+exec InsertUserLoginData N'Drew Williams','marvin64@example.com',N'Bắc Ninh','0868429619','zwilliams','sr&N9Ix8J^'
+exec InsertUserLoginData N'Ricky Arnold','patrick94@example.net',N'Bến Tre','0868429620','dana10','!pGHitl33Q'
+exec InsertUserLoginData N'Monique Martin','zfrederick@example.net',N'Bến Tre','0868429621','tgilbert','Se77&xXeW^'
+exec InsertUserLoginData N'Linda Lewis','steven15@example.net',N'Bến Tre','0868429622','angela20','F7ZlXTCm!7'
+exec InsertUserLoginData N'Adrian Nguyen PhD','eberry@example.org',N'Bến Tre','0868429623','bushstacy','_4WSwPwG1k'
+exec InsertUserLoginData N'Rodney Spencer','danielsalan@example.net',N'Bến Tre','0868429624','mccarthysean','r5!3fZyp5n'
+exec InsertUserLoginData N'Robert Smith','zgrimes@example.net',N'Bình Dương','0868429625','scott22','M9A8G0Jc@A'
+exec InsertUserLoginData N'Patrick Dominguez','irose@example.org',N'Bình Dương','0868429626','kathleensmith','dn@o4XTliu'
+exec InsertUserLoginData N'Victoria Patel','pittmancrystal@example.org',N'Bình Dương','0868429627','julie54','+7D0CcXR%l'
+exec InsertUserLoginData N'Misty Thompson','rebeccahancock@example.net',N'Bình Dương','0868429628','scott62','_i2XRmm7oY'
+exec InsertUserLoginData N'Lauren Wang','lindamartinez@example.com',N'Bình Định','0868429629','zwells','$82HDQgwym'
+exec InsertUserLoginData N'Chelsea Cruz','xraymond@example.com',N'Bình Định','0868429630','melissawarner','%3QBksGo8%'
+exec InsertUserLoginData N'Lisa Morgan','rhodesstanley@example.com',N'Bình Định','0868429631','allendaniel','_2JLeMq_sO'
+exec InsertUserLoginData N'Stephen Warner','alyssadavidson@example.org',N'Bình Phước','0868429632','james42','#NAME?'
+exec InsertUserLoginData N'Steven Myers','victoriabeasley@example.com',N'Bình Phước','0868429633','karenlewis','wH2ZU4hD!G'
+exec InsertUserLoginData N'Jimmy Glover','jefferywilliamson@example.net',N'Bình Phước','0868429634','joshuaking','J87IviMQM*'
+exec InsertUserLoginData N'Mr. Brian King Jr.','sharon06@example.com',N'Bình Thuận','0868429635','vanessa26','ZG$3WkSr_1'
+exec InsertUserLoginData N'Jamie Morse','carly21@example.com',N'Bình Thuận','0868429636','penny52','sk*8Qa+t3Z'
+exec InsertUserLoginData N'John Guerra','wwashington@example.com',N'Bình Thuận','0868429637','thomasmaria','n%S9W9e%L8'
+exec InsertUserLoginData N'Nicholas Olsen','christopher34@example.net',N'Bình Thuận','0868429638','curtismassey','aB2YF04la*'
+exec InsertUserLoginData N'Terry Adams','kristencalderon@example.net',N'Cà Mau','0868429639','brianhowell','$OFNa(pIo8'
+exec InsertUserLoginData N'Jose Shannon','barkercarla@example.com',N'Cà Mau','0868429640','philipcampos','QFr7EJi@&^'
+exec InsertUserLoginData N'Joshua Barajas','kevinschmitt@example.org',N'Cà Mau','0868429641','thomasmathew','N4vSH88l&S'
+exec InsertUserLoginData N'Kathryn Murillo','moralestammy@example.net',N'Cà Mau','0868429642','dustin11','MG@o6Letsw'
+exec InsertUserLoginData N'Michele Juarez','carmen71@example.org',N'Cao Bằng','0868429643','brandonhernandez','WF8N@S7hp#'
+exec InsertUserLoginData N'Mary Brewer','william43@example.com',N'Cao Bằng','0868429644','alishaparker',')E8HMhHNK+'
+exec InsertUserLoginData N'Jessica Hernandez','hoopermarcus@example.org',N'Cao Bằng','0868429645','browningjohn','_&A4QGhe&d'
+exec InsertUserLoginData N'Amy Wood','priceclaire@example.net',N'Cao Bằng','0868429646','justin21','l$Gd_7VkJ*'
+exec InsertUserLoginData N'Catherine Barton','smithdylan@example.com',N'Cao Bằng','0868429647','marcus51','!XjF+j$uV5'
+exec InsertUserLoginData N'Brandi Miller','fhughes@example.net',N'Cao Bằng','0868429648','derekspencer','en(8@pMu^3'
+exec InsertUserLoginData N'Robert Murphy','washingtonamber@example.com',N'Đắk Lắk','0868429649','kimberlykim','Zc6eGllM!5'
+exec InsertUserLoginData N'Stephanie Santiago','christopherpruitt@example.net',N'Đắk Lắk','0868429650','espinozamartin','+06%Osvff_'
+exec InsertUserLoginData N'Autumn Graham','danielgallagher@example.com',N'Đắk Lắk','0868429651','brittney30','f@0CEzmnPP'
+exec InsertAdminLoginData N'Amy Baker','laurahill@example.com',N'Đắk Lắk','0868429652','palmerjason','@(piO)qq4U'
+exec InsertAdminLoginData N'Kelly Jordan','pgomez@example.net',N'Đắk Lắk','0868429653','davidfisher','(D25I!w%S1'
+exec InsertAdminLoginData N'Laura Harrison','donovanjody@example.com',N'Đắk Nông','0868429654','brooksroberto','C*8Fm38c(_'
+exec InsertAdminLoginData N'Andrea Lopez','vazquezmark@example.net',N'Đắk Nông','0868429655','travis79','B#8&opRfC9'
+exec InsertAdminLoginData N'Samantha Wood','wangcaitlin@example.org',N'Đắk Nông','0868429656','maytiffany','^lQB3EwD!9'
+exec InsertAdminLoginData N'Alexandria Roberts','cjenkins@example.org',N'Hà Nội','0868429657','jamesbaker','r_2wKjO%9r'
+exec InsertAdminLoginData N'Stephen Obrien','thomascastro@example.com',N'Hà Nội','0868429658','mhuber','R__XV*^v+3'
+exec InsertAdminLoginData N'Kevin West','suzanne68@example.org',N'Hà Nội','0868429659','walkerpaul','jvbDlO_#*8'
+exec InsertAdminLoginData N'Christopher Martin','dylancraig@example.com',N'Hà Nội','0868429660','cherylpeters','es2f+NZjj^'
+exec InsertAdminLoginData N'Angela Glover','nbryant@example.org',N'Hà Nội','0868429661','jackson99','+2e2vZPt(l'
+exec InsertAdminLoginData N'Deborah Lee','vdudley@example.net',N'Hà Nội','0868429662','hillwilliam','f3cT3QUv)G'
+exec InsertAdminLoginData N'Andrea Jennings','guerrerodaniel@example.net',N'Hà Nội','0868429663','codyfrench','a&8ArkkB9G'
+exec InsertAdminLoginData N'Cheryl Good','jennifer79@example.com',N'Hà Nội','0868429664','williamsbrian','^&Pfdxynx9'
+exec InsertAdminLoginData N'Scott Mccann','billygordon@example.com',N'Hà Nội','0868429665','grobertson','xj+9Vd!7iq'
+exec InsertAdminLoginData N'Sandra Walton','sheltontonya@example.org',N'Hà Nội','0868429666','reginald10','95g5HFTb&^'
+exec InsertAdminLoginData N'Valerie Lynch','ijoseph@example.net',N'Hà Nội','0868429667','chelseaolson','f&^3LWmVMg'
+exec InsertAdminLoginData N'Allen Calhoun','knightjoan@example.com',N'Hà Nội','0868429668','ijones','QEu+2M6rPq'
+exec InsertAdminLoginData N'Yesenia Dyer','kristin20@example.org',N'Hà Nội','0868429669','gibbsdavid','j%1)8Lz^(K'
+exec InsertAdminLoginData N'Steven Armstrong','josephmaldonado@example.org',N'Hà Nội','0868429670','qrodriguez',')#r04MhO#_'
+exec InsertAdminLoginData N'Carrie Vargas','wallacechristopher@example.org',N'Hà Nội','0868429671','cainelizabeth','i0qY$mNa_9'
+exec InsertAdminLoginData N'Daniel Duran','youngjustin@example.net',N'Hà Nội','0868429672','farmerwesley','(u11QWk9@2'
+exec InsertAdminLoginData N'Dr. Miranda Stevenson','rebeccaspencer@example.org',N'Hà Nội','0868429673','hhall','+LVZ(u688G'
+exec InsertAdminLoginData N'Anthony Hoover','thomasramos@example.com',N'Hà Nội','0868429674','cameronhenry','(N7ROrMjyH'
+exec InsertAdminLoginData N'Brittany Webb','robertmccall@example.com',N'Hà Nội','0868429675','kristin62','%YgD+m9m)4'
+exec InsertAdminLoginData N'Kelly Smith','bdominguez@example.net',N'Hà Nội','0868429999','qrivas','Y+xL^2EgzC'
+exec InsertAdminLoginData N'Joseph Allen','bjohnson@example.org',N'Hà Nội','0868429677','florescatherine','wlS0JPq#&L'
+exec InsertAdminLoginData N'Elizabeth Dean','phillipsdouglas@example.com',N'Hà Nội','0868429678','rwhite','Pe(8Jd@)M$'
+exec InsertAdminLoginData N'Justin Gallagher','michael97@example.net',N'Hà Nội','0868429679','justinturner','(%4S^SNFyl'
+exec InsertAdminLoginData N'Samantha Hunter','erikroberson@example.org',N'Hà Nội','0868429680','wbryant','&7%c5BGjA0'
+exec InsertAdminLoginData N'Kelly Miller','fbishop@example.com',N'Hà Nội','0868429681','angela77','Ob^xiSHx@1'
+exec InsertAdminLoginData N'Alexandria Long','hollypeterson@example.net',N'Hà Nội','0868429682','zacharygray','0KJkhort(2'
+exec InsertAdminLoginData N'Kelly Wilcox','brooksmichelle@example.org',N'Hà Nội','0868429683','john17','l3JxOnJX&B'
+exec InsertAdminLoginData N'Stephanie Leach','matthewcallahan@example.org',N'Hà Nội','0868429684','deborahbailey','dr5GyRjHm^'
+exec InsertAdminLoginData N'Jacob Herrera','cunninghambenjamin@example.org',N'Hà Nội','0868429685','daniellewhite','K0Ac*t+a+%'
+exec InsertAdminLoginData N'Ricky Anderson','ewoods@example.org',N'Hà Nội','0868429686','nelsonkeith','8C8pGVUjt^'
+exec InsertAdminLoginData N'Nicole Garcia','kathleenalexander@example.net',N'Hà Nội','0868429687','lmcdowell','%DnCEfUn#3'
+exec InsertAdminLoginData N'Samuel Moody','bwebb@example.net',N'Hà Nội','0868429688','williamwilson','+^4PSLyS+4'
+exec InsertAdminLoginData N'Suzanne Meadows','jessicawhite@example.net',N'Hà Nội','0868429689','kleinrebecca','E&5)s_XdB8'
+exec InsertAdminLoginData N'Elizabeth Green','danielberry@example.com',N'Hà Nội','0868429690','barrettkathleen','fYA0FFKeS!'
+exec InsertAdminLoginData N'Randy Jackson','garciagary@example.net',N'Hà Nội','0868429691','hardysarah','1xp5mJcot$'
+exec InsertAdminLoginData N'Blake Gilbert','across@example.com',N'Hà Nội','0868429692','martinezlauren','zo%10XlzX8'
+exec InsertAdminLoginData N'Linda Edwards','echen@example.net',N'Hà Nội','0868429693','kbarber','JzH4bVfq@A'
+exec InsertAdminLoginData N'Tracy Johnston','hayesjimmy@example.com',N'Hà Nội','0868429694','jeremy33','64DlHNjp$8'
+exec InsertAdminLoginData N'Thomas Sanchez','landrymichael@example.com',N'Hà Nội','0868429695','tiffany19','%H1Cl@ao^4'
+exec InsertAdminLoginData N'Thomas Fry','curtisjones@example.org',N'Hà Nội','0868429696','susanwebb','Pb)0ZEcbwK'
+exec InsertAdminLoginData N'Stanley Hill','rsanders@example.org',N'Hà Nội','0868429697','jordan61','1*AdFGwE&w'
+exec InsertAdminLoginData N'Daniel Kelley','johnny28@example.com',N'Hà Nội','0868429698','brenda51','sy1DJAbe*H'
+exec InsertAdminLoginData N'Mark Carroll','zbraun@example.net',N'Hà Nội','0868429699','tacevedo','OxbX6L0II!'
 go
 
 create table MenuData
@@ -196,16 +295,33 @@ go
 
 exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food'
 exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
-exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken_mala_1_.png', N'Gà Sốt Mala (1 miếng)', N'Giòn tan đậm vị', 40000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken_mala_3-9.png', N'Gà Sốt Mala (3 miếng)', N'Giòn tan đậm vị', 112000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken_buffalo-chicken-6-9.png', N'Gà Sốt Mala (6 miếng)', N'Giòn tan đậm vị', 217000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/5/3/534x374px_fried-1.png', N'Gà Rán (1 miếng)', N'Giòn tan đậm vị', 35000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/5/3/534x374px_fried-chicken_1.png', N'Gà Rán (3 miếng)', N'Giòn tan đậm vị', 101000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/5/3/534x374px_fried-chicken.png', N'Gà Rán (6 miếng)', N'Giòn tan đậm vị', 195000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/5/3/534x374px_hs-1.png', N'Gà Sốt HS (1 miếng)', N'Giòn tan đậm vị', 40000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken-534x374px_hs-chicken_4.png', N'Gà Sốt HS (3 miếng)', N'Giòn tan đậm vị', 112000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken-534x374px_hs-chicken_3.png', N'Gà Sốt HS (6 miếng)', N'Giòn tan đậm vị', 217000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/5/3/534x374px_soybean-1.png', N'Gà Sốt Đậu (1 miếng)', N'Giòn tan đậm vị', 40000, 'food'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/5/3/534x374px_soybean-chicken_2.png', N'Gà Sốt Đậu (3 miếng)', N'Nước ngọt có gas', 129000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/a/pack_loy_set_3.png', N'Loy Set', N'02 Gà rán + 01 Burger Bulgogi', 136000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/a/pack_lody_set.png', N'Lody Set', N'Combo kết hợp 02 Gà rán + 01 Mì ý', 136000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/a/pack_lony_set.png', N'Lony Set', N'Combo kết hợp 02 Gà rán + 01 Burger Bulgogi', 189000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/a/pack_loking_set_1.png', N'Loking Set', N'Combo kết hợp 2 miếng gà rán + 1 mỳ ý', 207000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/a/pack_l4_set.png', N'L4 Set)', N'Combo kết hợp 04 Gà rán + 01 Burger Bulgogi', 265000, 'combo'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/k/mk.jpg', N'Milkis', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 22000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_orange.png', N'Nước Cam', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 27000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_fruittea.png', N'Nestea', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 18000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_mirinda.png', N'Pepsi (L)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 18000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/z/e/zero_1.jpg', N'Pepsi Zero (L)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 18000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_pepsi.png', N'7 UP (L)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 18000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_7up_1.png', N'Mirinda (L)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 18000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/z/e/zero.jpg', N'Pepsi Zero (M)', N'Nước ngọt có gas', 14000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_mirinda_1.png', N'Pepsi (M)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 18000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_pepsi_1.png', N'7 UP (M)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 14000, 'drink'
+exec InsertMenuData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/r/drink-534x374px_7up_1_1.png', N'Mirinda (M)', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 14000, 'drink'
 exec InsertMenuData 'https://static.kfcvietnam.com.vn/images/items/xs/Pepsi-Can.jpg?v=46kppg', N'Pepsi Lon', N'Nước ngọt có gas', 129000, 'drink'
 go
 
@@ -248,6 +364,22 @@ go
 exec InsertPromotionData 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Nhập mã COMBO1 giảm ngay 50%', N'Áp dụng từ ngày 03/05/2023 đến ngày 30/05/2023', '2023-05-30', 50
 exec InsertPromotionData 'https://static.kfcvietnam.com.vn/images/items/lg/2-lava-taro.jpg?v=41MdE4', N'Nhập mã COMBO2 giảm ngay 70%', N'Áp dụng từ ngày 03/05/2023 đến ngày 30/05/2023', '2023-05-30', 70
 exec InsertPromotionData 'https://static.kfcvietnam.com.vn/images/items/lg/1-gahoangkim.jpg?v=41MdE4', N'Nhập mã COMBO3 giảm ngay 30%', N'Áp dụng từ ngày 03/05/2023 đến ngày 30/05/2023', '2023-05-30', 30
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_169_1.png', N'THÁNG 5 RỰC RỠ', N'Áp dụng từ ngày 01/05/2023 đến ngày 30/05/2023', '2023-04-30', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_139.png', N'THƯỞNG THỨC HƯƠNG VỊ BÁNH BURGER THƯỢNG HẠNG HOÀN TOÀN MỚI', N'Áp dụng từ ngày 03/06/2023 đến ngày 30/06/2023', '2023-05-22', 70
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_99.png', N'BỘ BA POKEMON SIÊU PHẨM ĐÃ SẴN SÀNG!', N'Áp dụng từ ngày 03/07/2023 đến ngày 30/07/2023', '2023-05-20', 30
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/k/ck_set_milkis.png', N'Nhập mã COMBO1 giảm ngay 50%', N'Áp dụng từ ngày 03/08/2023 đến ngày 30/08/2023', '2023-05-15', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/e/menu-02.png', N'Nhập mã COMBO2 giảm ngay 70%', N'Áp dụng từ ngày 03/09/2023 đến ngày 30/09/2023', '2023-05-10', 70
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/e/menu_spaghetti_1.png', N'Nhập mã COMBO1 giảm ngay 10%', N'Áp dụng từ ngày 04/01/2023 đến ngày 30/01/2023', '2023-05-01', 10
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.79104x208/z/a/zalo_app_thang_nam_ruc_ro_1070x750_1.png', N'Nhập mã COMBO2 giảm ngay 20%', N'Áp dụng từ ngày 05/02/2023 đến ngày 30/02/2023', '2023-05-02', 20
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/324.94152923538x208/g/i/giay_lot_khay_burger_new_-_500x320px-01_1.jpg', N'Nhập mã COMBO3 giảm ngay 30%', N'Áp dụng từ ngày 06/03/2023 đến ngày 30/03/2023', '2023-05-03', 30
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/k/pkmm-1070x750_1.png', N'Nhập mã COMBO4 giảm ngay 40%', N'Áp dụng từ ngày 07/04/2023 đến ngày 30/04/2023', '2023-05-04', 40
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken-534x374px_goldensnow-set_1.png', N'Nhập mã COMBO5 giảm ngay 50%', N'Áp dụng từ ngày 08/11/2023 đến ngày 30/11/2023', '2023-05-05', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chickenset_mala.png', N'Nhập mã COMBO6 giảm ngay 60%', N'Áp dụng từ ngày 09/12/2023 đến ngày 30/12/2023', '2023-05-06', 60
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chickenset-534x374px_grilled-set.png', N'Nhập mã COMBO7 giảm ngay 70%', N'Áp dụng từ ngày 03/01/2023 đến ngày 30/01/2023', '2023-05-02', 70
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/g/_/g_pie_pep.png', N'Nhập mã COMBO8 giảm ngay 60%', N'Áp dụng từ ngày 04/02/2023 đến ngày 30/02/2023', '2023-05-01', 60
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/e/dessert-534x374px_shake-potato.png', N'Nhập mã COMBO9 giảm ngay 50%', N'Áp dụng từ ngày 05/03/2023 đến ngày 30/03/2023', '2023-05-02', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/e/dessert-534x374px_shake-chicken.png', N'Nhập mã COMB10 giảm ngay 40%', N'Áp dụng từ ngày 06/04/2023 đến ngày 30/04/2023', '2023-05-03', 40
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/v/a/value_l-chicken_1.png', N'Nhập mã COMB11 giảm ngay 30%', N'Áp dụng từ ngày 07/05/2023 đến ngày 30/05/2023', '2023-05-04', 30
 go
 
 create table StoreAddress
@@ -284,9 +416,56 @@ begin
 end
 go
 
-exec InsertStoreAddress 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Cửa hàng HTDT1', N'119 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
-exec InsertStoreAddress 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Cửa hàng HTDT2', N'118 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
-exec InsertStoreAddress 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Cửa hàng HTDT3', N'117 Nguyễn Thị Thập, Tân Phú, Quận 7, Hồ Chí Minh', N'7:00 - 19:00'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Parkson Lê Thánh Tôn', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Metro', N'Khu An Phú, An Khánh, Thảo Điền Q.2, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Diamond', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Trần Quang Khải', N'Số 2 Nguyễn Hữu Cầu, Quận 1, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Đinh Tiên Hoàng', N'Số 95A Trần Hưng Đạo, Quận 1, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Trần Hưng Đạo', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Citimart Nguyễn Trãi', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nowzone', N'Số 235 Nguyễn Văn Cừ, Quận 1, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Điện Biên Phủ', N'101 Đinh Tiên Hoàng, P. Đa Kao, Q.1, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/l3.jpg', N'Lotteria Parkson Cantavil', N'Xa Lộ Hà Nội, Phường An Phú, Quận 2', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/detalles-del-interior.jpg', N'Lotteria Vincom', N'Tòa nhà VinCom, 171 Đồng Khởi, P. Bến Nghé, Q.1', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/photo1618626245724-1618626245836566005844.jpg', N'Lotteria Nguyễn Du', N'149-151 Nguyễn Du, P.Bến Thành, Quận 1', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Lotteria CoopMart Nguyễn Đình Chiểu', N'Lotteria CoopMart Nguyễn Đình Chiểu', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Nam Kỳ Khởi Nghĩa', N'256 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Ga Sài Gòn', N'Số 1 Nguyễn Thông, Quận 3, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-4.jpg', N'Lotteria Cao Thắng', N'Số 61B Cao Thắng, Quận 3, TP HCM, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria_anhngocduong_axkc.jpg', N'Lotteria Nguyễn Thị Minh Khai', N'145 Tôn Thất Tùng, Quận 3, TpHCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Lý Chính Thắng', N'250B Lý Chính Thắng, P.9, Q.3, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Hoàng Diệu', N'102 Lê Quốc Hưng, P.12, Q.4, Tp. HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Tri Phương', N'Số 114 Trần Hưng Đạo, Quận 5, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Nguyễn Trãi', N'Số 165B Nguyễn Trãi, Quận 5, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Hùng Vương', N'Số 126 Hùng Vương, Phường 12, Quận 5, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Châu Văn Liêm', N'67 Vạn Kiếp, P.13, Q.5, TP. HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Bình Phú', N'211 - 213 Bình Phú, P.11, Q.6, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Hậu Giang', N'52 Hậu Giang, P.6, Q.6', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Hồng Bàng', N'801 Hồng Bàng, P.9, Q.6, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Phú Mỹ Hưng', N'SB2-1 Mỹ Khánh 2, Phú Mỹ Hưng, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Vinatex Nhà Bè', N'571 Huỳnh Tấn Phát, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Lotte Mart 1', N'469 Nguyễn Hữu Thọ, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Sky Garden', N'D24, R19-1 Mỹ Toàn 3, Phường Tân Phong, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Parkson Paragon', N'Số 3 Nguyễn Lương Bằng, Quận 7, TpHCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Cresent Mall', N'Lầu 5, 103 Tôn Dật Tiên, Phú Mỹ Hưng, Q.7, Tp. HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Nguyễn Thị Thập', N'495 Nguyễn Thị Thập, phường Tân Phong, quận 7, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria City Tân Thuận', N'336 Huỳnh Tấn Phát, P. Bình Thuận, Quận7', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Dương Bá Trạc', N'118 Dương Bá Trạc, Quận 8, TP.HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Tuy Lý Vương', N'40 - 54 CoopMart Tuy Lý Vương, P. 13, Q. 8', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Ba Tháng Hai', N'Số 572A Ba Tháng Hai, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria CoopMart Lý Thường Kiệt', N'Số 497 Hòa Hảo, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Tô Hiến Thành', N'Số 307A Tô Hiến Thành, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Siêu Thị Sài Gòn', N'Số 34 Đường 3/2, Phường 12, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Maxi Ba Tháng Hai', N'Số 3C Đường 3/2, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria CoopMart Hòa Hảo', N'Cao Ốc B Ngô Gia Tự, P. 3, Q. 10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nguyễn Chí Thanh', N'82 A Nguyễn Chí Thanh, P13, Q10, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Lê Hồng Phong', N'695C Lê Hồng Phong, P.10, Q.10', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Lotte Mart 2', N'Số 940B Đường 3/2, Phường 15, Quận 11, Tp HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Lê Đại Hành', N'Số 184 Lê Đại Hành, Phường 15, Quận 11, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Phú Thọ', N'Số 1 Lữ Gia, Quận 11, TP HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Ảnh Thủ', N'159/6-160/1 Nguyễn Ảnh Thủ, Trung Chánh, Hóc Môn (Quận 12), Tp HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Maxi Cộng Hòa', N'Số 15-17 Cộng Hòa, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Cách Mạng Tháng 8', N'24/26 Cách Mạng Tháng Tám, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM'
 go
 
 create table NotificationData
@@ -336,8 +515,123 @@ begin
 end
 go
 
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Lotteria đi đầu xu thế sử dụng nước sốt nhập khẩu 100% từ Hàn Quốc cùng nguyên liệu tươi sạch, nguồn gốc rõ ràng, đảm bảo vệ sinh an toàn thực phẩm, mang những món ăn chất lượng, tuyệt vời đến với khách hàng. Phiếu quà tặng có giá trị tương đương tiền mặt, được dùng để thanh toán cho hóa đơn trên 50.000đ. ', 'xyz'
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', 'abc', 'xyz'
+exec InsertNotificationData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.79104x208/z/a/zalo_app_thang_nam_ruc_ro_1070x750_1.png', N'THÁNG 5 RỰC RỠ', '2023-04-30', 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.79104x208/z/a/zalo_app_thang_nam_ruc_ro_1070x750_1.png', N'Chào hè rực rỡ, deal Gà ngon hết cỡ
+
+Ghé Lotteria tận hưởng Combo Tháng 5 ưu đãi siêu hời nha Fans:
+
+Combo Rực Rỡ 1: 2 Gà rán + Mì Ý + Khoai tây chiên (M) + 2 Pepsi (M) giá chỉ 99.000 (tiết kiệm đến 59.000)
+
+Combo Rực Rỡ 2: 2 Gà rán + Burger Bulgogi + Khoai tây lắc + 2 Pepsi (M) giá chỉ 139.000
+
+Combo Rực Rỡ 3: 3 Gà rán + Burger Bulgogi + Mì ý + 3 Pepsi (M) giá chỉ 169.000
+
+Đặc biệt hơn, Lotteria giao hàng MIỄN PHÍ khi bạn đặt hàng qua App LOTTERIA VN & Website lotteria.vn hoặc gọi đến số 1900.6778.
+
+Nhấc máy lên “o-đờ” nào Fans ơi!', N'Combo Rực Rỡ 1: 2 Gà rán + Mì Ý + Khoai tây chiên (M) + 2 Pepsi (M) giá chỉ 99.000 (tiết kiệm đến 59.000)
+
+Combo Rực Rỡ 2: 2 Gà rán + Burger Bulgogi + Khoai tây lắc + 2 Pepsi (M) giá chỉ 139.000
+
+Combo Rực Rỡ 3: 3 Gà rán + Burger Bulgogi + Mì ý + 3 Pepsi (M) giá chỉ 169.000'
+exec InsertNotificationData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/324.94152923538x208/g/i/giay_lot_khay_burger_new_-_500x320px-01_1.jpg', N'THƯỞNG THỨC HƯƠNG VỊ BÁNH BURGER THƯỢNG HẠNG HOÀN TOÀN MỚI', '2023-12-05', 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/324.94152923538x208/g/i/giay_lot_khay_burger_new_-_500x320px-01_1.jpg', N'Lần đầu tiên xuất hiện tại Lotteria: Bánh Burger Brioche.
+Bánh Burger mới đã được “thăng cấp” toàn diện từ diện mạo lẫn hương vị.
+
+ Mềm mại hơn  Thơm hơn  Ngon hơn 
+
+ Đậm vị trứng, thơm vị bơ 
+
+ Bánh Burger được làm từ những nguyên liệu thượng hạng, mang đến cho bạn cảm nhận sự khác biệt trong từng thớ bánh.
+
+Cùng trải nghiệm bánh Burger mới và những chiếc combo siêu hời này nha:
+
+ Combo Burger mới Ngon: Burger Double Double + Burger Tôm + Khoai tây lắc + 2 Pepsi (M)
+
+ giá chỉ 119.000 (tiết kiệm 53.000)
+
+ Combo Burger mới Rất Ngon: 2 Gà rán + Burger Bulgogi + Burger Tôm + Khoai tây chiên (M) +2 Pepsi (M)
+
+ giá chỉ 149.000 (tiết kiệm đến 68.000)
+
+ Bánh Burger mới đã “lên kệ” từ ngày 5 tháng 12 này, đang chờ các RIA Fans đến để thưởng thức đó.
+
+“O-đờ” món ngon tại các cửa hàng Lotteria hoặc truy cập App LOTTERIA VN/gọi đến số 1900.6778 để được giao hàng miễn phí và nhận thêm nhiều ưu đãi nữa nha các bạn!
+
+#MyFAVORITELOTTERIA #LotteriaVietnam #NewBun #Burgerthuonghang', N' Combo Burger mới Ngon: Burger Double Double + Burger Tôm + Khoai tây lắc + 2 Pepsi (M)
+
+ giá chỉ 119.000 (tiết kiệm 53.000)
+
+ Combo Burger mới Rất Ngon: 2 Gà rán + Burger Bulgogi + Burger Tôm + Khoai tây chiên (M) +2 Pepsi (M)
+
+ giá chỉ 149.000 (tiết kiệm đến 68.000)'
+exec InsertNotificationData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/l/playtogether_web_1.jpg', N'LOTTERIA ĐÃ CÓ MẶT TẠI GAME PLAY TOGETHER', '2023-05-07', 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/l/playtogether_web_1.jpg', N'Hế lô các thần dân của đảo Kaia, Lotteria vừa "khai trương" một cửa hàng mới tại khu trung tâm đó.
+
+Các bạn đã đến trải nghiệm chưa?
+
+Cùng tham gia làm nhiệm vụ tìm gà rán để trang bị thêm mũ Lody cho tủ đồ của mình nha.
+
+Bạn nào muốn "độ da" sang màu đỏ nâu khỏe khoắn thì thử liền món Gà rán H&S best seller tại cửa hàng Lotteria trên Play Together nhé!
+
+Cùng chờ đón những sự kiện thú vị và vật phẩm hấp dẫn tại cửa hàng ảo Lotteria nha!
+
+Hẹn gặp lại các bạn ở khu trung tâm đảo Kaia!!!', N'Lotteria vừa "khai trương" một cửa hàng mới tại khu trung tâm'
+exec InsertNotificationData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/c/t/ct_e_web_1.png', N'LOTTERIA CẦN THƠ GO THAY ÁO MỚI', '2023-05-08', 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/c/t/ct_e_web_1.png', N'Ngày 27/10/2022 Lotteria Cần Thơ Go đã chính thức hoạt động trở lại.
+
+Là Lotteria đầu tiên có mặt tại Cần Thơ, với mong muốn nâng cao chất lượng phục vụ và trải nghiệm của khách hàng tại Cửa hàng, Lotteria Cần Thơ Go đã được thay đổi một diện mạo mới: trẻ trung và năng động hơn.
+
+Địa chỉ: Lô 1  Khu dân cư Hưng Phú, Phường Hưng Phú, Quận Cái Răng , Thành phố Cần Thơ
+
+Cửa hàng được thiết kế với không gian mở, họa tiết L-chicken có tone màu đỏ-vàng bắt mắt, có thể phục vụ hơn 140 chỗ ngồi. Lotteria còn ưu ái dành riêng 1 khu vực chuyên phục vụ nhu cầu tổ chức tiệc của các Fans: Phòng sinh nhật được trang trí hình ảnh những sản phẩm Gà rán đặc trưng và Biệt đội siêu điệp viên L4.
+
+Tại sự kiện khai trương đang diễn ra rất nhiều chương trình khuyến mãi với ưu đãi hấp dẫn, đặc biệt: 400 khách hàng đầu tiên có hóa đơn từ 100.000 được tặng 1 áo thun Biệt đội siêu điệp viên L4, cùng đến chung vui cùng Lotteria Cần Thơ Go các Fans nhé!
+
+', N'Ngày 27/10/2022 Lotteria Cần Thơ Go đã chính thức hoạt động trở lại.'
+exec InsertNotificationData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/k/pkmm-1070x750_1.png', N'BỘ BA POKEMON SIÊU PHẨM ĐÃ SẴN SÀNG!', '2023-05-09', 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/k/pkmm-1070x750_1.png', N'Rước liền 1 combo Pokemon chỉ 169.000 để dắt về nhà một bạn Pokemon siêu cute hột me nha:
+
+Combo Pokemon 1: 2 Gà rán + 1 Mỳ Ý + 1 Khoai tây lắc + 2 Pepsi (M)
+
+Combo Pokemon 2: 1 Burger Tôm + 1 Burger Bulgogi + 1 Phô mai que + 1 Khoai tây lắc + 2 Pepsi (M)
+
+"Hari hari..."
+
+Harimaron - Hệ Cỏ - Pokemon hạt dẻ gai. Pokemon có những chiếc gai như lông nhím và có khả năng chống đỡ những cú tông cực mạnh.
+
+"Fok fok kooo..."
+Fokko - Hệ Lửa - Pokemon Cáo lửa. Một chiếc Pokemon với đôi tai rộng có thể phụt ra ngoài những luồng hơi nóng lên đến 390° F (tương đương 190° C).
+
+"Kero kero..."
+Keromatsu - Hệ Nước - Pokemon Ếch bong bóng. Khi tham chiến, Keromatsu sẽ tiết ra vô số bong bóng co dãn từ cổ và lưng để giảm sát thương
+
+Tuyệt quá đi thôi, đến Lotteria gần nhất để tham gia cuộc hành trình mới cùng với các bạn Pokemon mới nhé!
+
+Hành trình thu thập Pokemon mới tại Lotteria bắt đầu nữa rồi!!! Vùng đất thế hệ thứ 6 - Kalos đầy thơ mộng không kém phần hấp dẫn. Các RIA Fans đã sẵn sàng chưa nào!!!', N'Combo Pokemon 1: 2 Gà rán + 1 Mỳ Ý + 1 Khoai tây lắc + 2 Pepsi (M)
+
+Combo Pokemon 2: 1 Burger Tôm + 1 Burger Bulgogi + 1 Phô mai que + 1 Khoai tây lắc + 2 Pepsi (M)'
+exec InsertNotificationData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/346.86435845214x208/c/h/challenge_cup_thumb_1.jpg', N'LOTTERIA CHALLENGE CUP 2022 - ƯƠM MẦM TƯƠNG LAI BÓNG ĐÁ VIỆT', '2023-05-10', 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/346.86435845214x208/c/h/challenge_cup_thumb_1.jpg', N'Ngày 24 tháng 9 vừa qua, sau chặng đường dài gần hai tháng thi đấu vòng loại đầy gay cấn, 8 đội bóng vô địch từ Thành phố Hà Nội, Thành phố Hải Phòng, Thành phố Vinh, Thành phố Đà Nẵng, Thành phố Hồ Chí Minh và Thành phố Cần Thơ đã tham gia vòng chung kết tranh Lotteria Challenge Cup 2022 được tổ chức tại Câu lạc bộ bóng đá Phú Nhuận, Thành phố Hồ Chí Minh. Chiếc cúp vô địch đã  thuộc về đội FC Bóng đá Học đường TP.HCM bằng chiến thắng thuyết phục trước đội FC HYS Hà Nội với tỷ số 1-0. 
+
+Cùng Lotteria gửi lời chúc mừng đến các đội bóng xuất sắc tại mùa giải năm 2022:
+
+- Nhà Vô địch: CLB Bóng đá học đường TP. Hồ Chí Minh
+
+- Giải nhì và Giải Fairplay: FC HYS Hà Nội
+
+- Giải ba: CLB Kids star TP.Hồ Chí Minh
+
+- Giải tư: U11 Sầm Sơn Thanh Hóa
+
+Giải Vua phá lưới và Thủ môn xuất sắc được trao cho 2 cầu thủ tại CLB HYS Hà Nội, ngoài ra giải đấu còn vinh danh Huấn luyện viên xuất sắc đến từ CLB Bóng đá học đường TP. Hồ Chí Minh.
+
+Với mong muốn lan tỏa thông điệp trung thực và nêu cao tinh thần bóng đá đẹp, Lotteria Việt Nam đã rất nỗ lực để đưa Lotteria Challenge Cup trở lại sau 2 năm bị gián đoạn bởi dịch Covid-19. Đây cùng là mùa giải thứ 9 mà chúng tôi đồng hành cùng các em thiếu nhi có niềm đam mê bóng đá, giải đấu không chỉ là sân chơi lành mạnh, bổ ích, mà còn là môi trường rèn luyện cho các em những đức tính tốt đẹp: đoàn kết, trung thực và quyết tâm không ngừng nghỉ.
+
+Chứng kiến niềm đam mê của các cầu thủ nhí qua những trận đấu, chúng tôi sẽ cố gắng duy trì sân chơi lành mạnh và bổ ích này, góp phần ươm mầm thêm những tài năng mới cho nền bóng đá Việt. Tinh thần của giải đấu cũng chính là tiêu chí cốt lõi mà Lotteria luôn hướng đến thực hiện tại thị trường Việt Nam.
+
+', N'Cùng Lotteria gửi lời chúc mừng đến các đội bóng xuất sắc tại mùa giải năm 2022:
+
+- Nhà Vô địch: CLB Bóng đá học đường TP. Hồ Chí Minh
+
+- Giải nhì và Giải Fairplay: FC HYS Hà Nội
+
+- Giải ba: CLB Kids star TP.Hồ Chí Minh
+
+- Giải tư: U11 Sầm Sơn Thanh Hóa'
 go
 
 CREATE TABLE revenue (

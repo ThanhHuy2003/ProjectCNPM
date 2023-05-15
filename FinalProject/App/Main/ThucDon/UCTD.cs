@@ -49,7 +49,7 @@ namespace FinalProject.App
 
             return destImage;
         }
-        private void populateMenuData_CookTable_UCTD(string type)
+        private FlowLayoutPanel populateMenuData_CookTable_UCTD(string type, FlowLayoutPanel flowLayoutPanel1)
         {
             CookTableBLL cookTableBLL = new CookTableBLL();
 
@@ -80,47 +80,49 @@ namespace FinalProject.App
                     Item.Title = newMenuItem.dishName;
                     Item.Price = newMenuItem.dishPrice;
 
-                    this.flowLayoutPanel1.Controls.Add(Item);
+                    flowLayoutPanel1.Controls.Add(Item);
                 }
+                return flowLayoutPanel1;
             }
             else
             {
                 MessageBox.Show("Không có dữ liệu MenuData");
+                return null;
             }
         }
 
         private void btnCombo_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            populateMenuData_CookTable_UCTD(btnCombo.Text);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnCombo.Text, flowLayoutPanel1);
         }
 
         private void btnGa_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            populateMenuData_CookTable_UCTD(btnFood.Text);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnFood.Text, flowLayoutPanel1);
         }
 
         private void btnOther_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            populateMenuData_CookTable_UCTD(btnDrink.Text);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnDrink.Text, flowLayoutPanel1);
         }
 
         private void UCTD_Load(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            populateMenuData_CookTable_UCTD(btnCombo.Text);
-            populateMenuData_CookTable_UCTD(btnFood.Text);
-            populateMenuData_CookTable_UCTD(btnDrink.Text);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnCombo.Text, flowLayoutPanel1);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnFood.Text, flowLayoutPanel1);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnDrink.Text, flowLayoutPanel1);
         }
 
         private void btnAll_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            populateMenuData_CookTable_UCTD(btnCombo.Text);
-            populateMenuData_CookTable_UCTD(btnFood.Text);
-            populateMenuData_CookTable_UCTD(btnDrink.Text);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnCombo.Text, flowLayoutPanel1);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnFood.Text, flowLayoutPanel1);
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(btnDrink.Text, flowLayoutPanel1);
         }
     }
 }

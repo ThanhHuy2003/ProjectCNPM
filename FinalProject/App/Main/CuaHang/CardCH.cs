@@ -35,7 +35,10 @@ namespace FinalProject.App.Main
 
         private void ButtonKM1_Click(object sender, EventArgs e)
         {
-            
+            StringBuilder queryaddress = new StringBuilder();
+            queryaddress.Append("https://www.google.com/maps/place/119+Nguy%E1%BB%85n+Th%E1%BB%8B+Th%E1%BA%ADp,+T%C3%A2n+Ph%C3%BA,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7379978,106.7182535,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f8723fb8c9d:0x88f9b2c06109e0e1!8m2!3d10.7379978!4d106.7208284!16s%2Fg%2F11c89h33k7?hl=vi-VN");
+            webBrowser1.ScriptErrorsSuppressed = true;
+            webBrowser1.Navigate(queryaddress.ToString());
         }
     }
 }
