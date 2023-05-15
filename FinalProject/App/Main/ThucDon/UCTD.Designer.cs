@@ -39,7 +39,7 @@
             // 
             this.btnAll.CornerRoundingRadius = 30F;
             this.btnAll.Location = new System.Drawing.Point(396, 26);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnAll.Name = "btnAll";
             this.btnAll.Size = new System.Drawing.Size(193, 64);
             this.btnAll.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -58,7 +58,7 @@
             // 
             this.btnFood.CornerRoundingRadius = 30F;
             this.btnFood.Location = new System.Drawing.Point(799, 26);
-            this.btnFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFood.Margin = new System.Windows.Forms.Padding(4);
             this.btnFood.Name = "btnFood";
             this.btnFood.Size = new System.Drawing.Size(193, 64);
             this.btnFood.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -77,7 +77,7 @@
             // 
             this.btnDrink.CornerRoundingRadius = 30F;
             this.btnDrink.Location = new System.Drawing.Point(1000, 26);
-            this.btnDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDrink.Margin = new System.Windows.Forms.Padding(4);
             this.btnDrink.Name = "btnDrink";
             this.btnDrink.Size = new System.Drawing.Size(244, 64);
             this.btnDrink.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -96,7 +96,7 @@
             // 
             this.btnCombo.CornerRoundingRadius = 30F;
             this.btnCombo.Location = new System.Drawing.Point(597, 26);
-            this.btnCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCombo.Margin = new System.Windows.Forms.Padding(4);
             this.btnCombo.Name = "btnCombo";
             this.btnCombo.Size = new System.Drawing.Size(193, 64);
             this.btnCombo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));

@@ -389,6 +389,7 @@ create table StoreAddress
     storeName nvarchar(500) not null,
     storeDescription nvarchar(500) not null,
     storeTime nvarchar(500) not null,
+	storePhone varchar(500) not null,
     primary key(storeID)
 )
 go
@@ -397,7 +398,8 @@ create procedure InsertStoreAddress
     @storePicture varchar(500),
     @storeName nvarchar(500),
     @storeDescription nvarchar(500),
-    @storeTime nvarchar(500)
+    @storeTime nvarchar(500),
+	@storePhone varchar(500)
 as
 begin
     declare @newStoreID char(8)
@@ -412,60 +414,60 @@ begin
 		end
 		set @newStoreID = 'SID' + @maxStoreID 
 	end
-    insert into StoreAddress(storeID, storePicture, storeName, storeDescription, storeTime) values (@newStoreID, @storePicture, @storeName, @storeDescription, @storeTime)
+    insert into StoreAddress(storeID, storePicture, storeName, storeDescription, storeTime, storePhone) values (@newStoreID, @storePicture, @storeName, @storeDescription, @storeTime, @storePhone)
 end
 go
 
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Parkson Lê Thánh Tôn', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Metro', N'Khu An Phú, An Khánh, Thảo Điền Q.2, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Diamond', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Trần Quang Khải', N'Số 2 Nguyễn Hữu Cầu, Quận 1, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Đinh Tiên Hoàng', N'Số 95A Trần Hưng Đạo, Quận 1, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Trần Hưng Đạo', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Citimart Nguyễn Trãi', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nowzone', N'Số 235 Nguyễn Văn Cừ, Quận 1, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Điện Biên Phủ', N'101 Đinh Tiên Hoàng, P. Đa Kao, Q.1, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/l3.jpg', N'Lotteria Parkson Cantavil', N'Xa Lộ Hà Nội, Phường An Phú, Quận 2', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/detalles-del-interior.jpg', N'Lotteria Vincom', N'Tòa nhà VinCom, 171 Đồng Khởi, P. Bến Nghé, Q.1', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/photo1618626245724-1618626245836566005844.jpg', N'Lotteria Nguyễn Du', N'149-151 Nguyễn Du, P.Bến Thành, Quận 1', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Lotteria CoopMart Nguyễn Đình Chiểu', N'Lotteria CoopMart Nguyễn Đình Chiểu', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Nam Kỳ Khởi Nghĩa', N'256 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Ga Sài Gòn', N'Số 1 Nguyễn Thông, Quận 3, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-4.jpg', N'Lotteria Cao Thắng', N'Số 61B Cao Thắng, Quận 3, TP HCM, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria_anhngocduong_axkc.jpg', N'Lotteria Nguyễn Thị Minh Khai', N'145 Tôn Thất Tùng, Quận 3, TpHCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Lý Chính Thắng', N'250B Lý Chính Thắng, P.9, Q.3, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Hoàng Diệu', N'102 Lê Quốc Hưng, P.12, Q.4, Tp. HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Tri Phương', N'Số 114 Trần Hưng Đạo, Quận 5, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Nguyễn Trãi', N'Số 165B Nguyễn Trãi, Quận 5, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Hùng Vương', N'Số 126 Hùng Vương, Phường 12, Quận 5, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Châu Văn Liêm', N'67 Vạn Kiếp, P.13, Q.5, TP. HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Bình Phú', N'211 - 213 Bình Phú, P.11, Q.6, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Hậu Giang', N'52 Hậu Giang, P.6, Q.6', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Hồng Bàng', N'801 Hồng Bàng, P.9, Q.6, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Phú Mỹ Hưng', N'SB2-1 Mỹ Khánh 2, Phú Mỹ Hưng, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Vinatex Nhà Bè', N'571 Huỳnh Tấn Phát, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Lotte Mart 1', N'469 Nguyễn Hữu Thọ, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Sky Garden', N'D24, R19-1 Mỹ Toàn 3, Phường Tân Phong, Quận 7, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Parkson Paragon', N'Số 3 Nguyễn Lương Bằng, Quận 7, TpHCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Cresent Mall', N'Lầu 5, 103 Tôn Dật Tiên, Phú Mỹ Hưng, Q.7, Tp. HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Nguyễn Thị Thập', N'495 Nguyễn Thị Thập, phường Tân Phong, quận 7, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria City Tân Thuận', N'336 Huỳnh Tấn Phát, P. Bình Thuận, Quận7', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Dương Bá Trạc', N'118 Dương Bá Trạc, Quận 8, TP.HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Tuy Lý Vương', N'40 - 54 CoopMart Tuy Lý Vương, P. 13, Q. 8', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Ba Tháng Hai', N'Số 572A Ba Tháng Hai, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria CoopMart Lý Thường Kiệt', N'Số 497 Hòa Hảo, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Tô Hiến Thành', N'Số 307A Tô Hiến Thành, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Siêu Thị Sài Gòn', N'Số 34 Đường 3/2, Phường 12, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Maxi Ba Tháng Hai', N'Số 3C Đường 3/2, Quận 10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria CoopMart Hòa Hảo', N'Cao Ốc B Ngô Gia Tự, P. 3, Q. 10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nguyễn Chí Thanh', N'82 A Nguyễn Chí Thanh, P13, Q10, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Lê Hồng Phong', N'695C Lê Hồng Phong, P.10, Q.10', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Lotte Mart 2', N'Số 940B Đường 3/2, Phường 15, Quận 11, Tp HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Lê Đại Hành', N'Số 184 Lê Đại Hành, Phường 15, Quận 11, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Phú Thọ', N'Số 1 Lữ Gia, Quận 11, TP HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Ảnh Thủ', N'159/6-160/1 Nguyễn Ảnh Thủ, Trung Chánh, Hóc Môn (Quận 12), Tp HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Maxi Cộng Hòa', N'Số 15-17 Cộng Hòa, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Cách Mạng Tháng 8', N'24/26 Cách Mạng Tháng Tám, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Parkson Lê Thánh Tôn', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Metro', N'Khu An Phú, An Khánh, Thảo Điền Q.2, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Diamond', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Trần Quang Khải', N'Số 2 Nguyễn Hữu Cầu, Quận 1, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Đinh Tiên Hoàng', N'Số 95A Trần Hưng Đạo, Quận 1, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Trần Hưng Đạo', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Citimart Nguyễn Trãi', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nowzone', N'Số 235 Nguyễn Văn Cừ, Quận 1, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Điện Biên Phủ', N'101 Đinh Tiên Hoàng, P. Đa Kao, Q.1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/l3.jpg', N'Lotteria Parkson Cantavil', N'Xa Lộ Hà Nội, Phường An Phú, Quận 2', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/detalles-del-interior.jpg', N'Lotteria Vincom', N'Tòa nhà VinCom, 171 Đồng Khởi, P. Bến Nghé, Q.1', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/photo1618626245724-1618626245836566005844.jpg', N'Lotteria Nguyễn Du', N'149-151 Nguyễn Du, P.Bến Thành, Quận 1', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Lotteria CoopMart Nguyễn Đình Chiểu', N'Lotteria CoopMart Nguyễn Đình Chiểu', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Nam Kỳ Khởi Nghĩa', N'256 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Ga Sài Gòn', N'Số 1 Nguyễn Thông, Quận 3, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-4.jpg', N'Lotteria Cao Thắng', N'Số 61B Cao Thắng, Quận 3, TP HCM, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria_anhngocduong_axkc.jpg', N'Lotteria Nguyễn Thị Minh Khai', N'145 Tôn Thất Tùng, Quận 3, TpHCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Lý Chính Thắng', N'250B Lý Chính Thắng, P.9, Q.3, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Hoàng Diệu', N'102 Lê Quốc Hưng, P.12, Q.4, Tp. HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Tri Phương', N'Số 114 Trần Hưng Đạo, Quận 5, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Nguyễn Trãi', N'Số 165B Nguyễn Trãi, Quận 5, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Hùng Vương', N'Số 126 Hùng Vương, Phường 12, Quận 5, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Châu Văn Liêm', N'67 Vạn Kiếp, P.13, Q.5, TP. HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Bình Phú', N'211 - 213 Bình Phú, P.11, Q.6, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Hậu Giang', N'52 Hậu Giang, P.6, Q.6', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Hồng Bàng', N'801 Hồng Bàng, P.9, Q.6, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Phú Mỹ Hưng', N'SB2-1 Mỹ Khánh 2, Phú Mỹ Hưng, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Vinatex Nhà Bè', N'571 Huỳnh Tấn Phát, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Lotte Mart 1', N'469 Nguyễn Hữu Thọ, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Sky Garden', N'D24, R19-1 Mỹ Toàn 3, Phường Tân Phong, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Parkson Paragon', N'Số 3 Nguyễn Lương Bằng, Quận 7, TpHCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Cresent Mall', N'Lầu 5, 103 Tôn Dật Tiên, Phú Mỹ Hưng, Q.7, Tp. HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Nguyễn Thị Thập', N'495 Nguyễn Thị Thập, phường Tân Phong, quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria City Tân Thuận', N'336 Huỳnh Tấn Phát, P. Bình Thuận, Quận7', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Dương Bá Trạc', N'118 Dương Bá Trạc, Quận 8, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Tuy Lý Vương', N'40 - 54 CoopMart Tuy Lý Vương, P. 13, Q. 8', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Ba Tháng Hai', N'Số 572A Ba Tháng Hai, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria CoopMart Lý Thường Kiệt', N'Số 497 Hòa Hảo, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Tô Hiến Thành', N'Số 307A Tô Hiến Thành, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Siêu Thị Sài Gòn', N'Số 34 Đường 3/2, Phường 12, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Maxi Ba Tháng Hai', N'Số 3C Đường 3/2, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria CoopMart Hòa Hảo', N'Cao Ốc B Ngô Gia Tự, P. 3, Q. 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nguyễn Chí Thanh', N'82 A Nguyễn Chí Thanh, P13, Q10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Lê Hồng Phong', N'695C Lê Hồng Phong, P.10, Q.10', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Lotte Mart 2', N'Số 940B Đường 3/2, Phường 15, Quận 11, Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Lê Đại Hành', N'Số 184 Lê Đại Hành, Phường 15, Quận 11, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Phú Thọ', N'Số 1 Lữ Gia, Quận 11, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Ảnh Thủ', N'159/6-160/1 Nguyễn Ảnh Thủ, Trung Chánh, Hóc Môn (Quận 12), Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Maxi Cộng Hòa', N'Số 15-17 Cộng Hòa, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
+exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Cách Mạng Tháng 8', N'24/26 Cách Mạng Tháng Tám, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
 go
 
 create table NotificationData
@@ -692,14 +694,16 @@ create table CartData
     dishPrice int not null,
 	dishType varchar(500) not null,
 	totalQuantity int not null,
+	userID varchar(8),
     primary key(dishID),
-	foreign key(dishID) references MenuData(dishID)
+	foreign key(dishID) references MenuData(dishID),
+	foreign key(userID) references LoginData(userID)
 )
 go
 
 insert into CartData values
-('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3),
-('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 120000, 'combo', 2)
+('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3, 'UID00001'),
+('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 120000, 'combo', 2, 'UID00002')
 go
 
 select * from CartData

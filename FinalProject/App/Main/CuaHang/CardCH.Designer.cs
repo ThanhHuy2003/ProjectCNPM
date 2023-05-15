@@ -37,7 +37,6 @@
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,19 +150,10 @@
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(3, 204);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(915, 336);
-            this.webBrowser1.TabIndex = 21;
-            // 
             // CardCH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.kryptonLabel5);
             this.Controls.Add(this.kryptonLabel4);
             this.Controls.Add(this.kryptonLabel3);
@@ -175,7 +165,7 @@
             this.Controls.Add(this.pictureBox12);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CardCH";
-            this.Size = new System.Drawing.Size(1449, 543);
+            this.Size = new System.Drawing.Size(1449, 192);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -193,6 +183,5 @@
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
-        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

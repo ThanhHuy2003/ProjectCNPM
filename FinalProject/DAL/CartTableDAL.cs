@@ -9,9 +9,9 @@ namespace FinalProject.DAL
 {
     internal class CartTableDAL: DatabaseAccess
     {
-        public DataTable populateCartData_CartTable_DAL()
+        public DataTable populateCartData_CartTable_DAL(string userID)
         {
-            return populateCartData_DA_DAL();
+            return populateCartData_DA_DAL(userID);
         }
         public void deleteCartItem_CartTable_DAL(string id)
         {

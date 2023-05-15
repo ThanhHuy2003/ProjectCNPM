@@ -1,5 +1,6 @@
 ﻿using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
+using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,9 +16,15 @@ namespace FinalProject.App.Main.GioHang
 {
     public partial class UCGH : UserControl
     {
+        private string userIDLogin;
         public UCGH()
         {
             InitializeComponent();
+        }
+        public UCGH(string userIDLogin)
+        {
+            InitializeComponent();
+            this.userIDLogin = userIDLogin;
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -49,9 +56,9 @@ namespace FinalProject.App.Main.GioHang
 
             CartTableBLL cartTableBLL = new CartTableBLL();
 
-            if (cartTableBLL.populateCartData_CartTable_BLL() != null)
+            if (cartTableBLL.populateCartData_CartTable_BLL(userIDLogin) != null)
             {
-                foreach (DataRow row in cartTableBLL.populateCartData_CartTable_BLL().Rows)
+                foreach (DataRow row in cartTableBLL.populateCartData_CartTable_BLL(userIDLogin).Rows)
                 {
                     FinalProject.DTO.CartDataItem newCartDataItem = new FinalProject.DTO.CartDataItem();
 
@@ -91,6 +98,11 @@ namespace FinalProject.App.Main.GioHang
         private void UCGH_Load(object sender, EventArgs e)
         {
             populateCartData_CartTable_UCTD();
+        }
+        Form frm = new ADKM();
+        private void btnSelectVoucher_Click(object sender, EventArgs e)
+        {
+            frm.ShowDialog();
         }
     }
 }

@@ -22,23 +22,68 @@ namespace FinalProject.App.Main
         private string _description;
         private Image _pic;
         private string _date;
+        private string _phone;
 
         [Category("Custom Props")]
         public string Title { get { return _title; } set { _title = value; kryptonLabel36.Text = value; } }
         [Category("Custom Props")]
         public string Description { get { return _description; } set { _description = value; kryptonLabel35.Text = value; } }
         [Category("Custom Props")]
+        public string Phone { get { return _phone; } set { _phone = value; kryptonLabel5.Text = value; } }
+        [Category("Custom Props")]
         public Image Picture { get { return _pic; } set { _pic = value; pictureBox12.Image = value; } }
         [Category("Custom Props")]
         public string Date { get { return _date; } set { _date = value; kryptonLabel1.Text = value; } }
         #endregion
+        private static readonly string[] VietnameseSigns = new string[]
+        {
 
+            "aAeEoOuUiIdDyY",
+
+            "áàạảãâấầậẩẫăắằặẳẵ",
+
+            "ÁÀẠẢÃÂẤẦẬẨẪĂẮẰẶẲẴ",
+
+            "éèẹẻẽêếềệểễ",
+
+            "ÉÈẸẺẼÊẾỀỆỂỄ",
+
+            "óòọỏõôốồộổỗơớờợởỡ",
+
+            "ÓÒỌỎÕÔỐỒỘỔỖƠỚỜỢỞỠ",
+
+            "úùụủũưứừựửữ",
+
+            "ÚÙỤỦŨƯỨỪỰỬỮ",
+
+            "íìịỉĩ",
+
+            "ÍÌỊỈĨ",
+
+            "đ",
+
+            "Đ",
+
+            "ýỳỵỷỹ",
+
+            "ÝỲỴỶỸ"
+        };
+        public static string RemoveSign4VietnameseString(string str)
+        {
+            for (int i = 1; i < VietnameseSigns.Length; i++)
+            {
+                for (int j = 0; j < VietnameseSigns[i].Length; j++)
+                    str = str.Replace(VietnameseSigns[i][j], VietnameseSigns[0][i - 1]);
+            }
+            return str;
+        }
         private void ButtonKM1_Click(object sender, EventArgs e)
         {
-            StringBuilder queryaddress = new StringBuilder();
-            queryaddress.Append("https://www.google.com/maps/place/119+Nguy%E1%BB%85n+Th%E1%BB%8B+Th%E1%BA%ADp,+T%C3%A2n+Ph%C3%BA,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7379978,106.7182535,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f8723fb8c9d:0x88f9b2c06109e0e1!8m2!3d10.7379978!4d106.7208284!16s%2Fg%2F11c89h33k7?hl=vi-VN");
-            webBrowser1.ScriptErrorsSuppressed = true;
-            webBrowser1.Navigate(queryaddress.ToString());
+            StringBuilder address = new StringBuilder();
+            address.Append("https://www.google.com/maps/place/");
+            address.Append(kryptonLabel35.Text.Replace(' ', '+'));
+            address.Append("/");
+            System.Diagnostics.Process.Start(RemoveSign4VietnameseString(address.ToString()));
         }
     }
 }

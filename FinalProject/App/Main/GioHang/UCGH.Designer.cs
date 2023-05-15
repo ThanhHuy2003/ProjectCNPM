@@ -216,6 +216,7 @@
             this.btnSelectVoucher.TabIndex = 5;
             this.btnSelectVoucher.Values.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
             this.btnSelectVoucher.Values.Text = "";
+            this.btnSelectVoucher.Click += new System.EventHandler(this.btnSelectVoucher_Click);
             // 
             // label4
             // 
@@ -470,7 +471,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1585, 1660);
+            this.Size = new System.Drawing.Size(1585, 1639);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

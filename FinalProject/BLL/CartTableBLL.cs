@@ -14,15 +14,15 @@ namespace FinalProject.BLL
     internal class CartTableBLL
     {
         CartTableDAL cartTableDAL = new CartTableDAL();
-        public DataTable populateCartData_CartTable_BLL()
+        public DataTable populateCartData_CartTable_BLL(string userID)
         {
-            if (cartTableDAL.populateCartData_CartTable_DAL().Rows.Count <= 0)
+            if (cartTableDAL.populateCartData_CartTable_DAL(userID).Rows.Count <= 0)
             {
                 return null;
             }
             else
             {
-                return cartTableDAL.populateCartData_CartTable_DAL();
+                return cartTableDAL.populateCartData_CartTable_DAL(userID);
             }
         }
         public void deleteCartItem_CartTable_BLL(string id)
