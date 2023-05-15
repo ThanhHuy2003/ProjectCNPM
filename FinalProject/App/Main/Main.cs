@@ -24,14 +24,19 @@ namespace FinalProject
 {
     public partial class Main : Form
     {
-        private string userIDLogin = "asdsad"; 
-        Func func = new Func();
+        private string userIDLogin; 
+        Func func;
         public Main()
         {
             InitializeComponent();
             func = new Func(this);
         }
-
+        public Main(string userIDLogin)
+        {
+            InitializeComponent();
+            func = new Func(this);
+            this.userIDLogin = userIDLogin;
+        }
         private void btnTD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
@@ -82,10 +87,6 @@ namespace FinalProject
         {
 
             private Main main;
-            public Func()
-            {
-
-            }
             public Func(Main main)
             {
                 this.main = main;
@@ -180,8 +181,7 @@ namespace FinalProject
                     case "GH":
                         if (uCGH == null)
                         {
-                            MessageBox.Show(main.userIDLogin);
-                            uCGH = new UCGH();
+                            uCGH = new UCGH(main.userIDLogin);
                             panel.Controls.Add(uCGH);
                             uCGH.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCGH.Location = new System.Drawing.Point(0, 0);
