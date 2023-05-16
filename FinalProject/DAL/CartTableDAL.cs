@@ -27,9 +27,5 @@ namespace FinalProject.DAL
         {
             updateCartData_DA_DAL(dishID, totalQuantity, userID);
         }
-        public void insertIntoCartData_CartTable_DAL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
-        {
-            insertIntoCartData_DA_DAL(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID);
-        }
     }
 }

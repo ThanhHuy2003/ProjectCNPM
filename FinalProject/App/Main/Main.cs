@@ -43,11 +43,6 @@ namespace FinalProject
         {
             InitializeComponent();
             func = new Func(this);
-        }
-        public Main(string userIDLogin)
-        {
-            InitializeComponent();
-            func = new Func(this);
             this.userIDLogin = userIDLogin;
         }
         private void btnTD_Click(object sender, EventArgs e)
@@ -104,6 +99,10 @@ namespace FinalProject
             {
                 this.main = main;
             }
+            public Func( )
+            {
+
+            }
             //User
             private static UCTD uCTD;
             private static UCMain uCMain;
@@ -125,6 +124,9 @@ namespace FinalProject
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
             private static UCGH uCGH;
+            //Manager
+            private static UCNV uCNV;
+            private static UCLuong uCLuong;
             public void togglePanel(Panel panel, String panelName)
             {
                 
