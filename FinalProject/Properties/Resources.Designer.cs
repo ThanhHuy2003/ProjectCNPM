@@ -473,6 +473,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Luongg {
+            get {
+                object obj = ResourceManager.GetObject("Luongg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MoMo_Logo {
             get {
                 object obj = ResourceManager.GetObject("MoMo_Logo", resourceCulture);
@@ -496,6 +506,16 @@ namespace FinalProject.Properties {
         internal static System.Drawing.Bitmap NextSlider {
             get {
                 object obj = ResourceManager.GetObject("NextSlider", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NL {
+            get {
+                object obj = ResourceManager.GetObject("NL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

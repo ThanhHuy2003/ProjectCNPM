@@ -6,16 +6,20 @@ using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
 using FinalProject.App.Main.GioHang;
 using FinalProject.App.Main.ThucDon;
+using FinalProject.App.Manager;
 using FinalProject.App.Staff.GioHang;
 using FinalProject.App.Staff.KhuyenMai;
 using FinalProject.App.Staff.ThucDon;
+using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -23,59 +27,71 @@ namespace FinalProject
 {
     public partial class Main : Form
     {
-        Func func = new Func();
+        Func func;
         public Main()
         {
+            File ehe = new File();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
+            MessageBox.Show(ehe.readLanguage());
+            func = new Func(this);
+
         }
         private void btnTD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTD.Location.Y);
-            Func.togglePanel(panel_main, "TD");
+            func.togglePanel(panel_main, "TD");
         }
         private void btnKM_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnKM.Location.Y);
-            Func.togglePanel(panel_main, "KM");
+            func.togglePanel(panel_main, "KM");
         }
         private void btnCH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCH.Location.Y);
-            Func.togglePanel(panel_main, "CH");
+            func.togglePanel(panel_main, "CH");
         }
         private void btnGH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
-            Func.togglePanel(panel_main, "GH");
+            func.togglePanel(panel_main, "GH");
         }
 
         private void btnTB_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTB.Location.Y);
-            Func.togglePanel(panel_main, "TB");
+            func.togglePanel(panel_main, "TB");
         }
         private void btnCD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
-            Func.togglePanel(panel_main, "CD");
+            func.togglePanel(panel_main, "CD");
         }
         private void btnlogo_Click(object sender, EventArgs e)
         {
-            Func.togglePanel(panel_main, "Main");
+            func.togglePanel(panel_main, "Main");
         }
         private void Main_Load(object sender, EventArgs e)
         {
             btnlogo.Select();
-            Func.togglePanel(panel_main, "Main");
+            func.togglePanel(panel_main, "Main");
         }
         public class Func
         {
+            private Main main; // Tham chiếu đến instance của class Main
+
+            public Func(Main main)
+            {
+                this.main = main;
+            }
+
             //User
             private static UCTD uCTD;
             private static UCMain uCMain;
@@ -97,8 +113,12 @@ namespace FinalProject
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
             private static UCGH uCGH;
-            public static void togglePanel(Panel panel, String panelName)
+            //Manager
+            private static UCNV uCNV;
+            private static UCLuong uCLuong;
+            public void togglePanel(Panel panel, String panelName)
             {
+                
                 panel.Controls.Clear();
                 panel.AutoScroll = true;
                 switch (panelName)
@@ -106,6 +126,7 @@ namespace FinalProject
                     case "Main":
                         if (uCMain == null)
                         {
+                            
                             uCMain = new UCMain();
                             panel.Controls.Add(uCMain);
                             uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -358,6 +379,36 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCKMStaff);
+                        }
+                        break;
+                    case "NV":
+                        if (uCNV == null)
+                        {
+                            uCNV = new UCNV();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCNV.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCNV.Location = new System.Drawing.Point(0, 0);
+                            uCNV.Name = "uCNV";
+                            uCNV.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCNV);
+                        }
+                        break;
+                    case "Luong":
+                        if (uCLuong == null)
+                        {
+                            uCLuong = new UCLuong();
+                            panel.Controls.Add(uCLuong);
+                            uCLuong.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCLuong.Location = new System.Drawing.Point(0, 0);
+                            uCLuong.Name = "uCLuong";
+                            uCLuong.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCLuong);
                         }
                         break;
                     default:

@@ -18,6 +18,7 @@ namespace FinalProject.App.Login
         {
             InitializeComponent();
         }
+        Func Func;
         private UCDN uCDN;
         private void Login2_Load(object sender, EventArgs e)
         {

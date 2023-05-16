@@ -20,6 +20,7 @@ namespace FinalProject.App.Login
         {
             InitializeComponent();
         }
+        Func Func;
         private UCDK uCDK;
         private void btnDN_Click(object sender, EventArgs e)
         {

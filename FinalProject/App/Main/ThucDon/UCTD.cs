@@ -21,6 +21,7 @@ namespace FinalProject.App
 {
     public partial class UCTD : UserControl
     {
+
         public UCTD()
         {
             InitializeComponent();
@@ -95,13 +96,13 @@ namespace FinalProject.App
             populateMenuData_CookTable_UCTD(btnCombo.Text);
         }
 
-        private void btnGa_Click(object sender, EventArgs e)
+        private void btnFood_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             populateMenuData_CookTable_UCTD(btnFood.Text);
         }
 
-        private void btnOther_Click(object sender, EventArgs e)
+        private void btnDrink_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             populateMenuData_CookTable_UCTD(btnDrink.Text);

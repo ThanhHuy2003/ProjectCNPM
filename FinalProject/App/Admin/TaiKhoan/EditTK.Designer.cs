@@ -208,7 +208,7 @@
             // btnSave
             // 
             this.btnSave.CornerRoundingRadius = 30F;
-            this.btnSave.Location = new System.Drawing.Point(389, 558);
+            this.btnSave.Location = new System.Drawing.Point(376, 558);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(165, 58);
             this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -226,7 +226,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label8.Location = new System.Drawing.Point(369, 18);
+            this.label8.Location = new System.Drawing.Point(341, 26);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(230, 31);
             this.label8.TabIndex = 15;

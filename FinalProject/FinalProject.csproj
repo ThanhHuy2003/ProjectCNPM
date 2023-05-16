@@ -245,6 +245,42 @@
     <Compile Include="App\Main\ThongBao\UCTB.Designer.cs">
       <DependentUpon>UCTB.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Manager\AddNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\AddNV.Designer.cs">
+      <DependentUpon>AddNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\Luong\CardLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\Luong\CardLuong.Designer.cs">
+      <DependentUpon>CardLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\Luong\LuongDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\Luong\LuongDetails.Designer.cs">
+      <DependentUpon>LuongDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\MainManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\MainManager.Designer.cs">
+      <DependentUpon>MainManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\Luong\UCLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\Luong\UCLuong.Designer.cs">
+      <DependentUpon>UCLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\UCNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\UCNV.Designer.cs">
+      <DependentUpon>UCNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Staff\GioHang\CardGH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -310,6 +346,7 @@
     <Compile Include="BLL\AdminUserBLL.cs" />
     <Compile Include="BLL\CartTableBLL.cs" />
     <Compile Include="BLL\CookTableBLL.cs" />
+    <Compile Include="BLL\File.cs" />
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\NotificationTableBLL.cs" />
     <Compile Include="BLL\PromotionTableBLL.cs" />
@@ -380,7 +417,13 @@
     <EmbeddedResource Include="App\Main\CaiDat\CardDH.resx">
       <DependentUpon>CardDH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.en.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.vi.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
@@ -394,6 +437,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\KhuyenMai\UCKM.en.resx">
+      <DependentUpon>UCKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\Main.vi.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
       <DependentUpon>CardTB.cs</DependentUpon>
@@ -424,6 +476,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\UCTB.resx">
       <DependentUpon>UCTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\AddNV.resx">
+      <DependentUpon>AddNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\Luong\CardLuong.resx">
+      <DependentUpon>CardLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\Luong\LuongDetails.resx">
+      <DependentUpon>LuongDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\MainManager.resx">
+      <DependentUpon>MainManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\Luong\UCLuong.resx">
+      <DependentUpon>UCLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\UCNV.resx">
+      <DependentUpon>UCNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Staff\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
