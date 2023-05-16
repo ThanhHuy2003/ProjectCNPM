@@ -13,7 +13,7 @@ namespace FinalProject.App.Staff
 {
     public partial class MainStaff : Form
     {
-        Func Func;
+        Func Func = new Func();
         public MainStaff()
         {
             InitializeComponent();

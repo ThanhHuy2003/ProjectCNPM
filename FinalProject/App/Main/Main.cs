@@ -98,6 +98,7 @@ namespace FinalProject
             {
                 this.main = main;
             }
+            public Func() { }
             //User
             private static UCTD uCTD;
             private static UCMain uCMain;
