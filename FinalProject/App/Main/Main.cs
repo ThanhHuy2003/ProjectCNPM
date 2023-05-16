@@ -31,9 +31,9 @@ namespace FinalProject
         public Main()
         {
             File ehe = new File();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
+            string lang = ehe.readLanguage();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             InitializeComponent();
-            MessageBox.Show(ehe.readLanguage());
             func = new Func(this);
 
         }
