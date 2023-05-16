@@ -85,11 +85,15 @@ namespace FinalProject
         }
         public class Func
         {
-            private Main main; // Tham chiếu đến instance của class Main
+            private Main main;
 
             public Func(Main main)
             {
                 this.main = main;
+            }
+            public Func()
+            {
+
             }
 
             //User
@@ -106,7 +110,7 @@ namespace FinalProject
             //Admin
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
-            private static UCDT uCDT;
+            private static UCDTAdmin uCDT;
             private static UCTBAdmin uCTBAdmin;
             private static UCTB uCTB;
             //Staff
@@ -324,7 +328,7 @@ namespace FinalProject
                     case "DT":
                         if (uCDT == null)
                         {
-                            uCDT = new UCDT();
+                            uCDT = new UCDTAdmin();
                             panel.Controls.Add(uCDT);
                             uCDT.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCDT.Location = new System.Drawing.Point(0, 0);
