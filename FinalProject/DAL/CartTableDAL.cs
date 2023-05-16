@@ -15,9 +15,17 @@ namespace FinalProject.DAL
         {
             return populateCartData_DA_DAL(userID);
         }
-        public void deleteCartItem_CartTable_DAL(string id)
+        public void deleteCartItem_CartTable_DAL(string id, string userID)
         {
-            deleteCartItem_DA_DAL(id);
+            deleteCartItem_DA_DAL(id, userID);
+        }
+        public void insertIntoCartData_CartTable_DAL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
+        {
+            insertIntoCartData_DA_DAL(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID);
+        }
+        public void updateCartData_CartTable_DAL(string dishID, int totalQuantity, string userID)
+        {
+            updateCartData_DA_DAL(dishID, totalQuantity, userID);
         }
         public void insertIntoCartData_CartTable_DAL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
         {

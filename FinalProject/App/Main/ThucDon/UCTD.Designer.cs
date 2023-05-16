@@ -47,7 +47,8 @@
             // btnAll
             // 
             this.btnAll.CornerRoundingRadius = 30F;
-            this.btnAll.Location = new System.Drawing.Point(370, 29);
+            this.btnAll.Location = new System.Drawing.Point(396, 26);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnAll.Name = "btnAll";
             this.btnAll.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAll.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -102,7 +103,8 @@
             // btnFood
             // 
             this.btnFood.CornerRoundingRadius = 30F;
-            this.btnFood.Location = new System.Drawing.Point(496, 29);
+            this.btnFood.Location = new System.Drawing.Point(799, 26);
+            this.btnFood.Margin = new System.Windows.Forms.Padding(4);
             this.btnFood.Name = "btnFood";
             this.btnFood.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnFood.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -157,7 +159,8 @@
             // btnDrink
             // 
             this.btnDrink.CornerRoundingRadius = 30F;
-            this.btnDrink.Location = new System.Drawing.Point(622, 29);
+            this.btnDrink.Location = new System.Drawing.Point(1000, 26);
+            this.btnDrink.Margin = new System.Windows.Forms.Padding(4);
             this.btnDrink.Name = "btnDrink";
             this.btnDrink.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDrink.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -212,7 +215,8 @@
             // btnCombo
             // 
             this.btnCombo.CornerRoundingRadius = 30F;
-            this.btnCombo.Location = new System.Drawing.Point(748, 29);
+            this.btnCombo.Location = new System.Drawing.Point(597, 26);
+            this.btnCombo.Margin = new System.Windows.Forms.Padding(4);
             this.btnCombo.Name = "btnCombo";
             this.btnCombo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCombo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));

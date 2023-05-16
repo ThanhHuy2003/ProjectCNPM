@@ -22,6 +22,7 @@ namespace FinalProject.App.Login
         }
         Func Func;
         private UCDK uCDK;
+        Func Func;
         private void btnDN_Click(object sender, EventArgs e)
         {
             panel_DN.Visible = true;

@@ -20,6 +20,7 @@ namespace FinalProject.App.Login
         }
         Func Func=new Func();
         private UCDN uCDN;
+        Func Func;
         private void Login2_Load(object sender, EventArgs e)
         {
             Func.togglePanel(panel_login, name);

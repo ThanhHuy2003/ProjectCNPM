@@ -11,6 +11,7 @@ using FinalProject.App.Staff.GioHang;
 using FinalProject.App.Staff.KhuyenMai;
 using FinalProject.App.Staff.ThucDon;
 using FinalProject.DTO;
+using FinalProject.DTO;
 using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,11 @@ namespace FinalProject
             File ehe = new File();
             string lang = ehe.readLanguage();
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            InitializeComponent();
+            func = new Func(this);
+        }
+        public Main(string userIDLogin)
+        {
             InitializeComponent();
             func = new Func(this);
         }
@@ -98,7 +104,6 @@ namespace FinalProject
             {
                 this.main = main;
             }
-            public Func() { }
             //User
             private static UCTD uCTD;
             private static UCMain uCMain;
@@ -120,9 +125,6 @@ namespace FinalProject
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
             private static UCGH uCGH;
-            //Manager
-            private static UCNV uCNV;
-            private static UCLuong uCLuong;
             public void togglePanel(Panel panel, String panelName)
             {
                 

@@ -135,7 +135,7 @@
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(256, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 31);
+            this.label3.Size = new System.Drawing.Size(55, 39);
             this.label3.TabIndex = 4;
             this.label3.Text = "0đ";
             // 
@@ -302,7 +302,7 @@
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label14.Location = new System.Drawing.Point(246, 293);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 31);
+            this.label14.Size = new System.Drawing.Size(55, 39);
             this.label14.TabIndex = 14;
             this.label14.Text = "0đ";
             // 
@@ -315,7 +315,7 @@
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(246, 242);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(112, 31);
+            this.label13.Size = new System.Drawing.Size(55, 39);
             this.label13.TabIndex = 13;
             this.label13.Text = "0đ";
             // 
@@ -328,7 +328,7 @@
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(246, 191);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 31);
+            this.label12.Size = new System.Drawing.Size(55, 39);
             this.label12.TabIndex = 12;
             this.label12.Text = "0đ";
             // 
@@ -463,7 +463,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1263, 1332);
+            this.Size = new System.Drawing.Size(1585, 1597);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

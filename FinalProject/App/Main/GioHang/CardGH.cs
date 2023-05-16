@@ -40,11 +40,29 @@ namespace FinalProject.App.Main.GioHang
         private void PlusItem1_Click(object sender, EventArgs e)
         {
             setChoice(CountItem1, PlusItem1, true);
+            this.Quantity = this.Quantity + 1;
+            CartTableBLL cartTableBLL = new CartTableBLL();
+            cartTableBLL.updateIntoCartData_CartTable_BLL(this.ID, this.Quantity, this.UserID);
+            ButtonClicked?.Invoke(this, e);
         }
 
         private void SubItem1_Click(object sender, EventArgs e)
         {
             setChoice(CountItem1, SubItem1, false);
+            if (this.Quantity > 0)
+            {
+                this.Quantity = this.Quantity - 1;
+                if (Quantity == 0)
+                {
+                    btnClear_Click(sender, e);
+                }
+                else
+                {
+                    CartTableBLL cartTableBLL = new CartTableBLL();
+                    cartTableBLL.updateIntoCartData_CartTable_BLL(this.ID, this.Quantity, this.UserID);
+                }
+                ButtonClicked?.Invoke(this, e);
+            }
         }
         #region Properties
         private FlowLayoutPanel _flowLayoutPanel;
@@ -53,6 +71,9 @@ namespace FinalProject.App.Main.GioHang
         private int _price;
         private Image _pic;
         private int _quantity;
+        private string _userID;
+        [Category("Custom Props")]
+        public string UserID { get { return _userID; } set { _userID = value; } }
         [Category("Custom Props")]
         public FlowLayoutPanel FlowLayoutPanel { get { return _flowLayoutPanel; } set { _flowLayoutPanel = value; } }
         [Category("Custom Props")]
@@ -70,7 +91,7 @@ namespace FinalProject.App.Main.GioHang
         private void btnClear_Click(object sender, EventArgs e)
         {
             CartTableBLL cartTableBLL = new CartTableBLL();
-            cartTableBLL.deleteCartItem_CartTable_BLL(this.ID);
+            cartTableBLL.deleteCartItem_CartTable_BLL(this.ID, this.UserID);
             ButtonClicked?.Invoke(this, e);
         }
     }

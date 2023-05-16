@@ -40,7 +40,7 @@
             this.LabelNhapKM.Location = new System.Drawing.Point(96, 52);
             this.LabelNhapKM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LabelNhapKM.Name = "LabelNhapKM";
-            this.LabelNhapKM.Size = new System.Drawing.Size(156, 26);
+            this.LabelNhapKM.Size = new System.Drawing.Size(251, 31);
             this.LabelNhapKM.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.LabelNhapKM.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNhapKM.TabIndex = 7;

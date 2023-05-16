@@ -483,15 +483,6 @@
     <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\GioHang\ADKM.resx">
-      <DependentUpon>ADKM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\CuaHang\UCCH.en.resx">
-      <DependentUpon>UCCH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\CuaHang\UCCH.vi.resx">
-      <DependentUpon>UCCH.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
     </EmbeddedResource>
@@ -506,21 +497,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\KhuyenMai\CardKMForDisplay.resx">
-      <DependentUpon>CardKMForDisplay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\KhuyenMai\UCKM.en.resx">
-      <DependentUpon>UCKM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\KhuyenMai\UCKM.vi.resx">
-      <DependentUpon>UCKM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\Main.en.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\Main.vi.resx">
-      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
       <DependentUpon>CardTB.cs</DependentUpon>
