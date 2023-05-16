@@ -55,7 +55,7 @@ namespace FinalProject.App.Main.GioHang
             flowLayoutPanel1.Controls.Clear();
 
             CartTableBLL cartTableBLL = new CartTableBLL();
-
+            int totalCash = 0;
             if (cartTableBLL.populateCartData_CartTable_BLL(userIDLogin) != null)
             {
                 foreach (DataRow row in cartTableBLL.populateCartData_CartTable_BLL(userIDLogin).Rows)
@@ -65,10 +65,10 @@ namespace FinalProject.App.Main.GioHang
                     newCartDataItem.dishID = row["dishID"].ToString();
                     newCartDataItem.dishPicture = row["dishPicture"].ToString();
                     newCartDataItem.dishName = row["dishName"].ToString();
-                    newCartDataItem.dishDescription = row["dishDescription"].ToString();
                     newCartDataItem.dishPrice = int.Parse(row["dishPrice"].ToString());
-                    newCartDataItem.dishType = row["dishType"].ToString();
                     newCartDataItem.totalQuantity = int.Parse(row["totalQuantity"].ToString());
+
+                    totalCash += newCartDataItem.dishPrice * newCartDataItem.totalQuantity;
 
                     CardGH Item = new CardGH(flowLayoutPanel1);
 
@@ -89,6 +89,7 @@ namespace FinalProject.App.Main.GioHang
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
+            label12.Text = totalCash.ToString();
         }
         private void ChildControl_ButtonClicked(object sender, EventArgs e)
         {

@@ -72,7 +72,6 @@ namespace FinalProject.App.Main.GioHang
             CartTableBLL cartTableBLL = new CartTableBLL();
             cartTableBLL.deleteCartItem_CartTable_BLL(this.ID);
             ButtonClicked?.Invoke(this, e);
-
         }
     }
 }

@@ -88,6 +88,20 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        public DataTable getTotalQuantityOfDish_DA_DAL(string dishID, string userID)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select totalQuantity from MenuData, CartData, LoginData where CartData.dishID = MenuData.dishID and CartData.userID = LoginData.userID and CartData.dishID = @dishID and CartData.userID = @userID";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@dishID", dishID);
+            cmd.Parameters.AddWithValue("@userID", userID);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
         public DataTable populateCartData_DA_DAL(string userID)
         {
             SqlConnection conn = new SqlConnection(strConn);
@@ -99,6 +113,29 @@ namespace FinalProject.DAL
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        public void insertIntoCartData_DA_DAL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "insert into CartData values (@dishID, @dishPicture, @dishName, @dishPrice, @totalQuantity, @userID)";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@dishID", dishID);
+                cmd.Parameters.AddWithValue("@dishPicture", dishPicture);
+                cmd.Parameters.AddWithValue("@dishName", dishName);
+                cmd.Parameters.AddWithValue("@dishPrice", dishPrice);
+                cmd.Parameters.AddWithValue("@totalQuantity", totalQuantity);
+                cmd.Parameters.AddWithValue("@userID", userID);
+                MessageBox.Show(dishID + " " + dishPicture + " " + dishName + " " + dishPrice + " " + totalQuantity + " " + userID);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn. Vui lòng cập nhật số lượng trong giỏ hàng");
+            }
         }
         public void deleteCartItem_DA_DAL(string id)
         {

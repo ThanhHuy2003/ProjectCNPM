@@ -136,7 +136,7 @@ namespace FinalProject
                     case "TD":
                         if (uCTD == null)
                         {
-                            uCTD = new UCTD();
+                            uCTD = new UCTD(main.userIDLogin);
                             panel.Controls.Add(uCTD);
                             uCTD.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCTD.Location = new System.Drawing.Point(0, 0);

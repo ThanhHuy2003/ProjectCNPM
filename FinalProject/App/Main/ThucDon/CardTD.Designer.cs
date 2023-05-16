@@ -55,7 +55,7 @@
             // 
             this.btnTTN.CornerRoundingRadius = 30F;
             this.btnTTN.Location = new System.Drawing.Point(175, 318);
-            this.btnTTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTTN.Margin = new System.Windows.Forms.Padding(4);
             this.btnTTN.Name = "btnTTN";
             this.btnTTN.Size = new System.Drawing.Size(157, 42);
             this.btnTTN.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -69,12 +69,13 @@
             this.btnTTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTTN.TabIndex = 37;
             this.btnTTN.Values.Text = "Thanh toán ngay";
+            this.btnTTN.Click += new System.EventHandler(this.btnTTN_Click);
             // 
             // btnTVG
             // 
             this.btnTVG.CornerRoundingRadius = 30F;
             this.btnTVG.Location = new System.Drawing.Point(1, 318);
-            this.btnTVG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTVG.Margin = new System.Windows.Forms.Padding(4);
             this.btnTVG.Name = "btnTVG";
             this.btnTVG.Size = new System.Drawing.Size(157, 42);
             this.btnTVG.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -88,6 +89,7 @@
             this.btnTVG.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTVG.TabIndex = 36;
             this.btnTVG.Values.Text = "Thêm vào giỏ";
+            this.btnTVG.Click += new System.EventHandler(this.btnTVG_Click);
             // 
             // lblPrice
             // 
@@ -211,7 +213,7 @@
             this.Controls.Add(this.CountItem1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox9);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CardTD";
             this.Size = new System.Drawing.Size(343, 366);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

@@ -29,5 +29,9 @@ namespace FinalProject.BLL
         {
             cartTableDAL.deleteCartItem_CartTable_DAL(id);
         }
+        public void insertIntoCartData_CartTable_BLL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
+        {
+            cartTableDAL.insertIntoCartData_CartTable_DAL(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID);
+        }
     }
 }

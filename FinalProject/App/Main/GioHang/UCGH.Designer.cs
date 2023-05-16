@@ -68,6 +68,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(55, 236);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -134,9 +135,9 @@
             this.label3.Location = new System.Drawing.Point(341, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 39);
+            this.label3.Size = new System.Drawing.Size(55, 39);
             this.label3.TabIndex = 4;
-            this.label3.Text = "280,000đ";
+            this.label3.Text = "0đ";
             // 
             // label2
             // 
@@ -318,9 +319,9 @@
             this.label14.Location = new System.Drawing.Point(328, 361);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(140, 39);
+            this.label14.Size = new System.Drawing.Size(55, 39);
             this.label14.TabIndex = 14;
-            this.label14.Text = "50,000đ";
+            this.label14.Text = "0đ";
             // 
             // label13
             // 
@@ -331,9 +332,9 @@
             this.label13.Location = new System.Drawing.Point(328, 298);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(140, 39);
+            this.label13.Size = new System.Drawing.Size(55, 39);
             this.label13.TabIndex = 13;
-            this.label13.Text = "30,000đ";
+            this.label13.Text = "0đ";
             // 
             // label12
             // 
@@ -344,9 +345,9 @@
             this.label12.Location = new System.Drawing.Point(328, 235);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(159, 39);
+            this.label12.Size = new System.Drawing.Size(55, 39);
             this.label12.TabIndex = 12;
-            this.label12.Text = "300,000đ";
+            this.label12.Text = "0đ";
             // 
             // kryptonTextBox1
             // 
@@ -471,7 +472,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1585, 1639);
+            this.Size = new System.Drawing.Size(1585, 1597);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

@@ -21,9 +21,15 @@ namespace FinalProject.App
 {
     public partial class UCTD : UserControl
     {
+        private string userIDLogin;
         public UCTD()
         {
             InitializeComponent();
+        }
+        public UCTD(string userIDLogin)
+        {
+            InitializeComponent();
+            this.userIDLogin = userIDLogin;
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -65,9 +71,10 @@ namespace FinalProject.App
                     newMenuItem.dishDescription = row["dishDescription"].ToString();
                     newMenuItem.dishPrice = int.Parse(row["dishPrice"].ToString());
                     newMenuItem.dishType = row["dishType"].ToString();
-
+                    string tenp = newMenuItem.dishPicture;
                     CardTD Item = new CardTD();
 
+                    Item.ImageLink = tenp;
                     var request = WebRequest.Create(newMenuItem.dishPicture);
 
                     using (var response = request.GetResponse())
@@ -76,9 +83,15 @@ namespace FinalProject.App
                         Item.Picture = Bitmap.FromStream(stream);
                         Item.Picture = resizeImage(Item.Picture, 255, 143);
                     }
-
+                    Item.ID = newMenuItem.dishID;
                     Item.Title = newMenuItem.dishName;
                     Item.Price = newMenuItem.dishPrice;
+                    foreach (DataRow r in cookTableBLL.getTotalQuantityOfDish_CookTable_BLL(newMenuItem.dishID, userIDLogin).Rows)
+                    {
+                        Item.TotalQuantity = int.Parse(r["totalQuantity"].ToString());
+                        break;
+                    }
+                    Item.UserID = userIDLogin;
 
                     flowLayoutPanel1.Controls.Add(Item);
                 }
