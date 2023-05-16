@@ -31,9 +31,9 @@ namespace FinalProject
         public Main()
         {
             File ehe = new File();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
+            string lang= ehe.readLanguage();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             InitializeComponent();
-            MessageBox.Show(ehe.readLanguage());
             func = new Func(this);
 
         }
@@ -61,7 +61,6 @@ namespace FinalProject
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
             func.togglePanel(panel_main, "GH");
         }
-
         private void btnTB_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
@@ -80,16 +79,22 @@ namespace FinalProject
         }
         private void Main_Load(object sender, EventArgs e)
         {
+            File ehe = new File();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             btnlogo.Select();
             func.togglePanel(panel_main, "Main");
         }
         public class Func
         {
-            private Main main; // Tham chiếu đến instance của class Main
+            private Main main;
 
             public Func(Main main)
             {
                 this.main = main;
+            }
+            public Func()
+            {
+
             }
 
             //User
@@ -106,7 +111,7 @@ namespace FinalProject
             //Admin
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
-            private static UCDT uCDT;
+            private static UCDTAdmin uCDT;
             private static UCTBAdmin uCTBAdmin;
             private static UCTB uCTB;
             //Staff
@@ -118,7 +123,6 @@ namespace FinalProject
             private static UCLuong uCLuong;
             public void togglePanel(Panel panel, String panelName)
             {
-                
                 panel.Controls.Clear();
                 panel.AutoScroll = true;
                 switch (panelName)
@@ -196,7 +200,15 @@ namespace FinalProject
                         }
                         else
                         {
+                            uCGH = null; 
+                            MessageBox.Show("sdfasf");
+                            panel.Controls.Remove(uCGH);
+                            uCGH = new UCGH();
                             panel.Controls.Add(uCGH);
+                            uCGH.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCGH.Location = new System.Drawing.Point(0, 0);
+                            uCGH.Name = "uCGH";
+                            uCGH.TabIndex = 0;
                         }
                         break;
                     case "CD":
@@ -324,7 +336,7 @@ namespace FinalProject
                     case "DT":
                         if (uCDT == null)
                         {
-                            uCDT = new UCDT();
+                            uCDT = new UCDTAdmin();
                             panel.Controls.Add(uCDT);
                             uCDT.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCDT.Location = new System.Drawing.Point(0, 0);

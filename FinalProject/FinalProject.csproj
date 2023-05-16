@@ -125,11 +125,11 @@
     <Compile Include="App\Admin\ThongBao\UCTBAdmin.Designer.cs">
       <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\DoanhThu\UCDT.cs">
+    <Compile Include="App\Admin\DoanhThu\UCDTAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\DoanhThu\UCDT.Designer.cs">
-      <DependentUpon>UCDT.cs</DependentUpon>
+    <Compile Include="App\Admin\DoanhThu\UCDTAdmin.Designer.cs">
+      <DependentUpon>UCDTAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\TaiKhoan\UCTK.cs">
       <SubType>UserControl</SubType>
@@ -245,10 +245,22 @@
     <Compile Include="App\Main\ThongBao\UCTB.Designer.cs">
       <DependentUpon>UCTB.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Manager\AddNV.cs">
+    <Compile Include="App\Manager\DoanhThu\UCDTManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\DoanhThu\UCDTManager.Designer.cs">
+      <DependentUpon>UCDTManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\NguyenLieu\UCNL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\NguyenLieu\UCNL.Designer.cs">
+      <DependentUpon>UCNL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\NhanVien\AddNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Manager\AddNV.Designer.cs">
+    <Compile Include="App\Manager\NhanVien\AddNV.Designer.cs">
       <DependentUpon>AddNV.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Manager\Luong\CardLuong.cs">
@@ -275,11 +287,29 @@
     <Compile Include="App\Manager\Luong\UCLuong.Designer.cs">
       <DependentUpon>UCLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Manager\UCNV.cs">
+    <Compile Include="App\Manager\NhanVien\UCNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Manager\UCNV.Designer.cs">
+    <Compile Include="App\Manager\NhanVien\UCNV.Designer.cs">
       <DependentUpon>UCNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\AddTDManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\AddTDManager.Designer.cs">
+      <DependentUpon>AddTDManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\CardTDManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\CardTDManager.Designer.cs">
+      <DependentUpon>CardTDManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\UCTDManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\UCTDManager.Designer.cs">
+      <DependentUpon>UCTDManager.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Staff\GioHang\CardGH.cs">
       <SubType>UserControl</SubType>
@@ -393,14 +423,14 @@
     <EmbeddedResource Include="App\Admin\ThongBao\UCTBAdmin.resx">
       <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.vi.resx">
-      <DependentUpon>UCDT.cs</DependentUpon>
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDTAdmin.vi.resx">
+      <DependentUpon>UCDTAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\KhuyenMai\UCKMAdmin.resx">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.resx">
-      <DependentUpon>UCDT.cs</DependentUpon>
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDTAdmin.resx">
+      <DependentUpon>UCDTAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\TaiKhoan\UCTK.resx">
       <DependentUpon>UCTK.cs</DependentUpon>
@@ -477,7 +507,13 @@
     <EmbeddedResource Include="App\Main\ThongBao\UCTB.resx">
       <DependentUpon>UCTB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Manager\AddNV.resx">
+    <EmbeddedResource Include="App\Manager\DoanhThu\UCDTManager.resx">
+      <DependentUpon>UCDTManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\NguyenLieu\UCNL.resx">
+      <DependentUpon>UCNL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\NhanVien\AddNV.resx">
       <DependentUpon>AddNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Manager\Luong\CardLuong.resx">
@@ -492,8 +528,17 @@
     <EmbeddedResource Include="App\Manager\Luong\UCLuong.resx">
       <DependentUpon>UCLuong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Manager\UCNV.resx">
+    <EmbeddedResource Include="App\Manager\NhanVien\UCNV.resx">
       <DependentUpon>UCNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\ThucDon\AddTDManager.resx">
+      <DependentUpon>AddTDManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\ThucDon\CardTDManager.resx">
+      <DependentUpon>CardTDManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\ThucDon\UCTDManager.resx">
+      <DependentUpon>UCTDManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Staff\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>

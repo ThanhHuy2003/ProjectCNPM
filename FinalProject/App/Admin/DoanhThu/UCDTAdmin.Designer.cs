@@ -1,7 +1,7 @@
 ﻿using FinalProject.DTO;
 namespace FinalProject.App.Admin
 {
-    partial class UCDT
+    partial class UCDTAdmin
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,26 +32,27 @@ namespace FinalProject.App.Admin
             this.components = new System.ComponentModel.Container();
             this.lblCNN = new System.Windows.Forms.Label();
             this.cbCNN = new Krypton.Toolkit.KryptonComboBox();
-            this.lblDT1 = new System.Windows.Forms.Label();
-            this.lblDT2 = new System.Windows.Forms.Label();
-            this.timeStart = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.timeEnd = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.dtgvDT = new Krypton.Toolkit.KryptonDataGridView();
-            this.btnSearch = new Krypton.Toolkit.KryptonButton();
             this.revenueBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnSearch = new Krypton.Toolkit.KryptonButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtgvDT = new Krypton.Toolkit.KryptonDataGridView();
+            this.timeEnd = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.timeStart = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.lblDT2 = new System.Windows.Forms.Label();
+            this.lblDT1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cbCNN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCNN
             // 
             this.lblCNN.AutoSize = true;
             this.lblCNN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblCNN.Location = new System.Drawing.Point(67, 28);
-            this.lblCNN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCNN.Location = new System.Drawing.Point(54, 76);
             this.lblCNN.Name = "lblCNN";
-            this.lblCNN.Size = new System.Drawing.Size(184, 29);
+            this.lblCNN.Size = new System.Drawing.Size(150, 24);
             this.lblCNN.TabIndex = 0;
             this.lblCNN.Text = "Chọn chi nhánh:";
             // 
@@ -61,11 +62,10 @@ namespace FinalProject.App.Admin
             this.cbCNN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCNN.DropDownWidth = 262;
             this.cbCNN.IntegralHeight = false;
-            this.cbCNN.Location = new System.Drawing.Point(369, 18);
-            this.cbCNN.Margin = new System.Windows.Forms.Padding(4);
+            this.cbCNN.Location = new System.Drawing.Point(360, 69);
             this.cbCNN.Name = "cbCNN";
             this.cbCNN.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
-            this.cbCNN.Size = new System.Drawing.Size(376, 45);
+            this.cbCNN.Size = new System.Drawing.Size(282, 41);
             this.cbCNN.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.cbCNN.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.cbCNN.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -77,61 +77,93 @@ namespace FinalProject.App.Admin
             this.cbCNN.TabIndex = 1;
             this.cbCNN.SelectedIndexChanged += new System.EventHandler(this.cbCNN_SelectedIndexChanged);
             // 
-            // lblDT1
+            // revenueBindingSource2
             // 
-            this.lblDT1.AutoSize = true;
-            this.lblDT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblDT1.Location = new System.Drawing.Point(61, 132);
-            this.lblDT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDT1.Name = "lblDT1";
-            this.lblDT1.Size = new System.Drawing.Size(218, 29);
-            this.lblDT1.TabIndex = 2;
-            this.lblDT1.Text = "Chọn doanh thu từ: ";
+            this.revenueBindingSource2.DataSource = typeof(FinalProject.DTO.Revenue);
             // 
-            // lblDT2
+            // btnSearch
             // 
-            this.lblDT2.AutoSize = true;
-            this.lblDT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblDT2.Location = new System.Drawing.Point(721, 132);
-            this.lblDT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDT2.Name = "lblDT2";
-            this.lblDT2.Size = new System.Drawing.Size(120, 29);
-            this.lblDT2.TabIndex = 3;
-            this.lblDT2.Text = "Đến ngày:";
+            this.btnSearch.CornerRoundingRadius = 30F;
+            this.btnSearch.Location = new System.Drawing.Point(654, 163);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.Size = new System.Drawing.Size(120, 41);
+            this.btnSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.StateCommon.Border.Rounding = 30F;
+            this.btnSearch.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSearch.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSearch.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSearch.TabIndex = 70;
+            this.btnSearch.Values.Text = "Tra cứu";
             // 
-            // timeStart
+            // label2
             // 
-            this.timeStart.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
-            this.timeStart.CornerRoundingRadius = -1F;
-            this.timeStart.Location = new System.Drawing.Point(369, 129);
-            this.timeStart.Margin = new System.Windows.Forms.Padding(4);
-            this.timeStart.Name = "timeStart";
-            this.timeStart.ShowUpDown = true;
-            this.timeStart.Size = new System.Drawing.Size(301, 34);
-            this.timeStart.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeStart.TabIndex = 6;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label2.Location = new System.Drawing.Point(405, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 30);
+            this.label2.TabIndex = 69;
+            this.label2.Text = "DOANH THU CHI NHÁNH";
             // 
-            // timeEnd
+            // label1
             // 
-            this.timeEnd.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
-            this.timeEnd.CornerRoundingRadius = -1F;
-            this.timeEnd.Location = new System.Drawing.Point(872, 129);
-            this.timeEnd.Margin = new System.Windows.Forms.Padding(4);
-            this.timeEnd.Name = "timeEnd";
-            this.timeEnd.ShowUpDown = true;
-            this.timeEnd.Size = new System.Drawing.Size(304, 34);
-            this.timeEnd.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeEnd.TabIndex = 7;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label1.Location = new System.Drawing.Point(375, 226);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(332, 30);
+            this.label1.TabIndex = 68;
+            this.label1.Text = "BẢNG THỐNG KÊ DOANH THU";
             // 
             // dtgvDT
             // 
             this.dtgvDT.ColumnHeadersHeight = 36;
-            this.dtgvDT.DataSource = this.revenueBindingSource2;
-            this.dtgvDT.Location = new System.Drawing.Point(67, 223);
-            this.dtgvDT.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgvDT.Location = new System.Drawing.Point(49, 279);
             this.dtgvDT.Name = "dtgvDT";
             this.dtgvDT.RowHeadersWidth = 51;
-            this.dtgvDT.Size = new System.Drawing.Size(1313, 730);
+            this.dtgvDT.Size = new System.Drawing.Size(985, 499);
             this.dtgvDT.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.dtgvDT.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dtgvDT.StateCommon.DataCell.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -157,37 +189,58 @@ namespace FinalProject.App.Admin
             this.dtgvDT.StateCommon.HeaderRow.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.dtgvDT.TabIndex = 8;
+            this.dtgvDT.TabIndex = 67;
             // 
-            // btnSearch
+            // timeEnd
             // 
-            this.btnSearch.CornerRoundingRadius = 30F;
-            this.btnSearch.Location = new System.Drawing.Point(1205, 117);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(175, 60);
-            this.btnSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSearch.StateCommon.Border.Rounding = 30F;
-            this.btnSearch.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSearch.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSearch.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSearch.TabIndex = 9;
-            this.btnSearch.Values.Text = "Tra cứu";
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.timeEnd.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
+            this.timeEnd.CornerRoundingRadius = -1F;
+            this.timeEnd.Location = new System.Drawing.Point(360, 171);
+            this.timeEnd.Name = "timeEnd";
+            this.timeEnd.ShowUpDown = true;
+            this.timeEnd.Size = new System.Drawing.Size(228, 29);
+            this.timeEnd.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeEnd.TabIndex = 66;
             // 
-            // revenueBindingSource2
+            // timeStart
             // 
-            this.revenueBindingSource2.DataSource = typeof(FinalProject.DTO.Revenue);
+            this.timeStart.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
+            this.timeStart.CornerRoundingRadius = -1F;
+            this.timeStart.Location = new System.Drawing.Point(58, 171);
+            this.timeStart.Name = "timeStart";
+            this.timeStart.ShowUpDown = true;
+            this.timeStart.Size = new System.Drawing.Size(226, 29);
+            this.timeStart.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeStart.TabIndex = 65;
             // 
-            // UCDT
+            // lblDT2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.lblDT2.AutoSize = true;
+            this.lblDT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblDT2.Location = new System.Drawing.Point(356, 132);
+            this.lblDT2.Name = "lblDT2";
+            this.lblDT2.Size = new System.Drawing.Size(96, 24);
+            this.lblDT2.TabIndex = 64;
+            this.lblDT2.Text = "Đến ngày:";
+            // 
+            // lblDT1
+            // 
+            this.lblDT1.AutoSize = true;
+            this.lblDT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblDT1.Location = new System.Drawing.Point(54, 132);
+            this.lblDT1.Name = "lblDT1";
+            this.lblDT1.Size = new System.Drawing.Size(176, 24);
+            this.lblDT1.TabIndex = 63;
+            this.lblDT1.Text = "Chọn doanh thu từ: ";
+            // 
+            // UCDTAdmin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvDT);
             this.Controls.Add(this.timeEnd);
             this.Controls.Add(this.timeStart);
@@ -195,12 +248,11 @@ namespace FinalProject.App.Admin
             this.Controls.Add(this.lblDT1);
             this.Controls.Add(this.cbCNN);
             this.Controls.Add(this.lblCNN);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "UCDT";
-            this.Size = new System.Drawing.Size(1440, 985);
+            this.Name = "UCDTAdmin";
+            this.Size = new System.Drawing.Size(1080, 800);
             ((System.ComponentModel.ISupportInitialize)(this.cbCNN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,12 +262,14 @@ namespace FinalProject.App.Admin
 
         private System.Windows.Forms.Label lblCNN;
         private Krypton.Toolkit.KryptonComboBox cbCNN;
-        private System.Windows.Forms.Label lblDT1;
-        private System.Windows.Forms.Label lblDT2;
-        private Krypton.Toolkit.KryptonDateTimePicker timeStart;
-        private Krypton.Toolkit.KryptonDateTimePicker timeEnd;
-        private Krypton.Toolkit.KryptonDataGridView dtgvDT;
-        private Krypton.Toolkit.KryptonButton btnSearch;
         private System.Windows.Forms.BindingSource revenueBindingSource2;
+        private Krypton.Toolkit.KryptonButton btnSearch;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Krypton.Toolkit.KryptonDataGridView dtgvDT;
+        private Krypton.Toolkit.KryptonDateTimePicker timeEnd;
+        private Krypton.Toolkit.KryptonDateTimePicker timeStart;
+        private System.Windows.Forms.Label lblDT2;
+        private System.Windows.Forms.Label lblDT1;
     }
 }

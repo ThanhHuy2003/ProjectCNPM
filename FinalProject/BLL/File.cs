@@ -11,7 +11,7 @@ namespace FinalProject.BLL
     {
         public string readLanguage()
         {
-            FileStream fs = new FileStream("../Language.txt", FileMode.Open);
+            FileStream fs = new FileStream("../../Language.txt", FileMode.Open);
             StreamReader rd = new StreamReader(fs, Encoding.UTF8);
             String giatri = rd.ReadLine();
             rd.Close();
@@ -19,7 +19,7 @@ namespace FinalProject.BLL
         }
         public void changeLanguage(String lang)
         {
-            using (StreamWriter sw = new StreamWriter("../Language.txt"))
+            using (StreamWriter sw = new StreamWriter("../../Language.txt"))
             {
                 sw.WriteLine(lang);
             }

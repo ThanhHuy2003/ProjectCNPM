@@ -116,5 +116,10 @@ namespace FinalProject.App.Manager.ThucDon
             populateMenuData_CookTable_UCTD(btnFood.Text);
             populateMenuData_CookTable_UCTD(btnDrink.Text);
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

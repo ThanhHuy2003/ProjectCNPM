@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dtgvNV = new Krypton.Toolkit.KryptonDataGridView();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbSearch = new Krypton.Toolkit.KryptonTextBox();
-            this.picSearch = new System.Windows.Forms.PictureBox();
             this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.btnDelete = new Krypton.Toolkit.KryptonButton();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.picSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
@@ -77,10 +77,6 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtgvNV.TabIndex = 17;
             // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataSource = typeof(FinalProject.DTO.User);
-            // 
             // tbSearch
             // 
             this.tbSearch.Location = new System.Drawing.Point(63, 76);
@@ -95,17 +91,6 @@
             this.tbSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSearch.TabIndex = 14;
             this.tbSearch.Text = "Search";
-            // 
-            // picSearch
-            // 
-            this.picSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
-            this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.picSearch.Location = new System.Drawing.Point(298, 81);
-            this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(36, 32);
-            this.picSearch.TabIndex = 15;
-            this.picSearch.TabStop = false;
             // 
             // btnAdd
             // 
@@ -213,7 +198,22 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnDelete.TabIndex = 60;
-            this.btnDelete.Values.Text = "Thêm";
+            this.btnDelete.Values.Text = "Xóa";
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataSource = typeof(FinalProject.DTO.User);
+            // 
+            // picSearch
+            // 
+            this.picSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
+            this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.picSearch.Location = new System.Drawing.Point(298, 81);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(36, 32);
+            this.picSearch.TabIndex = 15;
+            this.picSearch.TabStop = false;
             // 
             // UCNV
             // 
