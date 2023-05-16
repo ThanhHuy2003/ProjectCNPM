@@ -1,5 +1,6 @@
 ﻿using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
+using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,11 +18,17 @@ namespace FinalProject.App.Main.GioHang
 {
     public partial class UCGH : UserControl
     {
+        private string userIDLogin;
         public UCGH()
         {
             File ehe = new File();
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
+        }
+        public UCGH(string userIDLogin)
+        {
+            InitializeComponent();
+            this.userIDLogin = userIDLogin;
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -52,20 +59,20 @@ namespace FinalProject.App.Main.GioHang
             flowLayoutPanel1.Controls.Clear();
 
             CartTableBLL cartTableBLL = new CartTableBLL();
-
-            if (cartTableBLL.populateCartData_CartTable_BLL() != null)
+            int totalCash = 0;
+            if (cartTableBLL.populateCartData_CartTable_BLL(userIDLogin) != null)
             {
-                foreach (DataRow row in cartTableBLL.populateCartData_CartTable_BLL().Rows)
+                foreach (DataRow row in cartTableBLL.populateCartData_CartTable_BLL(userIDLogin).Rows)
                 {
                     FinalProject.DTO.CartDataItem newCartDataItem = new FinalProject.DTO.CartDataItem();
 
                     newCartDataItem.dishID = row["dishID"].ToString();
                     newCartDataItem.dishPicture = row["dishPicture"].ToString();
                     newCartDataItem.dishName = row["dishName"].ToString();
-                    newCartDataItem.dishDescription = row["dishDescription"].ToString();
                     newCartDataItem.dishPrice = int.Parse(row["dishPrice"].ToString());
-                    newCartDataItem.dishType = row["dishType"].ToString();
                     newCartDataItem.totalQuantity = int.Parse(row["totalQuantity"].ToString());
+
+                    totalCash += newCartDataItem.dishPrice * newCartDataItem.totalQuantity;
 
                     CardGH Item = new CardGH(flowLayoutPanel1);
 
@@ -86,6 +93,7 @@ namespace FinalProject.App.Main.GioHang
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
+            label12.Text = totalCash.ToString();
         }
         private void ChildControl_ButtonClicked(object sender, EventArgs e)
         {
@@ -95,6 +103,11 @@ namespace FinalProject.App.Main.GioHang
         private void UCGH_Load(object sender, EventArgs e)
         {
             populateCartData_CartTable_UCTD();
+        }
+        Form frm = new ADKM();
+        private void btnSelectVoucher_Click(object sender, EventArgs e)
+        {
+            frm.ShowDialog();
         }
     }
 }

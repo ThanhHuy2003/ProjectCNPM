@@ -25,5 +25,9 @@ namespace FinalProject.BLL
                 return cookTableDAL.populateMenuData_CookTable_DAL(type);
             }
         }
+        public DataTable getTotalQuantityOfDish_CookTable_BLL(string dishID, string userID)
+        {
+            return cookTableDAL.getTotalQuantityOfDish_DA_DAL(dishID, userID);
+        }
     }
 }

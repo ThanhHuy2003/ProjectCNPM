@@ -1,9 +1,11 @@
-﻿using System;
+﻿using FinalProject.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,16 +44,54 @@ namespace FinalProject.App.Main.ThucDon
         }
         #region Properties
 
+        private string _imgLink;
+        private string _id;
+        private string _userID;
+        private int _totalQuantity;
         private string _title;
         private int _price;
         private Image _pic;
 
         [Category("Custom Props")]
+        public string ImageLink { get { return _imgLink; } set { _imgLink = value; } }
+        [Category("Custom Props")]
+        public string ID { get { return _id; } set { _id = value; } }
+        [Category("Custom Props")]
+        public string UserID { get { return _userID; } set { _userID = value; } }
+        [Category("Custom Props")]
         public string Title { get { return _title; } set { _title = value; lblName.Text = value; } }
         [Category("Custom Props")]
         public int Price { get { return _price; } set { _price = value; lblPrice.Text = value.ToString(); } }
         [Category("Custom Props")]
+        public int TotalQuantity { get { return _totalQuantity; } set { _totalQuantity = value; CountItem1.Text = value.ToString(); } }
+        [Category("Custom Props")]
         public Image Picture { get { return _pic; } set { _pic = value; pictureBox9.Image = value; } }
         #endregion
+
+        private void btnTTN_Click(object sender, EventArgs e)
+        {
+            if(CountItem1.Text == "0")
+            {
+                MessageBox.Show("Vui lòng nhập số lượng");
+                return;
+            }
+            else
+            {
+                
+            }
+        }
+        private void btnTVG_Click(object sender, EventArgs e)
+        {
+            if (CountItem1.Text == "0")
+            {
+                MessageBox.Show("Vui lòng nhập số lượng");
+                return;
+            }
+            else
+            {
+                CartTableBLL newCartTableBLL = new CartTableBLL();
+                newCartTableBLL.insertIntoCartData_CartTable_BLL(this.ID, this.ImageLink, this.Title, this.Price, int.Parse(this.CountItem1.Text), this.UserID);
+            }
+        }
     }
 }

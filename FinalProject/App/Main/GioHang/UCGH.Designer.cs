@@ -68,6 +68,9 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(55, 236);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(41, 192);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1155, 546);
@@ -134,7 +137,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 31);
             this.label3.TabIndex = 4;
-            this.label3.Text = "280,000đ";
+            this.label3.Text = "0đ";
             // 
             // label2
             // 
@@ -201,6 +204,7 @@
             this.btnSelectVoucher.TabIndex = 5;
             this.btnSelectVoucher.Values.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
             this.btnSelectVoucher.Values.Text = "";
+            this.btnSelectVoucher.Click += new System.EventHandler(this.btnSelectVoucher_Click);
             // 
             // label4
             // 
@@ -300,7 +304,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(112, 31);
             this.label14.TabIndex = 14;
-            this.label14.Text = "50,000đ";
+            this.label14.Text = "0đ";
             // 
             // label13
             // 
@@ -313,7 +317,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(112, 31);
             this.label13.TabIndex = 13;
-            this.label13.Text = "30,000đ";
+            this.label13.Text = "0đ";
             // 
             // label12
             // 
@@ -326,7 +330,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(127, 31);
             this.label12.TabIndex = 12;
-            this.label12.Text = "300,000đ";
+            this.label12.Text = "0đ";
             // 
             // kryptonTextBox1
             // 

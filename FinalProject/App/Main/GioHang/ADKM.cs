@@ -1,29 +1,27 @@
-﻿using FinalProject.App.Main;
-using FinalProject.App.Main.KhuyenMai;
-using FinalProject.App.Main.ThucDon;
-using FinalProject.BLL;
+﻿using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App
+namespace FinalProject.App.Main.GioHang
 {
-    public partial class UCKM : UserControl
+    public partial class ADKM : Form
     {
-        public UCKM()
+        public ADKM()
         {
-            File ehe = new File();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
+        }
+
+        private void ADKM_Load(object sender, EventArgs e)
+        {
+            populatePromotionData_PromotionTable_UCKM();
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -49,26 +47,6 @@ namespace FinalProject.App
 
             return destImage;
         }
-        private void SearchTextbox_Leave(object sender, EventArgs e)
-        {
-            if (SearchTextbox.Text == "")
-            {
-                SearchTextbox.Text = "Search";
-                SearchTextbox.ForeColor = Color.Silver;
-            }
-        }
-        private void SearchTextbox_Enter(object sender, EventArgs e)
-        {
-            if (SearchTextbox.Text == "Search")
-            {
-                SearchTextbox.Text = "";
-                SearchTextbox.ForeColor = Color.Black;
-            }
-        }
-        private void UCKM_Load(object sender, EventArgs e)
-        {
-            populatePromotionData_PromotionTable_UCKM();
-        }
         private void populatePromotionData_PromotionTable_UCKM()
         {
             PromotionTableBLL promotionTableBLL = new PromotionTableBLL();
@@ -86,7 +64,7 @@ namespace FinalProject.App
                     newPromotionItem.promotionDate = row["promotionDate"].ToString();
                     newPromotionItem.promotionPercent = int.Parse(row["promotionPercent"].ToString());
 
-                    CardKMForDisplay Item = new CardKMForDisplay();
+                    CardKM Item = new CardKM();
 
                     var request = WebRequest.Create(newPromotionItem.promotionPicture);
 
@@ -99,7 +77,7 @@ namespace FinalProject.App
 
                     Item.Title = newPromotionItem.promotionName;
                     Item.Description = newPromotionItem.promotionDescription;
-                    
+
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }

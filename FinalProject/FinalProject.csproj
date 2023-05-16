@@ -54,8 +54,20 @@
     <Reference Include="DotNetBrowser.WinForms, Version=2.22.1.3541, Culture=neutral, PublicKeyToken=b0b5aaca9c95c84e, processorArchitecture=MSIL">
       <HintPath>packages\DotNetBrowser.WinForms.2.22.1\lib\net45\DotNetBrowser.WinForms.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Apis, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.60.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Core.1.60.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.60.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
     <Reference Include="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <HintPath>packages\Krypton.Toolkit.70.22.11.312\lib\net48\Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>packages\protobuf-net.2.4.0\lib\net40\protobuf-net.dll</HintPath>
@@ -167,6 +179,12 @@
     <Compile Include="App\Main\CuaHang\CardCH.Designer.cs">
       <DependentUpon>CardCH.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Main\GioHang\ADKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Main\GioHang\ADKM.Designer.cs">
+      <DependentUpon>ADKM.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Main\GioHang\CardGH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,6 +202,12 @@
     </Compile>
     <Compile Include="App\Main\KhuyenMai\CardKM.Designer.cs">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\KhuyenMai\CardKMForDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Main\KhuyenMai\CardKMForDisplay.Designer.cs">
+      <DependentUpon>CardKMForDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\ThongBao\CardTB.cs">
       <SubType>UserControl</SubType>
@@ -459,6 +483,9 @@
     <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\ADKM.resx">
+      <DependentUpon>ADKM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CuaHang\UCCH.en.resx">
       <DependentUpon>UCCH.cs</DependentUpon>
     </EmbeddedResource>
@@ -479,6 +506,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\KhuyenMai\CardKMForDisplay.resx">
+      <DependentUpon>CardKMForDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\UCKM.en.resx">
       <DependentUpon>UCKM.cs</DependentUpon>

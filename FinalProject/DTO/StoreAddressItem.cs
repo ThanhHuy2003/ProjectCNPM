@@ -13,5 +13,6 @@ namespace FinalProject.DTO
         public string storeName { get; set; }
         public string storeDescription { get; set; }
         public string storeTime { get; set; }
+        public string storePhone { get; set; }
     }
 }

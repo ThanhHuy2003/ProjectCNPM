@@ -19,7 +19,6 @@ namespace FinalProject.App.Staff
             InitializeComponent();
             Func.togglePanel(pnlMainStaff, "TDStaff");
         }
-
         private void btnTD_Click(object sender, EventArgs e)
         {
             Func.togglePanel(pnlMainStaff, "TDStaff");

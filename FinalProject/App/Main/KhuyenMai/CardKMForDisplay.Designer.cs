@@ -1,6 +1,6 @@
-﻿namespace FinalProject.App.Main
+﻿namespace FinalProject.App.Main.KhuyenMai
 {
-    partial class CardKM
+    partial class CardKMForDisplay
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,31 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ButtonKM1 = new Krypton.Toolkit.KryptonButton();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel35 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel36 = new Krypton.Toolkit.KryptonLabel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
-            // ButtonKM1
+            // pictureBox12
             // 
-            this.ButtonKM1.CornerRoundingRadius = 15F;
-            this.ButtonKM1.Location = new System.Drawing.Point(1197, 121);
-            this.ButtonKM1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonKM1.Name = "ButtonKM1";
-            this.ButtonKM1.Size = new System.Drawing.Size(199, 57);
-            this.ButtonKM1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.ButtonKM1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.ButtonKM1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ButtonKM1.StateCommon.Border.Rounding = 15F;
-            this.ButtonKM1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.ButtonKM1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.ButtonKM1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonKM1.TabIndex = 13;
-            this.ButtonKM1.Values.Text = "Áp dụng";
+            this.pictureBox12.Image = global::FinalProject.Properties.Resources.HinhKM1;
+            this.pictureBox12.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(228, 187);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 11;
+            this.pictureBox12.TabStop = false;
             // 
             // kryptonLabel35
             // 
@@ -63,7 +54,7 @@
             this.kryptonLabel35.Size = new System.Drawing.Size(1075, 23);
             this.kryptonLabel35.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel35.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.kryptonLabel35.TabIndex = 12;
+            this.kryptonLabel35.TabIndex = 13;
             this.kryptonLabel35.Values.Text = "Áp dụng từ ngày 3/3/2023 đến ngày 3/7/2023 đối với hóa đơn từ 100k";
             // 
             // kryptonLabel36
@@ -74,31 +65,17 @@
             this.kryptonLabel36.Size = new System.Drawing.Size(349, 28);
             this.kryptonLabel36.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel36.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.kryptonLabel36.TabIndex = 11;
+            this.kryptonLabel36.TabIndex = 14;
             this.kryptonLabel36.Values.Text = "Nhập mã ANNGON giảm ngay 50%";
             // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::FinalProject.Properties.Resources.HinhKM1;
-            this.pictureBox12.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(228, 187);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 10;
-            this.pictureBox12.TabStop = false;
-            // 
-            // CardKM
+            // CardKMForDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.ButtonKM1);
-            this.Controls.Add(this.kryptonLabel35);
             this.Controls.Add(this.kryptonLabel36);
+            this.Controls.Add(this.kryptonLabel35);
             this.Controls.Add(this.pictureBox12);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "CardKM";
+            this.Name = "CardKMForDisplay";
             this.Size = new System.Drawing.Size(1408, 192);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
@@ -108,9 +85,8 @@
 
         #endregion
 
-        private Krypton.Toolkit.KryptonButton ButtonKM1;
+        private System.Windows.Forms.PictureBox pictureBox12;
         private Krypton.Toolkit.KryptonLabel kryptonLabel35;
         private Krypton.Toolkit.KryptonLabel kryptonLabel36;
-        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }
