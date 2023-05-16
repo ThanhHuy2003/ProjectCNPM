@@ -119,9 +119,10 @@ namespace FinalProject
                 switch (panelName)
                 {
                     case "Main":
+                        uCMain = null;
                         if (uCMain == null)
                         {
-                            uCMain = new UCMain();
+                            uCMain = new UCMain(main.userIDLogin);
                             panel.Controls.Add(uCMain);
                             uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCMain.Location = new System.Drawing.Point(0, 0);
@@ -134,6 +135,7 @@ namespace FinalProject
                         }
                         break;
                     case "TD":
+                        uCTD = null;
                         if (uCTD == null)
                         {
                             uCTD = new UCTD(main.userIDLogin);
@@ -179,6 +181,7 @@ namespace FinalProject
                         }
                         break;
                     case "GH":
+                        uCGH = null;
                         if (uCGH == null)
                         {
                             uCGH = new UCGH(main.userIDLogin);

@@ -152,10 +152,6 @@ exec InsertUserLoginData N'Vương Thanh Huy', 'vuongthanhhuy@gmail.com', N'Trà
 exec InsertUserLoginData N'Nguyễn Thành Nhật Tân', 'nguyenthanhnhattan@gmail.com', N'Trà Vinh', '0898495911', 'nguyennthanhhnhatttann', 'nguyenthanhnhattan2003'
 exec InsertAdminLoginData N'Phùng Thị Thủy Tiên', 'phungthithuytien@gmail.com', N'Đắk Nông', '0868429676', 'phunggthiithuyytienn', 'phungthithuytien2003'
 exec InsertAdminLoginData N'Nguyễn Trung Dũng', 'nguyentrungdung@gmail.com', N'Nghệ An', '0377485395', 'nguyenntrunggdungg', 'nguyentrungdung2003'
-exec InsertUserLoginData N'Vương Thanh Huy', 'vuongthanhhuy@gmail.com', N'Trà Vinh', '08546377748', 'vuonggthanhhhuyyy', 'vuongthanhhuy2003'
-exec InsertUserLoginData N'Nguyễn Thành Nhật Tân', 'nguyenthanhnhattan@gmail.com', N'Trà Vinh', '0898495911', 'nguyennthanhhnhatttannn', 'nguyenthanhnhattan2003'
-exec InsertAdminLoginData N'Phùng Thị Thủy Tiên', 'phungthithuytien@gmail.com', N'Đắk Nông', '0868429676', 'phunggthiithuyytiennn', 'phungthithuytien2003'
-exec InsertAdminLoginData N'Nguyễn Trung Dũng', 'nguyentrungdung@gmail.com', N'Nghệ An', '0377485395', 'nguyenntrunggdunggg', 'nguyentrungdung2003'
 exec InsertUserLoginData N'Lauren Vargas','fmcconnell@example.com',N'An Giang','0868429601','christopher33','I+U1jSf(&2'
 exec InsertUserLoginData N'Joseph Schmitt','mchen@example.org',N'An Giang','0868429602','brittanythomas','McxXOz@O(1'
 exec InsertUserLoginData N'Bradley Baldwin','otorres@example.org',N'An Giang','0868429603','ronald76','H3PVnukh&q'
@@ -329,7 +325,7 @@ create table PromotionData
 (
 	promotionID varchar(8) not null,
 	promotionPicture varchar(500) not null,
-    promotionName nvarchar(500) not null,
+    promotionName nvarchar(500) not null unique,
     promotionDescription nvarchar(500) not null,
     promotionDate datetime not null,
 	promotionPercent int not null,
@@ -361,9 +357,6 @@ begin
 end
 go
 
-exec InsertPromotionData 'https://static.kfcvietnam.com.vn/images/items/lg/GaOcQue.jpg?v=41MdE4', N'Nhập mã COMBO1 giảm ngay 50%', N'Áp dụng từ ngày 03/05/2023 đến ngày 30/05/2023', '2023-05-30', 50
-exec InsertPromotionData 'https://static.kfcvietnam.com.vn/images/items/lg/2-lava-taro.jpg?v=41MdE4', N'Nhập mã COMBO2 giảm ngay 70%', N'Áp dụng từ ngày 03/05/2023 đến ngày 30/05/2023', '2023-05-30', 70
-exec InsertPromotionData 'https://static.kfcvietnam.com.vn/images/items/lg/1-gahoangkim.jpg?v=41MdE4', N'Nhập mã COMBO3 giảm ngay 30%', N'Áp dụng từ ngày 03/05/2023 đến ngày 30/05/2023', '2023-05-30', 30
 exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_169_1.png', N'THÁNG 5 RỰC RỠ', N'Áp dụng từ ngày 01/05/2023 đến ngày 30/05/2023', '2023-04-30', 50
 exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_139.png', N'THƯỞNG THỨC HƯƠNG VỊ BÁNH BURGER THƯỢNG HẠNG HOÀN TOÀN MỚI', N'Áp dụng từ ngày 03/06/2023 đến ngày 30/06/2023', '2023-05-22', 70
 exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_99.png', N'BỘ BA POKEMON SIÊU PHẨM ĐÃ SẴN SÀNG!', N'Áp dụng từ ngày 03/07/2023 đến ngày 30/07/2023', '2023-05-20', 30
@@ -681,8 +674,8 @@ go
 insert into HistoryUserData(orderUserID, userID, orderPicture, totalDish, totalCash, condition) values ('OUID0001', 'UID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', 4, 300000, N'Món ăn đã được giao')
 go
 
-insert into HistoryUserDataDetail values ('OUID0001', 'DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', '2023-05-15 01:25:48.627', 'Khoai Tây Múi Cau', 'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3)
-insert into HistoryUserDataDetail values ('OUID0001', 'DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', '2023-05-15 01:25:48.627', 'Combo Đùi Gà Rán', 'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo', 1)
+insert into HistoryUserDataDetail values ('OUID0001', 'DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', '2023-05-15 01:25:48.627', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3)
+insert into HistoryUserDataDetail values ('OUID0001', 'DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', '2023-05-15 01:25:48.627', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo', 1)
 go
 
 create table CartData
@@ -690,20 +683,18 @@ create table CartData
 	dishID varchar(8) not null,
 	dishPicture varchar(500) not null,
     dishName nvarchar(500) not null,
-    dishDescription nvarchar(500) not null,
     dishPrice int not null,
-	dishType varchar(500) not null,
 	totalQuantity int not null,
 	userID varchar(8),
-    primary key(dishID),
+    primary key(dishID, userID),
 	foreign key(dishID) references MenuData(dishID),
 	foreign key(userID) references LoginData(userID)
 )
 go
 
 insert into CartData values
-('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3, 'UID00001'),
-('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 120000, 'combo', 2, 'UID00001')
+('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', 100000, 3, 'UID00001'),
+('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', 120000, 2, 'UID00001')
 go
 
 select * from CartData

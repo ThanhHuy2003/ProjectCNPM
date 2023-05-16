@@ -16,9 +16,15 @@ namespace FinalProject.App
 {
     public partial class UCMain : UserControl
     {
+        private string userIDLogin;
         public UCMain()
         {
             InitializeComponent();
+        }
+        public UCMain(string userIDLogin)
+        {
+            InitializeComponent();
+            this.userIDLogin = userIDLogin;
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -125,12 +131,11 @@ namespace FinalProject.App
 
         private void UCMain_Load(object sender, EventArgs e)
         {
-            populateMenuData_CookTable_UCTD();
-        }
-        private void populateMenuData_CookTable_UCTD()
-        {
             flowLayoutPanel1.Controls.Clear();
-
+            flowLayoutPanel1 = populateMenuData_CookTable_UCTD(flowLayoutPanel1);
+        }
+        private FlowLayoutPanel populateMenuData_CookTable_UCTD(FlowLayoutPanel flowLayoutPanel1)
+        {
             CookTableBLL cookTableBLL = new CookTableBLL();
 
             if (cookTableBLL.populateMenuData_CookTable_BLL("combo") != null)
@@ -148,9 +153,10 @@ namespace FinalProject.App
                         newMenuItem.dishDescription = row["dishDescription"].ToString();
                         newMenuItem.dishPrice = int.Parse(row["dishPrice"].ToString());
                         newMenuItem.dishType = row["dishType"].ToString();
-
+                        string tenp = newMenuItem.dishPicture;
                         CardTD Item = new CardTD();
 
+                        Item.ImageLink = tenp;
                         var request = WebRequest.Create(newMenuItem.dishPicture);
 
                         using (var response = request.GetResponse())
@@ -159,11 +165,17 @@ namespace FinalProject.App
                             Item.Picture = Bitmap.FromStream(stream);
                             Item.Picture = resizeImage(Item.Picture, 255, 143);
                         }
-
+                        Item.ID = newMenuItem.dishID;
                         Item.Title = newMenuItem.dishName;
                         Item.Price = newMenuItem.dishPrice;
+                        foreach (DataRow r in cookTableBLL.getTotalQuantityOfDish_CookTable_BLL(newMenuItem.dishID, userIDLogin).Rows)
+                        {
+                            Item.TotalQuantity = int.Parse(r["totalQuantity"].ToString());
+                            break;
+                        }
+                        Item.UserID = userIDLogin;
 
-                        this.flowLayoutPanel1.Controls.Add(Item);
+                        flowLayoutPanel1.Controls.Add(Item);
 
                         i++;
                     }
@@ -172,10 +184,12 @@ namespace FinalProject.App
                         break;
                     }
                 }
+                return flowLayoutPanel1;
             }
             else
             {
                 MessageBox.Show("Không có dữ liệu MenuData");
+                return null;
             }
         }
 
