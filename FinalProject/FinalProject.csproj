@@ -404,6 +404,7 @@
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\NotificationTableBLL.cs" />
     <Compile Include="BLL\PromotionTableBLL.cs" />
+    <Compile Include="BLL\ProvinceBLL.cs" />
     <Compile Include="BLL\StoreAddressTableBLL.cs" />
     <Compile Include="DAL\CartTableDAL.cs" />
     <Compile Include="DAL\NotificationDAL.cs" />
@@ -411,6 +412,7 @@
     <Compile Include="DAL\DatabaseAccess.cs" />
     <Compile Include="DAL\LoginDAL.cs" />
     <Compile Include="DAL\PromotionTableDAL.cs" />
+    <Compile Include="DAL\ProvinceDAL.cs" />
     <Compile Include="DAL\RevenueCRUD_DAL.cs" />
     <Compile Include="DAL\StoreAddressTableDAL.cs" />
     <Compile Include="DAL\UserCRUD_DAL.cs" />
@@ -418,6 +420,7 @@
     <Compile Include="DTO\MenuItem.cs" />
     <Compile Include="DTO\Notification.cs" />
     <Compile Include="DTO\PromotionItem.cs" />
+    <Compile Include="DTO\Province.cs" />
     <Compile Include="DTO\Revenue.cs" />
     <Compile Include="DTO\StoreAddressItem.cs" />
     <Compile Include="DTO\User.cs" />

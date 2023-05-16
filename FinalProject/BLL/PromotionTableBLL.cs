@@ -25,5 +25,13 @@ namespace FinalProject.BLL
                 return promotionTableDAL.populatePromotionData_PromotionTable_DAL();
             }
         }
+        public DataTable searchPromotion(String key)
+        {
+            return promotionTableDAL.searchPromotion_DAL(key);
+        }
+        public void addPromotion(PromotionItem item)
+        {
+            promotionTableDAL.addPromotion_DAL(item);
+        }
     }
 }

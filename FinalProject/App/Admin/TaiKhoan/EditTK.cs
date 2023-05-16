@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.BLL;
+using FinalProject.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,55 @@ namespace FinalProject.App.Admin.TaiKhoan
         public EditTK()
         {
             InitializeComponent();
+            Dictionary<string, string> comboSource = new Dictionary<string, string>();
+            ProvinceBLL storeBLL = new ProvinceBLL();
+            foreach (DataRow row in storeBLL.getAllProvince().Rows)
+            {
+                comboSource.Add(row["provinceID"].ToString(), row["provinceName"].ToString());
+            }
+            cbAddress.DataSource = new BindingSource(comboSource, null);
+            cbAddress.DisplayMember = "Value";
+            cbAddress.ValueMember = "Key";
+        }
+        bool IsValidEmail(string email)
+        {
+            var trimmedEmail = email.Trim();
+            if (trimmedEmail.EndsWith("."))
+            {
+                return false; 
+            }
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == trimmedEmail;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            AdminUserBLL ehe = new AdminUserBLL();
+            User newUser = new User();
+            if (txtFullname.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtPhonenumber.Text == "" || cbAddress.Text == "" || txtUsername.Text == "" || cbRole.Text == "")
+                MessageBox.Show("Nhập thiếu");
+            else
+            {
+                if (IsValidEmail(txtEmail.Text)==false)
+                    MessageBox.Show("Nhập sai email");
+                else
+                {
+                    newUser.fullName = txtFullname.Text;
+                    newUser.emailAddress = txtEmail.Text;
+                    newUser.contactAddress = cbAddress.Text;
+                    newUser.phoneNumber = txtPhonenumber.Text;
+                    newUser.userPassword = txtPassword.Text;
+                    newUser.userName = txtUsername.Text;
+                    newUser.userRole = cbRole.Text;
+                    ehe.addUser(newUser);
+                }
+            }
         }
     }
 }

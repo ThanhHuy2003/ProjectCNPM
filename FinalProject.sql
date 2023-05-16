@@ -701,7 +701,6 @@ select * from CartData
 select * from HistoryUserData
 select * from HistoryUserDataDetail
 
-select * from LoginData
 -- proc InsertLoginData
 select * from MenuData
 -- proc InsertMenuData
