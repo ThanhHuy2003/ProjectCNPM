@@ -25,13 +25,17 @@ namespace FinalProject.BLL
                 return cartTableDAL.populateCartData_CartTable_DAL(userID);
             }
         }
-        public void deleteCartItem_CartTable_BLL(string id)
+        public void deleteCartItem_CartTable_BLL(string id, string userID)
         {
-            cartTableDAL.deleteCartItem_CartTable_DAL(id);
+            cartTableDAL.deleteCartItem_CartTable_DAL(id, userID);
         }
         public void insertIntoCartData_CartTable_BLL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
         {
             cartTableDAL.insertIntoCartData_CartTable_DAL(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID);
+        }
+        public void updateIntoCartData_CartTable_BLL(string dishID, int totalQuantity, string userID)
+        {
+            cartTableDAL.updateCartData_CartTable_DAL(dishID, totalQuantity, userID);
         }
     }
 }

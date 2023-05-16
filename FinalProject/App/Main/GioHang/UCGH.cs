@@ -85,7 +85,7 @@ namespace FinalProject.App.Main.GioHang
                     Item.Price = newCartDataItem.dishPrice;
                     Item.Quantity = newCartDataItem.totalQuantity;
                     Item.ButtonClicked += ChildControl_ButtonClicked;
-
+                    Item.UserID = userIDLogin;
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }

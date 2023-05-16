@@ -128,20 +128,39 @@ namespace FinalProject.DAL
                 cmd.Parameters.AddWithValue("@dishPrice", dishPrice);
                 cmd.Parameters.AddWithValue("@totalQuantity", totalQuantity);
                 cmd.Parameters.AddWithValue("@userID", userID);
-                MessageBox.Show(dishID + " " + dishPicture + " " + dishName + " " + dishPrice + " " + totalQuantity + " " + userID);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Đã thêm vào giỏ hàng");
+            }
+            catch
+            {
+                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn");
+            }
+        }
+        public void updateCartData_DA_DAL(string dishID, int totalQuantity, string userID)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "update CartData set totalQuantity = @totalQuantity where dishID = @dishID and userID = @userID";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@dishID", dishID);
+                cmd.Parameters.AddWithValue("@totalQuantity", totalQuantity);
+                cmd.Parameters.AddWithValue("@userID", userID);
                 cmd.ExecuteNonQuery();
                 conn.Close();
             }
             catch
             {
-                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn. Vui lòng cập nhật số lượng trong giỏ hàng");
+                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn");
             }
         }
-        public void deleteCartItem_DA_DAL(string id)
+        public void deleteCartItem_DA_DAL(string id, string userID)
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "delete from CartData where dishID = '" + id +  "'";
+            String sSQL = "delete from CartData where dishID = '" + id +  "'" + "and userID = '" + userID + "'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.ExecuteNonQuery();
             conn.Close();

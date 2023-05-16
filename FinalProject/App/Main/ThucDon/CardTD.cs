@@ -36,11 +36,25 @@ namespace FinalProject.App.Main.ThucDon
         private void PlusItem1_Click(object sender, EventArgs e)
         {
             setChoice(CountItem1, PlusItem1, true);
+            this.TotalQuantity = this.TotalQuantity + 1;
+            CartTableBLL cartTableBLL = new CartTableBLL();
+            cartTableBLL.updateIntoCartData_CartTable_BLL(this.ID, this.TotalQuantity, this.UserID);
         }
 
         private void SubItem1_Click(object sender, EventArgs e)
         {
             setChoice(CountItem1, SubItem1, false);
+            if(TotalQuantity > 0)
+            {
+                this.TotalQuantity = this.TotalQuantity - 1;
+                CartTableBLL cartTableBLL = new CartTableBLL();
+                cartTableBLL.updateIntoCartData_CartTable_BLL(this.ID, this.TotalQuantity, this.UserID);
+            }
+            else if (TotalQuantity == 0)
+            {
+                CartTableBLL cartTableBLL = new CartTableBLL();
+                cartTableBLL.deleteCartItem_CartTable_BLL(this.ID, this.UserID);
+            }
         }
         #region Properties
 
