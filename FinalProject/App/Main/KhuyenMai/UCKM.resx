@@ -141,6 +141,9 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="&gt;&gt;LabelNhapKM.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="LabelNhapKM.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 26</value>
   </data>
@@ -174,9 +177,6 @@
   <data name="SearchTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>1070, 43</value>
   </data>
-  <data name="LabelNhapKM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 42</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UCKM</value>
   </data>
@@ -201,8 +201,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;LabelNhapKM.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="LabelNhapKM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 42</value>
   </data>
   <data name="LabelNhapKM.Values.ExtraText" xml:space="preserve">
     <value />
@@ -246,10 +246,4 @@
   <data name="picSearch.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
 </root>

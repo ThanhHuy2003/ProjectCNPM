@@ -96,7 +96,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnAll.TabIndex = 61;
-            this.btnAll.Values.Text = "All";
+            this.btnAll.Values.Text = "Tất cả";
             this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnFood
@@ -151,7 +151,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnFood.TabIndex = 60;
-            this.btnFood.Values.Text = "Food";
+            this.btnFood.Values.Text = "Thức ăn";
             this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // btnDrink
@@ -206,7 +206,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnDrink.TabIndex = 59;
-            this.btnDrink.Values.Text = "Drink";
+            this.btnDrink.Values.Text = "Nước";
             this.btnDrink.Click += new System.EventHandler(this.btnDrink_Click);
             // 
             // btnCombo

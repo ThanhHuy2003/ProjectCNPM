@@ -35,19 +35,19 @@
             // lblCH
             // 
             this.lblCH.Location = new System.Drawing.Point(38, 20);
-            this.lblCH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCH.Margin = new System.Windows.Forms.Padding(2);
             this.lblCH.Name = "lblCH";
             this.lblCH.Size = new System.Drawing.Size(343, 30);
             this.lblCH.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblCH.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCH.TabIndex = 0;
-            this.lblCH.Values.Text = "Các cửa hàng tại TP.Hồ Chí Minh";
+            this.lblCH.Values.Text = "Các cửa hàng tại TP.Hồ Chí Minh ";
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(44, 54);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1142, 563);
             this.flowLayoutPanel1.TabIndex = 1;
@@ -59,7 +59,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lblCH);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCCH";
             this.Size = new System.Drawing.Size(1230, 900);
             this.Load += new System.EventHandler(this.UCCH_Load);

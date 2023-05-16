@@ -16,6 +16,8 @@ using FinalProject.DTO;
 using FinalProject.DAL;
 using FinalProject.BLL;
 using FinalProject.App;
+using System.Globalization;
+using System.Threading;
 
 namespace FinalProject.App
 {
@@ -24,6 +26,8 @@ namespace FinalProject.App
 
         public UCTD()
         {
+            File ehe = new File();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
         }
         public Image resizeImage(Image image, int width, int height)

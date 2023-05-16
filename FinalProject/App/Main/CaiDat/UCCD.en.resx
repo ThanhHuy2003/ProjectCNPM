@@ -160,4 +160,16 @@
   <data name="labelHoten.Text" xml:space="preserve">
     <value>Full name:</value>
   </data>
+  <data name="tabTTCN.Text" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="tabDH.Text" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="tabPTTT.Text" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="tabBMDK.Text" xml:space="preserve">
+    <value>Privacy and terms</value>
+  </data>
 </root>
