@@ -148,14 +148,17 @@
   <data name="Eye2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eye2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="voucher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voucher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HinhKM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HinhKM1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_close_form" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icon_close_form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lich" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lich.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +169,9 @@
   <data name="imageedit_9_8657382073-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_9_8657382073-transformed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="acc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imageedit_8_3852496439-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageedit_8_3852496439-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,11 +181,17 @@
   <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Luongg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Luongg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_close_form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\icon_close_form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ImageSlider" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ImageSlider.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,13 +259,13 @@
   <data name="image 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="acc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\acc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo-_-lotteria-800-x-515px-scaled_preview_rev_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MoMo_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MoMo_Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo-_-lotteria-800-x-515px-scaled_preview_rev_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

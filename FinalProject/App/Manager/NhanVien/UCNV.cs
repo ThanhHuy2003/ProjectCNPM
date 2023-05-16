@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App.Main.CaiDat
+namespace FinalProject.App.Manager
 {
-    public partial class CardKM2 : UserControl
+    public partial class UCNV : UserControl
     {
-        public CardKM2()
+        public UCNV()
         {
             InitializeComponent();
+        }
+        Form frm = new AddNV();
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frm.ShowDialog();
         }
     }
 }

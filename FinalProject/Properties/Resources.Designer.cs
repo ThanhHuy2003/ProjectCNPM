@@ -443,6 +443,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lich {
+            get {
+                object obj = ResourceManager.GetObject("Lich", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
@@ -456,6 +466,16 @@ namespace FinalProject.Properties {
         internal static System.Drawing.Bitmap logo___lotteria_800_x_515px_scaled_preview_rev_11 {
             get {
                 object obj = ResourceManager.GetObject("logo-_-lotteria-800-x-515px-scaled_preview_rev_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Luongg {
+            get {
+                object obj = ResourceManager.GetObject("Luongg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,6 +513,16 @@ namespace FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NL {
+            get {
+                object obj = ResourceManager.GetObject("NL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap searchh {
             get {
                 object obj = ResourceManager.GetObject("searchh", resourceCulture);
@@ -516,6 +546,16 @@ namespace FinalProject.Properties {
         internal static System.Drawing.Bitmap TT {
             get {
                 object obj = ResourceManager.GetObject("TT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap voucher {
+            get {
+                object obj = ResourceManager.GetObject("voucher", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

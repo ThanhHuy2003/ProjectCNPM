@@ -294,17 +294,29 @@ create table NotificationData
 	notificationID varchar(8) not null,
 	notificationPicture varchar(500) not null,
     notificationName nvarchar(500) not null,
-    notificationDescription nvarchar(500) not null,
     notificationDate datetime not null,
     primary key(notificationID)
+)
+go
+
+create table NotificationDataDetail
+(
+	notificationID varchar(8) not null,
+	notificationPictureDetail varchar(500) not null,
+    notificationDescription nvarchar(4000) not null,
+	notificationFocus nvarchar(4000),
+    primary key(notificationID),
+	foreign key(notificationID) references NotificationData(notificationID)
 )
 go
 
 create procedure InsertNotificationData
     @notificationPicture varchar(500),
     @notificationName nvarchar(500),
-    @notificationDescription nvarchar(500),
-    @notificationDate datetime
+    @notificationDate datetime,
+	@notificationPictureDetail varchar(500),
+	@notificationDescription nvarchar(4000),
+	@notificationFocus nvarchar(4000)
 as
 begin
     declare @newnNotificationID char(8)
@@ -319,12 +331,13 @@ begin
 		end
 		set @newnNotificationID = 'NID' + @maxNotificationID 
 	end
-    insert into NotificationData(notificationID, notificationPicture, notificationName, notificationDescription, notificationDate) values (@newnNotificationID, @notificationPicture, @notificationName, @notificationDescription, @notificationDate)
+    insert into NotificationData(notificationID, notificationPicture, notificationName, notificationDate) values (@newnNotificationID, @notificationPicture, @notificationName, @notificationDate)
+	insert into NotificationDataDetail(notificationID, notificationPictureDetail, notificationDescription, notificationFocus) values (@newnNotificationID, @notificationPictureDetail, @notificationDescription, @notificationFocus)
 end
 go
 
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', N'Món gà rán nóng giòn cùng mùa hè nóng nực', '2023-05-07'
-exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', N'Món nước tươi mát cùng mùa hè nhiệt huyết', '2023-05-07'
+exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Thông báo món ăn mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/COMBO%20NHOM.jpg?v=41MdE4', N'Lotteria đi đầu xu thế sử dụng nước sốt nhập khẩu 100% từ Hàn Quốc cùng nguyên liệu tươi sạch, nguồn gốc rõ ràng, đảm bảo vệ sinh an toàn thực phẩm, mang những món ăn chất lượng, tuyệt vời đến với khách hàng. Phiếu quà tặng có giá trị tương đương tiền mặt, được dùng để thanh toán cho hóa đơn trên 50.000đ. ', 'xyz'
+exec InsertNotificationData 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', N'Thông báo món nước mới ra', '2023-05-07', 'https://static.kfcvietnam.com.vn/images/category/lg/TRANG%20MIENG.jpg?v=41MdE4', 'abc', 'xyz'
 go
 
 CREATE TABLE revenue (
@@ -333,12 +346,83 @@ CREATE TABLE revenue (
     dateCreate date NOT NULL,
     FOREIGN KEY (storeID) REFERENCES StoreAddress(storeID)
 );
-insert into revenue
-values('SID00002',180000,'5-13-2023')
+go
+
+insert into revenue values('SID00002',180000,'5-13-2023')
+go
+
+create table HistoryUserData
+(
+	orderUserID varchar(8) not null,
+	userID varchar(8) not null,
+	orderPicture varchar(500) not null,
+	totalDish int not null,
+	totalCash int not null,
+	orderDate datetime default current_timestamp,
+	condition nvarchar(500) not null,
+	primary key(orderUserID),
+	foreign key(userID) references LoginData(userID)
+)
+go
+
+create table HistoryUserDataDetail
+(
+	orderUserID varchar(8),
+	dishID varchar(8) not null,
+	dishPicture varchar(500) not null,
+	orderDate datetime not null,
+    dishName nvarchar(500) not null,
+    dishDescription nvarchar(500) not null,
+    dishPrice int not null,
+	dishType varchar(500) not null,
+	dishTotal int not null,
+	foreign key(orderUserID) references HistoryUserData(orderUserID),
+	foreign key(dishID) references MenuData(dishID),
+	primary key(orderUserID, dishID)
+)
+go
+
+insert into HistoryUserData(orderUserID, userID, orderPicture, totalDish, totalCash, condition) values ('OUID0001', 'UID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', 4, 300000, N'Món ăn đã được giao')
+go
+
+insert into HistoryUserDataDetail values ('OUID0001', 'DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', '2023-05-15 01:25:48.627', 'Khoai Tây Múi Cau', 'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3)
+insert into HistoryUserDataDetail values ('OUID0001', 'DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', '2023-05-15 01:25:48.627', 'Combo Đùi Gà Rán', 'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo', 1)
+go
+
+create table CartData
+(
+	dishID varchar(8) not null,
+	dishPicture varchar(500) not null,
+    dishName nvarchar(500) not null,
+    dishDescription nvarchar(500) not null,
+    dishPrice int not null,
+	dishType varchar(500) not null,
+	totalQuantity int not null,
+    primary key(dishID),
+	foreign key(dishID) references MenuData(dishID)
+)
+go
+
+insert into CartData values
+('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3),
+('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 120000, 'combo', 2)
+go
+
+select * from CartData
+select * from HistoryUserData
+select * from HistoryUserDataDetail
 
 select * from LoginData
+-- proc InsertLoginData
 select * from MenuData
+-- proc InsertMenuData
 select * from NotificationData
+-- proc InsertNotificationData
+select * from NotificationDataDetail
 select * from PromotionData
+-- proc InsertPromotionData
 select * from Province
+select * from revenue
 select * from StoreAddress
+-- proc InsertStoreAddress
+go

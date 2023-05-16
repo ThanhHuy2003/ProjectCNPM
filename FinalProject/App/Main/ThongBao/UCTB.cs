@@ -1,4 +1,5 @@
-﻿using FinalProject.App.Main.ThucDon;
+﻿using FinalProject.App.Main.ThongBao;
+using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
@@ -45,22 +46,22 @@ namespace FinalProject.App.Main
         }
         private void populateNotification_UCTB()
         {
-            AdminNotificationBLL notif = new AdminNotificationBLL();
+            NotificationTableBLL newNotificationTableBLL = new NotificationTableBLL();
 
-            if (notif.getAllNotification() != null)
+            if (newNotificationTableBLL.populateNotificationData_NotificationTable_BLL() != null)
             {
-                foreach (DataRow row in notif.getAllNotification().Rows)
+                foreach (DataRow row in newNotificationTableBLL.populateNotificationData_NotificationTable_BLL().Rows)
                 {
-                    FinalProject.DTO.Notification newMenuItem = new FinalProject.DTO.Notification();
+                    FinalProject.DTO.Notification newItem = new FinalProject.DTO.Notification();
 
+                    newItem.notificationID = row["notificationID"].ToString();
+                    newItem.notificationPicture = row["notificationPicture"].ToString();
+                    newItem.notificationName = row["notificationName"].ToString();
+                    newItem.notificationDate = row["notificationDate"].ToString();
 
-                    newMenuItem.notificationID = row["notificationID"].ToString();
-                    newMenuItem.notificationPicture = row["notificationPicture"].ToString();
-                    newMenuItem.notificationName = row["notificationName"].ToString();
-                    newMenuItem.notificationDescription = row["notificationDescription"].ToString();
-                    MessageBox.Show(newMenuItem.notificationID);
-                    CardTD Item = new CardTD();
-                    var request = WebRequest.Create(newMenuItem.notificationPicture);
+                    CardTB Item = new CardTB();
+                    Item.ID = newItem.notificationID;
+                    var request = WebRequest.Create(newItem.notificationPicture);
 
                     using (var response = request.GetResponse())
                     using (var stream = response.GetResponseStream())
@@ -69,7 +70,8 @@ namespace FinalProject.App.Main
                         Item.Picture = resizeImage(Item.Picture, 255, 143);
                     }
 
-                    Item.Title = newMenuItem.notificationName;
+                    Item.Title = newItem.notificationName;
+                    Item.Date = newItem.notificationDate.Split(' ')[0];
 
                     this.menuNotification.Controls.Add(Item);
                 }

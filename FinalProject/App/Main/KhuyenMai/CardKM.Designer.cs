@@ -38,7 +38,7 @@
             // ButtonKM1
             // 
             this.ButtonKM1.CornerRoundingRadius = 15F;
-            this.ButtonKM1.Location = new System.Drawing.Point(661, 97);
+            this.ButtonKM1.Location = new System.Drawing.Point(898, 98);
             this.ButtonKM1.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonKM1.Name = "ButtonKM1";
             this.ButtonKM1.Size = new System.Drawing.Size(149, 46);
@@ -56,18 +56,19 @@
             // 
             // kryptonLabel35
             // 
+            this.kryptonLabel35.AutoSize = false;
             this.kryptonLabel35.Location = new System.Drawing.Point(192, 54);
             this.kryptonLabel35.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel35.Name = "kryptonLabel35";
-            this.kryptonLabel35.Size = new System.Drawing.Size(419, 19);
+            this.kryptonLabel35.Size = new System.Drawing.Size(806, 19);
             this.kryptonLabel35.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel35.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel35.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel35.TabIndex = 12;
             this.kryptonLabel35.Values.Text = "Áp dụng từ ngày 3/3/2023 đến ngày 3/7/2023 đối với hóa đơn từ 100k";
             // 
             // kryptonLabel36
             // 
-            this.kryptonLabel36.Location = new System.Drawing.Point(336, 26);
+            this.kryptonLabel36.Location = new System.Drawing.Point(509, 14);
             this.kryptonLabel36.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel36.Name = "kryptonLabel36";
             this.kryptonLabel36.Size = new System.Drawing.Size(280, 23);
@@ -91,13 +92,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.ButtonKM1);
             this.Controls.Add(this.kryptonLabel35);
             this.Controls.Add(this.kryptonLabel36);
             this.Controls.Add(this.pictureBox12);
             this.Name = "CardKM";
-            this.Size = new System.Drawing.Size(815, 156);
+            this.Size = new System.Drawing.Size(1056, 156);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

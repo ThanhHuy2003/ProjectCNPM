@@ -4,14 +4,22 @@ using FinalProject.App.Admin.ThongBao;
 using FinalProject.App.Login;
 using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
+using FinalProject.App.Main.GioHang;
 using FinalProject.App.Main.ThucDon;
+using FinalProject.App.Manager;
+using FinalProject.App.Staff.GioHang;
+using FinalProject.App.Staff.KhuyenMai;
+using FinalProject.App.Staff.ThucDon;
+using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,57 +27,72 @@ namespace FinalProject
 {
     public partial class Main : Form
     {
-        Func func = new Func();
+        Func func;
         public Main()
         {
+            File ehe = new File();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
+            MessageBox.Show(ehe.readLanguage());
+            func = new Func(this);
+
         }
         private void btnTD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTD.Location.Y);
-            Func.togglePanel(panel_main, "TD");
+            func.togglePanel(panel_main, "TD");
         }
         private void btnKM_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnKM.Location.Y);
-            Func.togglePanel(panel_main, "KM");
+            func.togglePanel(panel_main, "KM");
         }
         private void btnCH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCH.Location.Y);
-            Func.togglePanel(panel_main, "CH");
+            func.togglePanel(panel_main, "CH");
         }
         private void btnGH_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnGH.Location.Y);
+            func.togglePanel(panel_main, "GH");
         }
 
         private void btnTB_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnTB.Location.Y);
+            func.togglePanel(panel_main, "TB");
         }
         private void btnCD_Click(object sender, EventArgs e)
         {
             menu_active.Visible = true;
             this.menu_active.Location = new Point(1, btnCD.Location.Y);
-            Func.togglePanel(panel_main, "CD");
+            func.togglePanel(panel_main, "CD");
         }
         private void btnlogo_Click(object sender, EventArgs e)
         {
-            Func.togglePanel(panel_main, "Main");
+            func.togglePanel(panel_main, "Main");
         }
         private void Main_Load(object sender, EventArgs e)
         {
             btnlogo.Select();
-            Func.togglePanel(panel_main, "Main");
+            func.togglePanel(panel_main, "Main");
         }
         public class Func
         {
+            private Main main; // Tham chiếu đến instance của class Main
+
+            public Func(Main main)
+            {
+                this.main = main;
+            }
+
+            //User
             private static UCTD uCTD;
             private static UCMain uCMain;
             private static UCKM uCKM;
@@ -80,13 +103,22 @@ namespace FinalProject
             private static CardTD cardTD;
             private static CardDH cardDH;
             private static CardKM cardKM;
-            private static CardKM2 cardKM2;
+            //Admin
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
             private static UCDT uCDT;
             private static UCTBAdmin uCTBAdmin;
-            public static void togglePanel(Panel panel, String panelName)
+            private static UCTB uCTB;
+            //Staff
+            private static UCTDStaff uCTDStaff;
+            private static UCKMStaff uCKMStaff;
+            private static UCGH uCGH;
+            //Manager
+            private static UCNV uCNV;
+            private static UCLuong uCLuong;
+            public void togglePanel(Panel panel, String panelName)
             {
+                
                 panel.Controls.Clear();
                 panel.AutoScroll = true;
                 switch (panelName)
@@ -94,6 +126,7 @@ namespace FinalProject
                     case "Main":
                         if (uCMain == null)
                         {
+                            
                             uCMain = new UCMain();
                             panel.Controls.Add(uCMain);
                             uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -134,6 +167,36 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCKM);
+                        }
+                        break;
+                    case "TB":
+                        if (uCTB == null)
+                        {
+                            uCTB = new UCTB();
+                            panel.Controls.Add(uCTB);
+                            uCTB.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTB.Location = new System.Drawing.Point(0, 0);
+                            uCTB.Name = "uCTB";
+                            uCTB.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTB);
+                        }
+                        break;
+                    case "GH":
+                        if (uCGH == null)
+                        {
+                            uCGH = new UCGH();
+                            panel.Controls.Add(uCGH);
+                            uCGH.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCGH.Location = new System.Drawing.Point(0, 0);
+                            uCGH.Name = "uCGH";
+                            uCGH.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCGH);
                         }
                         break;
                     case "CD":
@@ -227,20 +290,6 @@ namespace FinalProject
                             panel.Controls.Add(cardKM);
                         }
                         break;
-                    case "CardKM2":
-                        if (cardKM == null)
-                        {
-                            cardKM2 = new CardKM2();
-                            panel.Controls.Add(cardKM2);
-                            cardKM2.Dock = System.Windows.Forms.DockStyle.Fill;
-                            cardKM2.Location = new System.Drawing.Point(0, 0);
-                            cardKM2.Name = "cardKM";
-                        }
-                        else
-                        {
-                            panel.Controls.Add(cardKM2);
-                        }
-                        break;
                     case "TK":
                         if (uCTK == null)
                         {
@@ -300,6 +349,66 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCTBAdmin);
+                        }
+                        break;
+                    case "TDStaff":
+                        if (uCTDStaff == null)
+                        {
+                            uCTDStaff = new UCTDStaff();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCTDStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCTDStaff.Location = new System.Drawing.Point(0, 0);
+                            uCTDStaff.Name = "uCTDStaff";
+                            uCTDStaff.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCTDStaff);
+                        }
+                        break;
+                    case "KMStaff":
+                        if (uCKMStaff == null)
+                        {
+                            uCKMStaff = new UCKMStaff();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCKMStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCKMStaff.Location = new System.Drawing.Point(0, 0);
+                            uCKMStaff.Name = "uCKMStaff";
+                            uCKMStaff.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCKMStaff);
+                        }
+                        break;
+                    case "NV":
+                        if (uCNV == null)
+                        {
+                            uCNV = new UCNV();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCNV.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCNV.Location = new System.Drawing.Point(0, 0);
+                            uCNV.Name = "uCNV";
+                            uCNV.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCNV);
+                        }
+                        break;
+                    case "Luong":
+                        if (uCLuong == null)
+                        {
+                            uCLuong = new UCLuong();
+                            panel.Controls.Add(uCLuong);
+                            uCLuong.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCLuong.Location = new System.Drawing.Point(0, 0);
+                            uCLuong.Name = "uCLuong";
+                            uCLuong.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCLuong);
                         }
                         break;
                     default:

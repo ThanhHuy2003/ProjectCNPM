@@ -33,21 +33,19 @@
             // 
             // menuNotification
             // 
-            this.menuNotification.Location = new System.Drawing.Point(49, 30);
-            this.menuNotification.Margin = new System.Windows.Forms.Padding(4);
+            this.menuNotification.Location = new System.Drawing.Point(37, 24);
             this.menuNotification.Name = "menuNotification";
-            this.menuNotification.Size = new System.Drawing.Size(1289, 790);
+            this.menuNotification.Size = new System.Drawing.Size(1132, 642);
             this.menuNotification.TabIndex = 0;
             // 
             // UCTB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.menuNotification);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCTB";
-            this.Size = new System.Drawing.Size(1400, 923);
+            this.Size = new System.Drawing.Size(1220, 750);
             this.Load += new System.EventHandler(this.UCTB_Load);
             this.ResumeLayout(false);
 
