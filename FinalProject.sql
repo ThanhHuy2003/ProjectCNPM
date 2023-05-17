@@ -327,17 +327,19 @@ create table PromotionData
 	promotionPicture varchar(500) not null,
     promotionName nvarchar(500) not null unique,
     promotionDescription nvarchar(500) not null,
-    promotionDate datetime not null,
+    promotionDate date not null,
 	promotionPercent int not null,
     primary key(promotionID)
 )
+alter table PromotionData
+alter column promotionDate date
 go
 
 create procedure InsertPromotionData
     @promotionPicture varchar(500),
     @promotionName nvarchar(500),
     @promotionDescription nvarchar(500),
-    @promotionDate datetime,
+    @promotionDate date,
 	@promotionPercent int
 as
 begin
@@ -468,7 +470,7 @@ create table NotificationData
 	notificationID varchar(8) not null,
 	notificationPicture varchar(500) not null,
     notificationName nvarchar(500) not null,
-    notificationDate datetime not null,
+    notificationDate date not null,
     primary key(notificationID)
 )
 go
@@ -487,7 +489,7 @@ go
 create procedure InsertNotificationData
     @notificationPicture varchar(500),
     @notificationName nvarchar(500),
-    @notificationDate datetime,
+    @notificationDate date,
 	@notificationPictureDetail varchar(500),
 	@notificationDescription nvarchar(4000),
 	@notificationFocus nvarchar(4000)
@@ -705,6 +707,8 @@ select * from HistoryUserDataDetail
 select * from MenuData
 -- proc InsertMenuData
 select * from NotificationData
+alter table NotificationData
+alter column notificationDate date
 -- proc InsertNotificationData
 select * from NotificationDataDetail
 select * from PromotionData

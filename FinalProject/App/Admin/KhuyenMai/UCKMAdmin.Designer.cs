@@ -50,7 +50,7 @@
             // kryptonTextBox1
             // 
             this.kryptonTextBox1.Location = new System.Drawing.Point(71, 91);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(1284, 47);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -67,7 +67,7 @@
             // 
             this.btnAddKM.CornerRoundingRadius = 30F;
             this.btnAddKM.Location = new System.Drawing.Point(1179, 26);
-            this.btnAddKM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddKM.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddKM.Name = "btnAddKM";
             this.btnAddKM.Size = new System.Drawing.Size(176, 57);
             this.btnAddKM.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -83,8 +83,9 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(92, 165);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1261, 762);
             this.flowLayoutPanel1.TabIndex = 7;
@@ -95,7 +96,7 @@
             this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
             this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.picSearch.Location = new System.Drawing.Point(1279, 97);
-            this.picSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picSearch.Margin = new System.Windows.Forms.Padding(4);
             this.picSearch.Name = "picSearch";
             this.picSearch.Size = new System.Drawing.Size(48, 39);
             this.picSearch.TabIndex = 5;
@@ -112,9 +113,10 @@
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.lblKM);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCKMAdmin";
             this.Size = new System.Drawing.Size(1440, 985);
+            this.Load += new System.EventHandler(this.UCKMAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

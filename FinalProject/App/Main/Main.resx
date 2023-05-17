@@ -117,4 +117,262 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnlogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 7</value>
+  </data>
+  <data name="btnlogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 89</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnlogo.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnlogo.Values.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnlogo.Name" xml:space="preserve">
+    <value>btnlogo</value>
+  </data>
+  <data name="&gt;&gt;btnlogo.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnlogo.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnlogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 709</value>
+  </data>
+  <data name="btnCD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 89</value>
+  </data>
+  <data name="btnCD.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnCD.Values.Text" xml:space="preserve">
+    <value>Cài đặt </value>
+  </data>
+  <data name="&gt;&gt;btnCD.Name" xml:space="preserve">
+    <value>btnCD</value>
+  </data>
+  <data name="&gt;&gt;btnCD.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnCD.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnCD.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnKM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 219</value>
+  </data>
+  <data name="btnKM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 89</value>
+  </data>
+  <data name="btnKM.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnKM.Values.Text" xml:space="preserve">
+    <value>Khuyến mãi </value>
+  </data>
+  <data name="&gt;&gt;btnKM.Name" xml:space="preserve">
+    <value>btnKM</value>
+  </data>
+  <data name="&gt;&gt;btnKM.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnKM.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnKM.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 311</value>
+  </data>
+  <data name="btnTB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 89</value>
+  </data>
+  <data name="btnTB.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnTB.Values.Text" xml:space="preserve">
+    <value>Thông báo </value>
+  </data>
+  <data name="&gt;&gt;btnTB.Name" xml:space="preserve">
+    <value>btnTB</value>
+  </data>
+  <data name="&gt;&gt;btnTB.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnTB.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnTB.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnGH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 400</value>
+  </data>
+  <data name="btnGH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 89</value>
+  </data>
+  <data name="btnGH.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnGH.Values.Text" xml:space="preserve">
+    <value>Giỏ hàng </value>
+  </data>
+  <data name="&gt;&gt;btnGH.Name" xml:space="preserve">
+    <value>btnGH</value>
+  </data>
+  <data name="&gt;&gt;btnGH.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnGH.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnGH.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnCH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 486</value>
+  </data>
+  <data name="btnCH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 89</value>
+  </data>
+  <data name="btnCH.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCH.Values.Text" xml:space="preserve">
+    <value>Cửa hàng </value>
+  </data>
+  <data name="&gt;&gt;btnCH.Name" xml:space="preserve">
+    <value>btnCH</value>
+  </data>
+  <data name="&gt;&gt;btnCH.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnCH.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnCH.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="menu_active.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 129</value>
+  </data>
+  <data name="menu_active.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 89</value>
+  </data>
+  <data name="menu_active.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;menu_active.Name" xml:space="preserve">
+    <value>menu_active</value>
+  </data>
+  <data name="&gt;&gt;menu_active.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonPanel, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;menu_active.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;menu_active.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnTD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 129</value>
+  </data>
+  <data name="btnTD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 89</value>
+  </data>
+  <data name="btnTD.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnTD.Values.Text" xml:space="preserve">
+    <value>Thực đơn </value>
+  </data>
+  <data name="&gt;&gt;btnTD.Name" xml:space="preserve">
+    <value>btnTD</value>
+  </data>
+  <data name="&gt;&gt;btnTD.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnTD.Parent" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnTD.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="kryptonPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -5</value>
+  </data>
+  <data name="kryptonPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 907</value>
+  </data>
+  <data name="kryptonPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;kryptonPanel1.Name" xml:space="preserve">
+    <value>kryptonPanel1</value>
+  </data>
+  <data name="&gt;&gt;kryptonPanel1.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonPanel, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;kryptonPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_main.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, -2</value>
+  </data>
+  <data name="panel_main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1220, 900</value>
+  </data>
+  <data name="panel_main.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Name" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_main.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1484, 811</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
