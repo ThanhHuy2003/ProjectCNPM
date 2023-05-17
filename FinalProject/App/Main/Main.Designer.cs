@@ -46,6 +46,7 @@
             // 
             // kryptonPanel1
             // 
+            resources.ApplyResources(this.kryptonPanel1, "kryptonPanel1");
             this.kryptonPanel1.Controls.Add(this.btnlogo);
             this.kryptonPanel1.Controls.Add(this.btnCD);
             this.kryptonPanel1.Controls.Add(this.btnKM);
@@ -54,15 +55,13 @@
             this.kryptonPanel1.Controls.Add(this.btnCH);
             this.kryptonPanel1.Controls.Add(this.menu_active);
             this.kryptonPanel1.Controls.Add(this.btnTD);
-            resources.ApplyResources(this.kryptonPanel1, "kryptonPanel1");
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(267, 806);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             // 
             // btnlogo
             // 
-            this.btnlogo.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnlogo, "btnlogo");
+            this.btnlogo.CornerRoundingRadius = -1F;
             this.btnlogo.Name = "btnlogo";
             this.btnlogo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnlogo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -107,14 +106,15 @@
             this.btnlogo.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnlogo.StateTracking.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.None;
             this.btnlogo.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnlogo.Values.ExtraText = resources.GetString("btnlogo.Values.ExtraText");
+            this.btnlogo.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnlogo.Values.ImageTransparentColor")));
             this.btnlogo.Values.Text = resources.GetString("btnlogo.Values.Text");
             this.btnlogo.Click += new System.EventHandler(this.btnlogo_Click);
             // 
             // btnCD
             // 
-            this.btnCD.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnCD, "btnCD");
-            this.btnCD.Location = new System.Drawing.Point(21, 717);
+            this.btnCD.CornerRoundingRadius = -1F;
             this.btnCD.Name = "btnCD";
             this.btnCD.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnCD.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -142,13 +142,15 @@
             this.btnCD.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCD.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCD.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnCD.Values.ExtraText = resources.GetString("btnCD.Values.ExtraText");
+            this.btnCD.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnCD.Values.ImageTransparentColor")));
             this.btnCD.Values.Text = resources.GetString("btnCD.Values.Text");
             this.btnCD.Click += new System.EventHandler(this.btnCD_Click);
             // 
             // btnKM
             // 
-            this.btnKM.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnKM, "btnKM");
+            this.btnKM.CornerRoundingRadius = -1F;
             this.btnKM.Name = "btnKM";
             this.btnKM.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnKM.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -176,13 +178,15 @@
             this.btnKM.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnKM.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnKM.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnKM.Values.ExtraText = resources.GetString("btnKM.Values.ExtraText");
+            this.btnKM.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnKM.Values.ImageTransparentColor")));
             this.btnKM.Values.Text = resources.GetString("btnKM.Values.Text");
             this.btnKM.Click += new System.EventHandler(this.btnKM_Click);
             // 
             // btnTB
             // 
-            this.btnTB.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnTB, "btnTB");
+            this.btnTB.CornerRoundingRadius = -1F;
             this.btnTB.Name = "btnTB";
             this.btnTB.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnTB.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -209,13 +213,15 @@
             this.btnTB.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTB.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTB.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnTB.Values.ExtraText = resources.GetString("btnTB.Values.ExtraText");
+            this.btnTB.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnTB.Values.ImageTransparentColor")));
             this.btnTB.Values.Text = resources.GetString("btnTB.Values.Text");
             this.btnTB.Click += new System.EventHandler(this.btnTB_Click);
             // 
             // btnGH
             // 
-            this.btnGH.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnGH, "btnGH");
+            this.btnGH.CornerRoundingRadius = -1F;
             this.btnGH.Name = "btnGH";
             this.btnGH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnGH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -243,13 +249,15 @@
             this.btnGH.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnGH.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnGH.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnGH.Values.ExtraText = resources.GetString("btnGH.Values.ExtraText");
+            this.btnGH.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnGH.Values.ImageTransparentColor")));
             this.btnGH.Values.Text = resources.GetString("btnGH.Values.Text");
             this.btnGH.Click += new System.EventHandler(this.btnGH_Click);
             // 
             // btnCH
             // 
-            this.btnCH.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnCH, "btnCH");
+            this.btnCH.CornerRoundingRadius = -1F;
             this.btnCH.Name = "btnCH";
             this.btnCH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnCH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -278,6 +286,8 @@
             this.btnCH.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCH.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCH.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnCH.Values.ExtraText = resources.GetString("btnCH.Values.ExtraText");
+            this.btnCH.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnCH.Values.ImageTransparentColor")));
             this.btnCH.Values.Text = resources.GetString("btnCH.Values.Text");
             this.btnCH.Click += new System.EventHandler(this.btnCH_Click);
             // 
@@ -289,8 +299,8 @@
             // 
             // btnTD
             // 
-            this.btnTD.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnTD, "btnTD");
+            this.btnTD.CornerRoundingRadius = -1F;
             this.btnTD.Name = "btnTD";
             this.btnTD.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnTD.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -321,6 +331,8 @@
             this.btnTD.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTD.StateTracking.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.None;
             this.btnTD.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnTD.Values.ExtraText = resources.GetString("btnTD.Values.ExtraText");
+            this.btnTD.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnTD.Values.ImageTransparentColor")));
             this.btnTD.Values.Text = resources.GetString("btnTD.Values.Text");
             this.btnTD.Click += new System.EventHandler(this.btnTD_Click);
             // 
@@ -328,16 +340,12 @@
             // 
             resources.ApplyResources(this.panel_main, "panel_main");
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1220, 900);
-            this.panel_main.TabIndex = 30;
             // 
             // Main
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
-            this.ClientSize = new System.Drawing.Size(1484, 801);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

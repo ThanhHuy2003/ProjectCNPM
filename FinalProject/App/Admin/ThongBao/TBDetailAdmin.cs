@@ -21,9 +21,9 @@ namespace FinalProject.App.Admin.ThongBao
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Notification item = new Notification();
-            item.notificationPicture=tbPoster.Text;
+            item.notificationPicture = tbPoster.Text;
             item.notificationDate = timePick.Value.ToString();
-            item.notificationName=txtTD.Text;
+            item.notificationName = txtTD.Text;
 
         }
     }

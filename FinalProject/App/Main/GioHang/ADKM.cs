@@ -14,14 +14,20 @@ namespace FinalProject.App.Main.GioHang
 {
     public partial class ADKM : Form
     {
+        private string userIDLogin;
         public ADKM()
         {
             InitializeComponent();
         }
-
+        public ADKM(string userIDLogin)
+        {
+            InitializeComponent();
+            this.userIDLogin = userIDLogin;
+        }
         private void ADKM_Load(object sender, EventArgs e)
         {
             populatePromotionData_PromotionTable_UCKM();
+            LabelNhapKM.Select();
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -77,7 +83,9 @@ namespace FinalProject.App.Main.GioHang
 
                     Item.Title = newPromotionItem.promotionName;
                     Item.Description = newPromotionItem.promotionDescription;
-
+                    Item.Percent = newPromotionItem.promotionPercent;
+                    Item.UserID = userIDLogin;
+                    Item.PromotionID = newPromotionItem.promotionID;
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }

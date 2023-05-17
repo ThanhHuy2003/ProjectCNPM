@@ -23,7 +23,7 @@ namespace FinalProject.App.Admin
         {
             InitializeComponent();
         }
-        Form frm  = new AddKM();
+        Form frm = new AddKM();
         public Image resizeImage(Image image, int width, int height)
         {
             var destRect = new Rectangle(0, 0, width, height);
@@ -56,16 +56,16 @@ namespace FinalProject.App.Admin
             {
                 foreach (DataRow row in promotionTableBLL.populatePromotionData_PromotionTable_BLL().Rows)
                 {
-                        FinalProject.DTO.PromotionItem newPromotionItem = new FinalProject.DTO.PromotionItem();
-                        newPromotionItem.promotionID = row["promotionID"].ToString();
-                        newPromotionItem.promotionPicture = row["promotionPicture"].ToString();
-                        newPromotionItem.promotionName = row["promotionName"].ToString();
-                        newPromotionItem.promotionDescription = row["promotionDescription"].ToString();
-                        newPromotionItem.promotionDate = row["promotionDate"].ToString();
-                        newPromotionItem.promotionPercent = int.Parse(row["promotionPercent"].ToString());
+                    FinalProject.DTO.PromotionItem newPromotionItem = new FinalProject.DTO.PromotionItem();
+                    newPromotionItem.promotionID = row["promotionID"].ToString();
+                    newPromotionItem.promotionPicture = row["promotionPicture"].ToString();
+                    newPromotionItem.promotionName = row["promotionName"].ToString();
+                    newPromotionItem.promotionDescription = row["promotionDescription"].ToString();
+                    newPromotionItem.promotionDate = row["promotionDate"].ToString();
+                    newPromotionItem.promotionPercent = int.Parse(row["promotionPercent"].ToString());
 
-                        try
-                        {
+                    try
+                    {
                         CardKMForDisplay Item = new CardKMForDisplay();
 
                         var request = WebRequest.Create(newPromotionItem.promotionPicture);
@@ -82,8 +82,9 @@ namespace FinalProject.App.Admin
 
                         this.flowLayoutPanel1.Controls.Add(Item);
                     }
-                    catch { 
-                        MessageBox.Show("Không tìm được poster của khuyến mãi id: " + newPromotionItem.promotionID +"| name:" +newPromotionItem.promotionName); 
+                    catch
+                    {
+                        MessageBox.Show("Không tìm được poster của khuyến mãi id: " + newPromotionItem.promotionID + "| name:" + newPromotionItem.promotionName);
                     }
                 }
             }

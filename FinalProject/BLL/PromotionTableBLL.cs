@@ -31,11 +31,7 @@ namespace FinalProject.BLL
         }
         public void addPromotion(PromotionItem item)
         {
-            if(item.promotionPicture=="" || item.promotionPercent==0 ||item.promotionDate=="" || item.promotionDescription==""||item.promotionName=="" ) {
-                MessageBox.Show("Không được để trống");
-            }
-            else
-                promotionTableDAL.addPromotion_DAL(item);
+            promotionTableDAL.addPromotion_DAL(item);
         }
     }
 }

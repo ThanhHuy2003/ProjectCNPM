@@ -1,5 +1,4 @@
 ﻿using FinalProject.App.Main;
-using FinalProject.App.Main.KhuyenMai;
 using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
@@ -78,27 +77,20 @@ namespace FinalProject.App.Staff.KhuyenMai
                     newPromotionItem.promotionPercent = int.Parse(row["promotionPercent"].ToString());
 
                     CardKM Item = new CardKM();
-                    try
+
+                    var request = WebRequest.Create(newPromotionItem.promotionPicture);
+
+                    using (var response = request.GetResponse())
+                    using (var stream = response.GetResponseStream())
                     {
-
-                        var request = WebRequest.Create(newPromotionItem.promotionPicture);
-
-                        using (var response = request.GetResponse())
-                        using (var stream = response.GetResponseStream())
-                        {
-                            Item.Picture = Bitmap.FromStream(stream);
-                            Item.Picture = resizeImage(Item.Picture, 228, 187);
-                        }
-
-                        Item.Title = newPromotionItem.promotionName;
-                        Item.Description = newPromotionItem.promotionDescription;
-
-                        this.flowLayoutPanel1.Controls.Add(Item);
+                        Item.Picture = Bitmap.FromStream(stream);
+                        Item.Picture = resizeImage(Item.Picture, 228, 187);
                     }
-                    catch
-                    {
-                        MessageBox.Show("Không tìm được poster của khuyến mãi id: " + newPromotionItem.promotionID + "| name:" + newPromotionItem.promotionName);
-                    }
+
+                    Item.Title = newPromotionItem.promotionName;
+                    Item.Description = newPromotionItem.promotionDescription;
+
+                    this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
             else

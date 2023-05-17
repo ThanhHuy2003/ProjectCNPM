@@ -30,22 +30,25 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.label15 = new System.Windows.Forms.Label();
             this.btnTT = new Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSelectVoucher = new Krypton.Toolkit.KryptonButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.RadbtnMomo = new Krypton.Toolkit.KryptonRadioButton();
+            this.label13 = new System.Windows.Forms.Label();
             this.RadbtnMoney = new Krypton.Toolkit.KryptonRadioButton();
+            this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
+            this.label18 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.txtSDT = new Krypton.Toolkit.KryptonTextBox();
             this.txtFullName = new Krypton.Toolkit.KryptonTextBox();
@@ -55,37 +58,51 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AllowDrop = true;
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(41, 192);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(36, 192);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1155, 546);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1166, 337);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.label15);
             this.kryptonPanel1.Controls.Add(this.btnTT);
             this.kryptonPanel1.Controls.Add(this.label3);
             this.kryptonPanel1.Controls.Add(this.label2);
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 1300);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 1042);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1220, 104);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1202, 104);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(203)))));
             this.kryptonPanel1.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(203)))));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(380, 32);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(72, 31);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "VND";
             // 
             // btnTT
             // 
@@ -135,9 +152,9 @@
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(256, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 31);
+            this.label3.Size = new System.Drawing.Size(29, 31);
             this.label3.TabIndex = 4;
-            this.label3.Text = "0đ";
+            this.label3.Text = "0";
             // 
             // label2
             // 
@@ -161,18 +178,6 @@
             this.kryptonPanel2.Size = new System.Drawing.Size(1155, 87);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.kryptonPanel2.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.pictureBox1.Image = global::FinalProject.Properties.Resources.voucher;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // btnSelectVoucher
             // 
@@ -213,6 +218,9 @@
             this.btnSelectVoucher.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSelectVoucher.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSelectVoucher.StatePressed.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview1;
+            this.btnSelectVoucher.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnSelectVoucher.StateTracking.Back.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
+            this.btnSelectVoucher.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
             this.btnSelectVoucher.TabIndex = 5;
             this.btnSelectVoucher.Values.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
             this.btnSelectVoucher.Values.Text = "";
@@ -247,11 +255,37 @@
             this.kryptonPanel3.Controls.Add(this.RadbtnMomo);
             this.kryptonPanel3.Controls.Add(this.RadbtnMoney);
             this.kryptonPanel3.Controls.Add(this.label5);
-            this.kryptonPanel3.Location = new System.Drawing.Point(41, 762);
+            this.kryptonPanel3.Location = new System.Drawing.Point(36, 536);
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.Size = new System.Drawing.Size(1155, 157);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.kryptonPanel3.TabIndex = 7;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label17.Location = new System.Drawing.Point(382, 242);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(72, 31);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "VND";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label16.Location = new System.Drawing.Point(382, 198);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(72, 31);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "VND";
             // 
             // RadbtnMomo
             // 
@@ -263,6 +297,19 @@
             this.RadbtnMomo.TabIndex = 5;
             this.RadbtnMomo.Values.Text = "Ví điện tử";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label13.Location = new System.Drawing.Point(266, 242);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 31);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "50000";
+            // 
             // RadbtnMoney
             // 
             this.RadbtnMoney.Location = new System.Drawing.Point(137, 57);
@@ -272,6 +319,19 @@
             this.RadbtnMoney.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RadbtnMoney.TabIndex = 4;
             this.RadbtnMoney.Values.Text = "Tiền mặt";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(266, 198);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 31);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "0";
             // 
             // label5
             // 
@@ -287,11 +347,14 @@
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.label17);
+            this.kryptonPanel4.Controls.Add(this.label18);
+            this.kryptonPanel4.Controls.Add(this.label16);
             this.kryptonPanel4.Controls.Add(this.label14);
             this.kryptonPanel4.Controls.Add(this.label13);
-            this.kryptonPanel4.Controls.Add(this.label12);
             this.kryptonPanel4.Controls.Add(this.kryptonTextBox1);
             this.kryptonPanel4.Controls.Add(this.txtSDT);
+            this.kryptonPanel4.Controls.Add(this.label12);
             this.kryptonPanel4.Controls.Add(this.txtFullName);
             this.kryptonPanel4.Controls.Add(this.label11);
             this.kryptonPanel4.Controls.Add(this.label10);
@@ -299,11 +362,24 @@
             this.kryptonPanel4.Controls.Add(this.label8);
             this.kryptonPanel4.Controls.Add(this.label7);
             this.kryptonPanel4.Controls.Add(this.label6);
-            this.kryptonPanel4.Location = new System.Drawing.Point(41, 941);
+            this.kryptonPanel4.Location = new System.Drawing.Point(36, 699);
             this.kryptonPanel4.Name = "kryptonPanel4";
             this.kryptonPanel4.Size = new System.Drawing.Size(1155, 337);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.kryptonPanel4.TabIndex = 8;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label18.Location = new System.Drawing.Point(382, 293);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(72, 31);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "VND";
             // 
             // label14
             // 
@@ -312,37 +388,11 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(246, 293);
+            this.label14.Location = new System.Drawing.Point(266, 293);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 31);
+            this.label14.Size = new System.Drawing.Size(29, 31);
             this.label14.TabIndex = 14;
-            this.label14.Text = "0đ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(246, 242);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 31);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "0đ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(246, 191);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 31);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "0đ";
+            this.label14.Text = "0";
             // 
             // kryptonTextBox1
             // 
@@ -449,8 +499,21 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Tên khách hàng:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.pictureBox1.Image = global::FinalProject.Properties.Resources.voucher;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // UCGH
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
@@ -462,7 +525,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1220, 1400);
+            this.Size = new System.Drawing.Size(1201, 966);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
@@ -470,13 +533,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.kryptonPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +573,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label18;
     }
 }

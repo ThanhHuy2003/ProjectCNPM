@@ -118,64 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="kryptonButton1.Values.Text" xml:space="preserve">
-    <value>Đăng xuất  </value>
+    <value>Đăng xuất </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 37</value>
+    <value>370, 37</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Chỉnh sửa thông tin cá nhân  </value>
+    <value>Chỉnh sửa thông tin cá nhân </value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 25</value>
+    <value>153, 25</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Chọn ngôn ngữ:  </value>
+    <value>Chọn ngôn ngữ: </value>
   </data>
   <data name="lblQQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 25</value>
+    <value>104, 25</value>
   </data>
   <data name="lblQQ.Text" xml:space="preserve">
-    <value>Quê quán:  </value>
+    <value>Quê quán: </value>
   </data>
   <data name="lblNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 25</value>
+    <value>105, 25</value>
   </data>
   <data name="lblNS.Text" xml:space="preserve">
-    <value>Ngày sinh:  </value>
-  </data>
-  <data name="btnSave.Values.Text" xml:space="preserve">
-    <value>Lưu </value>
+    <value>Ngày sinh: </value>
   </data>
   <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 25</value>
+    <value>132, 25</value>
   </data>
   <data name="lblSDT.Text" xml:space="preserve">
-    <value>Số điện thoại:  </value>
+    <value>Số điện thoại: </value>
   </data>
   <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 25</value>
+    <value>67, 25</value>
   </data>
   <data name="lblEmail.Text" xml:space="preserve">
-    <value>Email:  </value>
+    <value>Email: </value>
   </data>
   <data name="labelHoten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 25</value>
+    <value>77, 25</value>
   </data>
   <data name="labelHoten.Text" xml:space="preserve">
-    <value>Họ tên:  </value>
-  </data>
-  <data name="tabTTCN.Text" xml:space="preserve">
-    <value>Thông tin cá nhân </value>
-  </data>
-  <data name="tabDH.Text" xml:space="preserve">
-    <value>Đơn hàng </value>
-  </data>
-  <data name="tabPTTT.Text" xml:space="preserve">
-    <value>Phương thức thanh toán </value>
-  </data>
-  <data name="tabBMDK.Text" xml:space="preserve">
-    <value>Bảo mật và điều khoản </value>
+    <value>Họ tên: </value>
   </data>
 </root>

@@ -477,6 +477,9 @@
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.en.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.ha.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>

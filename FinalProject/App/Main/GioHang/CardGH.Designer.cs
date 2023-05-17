@@ -53,7 +53,7 @@
             // btnClear
             // 
             this.btnClear.CornerRoundingRadius = 30F;
-            this.btnClear.Location = new System.Drawing.Point(1100, 4);
+            this.btnClear.Location = new System.Drawing.Point(1093, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(38, 30);
             this.btnClear.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -172,7 +172,7 @@
             // 
             this.pictureBox9.Image = global::FinalProject.Properties.Resources.image_1;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(255, 143);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -193,7 +193,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox9);
             this.Name = "CardGH";
-            this.Size = new System.Drawing.Size(1142, 142);
+            this.Size = new System.Drawing.Size(1134, 142);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

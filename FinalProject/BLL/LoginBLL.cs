@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FinalProject.DTO;
 using FinalProject.DAL;
 using System.Windows.Forms;
+using System.Data;
 
 namespace FinalProject.BLL
 {
@@ -72,6 +73,17 @@ namespace FinalProject.BLL
                 return "Vui lòng nhập mật khẩu";
             }
             return loginDAL.signUp_Login_DAL(newUser);
+        }
+        public DataTable populateInformationUser_Login_BLL(string userID)
+        {
+            if (loginDAL.populateInformationUser_Login_DAL(userID) == null)
+            {
+                return null;
+            }
+            else
+            {
+                return loginDAL.populateInformationUser_Login_DAL(userID);
+            }
         }
     }
 }

@@ -36,8 +36,8 @@
             this.Radbutton2 = new Krypton.Toolkit.KryptonRadioButton();
             this.LastSlider = new Krypton.Toolkit.KryptonButton();
             this.NextSlider = new Krypton.Toolkit.KryptonButton();
+            this.LabelCombo = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.ImageSlider = new System.Windows.Forms.PictureBox();
             this.ImageSlider2 = new System.Windows.Forms.PictureBox();
             this.ImageSlider3 = new System.Windows.Forms.PictureBox();
@@ -69,7 +69,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1220, 380);
+            this.panel1.Size = new System.Drawing.Size(1218, 380);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -150,24 +150,27 @@
             this.NextSlider.Values.Text = "";
             this.NextSlider.Click += new System.EventHandler(this.NextSlider_Click);
             // 
+            // LabelCombo
+            // 
+            this.LabelCombo.AutoSize = true;
+            this.LabelCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.LabelCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.LabelCombo.ForeColor = System.Drawing.Color.White;
+            this.LabelCombo.Location = new System.Drawing.Point(49, 387);
+            this.LabelCombo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelCombo.Name = "LabelCombo";
+            this.LabelCombo.Size = new System.Drawing.Size(351, 46);
+            this.LabelCombo.TabIndex = 31;
+            this.LabelCombo.Text = "Thực đơn hôm nay";
+            // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 453);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1143, 308);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1171, 345);
             this.flowLayoutPanel1.TabIndex = 32;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.label2.Location = new System.Drawing.Point(41, 398);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 37);
-            this.label2.TabIndex = 70;
-            this.label2.Text = "THỰC ĐƠN HÔM NAY";
             // 
             // ImageSlider
             // 
@@ -234,12 +237,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.LabelCombo);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCMain";
-            this.Size = new System.Drawing.Size(1220, 866);
+            this.Size = new System.Drawing.Size(1219, 800);
             this.Load += new System.EventHandler(this.UCMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -268,7 +271,7 @@
         private System.Windows.Forms.PictureBox ImageSlider3;
         private System.Windows.Forms.PictureBox ImageSlider4;
         private System.Windows.Forms.PictureBox ImageSlider5;
+        private System.Windows.Forms.Label LabelCombo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label2;
     }
 }

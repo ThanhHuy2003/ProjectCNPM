@@ -88,6 +88,34 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        public DataTable populateInformationUser_DA_DAL(string userID)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from LoginData where userID = '" + userID + "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public void updateCartDataPromotion_DA_DAL(string promotionID, string promotionCash, string userID)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "update CartData set promotionID = '" + promotionID + "', promotionCash = " + promotionCash + " where userID = '" + userID + "'";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Áp dụng khuyến mãi không thành công");
+            }
+}
         public DataTable getTotalQuantityOfDish_DA_DAL(string dishID, string userID)
         {
             SqlConnection conn = new SqlConnection(strConn);
@@ -153,7 +181,7 @@ namespace FinalProject.DAL
             }
             catch
             {
-                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn");
+                MessageBox.Show("Cập nhật số lượng không thành công");
             }
         }
         public void deleteCartItem_DA_DAL(string id, string userID)
@@ -404,17 +432,16 @@ namespace FinalProject.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "InsertPromotionData @poster, @name, @description,@date,@percent";
+            String sSQL = "InsertPromotionData @poster, N@name, N@description, @percent";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@poster",item.promotionPicture);
             cmd.Parameters.AddWithValue("@name", item.promotionName);
             cmd.Parameters.AddWithValue("@description", item.promotionDescription);
-            cmd.Parameters.AddWithValue("@date", item.promotionDate);
+           /* cmd.Parameters.AddWithValue("@date", item.promotionDate);*/
             cmd.Parameters.AddWithValue("@percent", item.promotionPercent);
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Thêm thành công");
         }
-
     }
 }

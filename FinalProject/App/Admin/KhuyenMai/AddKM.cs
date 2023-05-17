@@ -24,7 +24,7 @@ namespace FinalProject.App.Admin.KhuyenMai
             PromotionTableBLL ehe = new PromotionTableBLL();
             PromotionItem item = new PromotionItem();
             item.promotionPicture = tbPoster.Text;
-            item.promotionName = txtTD.Text; 
+            item.promotionName = txtTD.Text;
             item.promotionDescription = txtND.Text;
             try
             {

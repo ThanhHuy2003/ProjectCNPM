@@ -1,5 +1,6 @@
 ﻿using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
+using FinalProject.DAL;
 using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
@@ -60,6 +61,8 @@ namespace FinalProject.App.Main.GioHang
 
             CartTableBLL cartTableBLL = new CartTableBLL();
             int totalCash = 0;
+            int shipCash = 0;
+            int promotionCash = 0;
             if (cartTableBLL.populateCartData_CartTable_BLL(userIDLogin) != null)
             {
                 foreach (DataRow row in cartTableBLL.populateCartData_CartTable_BLL(userIDLogin).Rows)
@@ -90,10 +93,17 @@ namespace FinalProject.App.Main.GioHang
                     Item.Quantity = newCartDataItem.totalQuantity;
                     Item.ButtonClicked += ChildControl_ButtonClicked;
                     Item.UserID = userIDLogin;
+                    Item.PromotionID = row["promotionID"].ToString();
+                    Item.Percent = int.Parse(row["promotionCash"].ToString());
+                    promotionCash = (totalCash*Item.Percent)/100;
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
+            label14.Text = promotionCash.ToString();
             label12.Text = totalCash.ToString();
+            shipCash = int.Parse(label13.Text);
+            totalCash = totalCash + shipCash - promotionCash;
+            label3.Text = totalCash.ToString();
         }
         private void ChildControl_ButtonClicked(object sender, EventArgs e)
         {
@@ -102,12 +112,28 @@ namespace FinalProject.App.Main.GioHang
         }
         private void UCGH_Load(object sender, EventArgs e)
         {
+            LoginBLL newLoginBLL = new LoginBLL();
+            if (newLoginBLL.populateInformationUser_Login_BLL(userIDLogin) != null)
+            {
+                foreach (DataRow row in newLoginBLL.populateInformationUser_Login_BLL(userIDLogin).Rows)
+                {
+                    txtFullName.Text = row["fullName"].ToString();
+                    txtSDT.Text = row["phoneNumber"].ToString();
+                    kryptonTextBox1.Text = row["contactAddress"].ToString();
+                    break;
+                }
+            }
+            if (kryptonTextBox1.Text != "Hồ Chí Minh")
+            {
+                label13.Text = "100000";
+            }
             populateCartData_CartTable_UCTD();
         }
-        Form frm = new ADKM();
         private void btnSelectVoucher_Click(object sender, EventArgs e)
         {
+            ADKM frm = new ADKM(userIDLogin);
             frm.ShowDialog();
+            ChildControl_ButtonClicked(sender, e);
         }
     }
 }
