@@ -19,7 +19,7 @@ namespace FinalProject.App.Manager
             Func.togglePanel(pnlManager, "NV");
 
         }
-        Func Func;
+        Func Func = new Func() ;
         private void btnNV_Click(object sender, EventArgs e)
         {
             Func.togglePanel(pnlManager, "NV");

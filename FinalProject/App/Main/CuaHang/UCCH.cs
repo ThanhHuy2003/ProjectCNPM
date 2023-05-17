@@ -68,6 +68,7 @@ namespace FinalProject.App
                     newStoreAddressItem.storeName = row["storeName"].ToString();
                     newStoreAddressItem.storeDescription = row["storeDescription"].ToString();
                     newStoreAddressItem.storeTime = row["storeTime"].ToString();
+                    newStoreAddressItem.storePhone = row["storePhone"].ToString();
 
                     CardCH Item = new CardCH();
 
@@ -83,6 +84,7 @@ namespace FinalProject.App
                     Item.Title = newStoreAddressItem.storeName;
                     Item.Description = newStoreAddressItem.storeDescription;
                     Item.Date = newStoreAddressItem.storeTime;
+                    Item.Phone = newStoreAddressItem.storePhone;
 
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }

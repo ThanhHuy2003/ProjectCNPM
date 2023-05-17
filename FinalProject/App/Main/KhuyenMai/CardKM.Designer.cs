@@ -39,7 +39,7 @@
             // 
             this.ButtonKM1.CornerRoundingRadius = 15F;
             this.ButtonKM1.Location = new System.Drawing.Point(898, 98);
-            this.ButtonKM1.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonKM1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonKM1.Name = "ButtonKM1";
             this.ButtonKM1.Size = new System.Drawing.Size(149, 46);
             this.ButtonKM1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -52,13 +52,14 @@
             this.ButtonKM1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.ButtonKM1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonKM1.TabIndex = 13;
-            this.ButtonKM1.Values.Text = "Mua ngay";
+            this.ButtonKM1.Values.Text = "Áp dụng";
+            this.ButtonKM1.Click += new System.EventHandler(this.ButtonKM1_Click);
             // 
             // kryptonLabel35
             // 
             this.kryptonLabel35.AutoSize = false;
             this.kryptonLabel35.Location = new System.Drawing.Point(192, 54);
-            this.kryptonLabel35.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel35.Name = "kryptonLabel35";
             this.kryptonLabel35.Size = new System.Drawing.Size(806, 19);
             this.kryptonLabel35.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -69,7 +70,7 @@
             // kryptonLabel36
             // 
             this.kryptonLabel36.Location = new System.Drawing.Point(509, 14);
-            this.kryptonLabel36.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel36.Name = "kryptonLabel36";
             this.kryptonLabel36.Size = new System.Drawing.Size(280, 23);
             this.kryptonLabel36.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;

@@ -19,16 +19,13 @@ namespace FinalProject.App.Main.CaiDat
     {
         public UCCD()
         {
-            File ehe = new File();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
         }
-        Func Func;
+        Func Func = new Func();
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tabControl1.SelectedIndex == 1)
             {
-                btnLS.Select();
                 Func.togglePanel(panelDH, "CardDH");
             }
         }

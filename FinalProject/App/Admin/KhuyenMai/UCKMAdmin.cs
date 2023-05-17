@@ -27,5 +27,10 @@ namespace FinalProject.App.Admin
             frm.ShowDialog();
         }
 
+        private void picSearch_Click(object sender, EventArgs e)
+        {
+            //Search method
+            //Do something
+        }
     }
 }

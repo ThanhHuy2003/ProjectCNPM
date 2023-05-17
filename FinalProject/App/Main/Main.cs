@@ -10,6 +10,8 @@ using FinalProject.App.Manager;
 using FinalProject.App.Staff.GioHang;
 using FinalProject.App.Staff.KhuyenMai;
 using FinalProject.App.Staff.ThucDon;
+using FinalProject.DTO;
+using FinalProject.DTO;
 using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
@@ -27,6 +29,7 @@ namespace FinalProject
 {
     public partial class Main : Form
     {
+        private string userIDLogin; 
         Func func;
         public Main()
         {
@@ -35,7 +38,15 @@ namespace FinalProject
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             InitializeComponent();
             func = new Func(this);
-
+        }
+        public Main(string userIDLogin)
+        {
+            File ehe = new File();
+            string lang = ehe.readLanguage();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            InitializeComponent();
+            func = new Func(this);
+            this.userIDLogin = userIDLogin;
         }
         private void btnTD_Click(object sender, EventArgs e)
         {
@@ -85,17 +96,16 @@ namespace FinalProject
         }
         public class Func
         {
-            private Main main;
 
+            private Main main;
             public Func(Main main)
             {
                 this.main = main;
             }
-            public Func()
+            public Func( )
             {
 
             }
-
             //User
             private static UCTD uCTD;
             private static UCMain uCMain;
@@ -128,10 +138,10 @@ namespace FinalProject
                 switch (panelName)
                 {
                     case "Main":
+                        uCMain = null;
                         if (uCMain == null)
                         {
-                            
-                            uCMain = new UCMain();
+                            uCMain = new UCMain(main.userIDLogin);
                             panel.Controls.Add(uCMain);
                             uCMain.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCMain.Location = new System.Drawing.Point(0, 0);
@@ -144,9 +154,10 @@ namespace FinalProject
                         }
                         break;
                     case "TD":
+                        uCTD = null;
                         if (uCTD == null)
                         {
-                            uCTD = new UCTD();
+                            uCTD = new UCTD(main.userIDLogin);
                             panel.Controls.Add(uCTD);
                             uCTD.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCTD.Location = new System.Drawing.Point(0, 0);
@@ -189,9 +200,10 @@ namespace FinalProject
                         }
                         break;
                     case "GH":
+                        uCGH = null;
                         if (uCGH == null)
                         {
-                            uCGH = new UCGH();
+                            uCGH = new UCGH(main.userIDLogin);
                             panel.Controls.Add(uCGH);
                             uCGH.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCGH.Location = new System.Drawing.Point(0, 0);

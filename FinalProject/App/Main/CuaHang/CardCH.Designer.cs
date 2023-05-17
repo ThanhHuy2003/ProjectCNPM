@@ -143,9 +143,9 @@
             // 
             this.pictureBox12.Image = global::FinalProject.Properties.Resources.HinhKM1;
             this.pictureBox12.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(171, 152);
+            this.pictureBox12.Size = new System.Drawing.Size(171, 158);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
@@ -165,7 +165,7 @@
             this.Controls.Add(this.pictureBox12);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardCH";
-            this.Size = new System.Drawing.Size(1087, 155);
+            this.Size = new System.Drawing.Size(1087, 160);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

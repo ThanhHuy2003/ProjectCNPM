@@ -15,5 +15,10 @@ namespace FinalProject.DAL
         {
             return populateMenuData_DA_DAL(type);
         }
+        public DataTable getTotalQuantityOfDish_CookTable_DAL(string dishID, string userID)
+        {
+            return getTotalQuantityOfDish_DA_DAL(dishID, userID);
+        }
+
     }
 }

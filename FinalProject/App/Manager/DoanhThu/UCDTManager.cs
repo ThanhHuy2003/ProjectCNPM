@@ -16,5 +16,10 @@ namespace FinalProject.App.Manager.DoanhThu
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(timeStart.Value.ToString());
+        }
     }
 }

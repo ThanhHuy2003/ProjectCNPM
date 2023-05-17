@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSelectVoucher = new Krypton.Toolkit.KryptonButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,21 +55,23 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AllowDrop = true;
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(41, 192);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1155, 546);
             this.flowLayoutPanel1.TabIndex = 1;
@@ -78,7 +81,7 @@
             this.kryptonPanel1.Controls.Add(this.btnTT);
             this.kryptonPanel1.Controls.Add(this.label3);
             this.kryptonPanel1.Controls.Add(this.label2);
-            this.kryptonPanel1.Location = new System.Drawing.Point(15, 652);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 1300);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(1220, 104);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(203)))));
@@ -132,9 +135,9 @@
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(256, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 31);
+            this.label3.Size = new System.Drawing.Size(44, 31);
             this.label3.TabIndex = 4;
-            this.label3.Text = "280,000đ";
+            this.label3.Text = "0đ";
             // 
             // label2
             // 
@@ -158,6 +161,18 @@
             this.kryptonPanel2.Size = new System.Drawing.Size(1155, 87);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.kryptonPanel2.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.pictureBox1.Image = global::FinalProject.Properties.Resources.voucher;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // btnSelectVoucher
             // 
@@ -201,6 +216,7 @@
             this.btnSelectVoucher.TabIndex = 5;
             this.btnSelectVoucher.Values.Image = global::FinalProject.Properties.Resources.imageedit_8_3852496439_removebg_preview;
             this.btnSelectVoucher.Values.Text = "";
+            this.btnSelectVoucher.Click += new System.EventHandler(this.btnSelectVoucher_Click);
             // 
             // label4
             // 
@@ -298,9 +314,9 @@
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label14.Location = new System.Drawing.Point(246, 293);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 31);
+            this.label14.Size = new System.Drawing.Size(44, 31);
             this.label14.TabIndex = 14;
-            this.label14.Text = "50,000đ";
+            this.label14.Text = "0đ";
             // 
             // label13
             // 
@@ -311,9 +327,9 @@
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(246, 242);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(112, 31);
+            this.label13.Size = new System.Drawing.Size(44, 31);
             this.label13.TabIndex = 13;
-            this.label13.Text = "30,000đ";
+            this.label13.Text = "0đ";
             // 
             // label12
             // 
@@ -324,9 +340,9 @@
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(246, 191);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 31);
+            this.label12.Size = new System.Drawing.Size(44, 31);
             this.label12.TabIndex = 12;
-            this.label12.Text = "300,000đ";
+            this.label12.Text = "0đ";
             // 
             // kryptonTextBox1
             // 
@@ -433,21 +449,8 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Tên khách hàng:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.pictureBox1.Image = global::FinalProject.Properties.Resources.voucher;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // UCGH
             // 
-            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
@@ -459,7 +462,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1263, 1332);
+            this.Size = new System.Drawing.Size(1220, 1400);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
@@ -467,13 +470,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.kryptonPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

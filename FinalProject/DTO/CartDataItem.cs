@@ -15,5 +15,6 @@ namespace FinalProject.DTO
         public int dishPrice { get; set; }
         public string dishType { get; set; }
         public int totalQuantity { get; set; }
+        public string userID { get; set; }
     }
 }

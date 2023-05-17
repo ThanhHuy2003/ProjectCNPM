@@ -88,11 +88,25 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
-        public DataTable populateCartData_DA_DAL()
+        public DataTable getTotalQuantityOfDish_DA_DAL(string dishID, string userID)
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "select * from CartData";
+            String sSQL = "select totalQuantity from MenuData, CartData, LoginData where CartData.dishID = MenuData.dishID and CartData.userID = LoginData.userID and CartData.dishID = @dishID and CartData.userID = @userID";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@dishID", dishID);
+            cmd.Parameters.AddWithValue("@userID", userID);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public DataTable populateCartData_DA_DAL(string userID)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from CartData where userID = '" + userID + "'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -100,11 +114,53 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
-        public void deleteCartItem_DA_DAL(string id)
+        public void insertIntoCartData_DA_DAL(string dishID, string dishPicture, string dishName, int dishPrice, int totalQuantity, string userID)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "insert into CartData values (@dishID, @dishPicture, @dishName, @dishPrice, @totalQuantity, @userID)";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@dishID", dishID);
+                cmd.Parameters.AddWithValue("@dishPicture", dishPicture);
+                cmd.Parameters.AddWithValue("@dishName", dishName);
+                cmd.Parameters.AddWithValue("@dishPrice", dishPrice);
+                cmd.Parameters.AddWithValue("@totalQuantity", totalQuantity);
+                cmd.Parameters.AddWithValue("@userID", userID);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Đã thêm vào giỏ hàng");
+            }
+            catch
+            {
+                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn");
+            }
+        }
+        public void updateCartData_DA_DAL(string dishID, int totalQuantity, string userID)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "update CartData set totalQuantity = @totalQuantity where dishID = @dishID and userID = @userID";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@dishID", dishID);
+                cmd.Parameters.AddWithValue("@totalQuantity", totalQuantity);
+                cmd.Parameters.AddWithValue("@userID", userID);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn");
+            }
+        }
+        public void deleteCartItem_DA_DAL(string id, string userID)
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "delete from CartData where dishID = '" + id +  "'";
+            String sSQL = "delete from CartData where dishID = '" + id +  "'" + "and userID = '" + userID + "'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.ExecuteNonQuery();
             conn.Close();
@@ -184,20 +240,25 @@ namespace FinalProject.DAL
         public void updateUser_DA_BLL(User user)
         {
             MessageBox.Show("Update id :" + user.userID);
-            SqlConnection conn = new SqlConnection(strConn);
-            conn.Open();
-            String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username, userPassword=@userpassword where userID=@id";
-            SqlCommand cmd = new SqlCommand(sSQL, conn);
-            cmd.Parameters.AddWithValue("@name", user.fullName);
-            cmd.Parameters.AddWithValue("@email", user.emailAddress);
-            cmd.Parameters.AddWithValue("@contact", user.contactAddress);
-            cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
-            cmd.Parameters.AddWithValue("@username", user.userName);
-            cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
-            cmd.Parameters.AddWithValue("@id", user.userID);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Successfuly");
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username where userID=@id";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@name", user.fullName);
+                cmd.Parameters.AddWithValue("@email", user.emailAddress);
+                cmd.Parameters.AddWithValue("@contact", user.contactAddress);
+                cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
+                cmd.Parameters.AddWithValue("@username", user.userName);
+                cmd.Parameters.AddWithValue("@id", user.userID);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Successfuly");
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Sai tỉnh thành");
+            }
         }
         public void addUser_DA_BLL(User user)
         {
@@ -310,6 +371,49 @@ namespace FinalProject.DAL
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        //Province
+        public DataTable getAllProvince_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "SELECT * from Province";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        //Promotion
+        public DataTable searchPromotion_DA_DAL(String key)
+        {
+
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "SELECT distinct * from PromotionData where promotionName like %@key% or promotionName like @key%";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@key", key);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public void addPromotion_DA_DAL(PromotionItem item)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "InsertPromotionData @poster, N@name, N@description, @percent";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@poster",item.promotionPicture);
+            cmd.Parameters.AddWithValue("@name", item.promotionName);
+            cmd.Parameters.AddWithValue("@description", item.promotionDescription);
+           /* cmd.Parameters.AddWithValue("@date", item.promotionDate);*/
+            cmd.Parameters.AddWithValue("@percent", item.promotionPercent);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Thêm thành công");
         }
     }
 }
