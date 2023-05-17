@@ -55,7 +55,7 @@
             this.kryptonPanel1.Controls.Add(this.btnTD);
             this.kryptonPanel1.Location = new System.Drawing.Point(0, -5);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(267, 907);
+            this.kryptonPanel1.Size = new System.Drawing.Size(267, 806);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -115,7 +115,7 @@
             // btnCD
             // 
             this.btnCD.CornerRoundingRadius = -1F;
-            this.btnCD.Location = new System.Drawing.Point(24, 709);
+            this.btnCD.Location = new System.Drawing.Point(21, 717);
             this.btnCD.Name = "btnCD";
             this.btnCD.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
             this.btnCD.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(224)))));
@@ -344,14 +344,15 @@
             this.panel_main.AutoScroll = true;
             this.panel_main.Location = new System.Drawing.Point(263, -2);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1220, 900);
+            this.panel_main.Size = new System.Drawing.Size(1220, 803);
             this.panel_main.TabIndex = 30;
             // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1484, 811);
+            this.ClientSize = new System.Drawing.Size(1484, 801);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

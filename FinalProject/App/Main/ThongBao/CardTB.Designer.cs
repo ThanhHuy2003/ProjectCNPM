@@ -70,10 +70,10 @@
             // picNotification
             // 
             this.picNotification.Image = global::FinalProject.Properties.Resources.HinhKM1;
-            this.picNotification.Location = new System.Drawing.Point(2, 2);
+            this.picNotification.Location = new System.Drawing.Point(0, 0);
             this.picNotification.Margin = new System.Windows.Forms.Padding(2);
             this.picNotification.Name = "picNotification";
-            this.picNotification.Size = new System.Drawing.Size(171, 152);
+            this.picNotification.Size = new System.Drawing.Size(174, 160);
             this.picNotification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNotification.TabIndex = 11;
             this.picNotification.TabStop = false;
@@ -88,7 +88,7 @@
             this.Controls.Add(this.lblTB);
             this.Controls.Add(this.picNotification);
             this.Name = "CardTB";
-            this.Size = new System.Drawing.Size(1133, 156);
+            this.Size = new System.Drawing.Size(1133, 160);
             ((System.ComponentModel.ISupportInitialize)(this.picNotification)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -486,6 +486,9 @@
     <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\ADKM.resx">
+      <DependentUpon>ADKM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
     </EmbeddedResource>
@@ -500,6 +503,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
       <DependentUpon>CardTB.cs</DependentUpon>
