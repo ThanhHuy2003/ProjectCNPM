@@ -327,19 +327,17 @@ create table PromotionData
 	promotionPicture varchar(500) not null,
     promotionName nvarchar(500) not null unique,
     promotionDescription nvarchar(500) not null,
-    promotionDate date not null,
+    promotionDate datetime not null,
 	promotionPercent int not null,
     primary key(promotionID)
 )
-alter table PromotionData
-alter column promotionDate date
 go
 
 create procedure InsertPromotionData
     @promotionPicture varchar(500),
     @promotionName nvarchar(500),
     @promotionDescription nvarchar(500),
-    @promotionDate date,
+    @promotionDate datetime,
 	@promotionPercent int
 as
 begin
@@ -470,7 +468,7 @@ create table NotificationData
 	notificationID varchar(8) not null,
 	notificationPicture varchar(500) not null,
     notificationName nvarchar(500) not null,
-    notificationDate date not null,
+    notificationDate datetime not null,
     primary key(notificationID)
 )
 go
@@ -489,7 +487,7 @@ go
 create procedure InsertNotificationData
     @notificationPicture varchar(500),
     @notificationName nvarchar(500),
-    @notificationDate date,
+    @notificationDate datetime,
 	@notificationPictureDetail varchar(500),
 	@notificationDescription nvarchar(4000),
 	@notificationFocus nvarchar(4000)
@@ -687,6 +685,8 @@ create table CartData
     dishName nvarchar(500) not null,
     dishPrice int not null,
 	totalQuantity int not null,
+	promotionID varchar(8),
+	promotionCash int default 0,
 	userID varchar(8),
     primary key(dishID, userID),
 	foreign key(dishID) references MenuData(dishID),
@@ -694,7 +694,7 @@ create table CartData
 )
 go
 
-insert into CartData values
+insert into CartData(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID) values
 ('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', 100000, 3, 'UID00001'),
 ('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', 120000, 2, 'UID00001')
 go
@@ -703,12 +703,11 @@ select * from CartData
 select * from HistoryUserData
 select * from HistoryUserDataDetail
 
+select * from LoginData
 -- proc InsertLoginData
 select * from MenuData
 -- proc InsertMenuData
 select * from NotificationData
-alter table NotificationData
-alter column notificationDate date
 -- proc InsertNotificationData
 select * from NotificationDataDetail
 select * from PromotionData

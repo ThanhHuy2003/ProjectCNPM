@@ -120,7 +120,7 @@ namespace FinalProject.DAL
             {
                 SqlConnection conn = new SqlConnection(strConn);
                 conn.Open();
-                String sSQL = "insert into CartData values (@dishID, @dishPicture, @dishName, @dishPrice, @totalQuantity, @userID)";
+                String sSQL = "insert into CartData(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID) values (@dishID, @dishPicture, @dishName, @dishPrice, @totalQuantity, @userID)";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 cmd.Parameters.AddWithValue("@dishID", dishID);
                 cmd.Parameters.AddWithValue("@dishPicture", dishPicture);

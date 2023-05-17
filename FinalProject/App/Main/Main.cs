@@ -44,7 +44,6 @@ namespace FinalProject
             File ehe = new File();
             string lang = ehe.readLanguage();
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
-            MessageBox.Show("vo day r");
             InitializeComponent();
             func = new Func(this);
             this.userIDLogin = userIDLogin;
