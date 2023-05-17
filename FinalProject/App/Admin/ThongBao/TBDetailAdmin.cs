@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace FinalProject.App.Admin.ThongBao
         public TBDetailAdmin()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Notification item = new Notification();
+            item.notificationPicture = tbPoster.Text;
+            item.notificationDate = timePick.Value.ToString();
+            item.notificationName = txtTD.Text;
+
         }
     }
 }

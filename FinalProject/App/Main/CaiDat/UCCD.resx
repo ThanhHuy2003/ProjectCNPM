@@ -117,12 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Chọn làm phương thức mặc định</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 186</value>
+    <value>39, 229</value>
   </data>
   <data name="&gt;&gt;kryptonComboBox1.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -133,9 +140,8 @@
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtHoten.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabBMDK.TabIndex" type="System.Int32, mscorlib">
@@ -145,13 +151,13 @@
     <value />
   </data>
   <data name="lblQQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 25</value>
+    <value>132, 32</value>
   </data>
-  <data name="&gt;&gt;txtNS.Name" xml:space="preserve">
-    <value>txtNS</value>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="btnDHHT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 29</value>
+    <value>861, 36</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -163,16 +169,19 @@
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 176</value>
+    <value>39, 217</value>
   </data>
-  <data name="radbtnMoney.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 12</value>
+  <data name="radbtnMomo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;lblEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 32</value>
+  </data>
   <data name="lblEmail.Text" xml:space="preserve">
-    <value>Email:</value>
+    <value>Email: </value>
   </data>
   <data name="btnSDT.Values.ExtraText" xml:space="preserve">
     <value />
@@ -193,10 +202,10 @@
     <value>73</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1220, 811</value>
+    <value>1627, 998</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 25</value>
+    <value>401, 31</value>
   </data>
   <data name="lblSDT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -204,14 +213,17 @@
   <data name="&gt;&gt;lblNS.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="tabBMDK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="panelDH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 141</value>
+    <value>25, 174</value>
   </data>
   <data name="txtHoten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>630, 40</value>
+    <value>840, 46</value>
   </data>
   <data name="&gt;&gt;txtHoten.Name" xml:space="preserve">
     <value>txtHoten</value>
@@ -220,7 +232,7 @@
     <value>5</value>
   </data>
   <data name="kryptonButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>899, 92</value>
+    <value>1199, 113</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -237,11 +249,14 @@
   <data name="&gt;&gt;lblSDT.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Trạng thái: hoạt động</value>
+  </data>
   <data name="txtNS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 261</value>
+    <value>357, 321</value>
   </data>
   <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 37</value>
+    <value>265, 46</value>
   </data>
   <data name="labelHoten.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -264,11 +279,14 @@
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="txtEmail.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="txtSDT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="kryptonComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 37</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -277,13 +295,16 @@
     <value>53</value>
   </data>
   <data name="btnNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 33</value>
+    <value>53, 41</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 105</value>
+    <value>39, 129</value>
   </data>
-  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="radbtnMomo.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 12</value>
@@ -306,23 +327,29 @@
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;lblNS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Tiền mặt</value>
+  <data name="&gt;&gt;kryptonButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnDHHT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1601, 988</value>
   </data>
   <data name="&gt;&gt;txtSDT.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
+  <data name="&gt;&gt;btnHoTen.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
   <data name="&gt;&gt;panel4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -336,20 +363,14 @@
   <data name="lblNS.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 73</value>
+    <value>4, 90</value>
   </data>
   <data name="&gt;&gt;lblSDT.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 31</value>
-  </data>
-  <data name="btnNS.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
   </data>
   <data name="lblNS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -366,20 +387,26 @@
   <data name="kryptonComboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 31</value>
+  <data name="tabTTCN.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="labelHoten.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tabPTTT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 34</value>
   </data>
   <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="kryptonComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="&gt;&gt;btnSDT.Name" xml:space="preserve">
     <value>btnSDT</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1192, 46</value>
   </data>
   <data name="&gt;&gt;tabTTCN.Parent" xml:space="preserve">
     <value>tabControl1</value>
@@ -388,10 +415,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblQQ.Text" xml:space="preserve">
-    <value>Quê quán:</value>
+    <value>Quê quán: </value>
   </data>
   <data name="txtSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>630, 40</value>
+    <value>840, 46</value>
   </data>
   <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -412,10 +439,16 @@
     <value>btnEmail</value>
   </data>
   <data name="CBQQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>630, 41</value>
+    <value>840, 45</value>
   </data>
   <data name="kryptonButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="tabDH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1593, 950</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnSave.Values.Text" xml:space="preserve">
     <value>Lưu</value>
@@ -430,7 +463,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>347, 25</value>
+    <value>431, 31</value>
   </data>
   <data name="radbtnMomo.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
@@ -442,25 +475,22 @@
     <value>lblQQ</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 226</value>
+    <value>133, 278</value>
   </data>
   <data name="tabDH.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="btnNS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>894, 37</value>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;btnDHHT.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>630, 40</value>
-  </data>
-  <data name="kryptonButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 37</value>
+    <value>840, 46</value>
   </data>
   <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
     <value>tabTTCN</value>
@@ -475,13 +505,13 @@
     <value>57</value>
   </data>
   <data name="lblSDT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 389</value>
+    <value>363, 479</value>
   </data>
   <data name="btnSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 33</value>
+    <value>53, 41</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 25</value>
+    <value>133, 31</value>
   </data>
   <data name="txtSDT.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -492,8 +522,8 @@
   <data name="&gt;&gt;btnDHHT.Name" xml:space="preserve">
     <value>btnDHHT</value>
   </data>
-  <data name="txtHoten.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;txtNS.Name" xml:space="preserve">
+    <value>txtNS</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -501,8 +531,8 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>UCCD</value>
+  <data name="btnLS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
@@ -516,11 +546,8 @@
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
-  <data name="labelHoten.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
   <data name="btnEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 33</value>
+    <value>53, 41</value>
   </data>
   <data name="btnDHHT.Values.ExtraText" xml:space="preserve">
     <value />
@@ -544,7 +571,10 @@
     <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
   <data name="btnHoTen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -555,14 +585,14 @@
   <data name="&gt;&gt;radbtnMomo.Name" xml:space="preserve">
     <value>radbtnMomo</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;tabBMDK.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Quản lý:</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -586,7 +616,7 @@
     <value>0</value>
   </data>
   <data name="lblSDT.Text" xml:space="preserve">
-    <value>Số điện thoại:</value>
+    <value>Số điện thoại: </value>
   </data>
   <data name="&gt;&gt;tabDH.Parent" xml:space="preserve">
     <value>tabControl1</value>
@@ -595,16 +625,16 @@
     <value>tabControl1</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 25</value>
+    <value>271, 31</value>
   </data>
   <data name="&gt;&gt;CBQQ.Name" xml:space="preserve">
     <value>CBQQ</value>
   </data>
-  <data name="btnHoTen.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnLS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 46</value>
+    <value>240, 57</value>
   </data>
   <data name="tabPTTT.Text" xml:space="preserve">
     <value>Phương thức thanh toán</value>
@@ -613,28 +643,25 @@
     <value>label4</value>
   </data>
   <data name="txtNS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="tabTTCN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1193, 770</value>
+    <value>1593, 950</value>
   </data>
   <data name="btnSDT.Values.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;btnEmail.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="kryptonButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelHoten.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 151</value>
+    <value>363, 186</value>
   </data>
   <data name="radbtnMomo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 233</value>
+    <value>597, 287</value>
   </data>
-  <data name="&gt;&gt;btnDHHT.Parent" xml:space="preserve">
-    <value>tabDH</value>
+  <data name="btnLS.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -649,22 +676,22 @@
     <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 95</value>
-  </data>
-  <data name="&gt;&gt;kryptonButton1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>39, 117</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 48</value>
+    <value>76, 59</value>
   </data>
   <data name="&gt;&gt;btnHoTen.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;labelHoten.ZOrder" xml:space="preserve">
     <value>18</value>
@@ -675,38 +702,38 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Quản lý:</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btnHoTen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>848, 183</value>
-  </data>
-  <data name="lblNS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>1131, 225</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="&gt;&gt;txtSDT.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonTextBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 31</value>
+    <value>151, 39</value>
   </data>
   <data name="tabPTTT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1193, 770</value>
+    <value>1593, 950</value>
   </data>
   <data name="&gt;&gt;lblSDT.Name" xml:space="preserve">
     <value>lblSDT</value>
   </data>
   <data name="btnSDT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>848, 417</value>
+    <value>1131, 513</value>
   </data>
   <data name="txtHoten.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 181</value>
+    <value>357, 223</value>
   </data>
   <data name="labelHoten.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt</value>
@@ -718,7 +745,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 149</value>
+    <value>135, 183</value>
   </data>
   <data name="&gt;&gt;lblQQ.Parent" xml:space="preserve">
     <value>tabTTCN</value>
@@ -730,10 +757,10 @@
     <value />
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 37</value>
+    <value>463, 46</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 48</value>
+    <value>76, 59</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -744,17 +771,14 @@
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
-  <data name="&gt;&gt;radbtnMomo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnLS.Values.ExtraText" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;btnHoTen.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 39</value>
   </data>
   <data name="btnEmail.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
@@ -762,11 +786,17 @@
   <data name="lblQQ.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt</value>
   </data>
+  <data name="panelDH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="btnHoTen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 33</value>
+    <value>53, 41</value>
   </data>
   <data name="btnSDT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="tabTTCN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;btnNS.Parent" xml:space="preserve">
     <value>tabTTCN</value>
@@ -775,7 +805,7 @@
     <value>txtEmail</value>
   </data>
   <data name="CBQQ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 501</value>
+    <value>357, 617</value>
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -785,9 +815,6 @@
   </data>
   <data name="&gt;&gt;radbtnMoney.Parent" xml:space="preserve">
     <value>panel3</value>
-  </data>
-  <data name="lblSDT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -805,16 +832,25 @@
     <value>7</value>
   </data>
   <data name="btnDHHT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 46</value>
+    <value>240, 57</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 57</value>
+    <value>551, 70</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;labelHoten.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDHHT.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;tabBMDK.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -826,34 +862,37 @@
     <value>kryptonButton1</value>
   </data>
   <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 309</value>
+    <value>363, 380</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 295</value>
+    <value>1525, 363</value>
   </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1141, 5</value>
+    <value>1521, 6</value>
   </data>
   <data name="btnEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>848, 337</value>
+    <value>1131, 415</value>
+  </data>
+  <data name="&gt;&gt;txtHoten.Parent" xml:space="preserve">
+    <value>tabTTCN</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 24</value>
+    <value>133, 30</value>
   </data>
   <data name="radbtnMoney.Values.ExtraText" xml:space="preserve">
     <value />
   </data>
-  <data name="tabDH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1193, 770</value>
+  <data name="txtHoten.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="kryptonComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1062, 37</value>
+    <value>1416, 46</value>
   </data>
   <data name="tabTTCN.Text" xml:space="preserve">
     <value>Thông tin cá nhân</value>
@@ -876,14 +915,14 @@
   <data name="btnSave.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="kryptonButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 46</value>
   </data>
   <data name="btnSDT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 295</value>
+    <value>1525, 363</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -901,19 +940,28 @@
     <value>7</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 25</value>
+    <value>195, 32</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnEmail.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 63</value>
+    <value>29, 78</value>
   </data>
-  <data name="&gt;&gt;CBQQ.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;txtNS.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnHoTen.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -922,7 +970,7 @@
     <value>12</value>
   </data>
   <data name="labelHoten.Text" xml:space="preserve">
-    <value>Họ tên:</value>
+    <value>Họ tên: </value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -940,19 +988,22 @@
     <value>15</value>
   </data>
   <data name="btnEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
     <value>lblEmail</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 412</value>
+    <value>29, 507</value>
   </data>
   <data name="lblNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 25</value>
+    <value>133, 32</value>
   </data>
   <data name="radbtnMomo.Values.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;kryptonComboBox1.Name" xml:space="preserve">
     <value>kryptonComboBox1</value>
@@ -964,22 +1015,25 @@
     <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Chỉnh sửa thông tin cá nhân</value>
+    <value>Chỉnh sửa thông tin cá nhân </value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 335</value>
+    <value>357, 412</value>
   </data>
-  <data name="&gt;&gt;txtHoten.Parent" xml:space="preserve">
-    <value>tabTTCN</value>
+  <data name="btnDHHT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;btnSDT.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;radbtnMoney.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -996,17 +1050,20 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Chi tiết:</value>
   </data>
-  <data name="kryptonButton1.Values.Text" xml:space="preserve">
-    <value>Đăng xuất</value>
+  <data name="&gt;&gt;radbtnMomo.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txtSDT.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+  <data name="radbtnMoney.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 12</value>
   </data>
   <data name="&gt;&gt;kryptonComboBox1.Parent" xml:space="preserve">
     <value>tabTTCN</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1020,14 +1077,17 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1521, 6</value>
+  </data>
   <data name="radbtnMomo.Values.ExtraText" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="txtEmail.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;tabPTTT.Name" xml:space="preserve">
+    <value>tabPTTT</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -1042,7 +1102,7 @@
     <value>Krypton.Toolkit.KryptonComboBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="tabDH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 34</value>
   </data>
   <data name="&gt;&gt;lblQQ.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1051,7 +1111,7 @@
     <value>0</value>
   </data>
   <data name="lblQQ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 473</value>
+    <value>363, 582</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>tabPTTT</value>
@@ -1063,10 +1123,13 @@
     <value>3</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 617</value>
+    <value>641, 759</value>
   </data>
   <data name="btnNS.Values.ExtraText" xml:space="preserve">
     <value />
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
   <data name="&gt;&gt;btnEmail.Parent" xml:space="preserve">
     <value>tabTTCN</value>
@@ -1077,8 +1140,8 @@
   <data name="lblSDT.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1201, 803</value>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Tiền mặt</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1087,7 +1150,7 @@
     <value>NoControl</value>
   </data>
   <data name="radbtnMoney.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 243</value>
+    <value>597, 299</value>
   </data>
   <data name="btnHoTen.Values.Text" xml:space="preserve">
     <value />
@@ -1102,13 +1165,16 @@
     <value>2</value>
   </data>
   <data name="tabTTCN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 34</value>
+  </data>
+  <data name="tabDH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radbtnMoney.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtHoten.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -1116,8 +1182,8 @@
   <data name="&gt;&gt;lblQQ.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnLS.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Chọn làm phương thức mặc định</value>
@@ -1126,16 +1192,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="labelHoten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 25</value>
+    <value>99, 32</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 14</value>
+    <value>32, 17</value>
   </data>
   <data name="txtEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="lblNS.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1149,8 +1218,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Ví MoMo</value>
   </data>
-  <data name="&gt;&gt;tabPTTT.Name" xml:space="preserve">
-    <value>tabPTTT</value>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Chọn ngôn ngữ: </value>
   </data>
   <data name="radbtnMoney.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
@@ -1162,19 +1231,22 @@
     <value />
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 236</value>
+    <value>133, 290</value>
   </data>
   <data name="lblQQ.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
   </data>
   <data name="lblNS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 235</value>
+    <value>363, 289</value>
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 31</value>
+    <value>132, 39</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -1197,8 +1269,8 @@
   <data name="&gt;&gt;txtHoten.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonTextBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
-  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 25</value>
+  <data name="&gt;&gt;btnDHHT.Parent" xml:space="preserve">
+    <value>tabDH</value>
   </data>
   <data name="&gt;&gt;radbtnMomo.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1218,9 +1290,6 @@
   <data name="label7.Text" xml:space="preserve">
     <value>Thanh toán dễ dàng, linh động hơn</value>
   </data>
-  <data name="tabTTCN.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1231,7 +1300,7 @@
     <value>1</value>
   </data>
   <data name="txtSDT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 415</value>
+    <value>357, 511</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1242,35 +1311,32 @@
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
   </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Trạng thái: hoạt động</value>
+  <data name="panelDH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1531, 196</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 31</value>
+    <value>143, 39</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>tabTTCN</value>
+  <data name="&gt;&gt;tabDH.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;CBQQ.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
   <data name="tabDH.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="panelDH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1148, 159</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Chọn ngôn ngữ:</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnHoTen.Values.ExtraText" xml:space="preserve">
     <value />
@@ -1282,7 +1348,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 16</value>
+    <value>32, 20</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -1293,17 +1359,14 @@
   <data name="&gt;&gt;tabTTCN.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtSDT.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonTextBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  <data name="kryptonButton1.Values.Text" xml:space="preserve">
+    <value>Đăng xuất </value>
+  </data>
+  <data name="kryptonButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="tabBMDK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1193, 770</value>
-  </data>
-  <data name="&gt;&gt;tabDH.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;radbtnMoney.Name" xml:space="preserve">
     <value>radbtnMoney</value>
@@ -1311,17 +1374,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lblEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 73</value>
+    <value>4, 90</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 31</value>
+    <value>132, 39</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1345,16 +1405,13 @@
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;txtNS.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 25</value>
+    <value>401, 31</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 20.25pt, style=Bold</value>
@@ -1365,14 +1422,14 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="kryptonComboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 33</value>
+  <data name="tabTTCN.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;kryptonButton1.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
-  <data name="&gt;&gt;btnHoTen.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  <data name="btnNS.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1381,10 +1438,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnNS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>848, 263</value>
+    <value>1131, 324</value>
   </data>
   <data name="btnLS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 29</value>
+    <value>533, 36</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1396,22 +1453,25 @@
     <value>3</value>
   </data>
   <data name="lblNS.Text" xml:space="preserve">
-    <value>Ngày sinh:</value>
+    <value>Ngày sinh: </value>
   </data>
   <data name="&gt;&gt;txtNS.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonTextBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 139</value>
+    <value>135, 171</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>tabTTCN</value>
   </data>
   <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 25</value>
+    <value>168, 32</value>
   </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1141, 5</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UCCD</value>
   </data>
   <data name="&gt;&gt;btnLS.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1424,6 +1484,9 @@
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="tabPTTT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1440,8 +1503,11 @@
   <data name="&gt;&gt;btnEmail.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 4</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1455,32 +1521,32 @@
   <data name="btnDHHT.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabTTCN.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonTextBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;CBQQ.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+  <data name="tabBMDK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1593, 950</value>
   </data>
   <data name="btnSave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;lblNS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 39</value>
   </data>
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>630, 40</value>
+    <value>840, 46</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1488,16 +1554,22 @@
   <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="lblQQ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
   <data name="lblQQ.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="CBQQ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="tabBMDK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 34</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>vi</value>
+  </metadata>
 </root>

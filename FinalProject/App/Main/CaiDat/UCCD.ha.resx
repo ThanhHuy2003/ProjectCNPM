@@ -117,59 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="kryptonButton1.Values.Text" xml:space="preserve">
-    <value>Sign out</value>
+  <data name="kryptonButton1.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>471, 46</value>
+  <data name="kryptonButton1.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Change Personal Information</value>
+  <data name="btnSave.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 32</value>
+  <data name="btnSave.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Select language:</value>
+  <data name="btnSDT.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="lblQQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 32</value>
+  <data name="btnSDT.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="lblQQ.Text" xml:space="preserve">
-    <value>Province:</value>
+  <data name="btnEmail.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="lblNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 32</value>
+  <data name="btnEmail.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="lblNS.Text" xml:space="preserve">
-    <value>Date of birth:</value>
+  <data name="btnNS.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="btnSave.Values.Text" xml:space="preserve">
-    <value>Save</value>
+  <data name="btnNS.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 32</value>
+  <data name="btnHoTen.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="lblSDT.Text" xml:space="preserve">
-    <value>Phone number:</value>
+  <data name="btnHoTen.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="labelHoten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 32</value>
+  <data name="btnDHHT.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="labelHoten.Text" xml:space="preserve">
-    <value>Full name:</value>
+  <data name="btnDHHT.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="tabTTCN.Text" xml:space="preserve">
-    <value>Personal Information</value>
+  <data name="btnLS.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="tabDH.Text" xml:space="preserve">
-    <value>Orders</value>
+  <data name="btnLS.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="tabPTTT.Text" xml:space="preserve">
-    <value>Payment Method</value>
+  <data name="radbtnMoney.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="tabBMDK.Text" xml:space="preserve">
-    <value>Privacy and terms</value>
+  <data name="radbtnMoney.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="radbtnMomo.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radbtnMomo.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
 </root>

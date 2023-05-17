@@ -477,6 +477,9 @@
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.en.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.ha.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>
@@ -503,6 +506,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
       <DependentUpon>CardTB.cs</DependentUpon>
