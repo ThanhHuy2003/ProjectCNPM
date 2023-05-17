@@ -344,14 +344,14 @@
             this.panel_main.AutoScroll = true;
             this.panel_main.Location = new System.Drawing.Point(263, -2);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1220, 900);
+            this.panel_main.Size = new System.Drawing.Size(1220, 800);
             this.panel_main.TabIndex = 30;
             // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1484, 811);
+            this.ClientSize = new System.Drawing.Size(1484, 797);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

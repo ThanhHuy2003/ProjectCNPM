@@ -486,6 +486,9 @@
     <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\ADKM.resx">
+      <DependentUpon>ADKM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
     </EmbeddedResource>

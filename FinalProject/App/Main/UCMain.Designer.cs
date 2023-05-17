@@ -69,7 +69,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1230, 380);
+            this.panel1.Size = new System.Drawing.Size(1218, 380);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -165,10 +165,11 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 453);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1143, 308);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1171, 345);
             this.flowLayoutPanel1.TabIndex = 32;
             // 
             // ImageSlider
@@ -241,7 +242,7 @@
             this.Controls.Add(this.LabelCombo);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCMain";
-            this.Size = new System.Drawing.Size(1230, 866);
+            this.Size = new System.Drawing.Size(1219, 800);
             this.Load += new System.EventHandler(this.UCMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

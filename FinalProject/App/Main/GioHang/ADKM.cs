@@ -27,6 +27,7 @@ namespace FinalProject.App.Main.GioHang
         private void ADKM_Load(object sender, EventArgs e)
         {
             populatePromotionData_PromotionTable_UCKM();
+            LabelNhapKM.Select();
         }
         public Image resizeImage(Image image, int width, int height)
         {
