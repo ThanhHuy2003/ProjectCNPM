@@ -40,17 +40,19 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(77, 147);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(103, 181);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(946, 619);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1261, 762);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
             // btnAddTB
             // 
             this.btnAddTB.CornerRoundingRadius = 30F;
-            this.btnAddTB.Location = new System.Drawing.Point(613, 34);
+            this.btnAddTB.Location = new System.Drawing.Point(817, 42);
+            this.btnAddTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddTB.Name = "btnAddTB";
-            this.btnAddTB.Size = new System.Drawing.Size(132, 46);
+            this.btnAddTB.Size = new System.Drawing.Size(176, 57);
             this.btnAddTB.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.btnAddTB.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.btnAddTB.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -68,9 +70,10 @@
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(61, 87);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(81, 107);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(963, 43);
+            this.kryptonTextBox1.Size = new System.Drawing.Size(1284, 47);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -87,9 +90,10 @@
             // 
             this.lblKM.AutoSize = true;
             this.lblKM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKM.Location = new System.Drawing.Point(57, 34);
+            this.lblKM.Location = new System.Drawing.Point(76, 42);
+            this.lblKM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKM.Name = "lblKM";
-            this.lblKM.Size = new System.Drawing.Size(137, 24);
+            this.lblKM.Size = new System.Drawing.Size(174, 29);
             this.lblKM.TabIndex = 8;
             this.lblKM.Text = "Tìm thông báo:";
             // 
@@ -98,18 +102,20 @@
             this.picSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
             this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.picSearch.Location = new System.Drawing.Point(967, 92);
+            this.picSearch.Location = new System.Drawing.Point(1289, 113);
+            this.picSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(36, 32);
+            this.picSearch.Size = new System.Drawing.Size(48, 39);
             this.picSearch.TabIndex = 10;
             this.picSearch.TabStop = false;
             // 
             // btnEdit
             // 
             this.btnEdit.CornerRoundingRadius = 30F;
-            this.btnEdit.Location = new System.Drawing.Point(889, 34);
+            this.btnEdit.Location = new System.Drawing.Point(1185, 42);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(132, 46);
+            this.btnEdit.Size = new System.Drawing.Size(176, 57);
             this.btnEdit.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.btnEdit.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.btnEdit.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -126,9 +132,10 @@
             // btnDelete
             // 
             this.btnDelete.CornerRoundingRadius = 30F;
-            this.btnDelete.Location = new System.Drawing.Point(751, 34);
+            this.btnDelete.Location = new System.Drawing.Point(1001, 42);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(132, 46);
+            this.btnDelete.Size = new System.Drawing.Size(176, 57);
             this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.btnDelete.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -145,7 +152,7 @@
             // 
             // UCTBAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnDelete);
@@ -155,8 +162,10 @@
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.lblKM);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCTBAdmin";
-            this.Size = new System.Drawing.Size(1080, 800);
+            this.Size = new System.Drawing.Size(1440, 985);
+            this.Load += new System.EventHandler(this.UCTBAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

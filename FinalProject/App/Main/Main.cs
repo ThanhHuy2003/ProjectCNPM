@@ -35,12 +35,16 @@ namespace FinalProject
         {
             File ehe = new File();
             string lang = ehe.readLanguage();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
             InitializeComponent();
             func = new Func(this);
         }
         public Main(string userIDLogin)
         {
+            File ehe = new File();
+            string lang = ehe.readLanguage();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
+            MessageBox.Show("vo day r");
             InitializeComponent();
             func = new Func(this);
             this.userIDLogin = userIDLogin;

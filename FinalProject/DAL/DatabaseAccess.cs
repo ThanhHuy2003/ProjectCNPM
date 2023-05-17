@@ -404,16 +404,17 @@ namespace FinalProject.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "InsertPromotionData @poster, N@name, N@description, @percent";
+            String sSQL = "InsertPromotionData @poster, @name, @description,@date,@percent";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@poster",item.promotionPicture);
             cmd.Parameters.AddWithValue("@name", item.promotionName);
             cmd.Parameters.AddWithValue("@description", item.promotionDescription);
-           /* cmd.Parameters.AddWithValue("@date", item.promotionDate);*/
+            cmd.Parameters.AddWithValue("@date", item.promotionDate);
             cmd.Parameters.AddWithValue("@percent", item.promotionPercent);
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Thêm thành công");
         }
+
     }
 }
