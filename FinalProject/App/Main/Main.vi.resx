@@ -117,13 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="revenueBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>409, 17</value>
-  </metadata>
-  <metadata name="revenueBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="revenueBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>191, 17</value>
-  </metadata>
+  <data name="btnCD.Values.Text" xml:space="preserve">
+    <value>Cài đặt </value>
+  </data>
+  <data name="btnKM.Values.Text" xml:space="preserve">
+    <value>Khuyến mãi </value>
+  </data>
+  <data name="btnTB.Values.Text" xml:space="preserve">
+    <value>Thông báo </value>
+  </data>
+  <data name="btnGH.Values.Text" xml:space="preserve">
+    <value>Giỏ hàng </value>
+  </data>
+  <data name="btnCH.Values.Text" xml:space="preserve">
+    <value>Cửa hàng </value>
+  </data>
+  <data name="btnTD.Values.Text" xml:space="preserve">
+    <value>Thực đơn </value>
+  </data>
 </root>

@@ -27,5 +27,9 @@ namespace FinalProject.DAL
         {
             updateCartData_DA_DAL(dishID, totalQuantity, userID);
         }
+        public void updateCartDataPromotion_CartTable_DAL(string promotionID, string promotionCash, string userID)
+        {
+            updateCartDataPromotion_DA_DAL(promotionID, promotionCash, userID);
+        }
     }
 }

@@ -13,9 +13,9 @@ using FinalProject.DTO;
 
 namespace FinalProject.App.Admin
 {
-    public partial class UCDT : UserControl
+    public partial class UCDTAdmin : UserControl
     {
-        public UCDT()
+        public UCDTAdmin()
         {
             InitializeComponent();
             AdminRevenueBLL ehe = new AdminRevenueBLL();

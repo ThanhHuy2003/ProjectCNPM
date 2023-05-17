@@ -685,6 +685,8 @@ create table CartData
     dishName nvarchar(500) not null,
     dishPrice int not null,
 	totalQuantity int not null,
+	promotionID varchar(8),
+	promotionCash int default 0,
 	userID varchar(8),
     primary key(dishID, userID),
 	foreign key(dishID) references MenuData(dishID),
@@ -692,7 +694,7 @@ create table CartData
 )
 go
 
-insert into CartData values
+insert into CartData(dishID, dishPicture, dishName, dishPrice, totalQuantity, userID) values
 ('DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', N'Khoai Tây Múi Cau', 100000, 3, 'UID00001'),
 ('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', 120000, 2, 'UID00001')
 go

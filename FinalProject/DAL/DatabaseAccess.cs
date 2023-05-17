@@ -88,6 +88,34 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        public DataTable populateInformationUser_DA_DAL(string userID)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from LoginData where userID = '" + userID + "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public void updateCartDataPromotion_DA_DAL(string promotionID, string promotionCash, string userID)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "update CartData set promotionID = '" + promotionID + "', promotionCash = " + promotionCash + " where userID = '" + userID + "'";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Áp dụng khuyến mãi không thành công");
+            }
+}
         public DataTable getTotalQuantityOfDish_DA_DAL(string dishID, string userID)
         {
             SqlConnection conn = new SqlConnection(strConn);
@@ -153,7 +181,7 @@ namespace FinalProject.DAL
             }
             catch
             {
-                MessageBox.Show("Mặt hàng đã có trong giỏ hàng của bạn");
+                MessageBox.Show("Cập nhật số lượng không thành công");
             }
         }
         public void deleteCartItem_DA_DAL(string id, string userID)
@@ -240,20 +268,25 @@ namespace FinalProject.DAL
         public void updateUser_DA_BLL(User user)
         {
             MessageBox.Show("Update id :" + user.userID);
-            SqlConnection conn = new SqlConnection(strConn);
-            conn.Open();
-            String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username, userPassword=@userpassword where userID=@id";
-            SqlCommand cmd = new SqlCommand(sSQL, conn);
-            cmd.Parameters.AddWithValue("@name", user.fullName);
-            cmd.Parameters.AddWithValue("@email", user.emailAddress);
-            cmd.Parameters.AddWithValue("@contact", user.contactAddress);
-            cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
-            cmd.Parameters.AddWithValue("@username", user.userName);
-            cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
-            cmd.Parameters.AddWithValue("@id", user.userID);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Successfuly");
+            try
+            {
+                SqlConnection conn = new SqlConnection(strConn);
+                conn.Open();
+                String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username where userID=@id";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@name", user.fullName);
+                cmd.Parameters.AddWithValue("@email", user.emailAddress);
+                cmd.Parameters.AddWithValue("@contact", user.contactAddress);
+                cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
+                cmd.Parameters.AddWithValue("@username", user.userName);
+                cmd.Parameters.AddWithValue("@id", user.userID);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Successfuly");
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Sai tỉnh thành");
+            }
         }
         public void addUser_DA_BLL(User user)
         {
@@ -366,6 +399,49 @@ namespace FinalProject.DAL
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        //Province
+        public DataTable getAllProvince_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "SELECT * from Province";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        //Promotion
+        public DataTable searchPromotion_DA_DAL(String key)
+        {
+
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "SELECT distinct * from PromotionData where promotionName like %@key% or promotionName like @key%";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@key", key);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public void addPromotion_DA_DAL(PromotionItem item)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "InsertPromotionData @poster, N@name, N@description, @percent";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@poster",item.promotionPicture);
+            cmd.Parameters.AddWithValue("@name", item.promotionName);
+            cmd.Parameters.AddWithValue("@description", item.promotionDescription);
+           /* cmd.Parameters.AddWithValue("@date", item.promotionDate);*/
+            cmd.Parameters.AddWithValue("@percent", item.promotionPercent);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Thêm thành công");
         }
     }
 }

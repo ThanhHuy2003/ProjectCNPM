@@ -7,9 +7,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,6 +21,8 @@ namespace FinalProject.App
     {
         public UCKM()
         {
+            File ehe = new File();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
         }
         public Image resizeImage(Image image, int width, int height)

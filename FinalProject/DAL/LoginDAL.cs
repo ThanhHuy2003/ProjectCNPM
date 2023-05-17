@@ -1,6 +1,7 @@
 ﻿using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,17 @@ namespace FinalProject.DAL
         public string signUp_Login_DAL(User newUser)
         {
             return signUp_DA_DAL(newUser);
+        }
+        public DataTable populateInformationUser_Login_DAL(string userID)
+        {
+            if (populateInformationUser_DA_DAL(userID) == null)
+            {
+                return null;
+            }
+            else
+            {
+                return populateInformationUser_DA_DAL(userID);
+            }
         }
     }
 }

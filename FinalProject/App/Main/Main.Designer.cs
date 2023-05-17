@@ -145,7 +145,7 @@
             this.btnCD.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCD.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnCD.TabIndex = 12;
-            this.btnCD.Values.Text = "Cài đặt";
+            this.btnCD.Values.Text = "Cài đặt ";
             this.btnCD.Click += new System.EventHandler(this.btnCD_Click);
             // 
             // btnKM
@@ -181,7 +181,7 @@
             this.btnKM.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnKM.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnKM.TabIndex = 3;
-            this.btnKM.Values.Text = "Khuyến mãi";
+            this.btnKM.Values.Text = "Khuyến mãi ";
             this.btnKM.Click += new System.EventHandler(this.btnKM_Click);
             // 
             // btnTB
@@ -216,7 +216,7 @@
             this.btnTB.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTB.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnTB.TabIndex = 10;
-            this.btnTB.Values.Text = "Thông báo";
+            this.btnTB.Values.Text = "Thông báo ";
             this.btnTB.Click += new System.EventHandler(this.btnTB_Click);
             // 
             // btnGH
@@ -252,7 +252,7 @@
             this.btnGH.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnGH.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnGH.TabIndex = 6;
-            this.btnGH.Values.Text = "Giỏ hàng";
+            this.btnGH.Values.Text = "Giỏ hàng ";
             this.btnGH.Click += new System.EventHandler(this.btnGH_Click);
             // 
             // btnCH
@@ -289,7 +289,7 @@
             this.btnCH.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCH.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnCH.TabIndex = 5;
-            this.btnCH.Values.Text = "Cửa hàng";
+            this.btnCH.Values.Text = "Cửa hàng ";
             this.btnCH.Click += new System.EventHandler(this.btnCH_Click);
             // 
             // menu_active
@@ -336,7 +336,7 @@
             this.btnTD.StateTracking.Content.ShortText.Prefix = Krypton.Toolkit.PaletteTextHotkeyPrefix.None;
             this.btnTD.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnTD.TabIndex = 1;
-            this.btnTD.Values.Text = "Thực đơn";
+            this.btnTD.Values.Text = "Thực đơn ";
             this.btnTD.Click += new System.EventHandler(this.btnTD_Click);
             // 
             // panel_main

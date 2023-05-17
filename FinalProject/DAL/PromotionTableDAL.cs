@@ -15,5 +15,13 @@ namespace FinalProject.DAL
         {
             return populatePromotionData_DA_DAL();
         }
+        public DataTable searchPromotion_DAL(String key)
+        {
+            return searchPromotion_DA_DAL(key);
+        }
+        public void addPromotion_DAL(PromotionItem item)
+        {
+            addPromotion_DA_DAL(item);
+        }
     }
 }

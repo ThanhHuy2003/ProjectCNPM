@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTTCN = new System.Windows.Forms.TabPage();
+            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.CBQQ = new Krypton.Toolkit.KryptonComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
@@ -71,8 +73,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabBMDK = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.tabControl1.SuspendLayout();
             this.tabTTCN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CBQQ)).BeginInit();
@@ -128,6 +128,42 @@
             this.tabTTCN.TabIndex = 0;
             this.tabTTCN.Text = "Thông tin cá nhân";
             // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
+            this.kryptonButton1.CornerRoundingRadius = 20F;
+            this.kryptonButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.kryptonButton1.Location = new System.Drawing.Point(899, 92);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(266, 37);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateCommon.Border.Rounding = 20F;
+            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.kryptonButton1.TabIndex = 73;
+            this.kryptonButton1.Values.Text = "Đăng xuất ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(413, 57);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(370, 37);
+            this.label3.TabIndex = 72;
+            this.label3.Text = "Chỉnh sửa thông tin cá nhân ";
+            // 
             // CBQQ
             // 
             this.CBQQ.CornerRoundingRadius = 30F;
@@ -154,9 +190,9 @@
             this.label12.Location = new System.Drawing.Point(894, 37);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(148, 25);
+            this.label12.Size = new System.Drawing.Size(153, 25);
             this.label12.TabIndex = 70;
-            this.label12.Text = "Chọn ngôn ngữ:";
+            this.label12.Text = "Chọn ngôn ngữ: ";
             // 
             // kryptonComboBox1
             // 
@@ -178,32 +214,33 @@
             this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 20F;
             this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonComboBox1.TabIndex = 69;
+            this.kryptonComboBox1.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox1_SelectedIndexChanged);
             // 
             // lblQQ
             // 
             this.lblQQ.AutoSize = true;
             this.lblQQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.lblQQ.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQQ.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.lblQQ.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblQQ.Location = new System.Drawing.Point(272, 473);
             this.lblQQ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQQ.Name = "lblQQ";
-            this.lblQQ.Size = new System.Drawing.Size(99, 25);
+            this.lblQQ.Size = new System.Drawing.Size(104, 25);
             this.lblQQ.TabIndex = 67;
-            this.lblQQ.Text = "Quê quán:";
+            this.lblQQ.Text = "Quê quán: ";
             // 
             // lblNS
             // 
             this.lblNS.AutoSize = true;
             this.lblNS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.lblNS.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNS.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.lblNS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblNS.Location = new System.Drawing.Point(272, 235);
             this.lblNS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNS.Name = "lblNS";
-            this.lblNS.Size = new System.Drawing.Size(100, 25);
+            this.lblNS.Size = new System.Drawing.Size(105, 25);
             this.lblNS.TabIndex = 66;
-            this.lblNS.Text = "Ngày sinh:";
+            this.lblNS.Text = "Ngày sinh: ";
             // 
             // btnSave
             // 
@@ -376,40 +413,40 @@
             // 
             this.lblSDT.AutoSize = true;
             this.lblSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.lblSDT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblSDT.Location = new System.Drawing.Point(272, 389);
             this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(127, 25);
+            this.lblSDT.Size = new System.Drawing.Size(132, 25);
             this.lblSDT.TabIndex = 49;
-            this.lblSDT.Text = "Số điện thoại:";
+            this.lblSDT.Text = "Số điện thoại: ";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.lblEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblEmail.Location = new System.Drawing.Point(272, 309);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(62, 25);
+            this.lblEmail.Size = new System.Drawing.Size(67, 25);
             this.lblEmail.TabIndex = 48;
-            this.lblEmail.Text = "Email:";
+            this.lblEmail.Text = "Email: ";
             // 
             // labelHoten
             // 
             this.labelHoten.AutoSize = true;
             this.labelHoten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.labelHoten.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHoten.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.labelHoten.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.labelHoten.Location = new System.Drawing.Point(272, 151);
             this.labelHoten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHoten.Name = "labelHoten";
-            this.labelHoten.Size = new System.Drawing.Size(72, 25);
+            this.labelHoten.Size = new System.Drawing.Size(77, 25);
             this.labelHoten.TabIndex = 47;
-            this.labelHoten.Text = "Họ tên:";
+            this.labelHoten.Text = "Họ tên: ";
             // 
             // tabDH
             // 
@@ -695,44 +732,9 @@
             this.tabBMDK.TabIndex = 5;
             this.tabBMDK.Text = "Bảo mật và điều khoản";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(413, 57);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(363, 37);
-            this.label3.TabIndex = 72;
-            this.label3.Text = "Chỉnh sửa thông tin cá nhân";
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
-            this.kryptonButton1.CornerRoundingRadius = 20F;
-            this.kryptonButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.kryptonButton1.Location = new System.Drawing.Point(899, 92);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(266, 37);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 20F;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.kryptonButton1.TabIndex = 73;
-            this.kryptonButton1.Values.Text = "Đăng xuất";
-            // 
             // UCCD
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);

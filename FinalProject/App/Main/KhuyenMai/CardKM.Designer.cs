@@ -53,6 +53,7 @@
             this.ButtonKM1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonKM1.TabIndex = 13;
             this.ButtonKM1.Values.Text = "Áp dụng";
+            this.ButtonKM1.Click += new System.EventHandler(this.ButtonKM1_Click);
             // 
             // kryptonLabel35
             // 
@@ -97,7 +98,7 @@
             this.Controls.Add(this.kryptonLabel35);
             this.Controls.Add(this.kryptonLabel36);
             this.Controls.Add(this.pictureBox12);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CardKM";
             this.Size = new System.Drawing.Size(1408, 192);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();

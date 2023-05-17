@@ -18,7 +18,7 @@ namespace FinalProject.App.Admin
         {
             InitializeComponent();
         }
-        Func Func;
+        Func Func = new Func();
         private void MainAdmin_Load(object sender, EventArgs e)
         {
             Func.togglePanel(pnlAdmin, "TK");

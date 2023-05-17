@@ -37,5 +37,9 @@ namespace FinalProject.BLL
         {
             cartTableDAL.updateCartData_CartTable_DAL(dishID, totalQuantity, userID);
         }
+        public void updateCartDataPromotion_CartTable_BLL(string promotionID, string promotionCash, string userID)
+        {
+            cartTableDAL.updateCartDataPromotion_CartTable_DAL(promotionID, promotionCash, userID);
+        }
     }
 }

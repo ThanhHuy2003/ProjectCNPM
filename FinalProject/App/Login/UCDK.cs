@@ -20,8 +20,8 @@ namespace FinalProject.App.Login
         {
             InitializeComponent();
         }
-        private UCDK uCDK;
         Func Func;
+        private UCDK uCDK;
         private void btnDN_Click(object sender, EventArgs e)
         {
             panel_DN.Visible = true;

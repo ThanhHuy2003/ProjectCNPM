@@ -44,7 +44,7 @@
             this.LabelNhapKM.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.LabelNhapKM.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNhapKM.TabIndex = 7;
-            this.LabelNhapKM.Values.Text = "Nhập mã khuyến mãi:";
+            this.LabelNhapKM.Values.Text = "Tìm khuyến mãi:";
             // 
             // flowLayoutPanel1
             // 

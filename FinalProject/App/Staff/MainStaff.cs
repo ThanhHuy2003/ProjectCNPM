@@ -13,12 +13,12 @@ namespace FinalProject.App.Staff
 {
     public partial class MainStaff : Form
     {
+        Func Func = new Func();
         public MainStaff()
         {
             InitializeComponent();
             Func.togglePanel(pnlMainStaff, "TDStaff");
         }
-        Func Func;
         private void btnTD_Click(object sender, EventArgs e)
         {
             Func.togglePanel(pnlMainStaff, "TDStaff");

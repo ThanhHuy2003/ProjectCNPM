@@ -52,9 +52,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(91, 108);
+            this.label1.Location = new System.Drawing.Point(121, 133);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(75, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Họ tên:";
             // 
@@ -62,9 +63,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(91, 170);
+            this.label2.Location = new System.Drawing.Point(121, 209);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.Size = new System.Drawing.Size(66, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Email:";
             // 
@@ -72,9 +74,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(91, 238);
+            this.label3.Location = new System.Drawing.Point(121, 293);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(77, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Địa chỉ:";
             // 
@@ -82,9 +85,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(91, 302);
+            this.label4.Location = new System.Drawing.Point(121, 372);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 20);
+            this.label4.Size = new System.Drawing.Size(132, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Số điện thoại:";
             // 
@@ -92,9 +96,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(91, 366);
+            this.label5.Location = new System.Drawing.Point(121, 450);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 20);
+            this.label5.Size = new System.Drawing.Size(108, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Username:";
             // 
@@ -102,17 +107,19 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(91, 496);
+            this.label7.Location = new System.Drawing.Point(121, 610);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 20);
+            this.label7.Size = new System.Drawing.Size(74, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Vai trò:";
             // 
             // txtFullname
             // 
-            this.txtFullname.Location = new System.Drawing.Point(250, 97);
+            this.txtFullname.Location = new System.Drawing.Point(333, 119);
+            this.txtFullname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFullname.Name = "txtFullname";
-            this.txtFullname.Size = new System.Drawing.Size(544, 43);
+            this.txtFullname.Size = new System.Drawing.Size(725, 47);
             this.txtFullname.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -121,9 +128,10 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(250, 159);
+            this.txtEmail.Location = new System.Drawing.Point(333, 196);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(544, 43);
+            this.txtEmail.Size = new System.Drawing.Size(725, 47);
             this.txtEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -132,9 +140,10 @@
             // 
             // txtPhonenumber
             // 
-            this.txtPhonenumber.Location = new System.Drawing.Point(250, 291);
+            this.txtPhonenumber.Location = new System.Drawing.Point(333, 358);
+            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhonenumber.Name = "txtPhonenumber";
-            this.txtPhonenumber.Size = new System.Drawing.Size(544, 43);
+            this.txtPhonenumber.Size = new System.Drawing.Size(725, 47);
             this.txtPhonenumber.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -145,9 +154,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(91, 430);
+            this.label6.Location = new System.Drawing.Point(121, 529);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 20);
+            this.label6.Size = new System.Drawing.Size(104, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Password:";
             // 
@@ -157,9 +167,10 @@
             this.cbAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAddress.DropDownWidth = 524;
             this.cbAddress.IntegralHeight = false;
-            this.cbAddress.Location = new System.Drawing.Point(250, 228);
+            this.cbAddress.Location = new System.Drawing.Point(333, 281);
+            this.cbAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbAddress.Name = "cbAddress";
-            this.cbAddress.Size = new System.Drawing.Size(544, 41);
+            this.cbAddress.Size = new System.Drawing.Size(725, 45);
             this.cbAddress.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -169,9 +180,10 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(250, 355);
+            this.txtUsername.Location = new System.Drawing.Point(333, 437);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(544, 43);
+            this.txtUsername.Size = new System.Drawing.Size(725, 47);
             this.txtUsername.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -180,9 +192,10 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(250, 419);
+            this.txtPassword.Location = new System.Drawing.Point(333, 516);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(544, 43);
+            this.txtPassword.Size = new System.Drawing.Size(725, 47);
             this.txtPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -195,9 +208,15 @@
             this.cbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRole.DropDownWidth = 524;
             this.cbRole.IntegralHeight = false;
-            this.cbRole.Location = new System.Drawing.Point(250, 486);
+            this.cbRole.Items.AddRange(new object[] {
+            "admin",
+            "staff",
+            "user",
+            "manage"});
+            this.cbRole.Location = new System.Drawing.Point(333, 598);
+            this.cbRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(544, 41);
+            this.cbRole.Size = new System.Drawing.Size(725, 45);
             this.cbRole.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -208,9 +227,10 @@
             // btnSave
             // 
             this.btnSave.CornerRoundingRadius = 30F;
-            this.btnSave.Location = new System.Drawing.Point(389, 558);
+            this.btnSave.Location = new System.Drawing.Point(501, 687);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(165, 58);
+            this.btnSave.Size = new System.Drawing.Size(220, 71);
             this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -221,23 +241,25 @@
             this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.TabIndex = 14;
             this.btnSave.Values.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label8.Location = new System.Drawing.Point(369, 18);
+            this.label8.Location = new System.Drawing.Point(455, 32);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(230, 31);
+            this.label8.Size = new System.Drawing.Size(289, 39);
             this.label8.TabIndex = 15;
             this.label8.Text = "Thông tin cá nhân";
             // 
             // EditTK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(934, 651);
+            this.ClientSize = new System.Drawing.Size(1245, 801);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cbRole);
@@ -255,6 +277,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditTK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Chỉnh sửa tài khoản";

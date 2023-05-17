@@ -6,17 +6,22 @@ using FinalProject.App.Main;
 using FinalProject.App.Main.CaiDat;
 using FinalProject.App.Main.GioHang;
 using FinalProject.App.Main.ThucDon;
+using FinalProject.App.Manager;
 using FinalProject.App.Staff.GioHang;
 using FinalProject.App.Staff.KhuyenMai;
 using FinalProject.App.Staff.ThucDon;
 using FinalProject.DTO;
+using FinalProject.DTO;
+using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,6 +33,9 @@ namespace FinalProject
         Func func;
         public Main()
         {
+            File ehe = new File();
+            string lang = ehe.readLanguage();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             InitializeComponent();
             func = new Func(this);
         }
@@ -91,6 +99,10 @@ namespace FinalProject
             {
                 this.main = main;
             }
+            public Func( )
+            {
+
+            }
             //User
             private static UCTD uCTD;
             private static UCMain uCMain;
@@ -105,15 +117,19 @@ namespace FinalProject
             //Admin
             private static UCTK uCTK;
             private static UCKMAdmin uCKMAdmin;
-            private static UCDT uCDT;
+            private static UCDTAdmin uCDT;
             private static UCTBAdmin uCTBAdmin;
             private static UCTB uCTB;
             //Staff
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
             private static UCGH uCGH;
+            //Manager
+            private static UCNV uCNV;
+            private static UCLuong uCLuong;
             public void togglePanel(Panel panel, String panelName)
             {
+                
                 panel.Controls.Clear();
                 panel.AutoScroll = true;
                 switch (panelName)
@@ -321,7 +337,7 @@ namespace FinalProject
                     case "DT":
                         if (uCDT == null)
                         {
-                            uCDT = new UCDT();
+                            uCDT = new UCDTAdmin();
                             panel.Controls.Add(uCDT);
                             uCDT.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCDT.Location = new System.Drawing.Point(0, 0);
@@ -376,6 +392,36 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCKMStaff);
+                        }
+                        break;
+                    case "NV":
+                        if (uCNV == null)
+                        {
+                            uCNV = new UCNV();
+                            panel.Controls.Add(uCTBAdmin);
+                            uCNV.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCNV.Location = new System.Drawing.Point(0, 0);
+                            uCNV.Name = "uCNV";
+                            uCNV.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCNV);
+                        }
+                        break;
+                    case "Luong":
+                        if (uCLuong == null)
+                        {
+                            uCLuong = new UCLuong();
+                            panel.Controls.Add(uCLuong);
+                            uCLuong.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCLuong.Location = new System.Drawing.Point(0, 0);
+                            uCLuong.Name = "uCLuong";
+                            uCLuong.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCLuong);
                         }
                         break;
                     default:

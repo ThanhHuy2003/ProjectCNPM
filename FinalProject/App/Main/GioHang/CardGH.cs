@@ -65,6 +65,7 @@ namespace FinalProject.App.Main.GioHang
             }
         }
         #region Properties
+        private string _promotionID;
         private FlowLayoutPanel _flowLayoutPanel;
         private string _id;
         private string _title;
@@ -72,6 +73,11 @@ namespace FinalProject.App.Main.GioHang
         private Image _pic;
         private int _quantity;
         private string _userID;
+        private int _percent;
+        [Category("Custom Props")]
+        public string PromotionID { get { return _promotionID; } set { _promotionID = value; } }
+        [Category("Custom Props")]
+        public int Percent { get { return _percent; } set { _percent = value; } }
         [Category("Custom Props")]
         public string UserID { get { return _userID; } set { _userID = value; } }
         [Category("Custom Props")]

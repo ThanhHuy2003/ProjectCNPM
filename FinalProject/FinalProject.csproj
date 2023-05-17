@@ -137,11 +137,11 @@
     <Compile Include="App\Admin\ThongBao\UCTBAdmin.Designer.cs">
       <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\DoanhThu\UCDT.cs">
+    <Compile Include="App\Admin\DoanhThu\UCDTAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="App\Admin\DoanhThu\UCDT.Designer.cs">
-      <DependentUpon>UCDT.cs</DependentUpon>
+    <Compile Include="App\Admin\DoanhThu\UCDTAdmin.Designer.cs">
+      <DependentUpon>UCDTAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\TaiKhoan\UCTK.cs">
       <SubType>UserControl</SubType>
@@ -269,6 +269,72 @@
     <Compile Include="App\Main\ThongBao\UCTB.Designer.cs">
       <DependentUpon>UCTB.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Manager\DoanhThu\UCDTManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\DoanhThu\UCDTManager.Designer.cs">
+      <DependentUpon>UCDTManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\NguyenLieu\UCNL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\NguyenLieu\UCNL.Designer.cs">
+      <DependentUpon>UCNL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\NhanVien\AddNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\NhanVien\AddNV.Designer.cs">
+      <DependentUpon>AddNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\Luong\CardLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\Luong\CardLuong.Designer.cs">
+      <DependentUpon>CardLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\Luong\LuongDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\Luong\LuongDetails.Designer.cs">
+      <DependentUpon>LuongDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\MainManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\MainManager.Designer.cs">
+      <DependentUpon>MainManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\Luong\UCLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\Luong\UCLuong.Designer.cs">
+      <DependentUpon>UCLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\NhanVien\UCNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\NhanVien\UCNV.Designer.cs">
+      <DependentUpon>UCNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\AddTDManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\AddTDManager.Designer.cs">
+      <DependentUpon>AddTDManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\CardTDManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\CardTDManager.Designer.cs">
+      <DependentUpon>CardTDManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\UCTDManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Manager\ThucDon\UCTDManager.Designer.cs">
+      <DependentUpon>UCTDManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Staff\GioHang\CardGH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -334,9 +400,11 @@
     <Compile Include="BLL\AdminUserBLL.cs" />
     <Compile Include="BLL\CartTableBLL.cs" />
     <Compile Include="BLL\CookTableBLL.cs" />
+    <Compile Include="BLL\File.cs" />
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\NotificationTableBLL.cs" />
     <Compile Include="BLL\PromotionTableBLL.cs" />
+    <Compile Include="BLL\ProvinceBLL.cs" />
     <Compile Include="BLL\StoreAddressTableBLL.cs" />
     <Compile Include="DAL\CartTableDAL.cs" />
     <Compile Include="DAL\NotificationDAL.cs" />
@@ -344,6 +412,7 @@
     <Compile Include="DAL\DatabaseAccess.cs" />
     <Compile Include="DAL\LoginDAL.cs" />
     <Compile Include="DAL\PromotionTableDAL.cs" />
+    <Compile Include="DAL\ProvinceDAL.cs" />
     <Compile Include="DAL\RevenueCRUD_DAL.cs" />
     <Compile Include="DAL\StoreAddressTableDAL.cs" />
     <Compile Include="DAL\UserCRUD_DAL.cs" />
@@ -351,6 +420,7 @@
     <Compile Include="DTO\MenuItem.cs" />
     <Compile Include="DTO\Notification.cs" />
     <Compile Include="DTO\PromotionItem.cs" />
+    <Compile Include="DTO\Province.cs" />
     <Compile Include="DTO\Revenue.cs" />
     <Compile Include="DTO\StoreAddressItem.cs" />
     <Compile Include="DTO\User.cs" />
@@ -380,14 +450,14 @@
     <EmbeddedResource Include="App\Admin\ThongBao\UCTBAdmin.resx">
       <DependentUpon>UCTBAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.vi.resx">
-      <DependentUpon>UCDT.cs</DependentUpon>
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDTAdmin.vi.resx">
+      <DependentUpon>UCDTAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\KhuyenMai\UCKMAdmin.resx">
       <DependentUpon>UCKMAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\DoanhThu\UCDT.resx">
-      <DependentUpon>UCDT.cs</DependentUpon>
+    <EmbeddedResource Include="App\Admin\DoanhThu\UCDTAdmin.resx">
+      <DependentUpon>UCDTAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\TaiKhoan\UCTK.resx">
       <DependentUpon>UCTK.cs</DependentUpon>
@@ -404,26 +474,32 @@
     <EmbeddedResource Include="App\Main\CaiDat\CardDH.resx">
       <DependentUpon>CardDH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.en.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\UCCD.resx">
+      <DependentUpon>UCCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\UCCD.vi.resx">
       <DependentUpon>UCCD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CuaHang\CardCH.resx">
       <DependentUpon>CardCH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\GioHang\ADKM.resx">
-      <DependentUpon>ADKM.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\UCGH.en.resx">
+      <DependentUpon>UCGH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\GioHang\UCGH.resx">
       <DependentUpon>UCGH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\UCGH.vi.resx">
+      <DependentUpon>UCGH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\KhuyenMai\CardKMForDisplay.resx">
-      <DependentUpon>CardKMForDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
       <DependentUpon>CardTB.cs</DependentUpon>
@@ -443,6 +519,12 @@
     <EmbeddedResource Include="App\Main\KhuyenMai\UCKM.resx">
       <DependentUpon>UCKM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThucDon\UCTD.en.resx">
+      <DependentUpon>UCTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\ThucDon\UCTD.vi.resx">
+      <DependentUpon>UCTD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\UCMain.resx">
       <DependentUpon>UCMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,6 +536,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\UCTB.resx">
       <DependentUpon>UCTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\DoanhThu\UCDTManager.resx">
+      <DependentUpon>UCDTManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\NguyenLieu\UCNL.resx">
+      <DependentUpon>UCNL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\NhanVien\AddNV.resx">
+      <DependentUpon>AddNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\Luong\CardLuong.resx">
+      <DependentUpon>CardLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\Luong\LuongDetails.resx">
+      <DependentUpon>LuongDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\MainManager.resx">
+      <DependentUpon>MainManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\Luong\UCLuong.resx">
+      <DependentUpon>UCLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\NhanVien\UCNV.resx">
+      <DependentUpon>UCNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\ThucDon\AddTDManager.resx">
+      <DependentUpon>AddTDManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\ThucDon\CardTDManager.resx">
+      <DependentUpon>CardTDManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Manager\ThucDon\UCTDManager.resx">
+      <DependentUpon>UCTDManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Staff\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
