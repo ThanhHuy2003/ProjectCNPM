@@ -15,6 +15,8 @@ namespace FinalProject.App.Admin.ThongBao
 {
     public partial class UCTBAdmin : UserControl
     {
+        AdminNotificationBLL listBLL = new AdminNotificationBLL();
+        DataTable list;
         public UCTBAdmin()
         {
             InitializeComponent();
@@ -48,16 +50,23 @@ namespace FinalProject.App.Admin.ThongBao
 
             return destImage;
         }
-        private void populateNotification_UCTB()
+        private void populateNotification_UCTB(Boolean flag)
         {
-            NotificationTableBLL newNotificationTableBLL = new NotificationTableBLL();
-
-            if (newNotificationTableBLL.populateNotificationData_NotificationTable_BLL() != null)
+            if (flag)
             {
-                foreach (DataRow row in newNotificationTableBLL.populateNotificationData_NotificationTable_BLL().Rows)
+                this.flowLayoutPanel1.Controls.Clear();
+                this.list = this.listBLL.searchNotification(tbSearch.Text);
+            }
+            else
+            {
+                this.flowLayoutPanel1.Controls.Clear();
+                this.list = this.listBLL.getAllNotification();
+            }
+            if (this.list != null)
+            {
+                foreach (DataRow row in this.list.Rows)
                 {
                     FinalProject.DTO.Notification newItem = new FinalProject.DTO.Notification();
-
                     newItem.notificationID = row["notificationID"].ToString();
                     newItem.notificationPicture = row["notificationPicture"].ToString();
                     newItem.notificationName = row["notificationName"].ToString();
@@ -87,7 +96,12 @@ namespace FinalProject.App.Admin.ThongBao
         }
         private void UCTBAdmin_Load(object sender, EventArgs e)
         {
-            populateNotification_UCTB();
+            populateNotification_UCTB(false);
+        }
+
+        private void picSearch_Click(object sender, EventArgs e)
+        {
+            populateNotification_UCTB(true);
         }
     }
 }

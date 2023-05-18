@@ -21,5 +21,10 @@ namespace FinalProject.BLL
             NotificationDAL ehe = new NotificationDAL();
             ehe.addNotification_DAL(item, des,focus);
         }
+        public DataTable searchNotification(String key)
+        {
+            NotificationDAL ehe = new NotificationDAL();
+            return ehe.searchNotification_DAL(key);
+        }
     }
 }

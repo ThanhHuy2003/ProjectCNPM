@@ -419,9 +419,8 @@ namespace FinalProject.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "SELECT distinct * from Notification where notificationName like %@key% or notificationName like @key%";
+            String sSQL = "select distinct * from NotificationData Where notificationName like '%" + key+ "%' or notificationName like '"+key+"%'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
-            cmd.Parameters.AddWithValue("@key", key);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);

@@ -23,5 +23,9 @@ namespace FinalProject.DAL
         {
             addNotification_DA_DAL(item, des,focus);
         }
+        public DataTable searchNotification_DAL(String key)
+        {
+            return searchNotification_DA_DAL(key);
+        }
     }
 }

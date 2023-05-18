@@ -19,8 +19,11 @@ namespace FinalProject.App.Admin
     public partial class UCKMAdmin : UserControl
     {
         MainAdmin main = new MainAdmin();
+        PromotionTableBLL listBLL = new PromotionTableBLL();
+        DataTable list;
         public UCKMAdmin()
         {
+            this.list = this.listBLL.populatePromotionData_PromotionTable_BLL();
             InitializeComponent();
         }
         Form frm = new AddKM();
@@ -48,13 +51,16 @@ namespace FinalProject.App.Admin
 
             return destImage;
         }
-        private void populatePromotionData_PromotionTable_UCKM()
+        private void populatePromotionData_PromotionTable_UCKM(Boolean flag)
         {
-            PromotionTableBLL promotionTableBLL = new PromotionTableBLL();
-
-            if (promotionTableBLL.populatePromotionData_PromotionTable_BLL() != null)
+            if (flag)
             {
-                foreach (DataRow row in promotionTableBLL.populatePromotionData_PromotionTable_BLL().Rows)
+                this.flowLayoutPanel1.Controls.Clear();
+                this.list = this.listBLL.searchPromotion(tbSearch.Text);
+            }
+            if (this.list != null)
+            {
+                foreach (DataRow row in this.list.Rows)
                 {
                     FinalProject.DTO.PromotionItem newPromotionItem = new FinalProject.DTO.PromotionItem();
                     newPromotionItem.promotionID = row["promotionID"].ToString();
@@ -102,12 +108,12 @@ namespace FinalProject.App.Admin
         {
             //Search method
             //Do something
-            PromotionTableBLL ehe = new PromotionTableBLL();
+            populatePromotionData_PromotionTable_UCKM(true);
         }
 
         private void UCKMAdmin_Load(object sender, EventArgs e)
         {
-            populatePromotionData_PromotionTable_UCKM();
+            populatePromotionData_PromotionTable_UCKM(false);
         }
     }
 }
