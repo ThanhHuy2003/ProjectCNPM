@@ -13,11 +13,18 @@ namespace FinalProject.App.Manager
 {
     public partial class MainManager : Form
     {
+        private String userIDLogin;
         public MainManager()
         {
             InitializeComponent();
             Func.togglePanel(pnlManager, "NV");
 
+        }
+        public MainManager(string userIDLogin)
+        {
+            InitializeComponent();
+            Func = new Func(this);
+            this.userIDLogin = userIDLogin;
         }
         Func Func = new Func() ;
         private void btnNV_Click(object sender, EventArgs e)
@@ -33,11 +40,6 @@ namespace FinalProject.App.Manager
         private void btnKM_Click(object sender, EventArgs e)
         {
             Func.togglePanel(pnlManager, "Luong");
-        }
-
-        private void btnTB_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

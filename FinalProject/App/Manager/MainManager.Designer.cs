@@ -202,7 +202,6 @@
             this.btnTB.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnTB.TabIndex = 10;
             this.btnTB.Values.Text = "Thực đơn";
-            this.btnTB.Click += new System.EventHandler(this.btnTB_Click);
             // 
             // btnCH
             // 

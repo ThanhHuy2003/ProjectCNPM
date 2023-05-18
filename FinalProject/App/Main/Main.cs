@@ -23,6 +23,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProject.App.Staff;
 
 namespace FinalProject
 {
@@ -93,6 +94,8 @@ namespace FinalProject
         public class Func
         {
             private MainAdmin mainAdmin;
+            private MainStaff mainStaff;
+            private MainManager mainManager;
             private Main main;
             public Func(Main main)
             {
@@ -101,6 +104,14 @@ namespace FinalProject
             public Func(MainAdmin main)
             {
                 this.mainAdmin = main;
+            }
+            public Func(MainStaff main)
+            {
+                this.mainStaff = main;
+            }
+            public Func(MainManager main)
+            {
+                this.mainManager = main;
             }
             public Func( )
             {
@@ -126,6 +137,7 @@ namespace FinalProject
             //Staff
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
+            private static UCGHStaff uCGHStaff;
             private static UCGH uCGH;
             //Manager
             private static UCNV uCNV;
@@ -370,8 +382,8 @@ namespace FinalProject
                     case "TDStaff":
                         if (uCTDStaff == null)
                         {
-                            uCTDStaff = new UCTDStaff();
-                            panel.Controls.Add(uCTBAdmin);
+                            uCTDStaff = new UCTDStaff(mainStaff.userIDLogin);
+                            panel.Controls.Add(uCTDStaff);
                             uCTDStaff.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCTDStaff.Location = new System.Drawing.Point(0, 0);
                             uCTDStaff.Name = "uCTDStaff";
@@ -386,11 +398,26 @@ namespace FinalProject
                         if (uCKMStaff == null)
                         {
                             uCKMStaff = new UCKMStaff();
-                            panel.Controls.Add(uCTBAdmin);
+                            panel.Controls.Add(uCKMStaff);
                             uCKMStaff.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCKMStaff.Location = new System.Drawing.Point(0, 0);
                             uCKMStaff.Name = "uCKMStaff";
                             uCKMStaff.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCKMStaff);
+                        }
+                        break;
+                    case "GHStaff":
+                        if (uCGHStaff == null)
+                        {
+                            uCGHStaff = new UCGHStaff(mainStaff.userIDLogin);
+                            panel.Controls.Add(uCGHStaff);
+                            uCGHStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCGHStaff.Location = new System.Drawing.Point(0, 0);
+                            uCGHStaff.Name = "uCGHStaff";
+                            uCGHStaff.TabIndex = 0;
                         }
                         else
                         {

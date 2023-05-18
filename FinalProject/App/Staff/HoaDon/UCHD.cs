@@ -12,8 +12,14 @@ namespace FinalProject.App.Staff.HoaDon
 {
     public partial class UCHD : UserControl
     {
+        private String userIDLogin;
         public UCHD()
         {
+            InitializeComponent();
+        }
+        public UCHD(String userIDLogin)
+        {
+            this.userIDLogin= userIDLogin;
             InitializeComponent();
         }
     }

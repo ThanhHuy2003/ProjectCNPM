@@ -117,22 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnCD.Values.Text" xml:space="preserve">
-    <value>Cài đặt </value>
+  <data name="btnlogo.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="btnKM.Values.Text" xml:space="preserve">
-    <value>Khuyến mãi </value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnlogo.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="btnTB.Values.Text" xml:space="preserve">
-    <value>Thông báo </value>
+  <data name="btnCD.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="btnGH.Values.Text" xml:space="preserve">
-    <value>Giỏ hàng </value>
+  <data name="btnCD.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="btnCH.Values.Text" xml:space="preserve">
-    <value>Cửa hàng </value>
+  <data name="btnKM.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
-  <data name="btnTD.Values.Text" xml:space="preserve">
-    <value>Thực đơn </value>
+  <data name="btnKM.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="btnTB.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnTB.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="btnGH.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGH.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="btnCH.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCH.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="btnTD.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnTD.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
 </root>

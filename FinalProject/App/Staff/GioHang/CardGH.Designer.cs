@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblVND = new Krypton.Toolkit.KryptonLabel();
-            this.btnTTN = new Krypton.Toolkit.KryptonButton();
             this.lblPrice = new Krypton.Toolkit.KryptonLabel();
             this.SubItem1 = new Krypton.Toolkit.KryptonButton();
             this.PlusItem1 = new Krypton.Toolkit.KryptonButton();
@@ -41,39 +40,21 @@
             // 
             // lblVND
             // 
-            this.lblVND.Location = new System.Drawing.Point(396, 47);
-            this.lblVND.Margin = new System.Windows.Forms.Padding(2);
+            this.lblVND.Location = new System.Drawing.Point(528, 58);
+            this.lblVND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblVND.Name = "lblVND";
-            this.lblVND.Size = new System.Drawing.Size(65, 32);
+            this.lblVND.Size = new System.Drawing.Size(79, 40);
             this.lblVND.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblVND.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
             this.lblVND.TabIndex = 55;
             this.lblVND.Values.Text = "VND";
             // 
-            // btnTTN
-            // 
-            this.btnTTN.CornerRoundingRadius = 30F;
-            this.btnTTN.Location = new System.Drawing.Point(993, 92);
-            this.btnTTN.Name = "btnTTN";
-            this.btnTTN.Size = new System.Drawing.Size(135, 41);
-            this.btnTTN.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnTTN.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnTTN.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTTN.StateCommon.Border.Rounding = 30F;
-            this.btnTTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnTTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnTTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTTN.TabIndex = 54;
-            this.btnTTN.Values.Text = "Chỉnh sửa";
-            // 
             // lblPrice
             // 
-            this.lblPrice.Location = new System.Drawing.Point(282, 47);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.lblPrice.Location = new System.Drawing.Point(376, 58);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(96, 32);
+            this.lblPrice.Size = new System.Drawing.Size(118, 40);
             this.lblPrice.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblPrice.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
             this.lblPrice.TabIndex = 53;
@@ -82,10 +63,10 @@
             // SubItem1
             // 
             this.SubItem1.CornerRoundingRadius = -1F;
-            this.SubItem1.Location = new System.Drawing.Point(291, 101);
-            this.SubItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.SubItem1.Location = new System.Drawing.Point(388, 124);
+            this.SubItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubItem1.Name = "SubItem1";
-            this.SubItem1.Size = new System.Drawing.Size(37, 31);
+            this.SubItem1.Size = new System.Drawing.Size(49, 38);
             this.SubItem1.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.SubItem1.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.SubItem1.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -108,10 +89,10 @@
             // PlusItem1
             // 
             this.PlusItem1.CornerRoundingRadius = -1F;
-            this.PlusItem1.Location = new System.Drawing.Point(371, 101);
-            this.PlusItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.PlusItem1.Location = new System.Drawing.Point(495, 124);
+            this.PlusItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlusItem1.Name = "PlusItem1";
-            this.PlusItem1.Size = new System.Drawing.Size(37, 31);
+            this.PlusItem1.Size = new System.Drawing.Size(49, 38);
             this.PlusItem1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.PlusItem1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.PlusItem1.StateNormal.Back.Color1 = System.Drawing.Color.White;
@@ -143,10 +124,10 @@
             // 
             // CountItem1
             // 
-            this.CountItem1.Location = new System.Drawing.Point(342, 101);
-            this.CountItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.CountItem1.Location = new System.Drawing.Point(456, 124);
+            this.CountItem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CountItem1.Name = "CountItem1";
-            this.CountItem1.Size = new System.Drawing.Size(21, 32);
+            this.CountItem1.Size = new System.Drawing.Size(24, 39);
             this.CountItem1.StateCommon.ShortText.Font = new System.Drawing.Font("Dubai Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CountItem1.TabIndex = 49;
             this.CountItem1.Values.Text = "0";
@@ -154,10 +135,10 @@
             // lblName
             // 
             this.lblName.AutoSize = false;
-            this.lblName.Location = new System.Drawing.Point(282, 0);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2);
+            this.lblName.Location = new System.Drawing.Point(376, 0);
+            this.lblName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(568, 43);
+            this.lblName.Size = new System.Drawing.Size(757, 53);
             this.lblName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.TabIndex = 50;
@@ -166,8 +147,8 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::FinalProject.Properties.Resources.image_1;
-            this.pictureBox9.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(255, 143);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -176,19 +157,19 @@
             // 
             // CardGH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblVND);
-            this.Controls.Add(this.btnTTN);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.SubItem1);
             this.Controls.Add(this.PlusItem1);
             this.Controls.Add(this.CountItem1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox9);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CardGH";
-            this.Size = new System.Drawing.Size(1155, 144);
+            this.Size = new System.Drawing.Size(1540, 177);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,7 +179,6 @@
         #endregion
 
         private Krypton.Toolkit.KryptonLabel lblVND;
-        private Krypton.Toolkit.KryptonButton btnTTN;
         private Krypton.Toolkit.KryptonLabel lblPrice;
         private Krypton.Toolkit.KryptonButton SubItem1;
         private Krypton.Toolkit.KryptonButton PlusItem1;
