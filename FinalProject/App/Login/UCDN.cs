@@ -25,7 +25,7 @@ namespace FinalProject.App
             InitializeComponent();
         }
         private UCDN uCDN;
-        Func Func;
+        Func Func = new Func();
         
         private void linkDK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
