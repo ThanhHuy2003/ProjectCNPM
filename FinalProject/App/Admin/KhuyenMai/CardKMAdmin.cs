@@ -16,5 +16,10 @@ namespace FinalProject.App.Admin
         {
             InitializeComponent();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

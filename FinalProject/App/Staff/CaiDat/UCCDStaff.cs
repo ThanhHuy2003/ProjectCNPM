@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.App.Staff.KhuyenMai
+namespace FinalProject.App.Staff.CaiDat
 {
-    public partial class CardKMStaff : UserControl
+    public partial class UCCDStaff : UserControl
     {
-        public CardKMStaff()
+        public UCCDStaff()
         {
             InitializeComponent();
         }

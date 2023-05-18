@@ -1,14 +1,9 @@
 ﻿using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FinalProject.App.Staff.ThucDon
@@ -107,13 +102,13 @@ namespace FinalProject.App.Staff.ThucDon
             populateMenuData_CookTable_UCTD(btnCombo.Text, flowLayoutPanel1);
         }
 
-        private void btnGa_Click(object sender, EventArgs e)
+        private void btnFood_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             populateMenuData_CookTable_UCTD(btnFood.Text, flowLayoutPanel1);
         }
 
-        private void btnOther_Click(object sender, EventArgs e)
+        private void btnDrink_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             populateMenuData_CookTable_UCTD(btnDrink.Text, flowLayoutPanel1);

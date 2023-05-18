@@ -335,6 +335,12 @@
     <Compile Include="App\Manager\ThucDon\UCTDManager.Designer.cs">
       <DependentUpon>UCTDManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Staff\CaiDat\UCCDStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App\Staff\CaiDat\UCCDStaff.Designer.cs">
+      <DependentUpon>UCCDStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Staff\GioHang\CardGH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -364,12 +370,6 @@
     </Compile>
     <Compile Include="App\Staff\HoaDon\UCHD.Designer.cs">
       <DependentUpon>UCHD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Staff\KhuyenMai\CardKMStaff.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="App\Staff\KhuyenMai\CardKMStaff.Designer.cs">
-      <DependentUpon>CardKMStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Staff\KhuyenMai\UCKMStaff.cs">
       <SubType>UserControl</SubType>
@@ -507,6 +507,9 @@
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKM.resx">
       <DependentUpon>CardKM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\KhuyenMai\CardKMForDisplay.resx">
+      <DependentUpon>CardKMForDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\Main.en.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -582,6 +585,9 @@
     <EmbeddedResource Include="App\Manager\ThucDon\UCTDManager.resx">
       <DependentUpon>UCTDManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Staff\CaiDat\UCCDStaff.resx">
+      <DependentUpon>UCCDStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Staff\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
     </EmbeddedResource>
@@ -596,9 +602,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Staff\HoaDon\UCHD.resx">
       <DependentUpon>UCHD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Staff\KhuyenMai\CardKMStaff.resx">
-      <DependentUpon>CardKMStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Staff\KhuyenMai\UCKMStaff.resx">
       <DependentUpon>UCKMStaff.cs</DependentUpon>
@@ -672,10 +675,12 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\moneylogo2.png" />
+    <None Include="Resources\moneylogo.png" />
+    <None Include="Resources\SignOut4.png" />
     <None Include="Resources\Lich.png" />
     <None Include="Resources\voucher.png" />
     <None Include="Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_11.png" />
-    <None Include="Resources\logo-_-lotteria-800-x-515px-scaled_preview_rev_1.png" />
     <None Include="Resources\KM.png" />
     <None Include="Resources\searchh.png" />
     <None Include="Resources\search.png" />
@@ -688,7 +693,6 @@
     <None Include="Resources\imageedit_2_9412216040-removebg-preview1.png" />
     <None Include="Resources\imageedit_2_9412216040-removebg-preview.png" />
     <None Include="Resources\imageedit_2_5889740345.png" />
-    <None Include="Resources\moneylogo1.png" />
     <None Include="Resources\MoMo_Logo2.png" />
     <None Include="Resources\MoMo_Logo1.png" />
     <None Include="Resources\Language.png" />
@@ -708,7 +712,6 @@
     <None Include="Resources\NextSlider.png" />
     <None Include="Resources\ImageSlider.png" />
     <None Include="Resources\Background.png" />
-    <None Include="Resources\Eye-removebg-preview.png" />
     <None Include="Resources\Eye1.png" />
     <None Include="Resources\Eye2.png" />
     <None Include="Resources\account.png" />

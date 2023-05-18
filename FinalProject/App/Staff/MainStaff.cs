@@ -18,7 +18,6 @@ namespace FinalProject.App.Staff
         public MainStaff()
         {
             InitializeComponent();
-            Func.togglePanel(pnlMainStaff, "TDStaff");
         }
         public MainStaff(string userIDLogin)
         {
@@ -28,6 +27,7 @@ namespace FinalProject.App.Staff
         }
         private void btnTD_Click(object sender, EventArgs e)
         {
+            this.menu_active.Location = new Point(1, btnTD.Location.Y);
             Func.togglePanel(pnlMainStaff, "TDStaff");
         }
 
@@ -39,12 +39,22 @@ namespace FinalProject.App.Staff
 
         private void btnKM_Click(object sender, EventArgs e)
         {
+            this.menu_active.Location = new Point(1, btnKM.Location.Y);
             Func.togglePanel(pnlMainStaff, "KMStaff");
         }
 
         private void btnGH_Click(object sender, EventArgs e)
         {
+            this.menu_active.Location = new Point(1, btnGH.Location.Y);
             Func.togglePanel(pnlMainStaff, "GHStaff");
+
+        }
+
+        private void btnCD_Click(object sender, EventArgs e)
+        {
+            this.menu_active.Location = new Point(1, btnCD.Location.Y);
+            Func.togglePanel(pnlMainStaff, "CDStaff");
+
         }
     }
 }

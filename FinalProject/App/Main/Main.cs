@@ -24,6 +24,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProject.App.Staff;
+using FinalProject.App.Staff.CaiDat;
 
 namespace FinalProject
 {
@@ -122,7 +123,9 @@ namespace FinalProject
             private static UCMain uCMain;
             private static UCKM uCKM;
             private static UCCD uCCD;
+            private static UCGH uCGH;
             private static UCCH uCCH;
+            private static UCTB uCTB;
             private static UCDN uCDN;
             private static UCDK uCDK;
             private static CardTD cardTD;
@@ -133,12 +136,11 @@ namespace FinalProject
             private static UCKMAdmin uCKMAdmin;
             private static UCDTAdmin uCDT;
             private static UCTBAdmin uCTBAdmin;
-            private static UCTB uCTB;
             //Staff
             private static UCTDStaff uCTDStaff;
             private static UCKMStaff uCKMStaff;
             private static UCGHStaff uCGHStaff;
-            private static UCGH uCGH;
+            private static UCCDStaff uCCDStaff;
             //Manager
             private static UCNV uCNV;
             private static UCLuong uCLuong;
@@ -421,7 +423,22 @@ namespace FinalProject
                         }
                         else
                         {
-                            panel.Controls.Add(uCKMStaff);
+                            panel.Controls.Add(uCGHStaff);
+                        }
+                        break;
+                    case "CDStaff":
+                        if (uCCDStaff == null)
+                        {
+                            uCCDStaff = new UCCDStaff();
+                            panel.Controls.Add(uCCDStaff);
+                            uCCDStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCCDStaff.Location = new System.Drawing.Point(0, 0);
+                            uCCDStaff.Name = "uCCDStaff";
+                            uCCDStaff.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCCDStaff);
                         }
                         break;
                     case "NV":

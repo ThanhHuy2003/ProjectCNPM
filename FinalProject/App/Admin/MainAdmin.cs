@@ -37,23 +37,31 @@ namespace FinalProject.App.Admin
 
         private void btnKM_Click(object sender, EventArgs e)
         {
-            
+            this.menu_active.Location = new Point(1, btnKM.Location.Y);
             Func.togglePanel(pnlAdmin, "KMAdmin");
         }
 
         private void btnTB_Click(object sender, EventArgs e)
         {
+            this.menu_active.Location = new Point(1, btnTB.Location.Y);
             Func.togglePanel(pnlAdmin, "TBAdmin");
         }
 
-        private void btnCH_Click(object sender, EventArgs e)
+        private void btnDT_Click(object sender, EventArgs e)
         {
+            this.menu_active.Location = new Point(1, btnDT.Location.Y);
             Func.togglePanel(pnlAdmin, "DT");
         }
 
         private void btnTD_Click(object sender, EventArgs e)
         {
+            this.menu_active.Location = new Point(1, btnTD.Location.Y);
             Func.togglePanel(pnlAdmin, "TK");
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.menu_active.Location = new Point(1, btnTD.Location.Y);
         }
     }
 }
