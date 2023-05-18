@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class Main
+    partial class MainUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUser));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.btnlogo = new Krypton.Toolkit.KryptonButton();
             this.btnCD = new Krypton.Toolkit.KryptonButton();

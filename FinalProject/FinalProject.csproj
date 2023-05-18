@@ -257,11 +257,11 @@
     <Compile Include="App\Main\ThucDon\UCTD.Designer.cs">
       <DependentUpon>UCTD.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Main\Main.cs">
+    <Compile Include="App\Main\MainUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Main\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="App\Main\MainUser.Designer.cs">
+      <DependentUpon>MainUser.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\ThongBao\UCTB.cs">
       <SubType>UserControl</SubType>
@@ -510,11 +510,11 @@
     <EmbeddedResource Include="App\Main\KhuyenMai\CardKMForDisplay.resx">
       <DependentUpon>CardKMForDisplay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\Main.en.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="App\Main\MainUser.en.resx">
+      <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\Main.vi.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="App\Main\MainUser.vi.resx">
+      <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\CardTB.resx">
       <DependentUpon>CardTB.cs</DependentUpon>
@@ -546,8 +546,8 @@
     <EmbeddedResource Include="App\Main\ThucDon\UCTD.resx">
       <DependentUpon>UCTD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Main\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="App\Main\MainUser.resx">
+      <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThongBao\UCTB.resx">
       <DependentUpon>UCTB.cs</DependentUpon>

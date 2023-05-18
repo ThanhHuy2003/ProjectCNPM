@@ -21,5 +21,18 @@ namespace FinalProject.App.Admin
         {
 
         }
+        #region Properties
+
+        private string _title;
+        private string _description;
+        private Image _pic;
+
+        [Category("Custom Props")]
+        public string Title { get { return _title; } set { _title = value; kryptonLabel36.Text = value; } }
+        [Category("Custom Props")]
+        public string Description { get { return _description; } set { _description = value; kryptonLabel35.Text = value; } }
+        [Category("Custom Props")]
+        public Image Picture { get { return _pic; } set { _pic = value; pictureBox12.Image = value; } }
+        #endregion
     }
 }

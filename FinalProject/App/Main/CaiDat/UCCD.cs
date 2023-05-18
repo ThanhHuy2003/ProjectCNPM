@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static FinalProject.Main;
+using static FinalProject.MainUser;
 
 namespace FinalProject.App.Main.CaiDat
 {

@@ -39,5 +39,10 @@ namespace FinalProject.BLL
             UserCRUD_DAL data = new UserCRUD_DAL();
             data.addUser_DAL(user);
         }
+        public String getIdByUsername(String name)
+        {
+            UserCRUD_DAL data = new UserCRUD_DAL();
+            return data.getIdByUsername_DAL(name);
+        }
     }
 }

@@ -9,9 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static FinalProject.Main;
+using static FinalProject.MainUser;
 using FinalProject.DTO;
 using FinalProject.BLL;
+using FinalProject.App.Admin;
+using FinalProject.App.Staff;
 
 namespace FinalProject.App
 {
@@ -24,6 +26,7 @@ namespace FinalProject.App
         }
         private UCDN uCDN;
         Func Func;
+        
         private void linkDK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             panel_DK.Visible = true;
@@ -87,10 +90,11 @@ namespace FinalProject.App
         {
             lblSignIn.Select();
         }
+        public event EventHandler ButtonClicked;
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             User tk = new User();
-
+            AdminUserBLL ehe = new AdminUserBLL();
             tk.userName = UsernameText.Text;
             tk.userPassword = PasswordText.Text;
 
@@ -113,7 +117,27 @@ namespace FinalProject.App
             }
             else
             {
-                MessageBox.Show("Đăng nhập thành công");
+                if (ehe.getIdByUsername(tk.userName).ToString().Contains('A'))
+                {
+                    MainAdmin newMain = new MainAdmin(ehe.getIdByUsername(tk.userName).ToString());
+                    newMain.ShowDialog();
+                    ((Form)this.TopLevelControl).Close();
+                }
+                else if (ehe.getIdByUsername(tk.userName).ToString().Contains('U'))
+                {
+                    MainUser newMain = new MainUser(ehe.getIdByUsername(tk.userName).ToString());
+                    newMain.ShowDialog();
+                    ((Form)this.TopLevelControl).Close();
+                }
+                else if (ehe.getIdByUsername(tk.userName).ToString().Contains('S'))
+                {
+                    MainStaff newMain = new MainStaff(ehe.getIdByUsername(tk.userName).ToString());
+                    newMain.ShowDialog();
+                    ((Form)this.TopLevelControl).Close();
+                }
+                else if (ehe.getIdByUsername(tk.userName).ToString().Contains('M'))
+                {
+                }
                 return;
             }
         }

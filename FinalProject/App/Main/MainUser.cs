@@ -28,20 +28,23 @@ using FinalProject.App.Staff.CaiDat;
 
 namespace FinalProject
 {
-    public partial class Main : Form
+    public partial class MainUser : Form
     {
         private string userIDLogin; 
         Func func;
-        public Main()
+        public MainUser()
         {
             File ehe = new File();
             string lang = ehe.readLanguage();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
             InitializeComponent();
             func = new Func(this);
         }
-        public Main(string userIDLogin)
+        public MainUser(string userIDLogin)
         {
+            File ehe = new File();
+            string lang = ehe.readLanguage();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
             InitializeComponent();
             func = new Func(this);
             this.userIDLogin = userIDLogin;
@@ -97,8 +100,8 @@ namespace FinalProject
             private MainAdmin mainAdmin;
             private MainStaff mainStaff;
             private MainManager mainManager;
-            private Main main;
-            public Func(Main main)
+            private MainUser main;
+            public Func(MainUser main)
             {
                 this.main = main;
             }

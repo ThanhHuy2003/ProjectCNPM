@@ -114,9 +114,9 @@
             this.btnDelete.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDelete.Values.ExtraText = resources.GetString("btnDrink.Values.ExtraText");
-            this.btnDelete.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnDrink.Values.ImageTransparentColor")));
-            this.btnDelete.Values.Text = resources.GetString("btnDrink.Values.Text");
+            this.btnDelete.Values.ExtraText = resources.GetString("btnDelete.Values.ExtraText");
+            this.btnDelete.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnDelete.Values.ImageTransparentColor")));
+            this.btnDelete.Values.Text = resources.GetString("btnDelete.Values.Text");
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
@@ -169,14 +169,15 @@
             this.btnUpdate.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnUpdate.Values.ExtraText = resources.GetString("kryptonButton1.Values.ExtraText");
-            this.btnUpdate.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonButton1.Values.ImageTransparentColor")));
-            this.btnUpdate.Values.Text = resources.GetString("kryptonButton1.Values.Text");
+            this.btnUpdate.Values.ExtraText = resources.GetString("btnUpdate.Values.ExtraText");
+            this.btnUpdate.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnUpdate.Values.ImageTransparentColor")));
+            this.btnUpdate.Values.Text = resources.GetString("btnUpdate.Values.Text");
             // 
             // CardKMAdmin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.kryptonLabel35);

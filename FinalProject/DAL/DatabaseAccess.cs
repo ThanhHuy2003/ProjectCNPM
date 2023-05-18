@@ -18,6 +18,23 @@ namespace FinalProject.DAL
     internal class DatabaseAccess
     {
         String strConn = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
+        public String getIdByUsername_DA_DAL(String name)
+        {
+            String userID="";
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from LoginData where userName = '" + name + "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            foreach (DataRow row in dt.Rows)
+            {
+                userID = row["userID"].ToString();
+            }
+            return userID;
+        }
         public string checkLoginData_DA_DAL(User tk)
         {
             string userName = null;

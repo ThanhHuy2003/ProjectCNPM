@@ -12,7 +12,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static FinalProject.Main;
+using static FinalProject.MainUser;
 
 namespace FinalProject.App.Admin
 {
@@ -72,7 +72,7 @@ namespace FinalProject.App.Admin
 
                     try
                     {
-                        CardKMForDisplay Item = new CardKMForDisplay();
+                        CardKMAdmin Item = new CardKMAdmin();
 
                         var request = WebRequest.Create(newPromotionItem.promotionPicture);
 

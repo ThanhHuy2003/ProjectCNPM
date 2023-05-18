@@ -31,5 +31,9 @@ namespace FinalProject.DAL
         {
             addUser_DA_BLL(user);
         }
+        public String getIdByUsername_DAL(String name)
+        {
+            return getIdByUsername_DA_DAL(name);
+        }
     }
 }
