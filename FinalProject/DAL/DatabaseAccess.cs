@@ -244,9 +244,8 @@ namespace FinalProject.DAL
             }
             else
             {
-                String sSQL = "select * from LoginData Where userID=@key";
+                String sSQL = "select distinct * from LoginData Where userID like '%" + key+ "%' or userID like '"+key+"%'";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
-                cmd.Parameters.AddWithValue("@key", key);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
             }
@@ -400,6 +399,35 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        public void addNotification_DA_DAL(Notification item, String description,String focus)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "exec InsertNotificationData @pic, @name, @date, @pic,@des,@focus";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@pic", item.notificationPicture);
+            cmd.Parameters.AddWithValue("@name", item.notificationName);
+            cmd.Parameters.AddWithValue("@description", description);
+            cmd.Parameters.AddWithValue("@date",item.notificationDate);
+            cmd.Parameters.AddWithValue("@des", description);
+            cmd.Parameters.AddWithValue("@focus", focus);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Thêm thành công");
+        }
+        public  DataTable searchNotification_DA_DAL(String key)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "SELECT distinct * from Notification where notificationName like %@key% or notificationName like @key%";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@key", key);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
         //Province
         public DataTable getAllProvince_DA_DAL()
         {
@@ -419,7 +447,7 @@ namespace FinalProject.DAL
 
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "SELECT distinct * from PromotionData where promotionName like %@key% or promotionName like @key%";
+            String sSQL = "select distinct * from PromotionData Where promotionName like '%" + key+ "%' or promotionName like '"+key+"%'";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@key", key);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

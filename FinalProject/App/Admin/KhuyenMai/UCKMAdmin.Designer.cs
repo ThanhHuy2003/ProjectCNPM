@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblKM = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            this.tbSearch = new Krypton.Toolkit.KryptonTextBox();
             this.btnAddKM = new Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.picSearch = new System.Windows.Forms.PictureBox();
@@ -47,21 +47,21 @@
             this.lblKM.TabIndex = 0;
             this.lblKM.Text = "Nhập mã tìm khuyến mãi:";
             // 
-            // kryptonTextBox1
+            // tbSearch
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(71, 91);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(1284, 47);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.tbSearch.Location = new System.Drawing.Point(71, 91);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(1284, 47);
+            this.tbSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tbSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 30F;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 4;
-            this.kryptonTextBox1.Text = "Search";
+            this.tbSearch.StateCommon.Border.Rounding = 30F;
+            this.tbSearch.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
+            this.tbSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.TabIndex = 4;
+            this.tbSearch.Text = "Search";
             // 
             // btnAddKM
             // 
@@ -111,7 +111,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnAddKM);
             this.Controls.Add(this.picSearch);
-            this.Controls.Add(this.kryptonTextBox1);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.lblKM);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCKMAdmin";
@@ -127,7 +127,7 @@
 
         private System.Windows.Forms.Label lblKM;
         private System.Windows.Forms.PictureBox picSearch;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonTextBox tbSearch;
         private Krypton.Toolkit.KryptonButton btnAddKM;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }

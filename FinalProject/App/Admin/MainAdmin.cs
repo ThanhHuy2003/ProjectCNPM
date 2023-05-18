@@ -1,4 +1,6 @@
 ﻿using FinalProject.App.Login;
+using FinalProject.App.Admin;
+using FinalProject.App.Main;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +16,20 @@ namespace FinalProject.App.Admin
 {
     public partial class MainAdmin : Form
     {
+        private string userIDLogin;
+        Func Func;
         public MainAdmin()
         {
             InitializeComponent();
+            Func = new Func(this);
         }
-        Func Func = new Func();
+        public MainAdmin(string userIDLogin)
+        {
+            InitializeComponent();
+            Func = new Func(this);
+            MessageBox.Show(userIDLogin);
+            this.userIDLogin = userIDLogin;
+        }
         private void MainAdmin_Load(object sender, EventArgs e)
         {
             Func.togglePanel(pnlAdmin, "TK");

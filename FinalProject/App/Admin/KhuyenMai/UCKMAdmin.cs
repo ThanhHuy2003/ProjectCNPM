@@ -102,6 +102,7 @@ namespace FinalProject.App.Admin
         {
             //Search method
             //Do something
+            PromotionTableBLL ehe = new PromotionTableBLL();
         }
 
         private void UCKMAdmin_Load(object sender, EventArgs e)

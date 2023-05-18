@@ -1,4 +1,5 @@
 ﻿using FinalProject.DAL;
+using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,6 +15,11 @@ namespace FinalProject.BLL
         {
             NotificationDAL ehe = new NotificationDAL();
             return ehe.getAllNotification_DAL();
+        }
+        public void addNotification(Notification item, String des,String focus)
+        {
+            NotificationDAL ehe = new NotificationDAL();
+            ehe.addNotification_DAL(item, des,focus);
         }
     }
 }

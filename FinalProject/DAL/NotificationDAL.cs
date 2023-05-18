@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -17,6 +18,10 @@ namespace FinalProject.DAL
         public DataTable getNotificationItem_DAL()
         {
             return getNotificationItem_DA_DAL();
+        }
+        public void addNotification_DAL(Notification item, String des,String focus)
+        {
+            addNotification_DA_DAL(item, des,focus);
         }
     }
 }

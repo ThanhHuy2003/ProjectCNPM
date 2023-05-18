@@ -11,7 +11,6 @@ using FinalProject.App.Staff.GioHang;
 using FinalProject.App.Staff.KhuyenMai;
 using FinalProject.App.Staff.ThucDon;
 using FinalProject.DTO;
-using FinalProject.DTO;
 using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
@@ -93,11 +92,15 @@ namespace FinalProject
         }
         public class Func
         {
-
+            private MainAdmin mainAdmin;
             private Main main;
             public Func(Main main)
             {
                 this.main = main;
+            }
+            public Func(MainAdmin main)
+            {
+                this.mainAdmin = main;
             }
             public Func( )
             {
