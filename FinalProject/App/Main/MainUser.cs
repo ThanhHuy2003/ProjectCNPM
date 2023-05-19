@@ -418,6 +418,7 @@ namespace FinalProject
                         }
                         break;
                     case "GHStaff":
+                        uCGHStaff = null;
                         if (uCGHStaff == null)
                         {
                             uCGHStaff = new UCGHStaff(mainStaff.userIDLogin);

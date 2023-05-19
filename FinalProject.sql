@@ -378,7 +378,7 @@ create table PromotionData
 	promotionPicture varchar(500) not null,
     promotionName nvarchar(500) not null unique,
     promotionDescription nvarchar(500) not null,
-    promotionDate datetime not null,
+    promotionDate datetime not null default current_timestamp,
 	promotionPercent int not null,
     primary key(promotionID)
 )
@@ -388,7 +388,6 @@ create procedure InsertPromotionData
     @promotionPicture varchar(500),
     @promotionName nvarchar(500),
     @promotionDescription nvarchar(500),
-    @promotionDate datetime,
 	@promotionPercent int
 as
 begin
@@ -404,26 +403,26 @@ begin
 		end
 		set @newPromotionID = 'PID' + @maxPromotionID 
 	end
-    insert into PromotionData(promotionID, promotionPicture, promotionName, promotionDescription, promotionDate, promotionPercent) values (@newPromotionID, @promotionPicture, @promotionName, @promotionDescription, @promotionDate, @promotionPercent)
+    insert into PromotionData(promotionID, promotionPicture, promotionName, promotionDescription, promotionPercent) values (@newPromotionID, @promotionPicture, @promotionName, @promotionDescription, @promotionPercent)
 end
 go
 
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_169_1.png', N'THÁNG 5 RỰC RỠ', N'Áp dụng từ ngày 01/05/2023 đến ngày 30/05/2023', '2023-04-30', 50
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_139.png', N'THƯỞNG THỨC HƯƠNG VỊ BÁNH BURGER THƯỢNG HẠNG HOÀN TOÀN MỚI', N'Áp dụng từ ngày 03/06/2023 đến ngày 30/06/2023', '2023-05-22', 70
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_99.png', N'BỘ BA POKEMON SIÊU PHẨM ĐÃ SẴN SÀNG!', N'Áp dụng từ ngày 03/07/2023 đến ngày 30/07/2023', '2023-05-20', 30
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/k/ck_set_milkis.png', N'Nhập mã COMBO1 giảm ngay 50%', N'Áp dụng từ ngày 03/08/2023 đến ngày 30/08/2023', '2023-05-15', 50
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/e/menu-02.png', N'Nhập mã COMBO2 giảm ngay 70%', N'Áp dụng từ ngày 03/09/2023 đến ngày 30/09/2023', '2023-05-10', 70
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/e/menu_spaghetti_1.png', N'Nhập mã COMBO1 giảm ngay 10%', N'Áp dụng từ ngày 04/01/2023 đến ngày 30/01/2023', '2023-05-01', 10
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.79104x208/z/a/zalo_app_thang_nam_ruc_ro_1070x750_1.png', N'Nhập mã COMBO2 giảm ngay 20%', N'Áp dụng từ ngày 05/02/2023 đến ngày 30/02/2023', '2023-05-02', 20
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/324.94152923538x208/g/i/giay_lot_khay_burger_new_-_500x320px-01_1.jpg', N'Nhập mã COMBO3 giảm ngay 30%', N'Áp dụng từ ngày 06/03/2023 đến ngày 30/03/2023', '2023-05-03', 30
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/k/pkmm-1070x750_1.png', N'Nhập mã COMBO4 giảm ngay 40%', N'Áp dụng từ ngày 07/04/2023 đến ngày 30/04/2023', '2023-05-04', 40
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken-534x374px_goldensnow-set_1.png', N'Nhập mã COMBO5 giảm ngay 50%', N'Áp dụng từ ngày 08/11/2023 đến ngày 30/11/2023', '2023-05-05', 50
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chickenset_mala.png', N'Nhập mã COMBO6 giảm ngay 60%', N'Áp dụng từ ngày 09/12/2023 đến ngày 30/12/2023', '2023-05-06', 60
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chickenset-534x374px_grilled-set.png', N'Nhập mã COMBO7 giảm ngay 70%', N'Áp dụng từ ngày 03/01/2023 đến ngày 30/01/2023', '2023-05-02', 70
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/g/_/g_pie_pep.png', N'Nhập mã COMBO8 giảm ngay 60%', N'Áp dụng từ ngày 04/02/2023 đến ngày 30/02/2023', '2023-05-01', 60
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/e/dessert-534x374px_shake-potato.png', N'Nhập mã COMBO9 giảm ngay 50%', N'Áp dụng từ ngày 05/03/2023 đến ngày 30/03/2023', '2023-05-02', 50
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/e/dessert-534x374px_shake-chicken.png', N'Nhập mã COMB10 giảm ngay 40%', N'Áp dụng từ ngày 06/04/2023 đến ngày 30/04/2023', '2023-05-03', 40
-exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/v/a/value_l-chicken_1.png', N'Nhập mã COMB11 giảm ngay 30%', N'Áp dụng từ ngày 07/05/2023 đến ngày 30/05/2023', '2023-05-04', 30
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_169_1.png', N'THÁNG 5 RỰC RỠ', N'Áp dụng từ ngày 01/05/2023 đến ngày 30/05/2023', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_139.png', N'THƯỞNG THỨC HƯƠNG VỊ BÁNH BURGER THƯỢNG HẠNG HOÀN TOÀN MỚI', N'Áp dụng từ ngày 03/06/2023 đến ngày 30/06/2023', 70
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/i/milkis_-_c.thu_n_99.png', N'BỘ BA POKEMON SIÊU PHẨM ĐÃ SẴN SÀNG!', N'Áp dụng từ ngày 03/07/2023 đến ngày 30/07/2023', 30
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/k/ck_set_milkis.png', N'Nhập mã COMBO1 giảm ngay 50%', N'Áp dụng từ ngày 03/08/2023 đến ngày 30/08/2023', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/e/menu-02.png', N'Nhập mã COMBO2 giảm ngay 70%', N'Áp dụng từ ngày 03/09/2023 đến ngày 30/09/2023', 70
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/m/e/menu_spaghetti_1.png', N'Nhập mã COMBO1 giảm ngay 10%', N'Áp dụng từ ngày 04/01/2023 đến ngày 30/01/2023', 10
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.79104x208/z/a/zalo_app_thang_nam_ruc_ro_1070x750_1.png', N'Nhập mã COMBO2 giảm ngay 20%', N'Áp dụng từ ngày 05/02/2023 đến ngày 30/02/2023', 20
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/324.94152923538x208/g/i/giay_lot_khay_burger_new_-_500x320px-01_1.jpg', N'Nhập mã COMBO3 giảm ngay 30%', N'Áp dụng từ ngày 06/03/2023 đến ngày 30/03/2023', 30
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/mageplaza/blog/post/resize/296.74666666667x208/p/k/pkmm-1070x750_1.png', N'Nhập mã COMBO4 giảm ngay 40%', N'Áp dụng từ ngày 07/04/2023 đến ngày 30/04/2023', 40
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chicken-534x374px_goldensnow-set_1.png', N'Nhập mã COMBO5 giảm ngay 50%', N'Áp dụng từ ngày 08/11/2023 đến ngày 30/11/2023', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chickenset_mala.png', N'Nhập mã COMBO6 giảm ngay 60%', N'Áp dụng từ ngày 09/12/2023 đến ngày 30/12/2023', 60
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/c/h/chickenset-534x374px_grilled-set.png', N'Nhập mã COMBO7 giảm ngay 70%', N'Áp dụng từ ngày 03/01/2023 đến ngày 30/01/2023', 70
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/g/_/g_pie_pep.png', N'Nhập mã COMBO8 giảm ngay 60%', N'Áp dụng từ ngày 04/02/2023 đến ngày 30/02/2023', 60
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/e/dessert-534x374px_shake-potato.png', N'Nhập mã COMBO9 giảm ngay 50%', N'Áp dụng từ ngày 05/03/2023 đến ngày 30/03/2023', 50
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/d/e/dessert-534x374px_shake-chicken.png', N'Nhập mã COMB10 giảm ngay 40%', N'Áp dụng từ ngày 06/04/2023 đến ngày 30/04/2023', 40
+exec InsertPromotionData 'https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/v/a/value_l-chicken_1.png', N'Nhập mã COMB11 giảm ngay 30%', N'Áp dụng từ ngày 07/05/2023 đến ngày 30/05/2023', 30
 go
 
 create table StoreAddress
@@ -488,40 +487,6 @@ exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-16
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Nam Kỳ Khởi Nghĩa', N'256 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Ga Sài Gòn', N'Số 1 Nguyễn Thông, Quận 3, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-4.jpg', N'Lotteria Cao Thắng', N'Số 61B Cao Thắng, Quận 3, TP HCM, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria_anhngocduong_axkc.jpg', N'Lotteria Nguyễn Thị Minh Khai', N'145 Tôn Thất Tùng, Quận 3, TpHCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Lý Chính Thắng', N'250B Lý Chính Thắng, P.9, Q.3, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Hoàng Diệu', N'102 Lê Quốc Hưng, P.12, Q.4, Tp. HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Tri Phương', N'Số 114 Trần Hưng Đạo, Quận 5, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria Nguyễn Trãi', N'Số 165B Nguyễn Trãi, Quận 5, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Hùng Vương', N'Số 126 Hùng Vương, Phường 12, Quận 5, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Châu Văn Liêm', N'67 Vạn Kiếp, P.13, Q.5, TP. HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Bình Phú', N'211 - 213 Bình Phú, P.11, Q.6, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Hậu Giang', N'52 Hậu Giang, P.6, Q.6', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Hồng Bàng', N'801 Hồng Bàng, P.9, Q.6, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Phú Mỹ Hưng', N'SB2-1 Mỹ Khánh 2, Phú Mỹ Hưng, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Vinatex Nhà Bè', N'571 Huỳnh Tấn Phát, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Lotte Mart 1', N'469 Nguyễn Hữu Thọ, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Sky Garden', N'D24, R19-1 Mỹ Toàn 3, Phường Tân Phong, Quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Parkson Paragon', N'Số 3 Nguyễn Lương Bằng, Quận 7, TpHCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Cresent Mall', N'Lầu 5, 103 Tôn Dật Tiên, Phú Mỹ Hưng, Q.7, Tp. HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Nguyễn Thị Thập', N'495 Nguyễn Thị Thập, phường Tân Phong, quận 7, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria City Tân Thuận', N'336 Huỳnh Tấn Phát, P. Bình Thuận, Quận7', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Dương Bá Trạc', N'118 Dương Bá Trạc, Quận 8, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Tuy Lý Vương', N'40 - 54 CoopMart Tuy Lý Vương, P. 13, Q. 8', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Ba Tháng Hai', N'Số 572A Ba Tháng Hai, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria CoopMart Lý Thường Kiệt', N'Số 497 Hòa Hảo, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Tô Hiến Thành', N'Số 307A Tô Hiến Thành, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Siêu Thị Sài Gòn', N'Số 34 Đường 3/2, Phường 12, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Maxi Ba Tháng Hai', N'Số 3C Đường 3/2, Quận 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria CoopMart Hòa Hảo', N'Cao Ốc B Ngô Gia Tự, P. 3, Q. 10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nguyễn Chí Thanh', N'82 A Nguyễn Chí Thanh, P13, Q10, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Lê Hồng Phong', N'695C Lê Hồng Phong, P.10, Q.10', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Lotte Mart 2', N'Số 940B Đường 3/2, Phường 15, Quận 11, Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Parkson Lê Đại Hành', N'Số 184 Lê Đại Hành, Phường 15, Quận 11, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1000x625px-750x468.jpg', N'Lotteria CoopMart Phú Thọ', N'Số 1 Lữ Gia, Quận 11, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria.jpg', N'Lotteria Nguyễn Ảnh Thủ', N'159/6-160/1 Nguyễn Ảnh Thủ, Trung Chánh, Hóc Môn (Quận 12), Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Maxi Cộng Hòa', N'Số 15-17 Cộng Hòa, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Cách Mạng Tháng 8', N'24/26 Cách Mạng Tháng Tám, Quận Tân Bình, Tp HCM', N'7:00 AM - 11:00 PM', '19001568'
 go
 
 create table NotificationData

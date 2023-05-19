@@ -14,6 +14,7 @@ using FinalProject.DTO;
 using FinalProject.BLL;
 using FinalProject.App.Admin;
 using FinalProject.App.Staff;
+using FinalProject.App.Manager;
 
 namespace FinalProject.App
 {
@@ -137,6 +138,9 @@ namespace FinalProject.App
                 }
                 else if (ehe.getIdByUsername(tk.userName).ToString().Contains('M'))
                 {
+                    MainManager newMain = new MainManager(ehe.getIdByUsername(tk.userName).ToString());
+                    newMain.ShowDialog();
+                    ((Form)this.TopLevelControl).Close();
                 }
                 return;
             }
