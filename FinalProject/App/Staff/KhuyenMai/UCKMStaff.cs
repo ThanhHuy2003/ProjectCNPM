@@ -98,5 +98,10 @@ namespace FinalProject.App.Staff.KhuyenMai
                 MessageBox.Show("Không có dữ liệu PromotionData");
             }
         }
+
+        private void picSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

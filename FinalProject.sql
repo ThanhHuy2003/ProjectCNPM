@@ -91,6 +91,7 @@ create table LoginData
     userName varchar(500) not null unique,
     userPassword varchar(500) not null,
 	userRole varchar(500) not null default 'user',
+	userDateOfBirth date default current_timestamp,
     primary key(userID)
 )
 go
@@ -409,6 +410,16 @@ begin
 	end
     insert into StoreAddress(storeID, storePicture, storeName, storeDescription, storeTime, storePhone) values (@newStoreID, @storePicture, @storeName, @storeDescription, @storeTime, @storePhone)
 end
+go
+
+create table UserAddress
+(
+	userID varchar(8),
+	storeID varchar(8),
+	primary key(userID, storeID),
+	foreign key(userID) references LoginData(userID),
+	foreign key(storeID) references StoreAddress(storeID)
+)
 go
 
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-viet-nam-co-the-dong-cua-ngay-trong-nam-nay.jpg', N'Lotteria Parkson Lê Thánh Tôn', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'

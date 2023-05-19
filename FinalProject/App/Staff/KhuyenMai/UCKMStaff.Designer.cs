@@ -38,17 +38,18 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 125);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(28, 154);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1195, 673);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1593, 828);
             this.flowLayoutPanel1.TabIndex = 13;
             // 
             // SearchTextbox
             // 
-            this.SearchTextbox.Location = new System.Drawing.Point(21, 58);
+            this.SearchTextbox.Location = new System.Drawing.Point(28, 71);
+            this.SearchTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchTextbox.Name = "SearchTextbox";
-            this.SearchTextbox.Size = new System.Drawing.Size(1156, 43);
+            this.SearchTextbox.Size = new System.Drawing.Size(1541, 47);
             this.SearchTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.SearchTextbox.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -63,10 +64,10 @@
             // 
             // LabelNhapKM
             // 
-            this.LabelNhapKM.Location = new System.Drawing.Point(21, 17);
-            this.LabelNhapKM.Margin = new System.Windows.Forms.Padding(2);
+            this.LabelNhapKM.Location = new System.Drawing.Point(28, 21);
+            this.LabelNhapKM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LabelNhapKM.Name = "LabelNhapKM";
-            this.LabelNhapKM.Size = new System.Drawing.Size(202, 26);
+            this.LabelNhapKM.Size = new System.Drawing.Size(251, 31);
             this.LabelNhapKM.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.LabelNhapKM.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNhapKM.TabIndex = 12;
@@ -77,23 +78,26 @@
             this.picSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
             this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.picSearch.Location = new System.Drawing.Point(1123, 63);
+            this.picSearch.Location = new System.Drawing.Point(1497, 78);
+            this.picSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(35, 32);
+            this.picSearch.Size = new System.Drawing.Size(47, 39);
             this.picSearch.TabIndex = 11;
             this.picSearch.TabStop = false;
+            this.picSearch.Click += new System.EventHandler(this.picSearch_Click);
             // 
             // UCKMStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.SearchTextbox);
             this.Controls.Add(this.LabelNhapKM);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCKMStaff";
-            this.Size = new System.Drawing.Size(1220, 800);
+            this.Size = new System.Drawing.Size(1627, 985);
             this.Load += new System.EventHandler(this.UCKM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
