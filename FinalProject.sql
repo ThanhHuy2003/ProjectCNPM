@@ -780,4 +780,7 @@ select * from PromotionData
 select * from Province
 select * from revenue
 select * from StoreAddress
-go
+select * from UserAddress
+
+select distinct LoginData.*,UserAddress.storeID from LoginData,UserAddress 
+Where (fullName like '%%' or fullName like '%') and UserAddress.storeID = 'SID00001'and LoginData.userID= UserAddress.userID 

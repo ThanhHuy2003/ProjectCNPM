@@ -21,12 +21,22 @@ namespace FinalProject.App.Admin
             InitializeComponent();
             AdminUserBLL ehe = new AdminUserBLL();
             dtgvTK.DataSource = ehe.getAllUser();
+            Dictionary<string, string> comboSource = new Dictionary<string, string>();
+            StoreAddressTableBLL storeBLL = new StoreAddressTableBLL();
+            foreach (DataRow row in storeBLL.populateStoreAddressData_StoreAddressTable_BLL().Rows)
+            {
+                comboSource.Add(row["storeID"].ToString(), row["storeName"].ToString());
+            }
+            cbCNN.DataSource = new BindingSource(comboSource, null);
+            cbCNN.DisplayMember = "Value";
+            cbCNN.ValueMember = "Key";
         }
         Form edit = new EditTK();
         private void picSearch_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(cbCNN.SelectedValue.ToString());
             AdminUserBLL ehe = new AdminUserBLL();
-            dtgvTK.DataSource = ehe.searchUser(tbSearch.Text);
+            dtgvTK.DataSource = ehe.searchUser(tbSearch.Text,cbCNN.SelectedValue.ToString());
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -61,12 +71,23 @@ namespace FinalProject.App.Admin
                 return false;
             }
         }
+        public bool IsNumber(string pValue)
+        {
+            foreach (Char c in pValue)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
+        }
         private void btnEdit_Click(object sender, EventArgs e)
         {
             AdminUserBLL ehe = new AdminUserBLL();
             int rowIndex = dtgvTK.SelectedCells[0].RowIndex;
-            if (IsValidEmail(dtgvTK.Rows[rowIndex].Cells[2].Value.ToString()))
+            if (IsValidEmail(dtgvTK.Rows[rowIndex].Cells[2].Value.ToString()) == false)
                 MessageBox.Show("Invalid Email");
+            else if (IsNumber(dtgvTK.Rows[rowIndex].Cells[4].Value.ToString()) == false || dtgvTK.Rows[rowIndex].Cells[4].Value.ToString().Length ==10 )
+                MessageBox.Show("Invalid PhoneNumber");
             else
             {
                 User newUser = new User();
@@ -77,13 +98,13 @@ namespace FinalProject.App.Admin
                 newUser.phoneNumber = dtgvTK.Rows[rowIndex].Cells[4].Value.ToString();
                 newUser.userName = dtgvTK.Rows[rowIndex].Cells[5].Value.ToString();
                 newUser.userRole = dtgvTK.Rows[rowIndex].Cells[7].Value.ToString();
-                if(newUser.userID=="" || newUser.fullName==""|| newUser.emailAddress==""|| newUser.contactAddress==""||newUser.phoneNumber==""|| newUser.userName == "" || newUser.userRole == "")
+                if (newUser.userID == "" || newUser.fullName == "" || newUser.emailAddress == "" || newUser.contactAddress == "" || newUser.phoneNumber == "" || newUser.userName == "" || newUser.userRole == "")
                 {
                     MessageBox.Show("Không được để trống");
                 }
                 else
                 {
-                    if (IsValidEmail(newUser.emailAddress)==false)
+                    if (IsValidEmail(newUser.emailAddress) == false)
                         MessageBox.Show("Invalid email");
                     else
                     {
@@ -94,6 +115,10 @@ namespace FinalProject.App.Admin
             }
         }
 
-
+        private void btnList_click(object sender, EventArgs e)
+        {
+            AdminUserBLL ehe = new AdminUserBLL();
+            dtgvTK.DataSource = ehe.searchUser("null","null");
+        }
     }
 }

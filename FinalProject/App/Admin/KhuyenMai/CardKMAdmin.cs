@@ -28,10 +28,13 @@ namespace FinalProject.App.Admin
         private string _promotionID;
         private string _title;
         private string _description;
+        private string _date;
         private Image _pic;
         private int _percent;
         [Category("Custom Props")]
         public string PromotionID { get { return _promotionID; } set { _promotionID = value; } }
+        [Category("Custom Props")]
+        public string Date { get { return _date; } set { _date = value; } }
         [Category("Custom Props")]
         public int Percent { get { return _percent; } set { _percent = value; } }
         [Category("Custom Props")]

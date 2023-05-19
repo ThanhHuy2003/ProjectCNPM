@@ -15,6 +15,7 @@ namespace FinalProject.App.Login
     public partial class Login : Form
     {
         public static String name = "DN";
+        public  event Action Something;
         public Login()
         {
             InitializeComponent();

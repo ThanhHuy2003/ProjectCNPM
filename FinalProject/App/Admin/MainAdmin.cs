@@ -1,6 +1,7 @@
 ﻿using FinalProject.App.Login;
 using FinalProject.App.Admin;
 using FinalProject.App.Main;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static FinalProject.MainUser;
+using FinalProject.App.Staff;
 
 namespace FinalProject.App.Admin
 {
@@ -60,7 +62,7 @@ namespace FinalProject.App.Admin
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            this.menu_active.Location = new Point(1, btnTD.Location.Y);
+            Application.Restart();
         }
     }
 }

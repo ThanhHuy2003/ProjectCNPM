@@ -19,10 +19,10 @@ namespace FinalProject.BLL
             UserCRUD_DAL ehe = new UserCRUD_DAL();
             return ehe.getAllUser_DAL();
         }
-        public DataTable searchUser(String key)
+        public DataTable searchUser(String key,String cn)
         {
             UserCRUD_DAL data = new UserCRUD_DAL();
-            return data.searchUser_DAL(key);
+            return data.searchUser_DAL(key,cn);
         }
         public void deleteUser(String id)
         {
@@ -34,10 +34,10 @@ namespace FinalProject.BLL
             UserCRUD_DAL data = new UserCRUD_DAL();
             data.updateUser_DAL(user);
         }
-        public void addUser(User user)
+        public void addUser(User user,String cn)
         {
             UserCRUD_DAL data = new UserCRUD_DAL();
-            data.addUser_DAL(user);
+            data.addUser_DAL(user,cn);
         }
         public String getIdByUsername(String name)
         {

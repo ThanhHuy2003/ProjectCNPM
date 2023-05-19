@@ -16,9 +16,9 @@ namespace FinalProject.DAL
         {
             return getAllUser_DA_DAL();
         }
-        public DataTable searchUser_DAL(String key)
+        public DataTable searchUser_DAL(String key,String cn)
         {
-            return searchUser_DA_BLL(key);
+            return searchUser_DA_BLL(key,cn);
         }
         public void deleteUser_DAL(String id)
         {
@@ -28,9 +28,9 @@ namespace FinalProject.DAL
         {
             updateUser_DA_BLL(user);
         }
-        public void addUser_DAL(User user)
+        public void addUser_DAL(User user, String cn)
         {
-            addUser_DA_BLL(user);
+            addUser_DA_BLL(user,cn);
         }
         public String getIdByUsername_DAL(String name)
         {

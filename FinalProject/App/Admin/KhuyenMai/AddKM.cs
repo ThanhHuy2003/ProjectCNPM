@@ -31,7 +31,6 @@ namespace FinalProject.App.Admin.KhuyenMai
                 item.promotionPercent = int.Parse(tbPercent.Text);
             }
             catch { }
-            item.promotionDate = timePick.Value.ToString();
             ehe.addPromotion(item);
         }
     }

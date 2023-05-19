@@ -87,12 +87,14 @@ namespace FinalProject.App.Admin
                         Item.PromotionID = newPromotionItem.promotionID;
                         Item.Title = newPromotionItem.promotionName;
                         Item.Description = newPromotionItem.promotionDescription;
+                        Item.Date = newPromotionItem.promotionDate;
                         Item.ButtonClicked += ChildControl_ButtonClicked;
                         this.flowLayoutPanel1.Controls.Add(Item);
                     }
                     catch
                     {
                         MessageBox.Show("Không tìm được poster của khuyến mãi id: " + newPromotionItem.promotionID + "| name:" + newPromotionItem.promotionName);
+                        listBLL.deletePromotion(newPromotionItem.promotionID);
                     }
                 }
             }

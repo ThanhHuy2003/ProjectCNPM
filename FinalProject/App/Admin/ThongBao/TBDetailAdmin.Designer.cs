@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.timePick = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
             this.tbPoster = new Krypton.Toolkit.KryptonTextBox();
             this.txtTD = new Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,30 +37,9 @@
             this.txtND = new Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbFocus = new Krypton.Toolkit.KryptonTextBox();
+            this.timePick = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // timePick
-            // 
-            this.timePick.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
-            this.timePick.CornerRoundingRadius = -1F;
-            this.timePick.Location = new System.Drawing.Point(453, 649);
-            this.timePick.Margin = new System.Windows.Forms.Padding(4);
-            this.timePick.Name = "timePick";
-            this.timePick.ShowUpDown = true;
-            this.timePick.Size = new System.Drawing.Size(301, 34);
-            this.timePick.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timePick.TabIndex = 75;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(86, 654);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 29);
-            this.label6.TabIndex = 74;
-            this.label6.Text = "Ngày:";
             // 
             // tbPoster
             // 
@@ -115,7 +92,7 @@
             // btnAdd
             // 
             this.btnAdd.CornerRoundingRadius = 30F;
-            this.btnAdd.Location = new System.Drawing.Point(591, 711);
+            this.btnAdd.Location = new System.Drawing.Point(507, 767);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(163, 49);
@@ -189,18 +166,41 @@
             this.tbFocus.StateCommon.Border.Rounding = 30F;
             this.tbFocus.TabIndex = 79;
             // 
+            // timePick
+            // 
+            this.timePick.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
+            this.timePick.CornerRoundingRadius = -1F;
+            this.timePick.Location = new System.Drawing.Point(409, 688);
+            this.timePick.Margin = new System.Windows.Forms.Padding(4);
+            this.timePick.Name = "timePick";
+            this.timePick.ShowUpDown = true;
+            this.timePick.Size = new System.Drawing.Size(575, 34);
+            this.timePick.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timePick.TabIndex = 80;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label5.Location = new System.Drawing.Point(46, 693);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 29);
+            this.label5.TabIndex = 81;
+            this.label5.Text = "Ngày";
+            // 
             // TBDetailAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1245, 802);
+            this.ClientSize = new System.Drawing.Size(1245, 844);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.timePick);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbFocus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtND);
-            this.Controls.Add(this.timePick);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.tbPoster);
             this.Controls.Add(this.txtTD);
             this.Controls.Add(this.label2);
@@ -216,9 +216,6 @@
         }
 
         #endregion
-
-        private Krypton.Toolkit.KryptonDateTimePicker timePick;
-        private System.Windows.Forms.Label label6;
         private Krypton.Toolkit.KryptonTextBox tbPoster;
         private Krypton.Toolkit.KryptonTextBox txtTD;
         private System.Windows.Forms.Label label2;
@@ -228,5 +225,7 @@
         private Krypton.Toolkit.KryptonTextBox txtND;
         private System.Windows.Forms.Label label4;
         private Krypton.Toolkit.KryptonTextBox tbFocus;
+        private Krypton.Toolkit.KryptonDateTimePicker timePick;
+        private System.Windows.Forms.Label label5;
     }
 }
