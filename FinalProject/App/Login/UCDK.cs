@@ -126,6 +126,18 @@ namespace FinalProject.App.Login
         }
         private void UCDK_Load(object sender, EventArgs e)
         {
+            LoginBLL newTKBLL = new LoginBLL();
+            if (newTKBLL.populateProvince_Login_BLL() == null)
+            {
+                MessageBox.Show("Không có dữ liệu tỉnh thành");
+            }
+            else
+            {
+                foreach(DataRow row in newTKBLL.populateProvince_Login_BLL().Rows)
+                {
+                    ContactCB.Items.Add(row["provinceName"].ToString());
+                }
+            }
             lblSignUp.Select();
         }
         private void UCDK_Clicked(object sender, EventArgs e)
@@ -138,7 +150,16 @@ namespace FinalProject.App.Login
 
             newTK.fullName = FullNameText.Text;
             newTK.emailAddress = EmailText.Text;
-            //newTK.contactAddress = ContactText.Text;
+            if(ContactCB.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn tỉnh thành");
+                return;
+            }
+            else
+            {
+                newTK.contactAddress = ContactCB.SelectedItem.ToString();
+
+            }
             newTK.phoneNumber = PhoneNumberText.Text;
             newTK.userName = UserNameText.Text;
             newTK.userPassword = PasswordText.Text;
@@ -160,11 +181,6 @@ namespace FinalProject.App.Login
             else if (temp == "Vui lòng nhập email hợp lệ")
             {
                 MessageBox.Show("Vui lòng nhập email hợp lệ");
-                return;
-            }
-            else if (temp == "Vui lòng nhập địa chỉ liên lạc")
-            {
-                MessageBox.Show("Vui lòng nhập địa chỉ liên lạc");
                 return;
             }
             else if (temp == "Vui lòng nhập số điện thoại")

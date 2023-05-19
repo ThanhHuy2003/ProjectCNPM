@@ -8,6 +8,7 @@ using FinalProject.DAL;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace FinalProject.BLL
 {
@@ -40,6 +41,21 @@ namespace FinalProject.BLL
         public void updateCartDataPromotion_CartTable_BLL(string promotionID, string promotionCash, string userID)
         {
             cartTableDAL.updateCartDataPromotion_CartTable_DAL(promotionID, promotionCash, userID);
+        }
+        public DataTable populateStoreAddress_CartTable_BLL()
+        {
+            if (cartTableDAL.populateStoreAddress_DA_DAL() == null)
+            {
+                return null;
+            }
+            else
+            {
+                return cartTableDAL.populateStoreAddress_DA_DAL();
+            }
+        }
+        public void payMoney(string userID, int totalCash, string storeName)
+        {
+            cartTableDAL.payMoney_BLL(userID, totalCash, storeName);
         }
     }
 }

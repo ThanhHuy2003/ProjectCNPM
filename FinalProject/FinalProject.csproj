@@ -91,6 +91,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\Admin\KhuyenMai\AddKM.cs">
@@ -194,6 +200,12 @@
     </Compile>
     <Compile Include="App\Main\GioHang\CardGH.Designer.cs">
       <DependentUpon>CardGH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Main\GioHang\QRcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Main\GioHang\QRcode.Designer.cs">
+      <DependentUpon>QRcode.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Main\GioHang\UCGH.cs">
       <SubType>UserControl</SubType>
@@ -502,6 +514,9 @@
     <EmbeddedResource Include="App\Main\GioHang\CardGH.resx">
       <DependentUpon>CardGH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\GioHang\QRcode.resx">
+      <DependentUpon>QRcode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\GioHang\UCGH.en.resx">
       <DependentUpon>UCGH.cs</DependentUpon>
     </EmbeddedResource>
@@ -682,6 +697,7 @@
     <None Include="Resources\HinhKM1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\logo_momo.png" />
     <None Include="Resources\moneylogo2.png" />
     <None Include="Resources\moneylogo.png" />
     <None Include="Resources\SignOut4.png" />

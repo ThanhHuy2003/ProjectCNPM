@@ -18,6 +18,39 @@ namespace FinalProject.DAL
     internal class DatabaseAccess
     {
         String strConn = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
+        public DataTable populateStoreAddress_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from StoreAddress";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public void payMoney(string userID, int totalCash, string storeName)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "exec PayMoney '" + userID + "', " + totalCash.ToString() + ", N'" + storeName + "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public DataTable populateProvince_DA_DAL()
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from Province";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
         public String getIdByUsername_DA_DAL(String name)
         {
             String userID="";

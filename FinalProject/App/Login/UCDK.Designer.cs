@@ -137,7 +137,7 @@
             // panel_DN
             // 
             this.panel_DN.Location = new System.Drawing.Point(505, 27);
-            this.panel_DN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_DN.Margin = new System.Windows.Forms.Padding(4);
             this.panel_DN.Name = "panel_DN";
             this.panel_DN.Size = new System.Drawing.Size(157, 65);
             this.panel_DN.TabIndex = 41;
@@ -146,7 +146,7 @@
             // FullNameText
             // 
             this.FullNameText.Location = new System.Drawing.Point(117, 343);
-            this.FullNameText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FullNameText.Margin = new System.Windows.Forms.Padding(4);
             this.FullNameText.Name = "FullNameText";
             this.FullNameText.Size = new System.Drawing.Size(432, 39);
             this.FullNameText.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
@@ -165,7 +165,7 @@
             // EmailText
             // 
             this.EmailText.Location = new System.Drawing.Point(117, 415);
-            this.EmailText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailText.Margin = new System.Windows.Forms.Padding(4);
             this.EmailText.Name = "EmailText";
             this.EmailText.Size = new System.Drawing.Size(432, 39);
             this.EmailText.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
@@ -184,7 +184,7 @@
             // UserNameText
             // 
             this.UserNameText.Location = new System.Drawing.Point(117, 623);
-            this.UserNameText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserNameText.Margin = new System.Windows.Forms.Padding(4);
             this.UserNameText.Name = "UserNameText";
             this.UserNameText.Size = new System.Drawing.Size(432, 39);
             this.UserNameText.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
@@ -203,7 +203,7 @@
             // PasswordText
             // 
             this.PasswordText.Location = new System.Drawing.Point(117, 690);
-            this.PasswordText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PasswordText.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordText.Name = "PasswordText";
             this.PasswordText.Size = new System.Drawing.Size(432, 39);
             this.PasswordText.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
@@ -222,10 +222,11 @@
             // ContactCB
             // 
             this.ContactCB.CornerRoundingRadius = 30F;
+            this.ContactCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ContactCB.DropDownWidth = 304;
             this.ContactCB.IntegralHeight = false;
             this.ContactCB.Location = new System.Drawing.Point(117, 482);
-            this.ContactCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ContactCB.Margin = new System.Windows.Forms.Padding(4);
             this.ContactCB.Name = "ContactCB";
             this.ContactCB.Size = new System.Drawing.Size(432, 45);
             this.ContactCB.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
@@ -239,8 +240,9 @@
             // 
             // PhoneNumberText
             // 
-            this.PhoneNumberText.Location = new System.Drawing.Point(117, 556);
-            this.PhoneNumberText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PhoneNumberText.Location = new System.Drawing.Point(117, 555);
+            this.PhoneNumberText.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneNumberText.MaxLength = 10;
             this.PhoneNumberText.Name = "PhoneNumberText";
             this.PhoneNumberText.Size = new System.Drawing.Size(432, 39);
             this.PhoneNumberText.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
@@ -254,6 +256,7 @@
             this.PhoneNumberText.TabIndex = 50;
             this.PhoneNumberText.Text = "Phone number";
             this.PhoneNumberText.Enter += new System.EventHandler(this.PhoneNumberText_Enter);
+            this.PhoneNumberText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhoneNumberText_KeyPress);
             this.PhoneNumberText.Leave += new System.EventHandler(this.PhoneNumberText_Leave);
             // 
             // UCDK
@@ -261,6 +264,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
+            this.Controls.Add(this.PhoneNumberText);
             this.Controls.Add(this.panel_DN);
             this.Controls.Add(this.btnDN);
             this.Controls.Add(this.kryptonButton2);
@@ -270,11 +274,10 @@
             this.Controls.Add(this.EmailText);
             this.Controls.Add(this.FullNameText);
             this.Controls.Add(this.ContactCB);
-            this.Controls.Add(this.PhoneNumberText);
             this.Controls.Add(this.Eye2);
             this.Controls.Add(this.Blind2);
             this.Controls.Add(this.PasswordText);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCDK";
             this.Size = new System.Drawing.Size(700, 874);
             this.Load += new System.EventHandler(this.UCDK_Load);

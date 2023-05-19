@@ -85,5 +85,16 @@ namespace FinalProject.BLL
                 return loginDAL.populateInformationUser_Login_DAL(userID);
             }
         }
+        public DataTable populateProvince_Login_BLL()
+        {
+            if(loginDAL.populateProvince_DA_DAL() == null)
+            {
+                return null;
+            }
+            else
+            {
+                return loginDAL.populateProvince_DA_DAL();
+            }
+        }
     }
 }

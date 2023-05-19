@@ -477,16 +477,6 @@ exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/bien-hieu-1
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/LR3.jpg', N'Lotteria Trần Quang Khải', N'Số 2 Nguyễn Hữu Cầu, Quận 1, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/man-hinh-led-95-tran-hung-dao-quan-1-hcm-4-1030x772.jpg', N'Lotteria Đinh Tiên Hoàng', N'Số 95A Trần Hưng Đạo, Quận 1, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
 exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/gYPRka.jpg', N'Lotteria Trần Hưng Đạo', N'Số 34 Lê Duẩn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Citimart Nguyễn Trãi', N'Số 35 Bis - 45 Lê Thánh Tôn, Quận 1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-tuyen-dung-part-time-2019-bi-kip-dau-phong-van-co-viec-ngay-6.jpg', N'Lotteria Nowzone', N'Số 235 Nguyễn Văn Cừ, Quận 1, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-p-rarticledocx-1620893014826.jpg', N'Lotteria Điện Biên Phủ', N'101 Đinh Tiên Hoàng, P. Đa Kao, Q.1, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/l3.jpg', N'Lotteria Parkson Cantavil', N'Xa Lộ Hà Nội, Phường An Phú, Quận 2', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/detalles-del-interior.jpg', N'Lotteria Vincom', N'Tòa nhà VinCom, 171 Đồng Khởi, P. Bến Nghé, Q.1', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/photo1618626245724-1618626245836566005844.jpg', N'Lotteria Nguyễn Du', N'149-151 Nguyễn Du, P.Bến Thành, Quận 1', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-1618651881505.jpg', N'Lotteria Lotteria CoopMart Nguyễn Đình Chiểu', N'Lotteria CoopMart Nguyễn Đình Chiểu', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-750x468-16186480593151320550214.jpg', N'Lotteria Nam Kỳ Khởi Nghĩa', N'256 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/su-that-viec-lotteria-thua-lo-sap-dong-cua-tai-viet-nam-7e661624.jpg', N'Lotteria Ga Sài Gòn', N'Số 1 Nguyễn Thông, Quận 3, TP HCM', N'7:00 AM - 11:00 PM', '19001568'
-exec InsertStoreAddress 'https://vietnamtop10.net/wp-content/uploads/lotteria-4.jpg', N'Lotteria Cao Thắng', N'Số 61B Cao Thắng, Quận 3, TP HCM, TP.HCM', N'7:00 AM - 11:00 PM', '19001568'
 go
 
 create table NotificationData
@@ -657,13 +647,19 @@ go
 
 CREATE TABLE revenue (
     storeId varchar(8) NOT NULL,
-    amount int,
-    dateCreate date NOT NULL,
+    amount int default 0,
+    dateCreate date NOT NULL default current_timestamp,
     FOREIGN KEY (storeID) REFERENCES StoreAddress(storeID)
 );
 go
 
-insert into revenue values('SID00002',180000,'5-13-2023')
+insert into revenue(storeId) values
+('SID00001'),
+('SID00002'),
+('SID00003'),
+('SID00004'),
+('SID00005'),
+('SID00006')
 go
 
 create table HistoryUserData
@@ -718,7 +714,8 @@ go
 
 create procedure PayMoney
     @userID varchar(8),
-	@totalCash int
+	@totalCash int,
+	@storeName nvarchar(500)
 as
 begin
 	declare @check int
@@ -761,12 +758,11 @@ begin
 			delete from CartData where userID = @userID and dishID = @dishID
 			set @i = @i + 1
 		end
+		declare @storeID varchar(8)
+		select @storeID = storeID from StoreAddress where storeName = @storeName
+		update revenue set amount = amount + @totalCash, dateCreate = current_timestamp where storeId = @storeID
 	end
 end
-go
-
-update CartData set promotionCash = 50 where promotionCash = 0
-exec PayMoney 'UID00001', 540000
 go
 
 select * from CartData

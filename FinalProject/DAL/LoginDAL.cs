@@ -29,5 +29,16 @@ namespace FinalProject.DAL
                 return populateInformationUser_DA_DAL(userID);
             }
         }
+        public DataTable populateProvince_Login_DAL()
+        {
+            if(populateProvince_DA_DAL() == null)
+            {
+                return null;
+            }
+            else
+            {
+                return populateProvince_DA_DAL();
+            }
+        }
     }
 }

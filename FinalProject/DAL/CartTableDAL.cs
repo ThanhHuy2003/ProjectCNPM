@@ -31,5 +31,20 @@ namespace FinalProject.DAL
         {
             updateCartDataPromotion_DA_DAL(promotionID, promotionCash, userID);
         }
+        public DataTable populateStoreAddress_CartTable_DAL()
+        {
+            if (populateStoreAddress_DA_DAL() == null)
+            {
+                return null;
+            }
+            else
+            {
+                return populateStoreAddress_DA_DAL();
+            }
+        }
+        public void payMoney_BLL(string userID, int totalCash, string storeName)
+        {
+            payMoney(userID, totalCash, storeName);
+        }
     }
 }

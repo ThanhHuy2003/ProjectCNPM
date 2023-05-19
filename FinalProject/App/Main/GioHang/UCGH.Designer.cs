@@ -56,6 +56,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.cbStoreAddress = new Krypton.Toolkit.KryptonComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
@@ -65,13 +67,14 @@
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbStoreAddress)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 236);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1555, 415);
             this.flowLayoutPanel1.TabIndex = 1;
@@ -83,7 +86,7 @@
             this.kryptonPanel1.Controls.Add(this.label3);
             this.kryptonPanel1.Controls.Add(this.label2);
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 1282);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(1603, 128);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(203)))));
@@ -108,7 +111,7 @@
             this.btnTT.CornerRoundingRadius = 15F;
             this.btnTT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnTT.Location = new System.Drawing.Point(1392, 41);
-            this.btnTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTT.Margin = new System.Windows.Forms.Padding(4);
             this.btnTT.Name = "btnTT";
             this.btnTT.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTT.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -142,6 +145,7 @@
             this.btnTT.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTT.TabIndex = 5;
             this.btnTT.Values.Text = "Đặt hàng";
+            this.btnTT.Click += new System.EventHandler(this.btnTT_Click);
             // 
             // label3
             // 
@@ -176,7 +180,7 @@
             this.kryptonPanel2.Controls.Add(this.btnSelectVoucher);
             this.kryptonPanel2.Controls.Add(this.label4);
             this.kryptonPanel2.Location = new System.Drawing.Point(48, 36);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Size = new System.Drawing.Size(1540, 107);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -188,7 +192,7 @@
             this.pictureBox1.Image = global::FinalProject.Properties.Resources.voucher;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(28, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(197, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,7 +204,7 @@
             this.btnSelectVoucher.CornerRoundingRadius = 100F;
             this.btnSelectVoucher.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSelectVoucher.Location = new System.Drawing.Point(1452, 27);
-            this.btnSelectVoucher.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelectVoucher.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelectVoucher.Name = "btnSelectVoucher";
             this.btnSelectVoucher.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSelectVoucher.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -275,7 +279,7 @@
             this.kryptonPanel3.Controls.Add(this.RadbtnMoney);
             this.kryptonPanel3.Controls.Add(this.label5);
             this.kryptonPanel3.Location = new System.Drawing.Point(48, 660);
-            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.Size = new System.Drawing.Size(1540, 193);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -284,7 +288,7 @@
             // RadbtnMomo
             // 
             this.RadbtnMomo.Location = new System.Drawing.Point(183, 132);
-            this.RadbtnMomo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadbtnMomo.Margin = new System.Windows.Forms.Padding(4);
             this.RadbtnMomo.Name = "RadbtnMomo";
             this.RadbtnMomo.Size = new System.Drawing.Size(128, 32);
             this.RadbtnMomo.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -295,7 +299,7 @@
             // RadbtnMoney
             // 
             this.RadbtnMoney.Location = new System.Drawing.Point(183, 70);
-            this.RadbtnMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadbtnMoney.Margin = new System.Windows.Forms.Padding(4);
             this.RadbtnMoney.Name = "RadbtnMoney";
             this.RadbtnMoney.Size = new System.Drawing.Size(121, 32);
             this.RadbtnMoney.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -346,6 +350,8 @@
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.label10);
+            this.kryptonPanel4.Controls.Add(this.cbStoreAddress);
             this.kryptonPanel4.Controls.Add(this.label18);
             this.kryptonPanel4.Controls.Add(this.label16);
             this.kryptonPanel4.Controls.Add(this.label14);
@@ -359,7 +365,7 @@
             this.kryptonPanel4.Controls.Add(this.label7);
             this.kryptonPanel4.Controls.Add(this.label6);
             this.kryptonPanel4.Location = new System.Drawing.Point(48, 860);
-            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel4.Name = "kryptonPanel4";
             this.kryptonPanel4.Size = new System.Drawing.Size(1540, 415);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -396,7 +402,7 @@
             // kryptonTextBox1
             // 
             this.kryptonTextBox1.Location = new System.Drawing.Point(336, 164);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(635, 47);
             this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -408,7 +414,7 @@
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(336, 94);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(635, 47);
             this.txtSDT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -420,7 +426,7 @@
             // txtFullName
             // 
             this.txtFullName.Location = new System.Drawing.Point(336, 25);
-            this.txtFullName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(635, 47);
             this.txtFullName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -494,6 +500,38 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Tên khách hàng:";
             // 
+            // cbStoreAddress
+            // 
+            this.cbStoreAddress.CornerRoundingRadius = 30F;
+            this.cbStoreAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStoreAddress.DropDownWidth = 304;
+            this.cbStoreAddress.IntegralHeight = false;
+            this.cbStoreAddress.Location = new System.Drawing.Point(336, 250);
+            this.cbStoreAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.cbStoreAddress.Name = "cbStoreAddress";
+            this.cbStoreAddress.Size = new System.Drawing.Size(432, 45);
+            this.cbStoreAddress.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(236)))), ((int)(((byte)(223)))));
+            this.cbStoreAddress.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.cbStoreAddress.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbStoreAddress.StateCommon.ComboBox.Border.Rounding = 30F;
+            this.cbStoreAddress.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cbStoreAddress.TabIndex = 50;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label10.Location = new System.Drawing.Point(56, 254);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(179, 29);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "Chọn cửa hàng:";
+            // 
             // UCGH
             // 
             this.AllowDrop = true;
@@ -507,9 +545,9 @@
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCGH";
-            this.Size = new System.Drawing.Size(1580, 1168);
+            this.Size = new System.Drawing.Size(1538, 1126);
             this.Load += new System.EventHandler(this.UCGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
@@ -524,6 +562,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbStoreAddress)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -558,5 +597,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label10;
+        private Krypton.Toolkit.KryptonComboBox cbStoreAddress;
     }
 }

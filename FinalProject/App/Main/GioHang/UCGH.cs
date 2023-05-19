@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace FinalProject.App.Main.GioHang
 {
@@ -110,6 +111,18 @@ namespace FinalProject.App.Main.GioHang
         }
         private void UCGH_Load(object sender, EventArgs e)
         {
+            CartTableBLL newCartTableBLL = new CartTableBLL();
+            if (newCartTableBLL.populateStoreAddress_CartTable_BLL() == null)
+            {
+                MessageBox.Show("Không có dữ liệu cửa hàng");
+            }
+            else
+            {
+                foreach (DataRow row in newCartTableBLL.populateStoreAddress_CartTable_BLL().Rows)
+                {
+                    cbStoreAddress.Items.Add(row["storeName"].ToString());
+                }
+            }
             RadbtnMoney.Checked = true;
             LoginBLL newLoginBLL = new LoginBLL();
             if (newLoginBLL.populateInformationUser_Login_BLL(userIDLogin) != null)
@@ -129,6 +142,52 @@ namespace FinalProject.App.Main.GioHang
             ADKM frm = new ADKM(userIDLogin);
             frm.ShowDialog();
             ChildControl_ButtonClicked(sender, e);
+        }
+
+        private void btnTT_Click(object sender, EventArgs e)
+        {
+            if (txtFullName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập họ và tên");
+                return;
+            }
+
+            else if (txtSDT.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại");
+                return;
+            }
+            else if (kryptonTextBox1.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ liên hệ");
+                return;
+            }
+            else if (label3.Text == "")
+            {
+                MessageBox.Show("Giỏ hàng không có món để thanh toán");
+                return;
+            }
+            else if (cbStoreAddress.SelectedItem == null)
+            {
+                MessageBox.Show("Bạn muốn chi nhánh nào sẽ giao hàng?");
+                return;
+            }
+            else if (RadbtnMoney.Checked == true && txtFullName.Text != "" && txtSDT.Text != "" && kryptonTextBox1.Text != "" && label3.Text != "0" && cbStoreAddress.SelectedItem != null)
+            {
+                CartTableBLL newCartTableBLL = new CartTableBLL();
+                newCartTableBLL.payMoney(userIDLogin, int.Parse(label3.Text), cbStoreAddress.SelectedItem.ToString());
+                MessageBox.Show("Vui lòng thanh toán khi nhận được đồ ăn. Chúc bạn ngon miệng");
+                return;
+            }
+            else if (RadbtnMomo.Checked == true && txtFullName.Text != "" && txtSDT.Text != "" && kryptonTextBox1.Text != "" && label3.Text != "0" && cbStoreAddress.SelectedItem != null)
+            {
+                QRcode newQRCode = new QRcode(label3.Text);
+                newQRCode.ShowDialog();
+                CartTableBLL newCartTableBLL = new CartTableBLL();
+                newCartTableBLL.payMoney(userIDLogin, int.Parse(label3.Text), cbStoreAddress.SelectedItem.ToString());
+                MessageBox.Show("Vui lòng chờ nhận hàng");
+                return;
+            }
         }
     }
 }
