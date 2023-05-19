@@ -70,22 +70,27 @@ namespace FinalProject.App.Admin.ThongBao
                     newItem.notificationPicture = row["notificationPicture"].ToString();
                     newItem.notificationName = row["notificationName"].ToString();
                     newItem.notificationDate = row["notificationDate"].ToString();
-
-                    CardTBAdmin Item = new CardTBAdmin();
-                    Item.ID = newItem.notificationID;
-                    var request = WebRequest.Create(newItem.notificationPicture);
-
-                    using (var response = request.GetResponse())
-                    using (var stream = response.GetResponseStream())
+                    try
                     {
-                        Item.Picture = Bitmap.FromStream(stream);
-                        Item.Picture = resizeImage(Item.Picture, 255, 143);
+                        CardTBAdmin Item = new CardTBAdmin();
+                        Item.ID = newItem.notificationID;
+                        var request = WebRequest.Create(newItem.notificationPicture);
+
+                        using (var response = request.GetResponse())
+                        using (var stream = response.GetResponseStream())
+                        {
+                            Item.Picture = Bitmap.FromStream(stream);
+                            Item.Picture = resizeImage(Item.Picture, 255, 143);
+                        }
+
+                        Item.Title = newItem.notificationName;
+                        Item.ButtonClicked += ChildControl_ButtonClicked;
+
+                        this.flowLayoutPanel1.Controls.Add(Item);
+                    }catch{
+                        MessageBox.Show("Không tìm thấy poster ID: " + newItem.notificationID);
+                        listBLL.deleteNotification(newItem.notificationID);
                     }
-
-                    Item.Title = newItem.notificationName;
-                    Item.ButtonClicked += ChildControl_ButtonClicked;
-
-                    this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
             else

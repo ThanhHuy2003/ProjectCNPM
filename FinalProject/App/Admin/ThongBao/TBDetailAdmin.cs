@@ -24,8 +24,8 @@ namespace FinalProject.App.Admin.ThongBao
             Notification item = new Notification();
             NotificationDAL ehe = new NotificationDAL();
             item.notificationPicture = tbPoster.Text;
-            item.notificationDate = timePick.Value.ToString();
             item.notificationName = txtTD.Text;
+            item.notificationDate = timePick.Value.ToString();
             String focus = tbFocus.Text;
             String des = txtND.Text;
             ehe.addNotification_DAL(item, des,focus);

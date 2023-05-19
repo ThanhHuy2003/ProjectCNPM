@@ -280,12 +280,12 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
-        public DataTable searchUser_DA_BLL(String key)
+        public DataTable searchUser_DA_BLL(String key,String cn)
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
             DataTable dt = new DataTable();
-            if (key==null || key.Equals(""))
+            if (cn.Equals("null") || key.Equals("null"))
             {
                 String sSQL = "select * from LoginData";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
@@ -294,7 +294,8 @@ namespace FinalProject.DAL
             }
             else
             {
-                String sSQL = "select distinct * from LoginData Where userID like '%" + key+ "%' or userID like '"+key+"%'";
+                String sSQL = "select distinct LoginData.*,UserAddress.storeID from LoginData,UserAddress  Where (fullName like '%" + key+ "%' or fullName like '"+key+ "%') and UserAddress.storeID = '" + cn+ "'and LoginData.userID= UserAddress.userID  ";
+                MessageBox.Show(sSQL);
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
@@ -337,37 +338,57 @@ namespace FinalProject.DAL
                 MessageBox.Show("Sai tỉnh thành");
             }
         }
-        public void addUser_DA_BLL(User user)
+        public void addUser_DA_BLL(User user,String cn)
         {
             MessageBox.Show("add user :" + user.fullName);
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            if (user.userRole.Equals("user"))
+            String sSQL2 = "Insert into UserAddress values(@userID,@storeID)";
+            SqlCommand cmd2 = new SqlCommand(sSQL2, conn);
+            cmd2.Parameters.AddWithValue("@storeID", cn);
+            String sSQL = "exec @proc @name,@email,@contact,@phone,@username,@userpassword";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@name", user.fullName);
+            cmd.Parameters.AddWithValue("@email", user.emailAddress);
+            cmd.Parameters.AddWithValue("@contact", user.contactAddress);
+            cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
+            cmd.Parameters.AddWithValue("@username", user.userName);
+            cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
+            try
             {
-                String sSQL = "exec InsertUserLoginData @name,@email,@contact,@phone,@username,@userpassword";
-                SqlCommand cmd = new SqlCommand(sSQL, conn);
-                cmd.Parameters.AddWithValue("@name", user.fullName);
-                cmd.Parameters.AddWithValue("@email", user.emailAddress);
-                cmd.Parameters.AddWithValue("@contact", user.contactAddress);
-                cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
-                cmd.Parameters.AddWithValue("@username", user.userName);
-                cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
-                cmd.ExecuteNonQuery();
+                if (user.userRole.Equals("user"))
+                {
+                    cmd.Parameters.AddWithValue("@proc", "InsertUserLoginData");
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfuly");
+                }
+                else if (user.userRole.Equals("admin"))
+                {
+                    cmd.Parameters.AddWithValue("@proc", "InsertAdminLoginData");
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfuly");
+                }
+                else if (user.userRole.Equals("staff"))
+                {
+                    cmd.Parameters.AddWithValue("@proc", "InsertStaffLoginData");
+                    cmd.ExecuteNonQuery();
+                    cmd2.Parameters.AddWithValue("@userID", getIdByUsername_DA_DAL(user.userName));
+                    cmd2.ExecuteNonQuery();
+                    MessageBox.Show("Successfuly");
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@proc", "InsertManagerLoginData");
+                    cmd.ExecuteNonQuery();
+                    cmd2.Parameters.AddWithValue("@userID", getIdByUsername_DA_DAL(user.userName));
+                    cmd2.ExecuteNonQuery();
+                    MessageBox.Show("Successfuly");
+                }
             }
-            else
-            {
-                String sSQL = "exec InsertAdminLoginData @name,@email,@contact,@phone,@username,@userpassword";
-                SqlCommand cmd = new SqlCommand(sSQL, conn);
-                cmd.Parameters.AddWithValue("@name", user.fullName);
-                cmd.Parameters.AddWithValue("@email", user.emailAddress);
-                cmd.Parameters.AddWithValue("@contact", user.contactAddress);
-                cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
-                cmd.Parameters.AddWithValue("@username", user.userName);
-                cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
-                cmd.ExecuteNonQuery();
+             catch {
+                MessageBox.Show("Tài khoản đã tồn tại");
             }
             conn.Close();
-            MessageBox.Show("Successfuly");
         }
         public DataTable getUserById_DA_DAL(String id)
         {
@@ -482,11 +503,22 @@ namespace FinalProject.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "select distinct * from NotificationData Where notificationName like '%" + key+ "%' or notificationName like '"+key+"%'";
-            SqlCommand cmd = new SqlCommand(sSQL, conn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            if (key == null || key.Equals(""))
+            {
+                String sSQL = "select distinct * from NotificationData";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            else
+            {
+                String sSQL = "select distinct * from NotificationData Where notificationName like '%" + key + "%' or notificationName like '" + key + "%'";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@key", key);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
             conn.Close();
             return dt;
         }
@@ -528,15 +560,23 @@ namespace FinalProject.DAL
         //Promotion
         public DataTable searchPromotion_DA_DAL(String key)
         {
-
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "select distinct * from PromotionData Where promotionName like '%" + key+ "%' or promotionName like '"+key+"%'";
-            SqlCommand cmd = new SqlCommand(sSQL, conn);
-            cmd.Parameters.AddWithValue("@key", key);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            if (key == null || key.Equals(""))
+            {
+                String sSQL = "select * from PromotionData";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            else{
+                String sSQL = "select distinct * from PromotionData Where promotionName like '%" + key+ "%' or promotionName like '"+key+"%'";
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                cmd.Parameters.AddWithValue("@key", key);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
             conn.Close();
             return dt;
         }
@@ -544,12 +584,11 @@ namespace FinalProject.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "InsertPromotionData @poster, N@name, N@description, @percent";
+            String sSQL = "InsertPromotionData @poster, @name, @description, @percent";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@poster",item.promotionPicture);
             cmd.Parameters.AddWithValue("@name", item.promotionName);
             cmd.Parameters.AddWithValue("@description", item.promotionDescription);
-           /* cmd.Parameters.AddWithValue("@date", item.promotionDate);*/
             cmd.Parameters.AddWithValue("@percent", item.promotionPercent);
             cmd.ExecuteNonQuery();
             conn.Close();
