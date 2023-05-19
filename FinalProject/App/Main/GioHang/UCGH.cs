@@ -177,6 +177,7 @@ namespace FinalProject.App.Main.GioHang
                 CartTableBLL newCartTableBLL = new CartTableBLL();
                 newCartTableBLL.payMoney(userIDLogin, int.Parse(label3.Text), cbStoreAddress.SelectedItem.ToString());
                 MessageBox.Show("Vui lòng thanh toán khi nhận được đồ ăn. Chúc bạn ngon miệng");
+                populateCartData_CartTable_UCTD();
                 return;
             }
             else if (RadbtnMomo.Checked == true && txtFullName.Text != "" && txtSDT.Text != "" && kryptonTextBox1.Text != "" && label3.Text != "0" && cbStoreAddress.SelectedItem != null)
@@ -186,8 +187,10 @@ namespace FinalProject.App.Main.GioHang
                 CartTableBLL newCartTableBLL = new CartTableBLL();
                 newCartTableBLL.payMoney(userIDLogin, int.Parse(label3.Text), cbStoreAddress.SelectedItem.ToString());
                 MessageBox.Show("Vui lòng chờ nhận hàng");
+                populateCartData_CartTable_UCTD();
                 return;
             }
+
         }
     }
 }

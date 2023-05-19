@@ -765,6 +765,7 @@ begin
 end
 go
 
+select * from revenue
 select * from CartData
 select * from HistoryUserData
 select * from HistoryUserDataDetail
@@ -774,7 +775,6 @@ select * from NotificationData
 select * from NotificationDataDetail
 select * from PromotionData
 select * from Province
-select * from revenue
 select * from StoreAddress
 select * from UserAddress
 
