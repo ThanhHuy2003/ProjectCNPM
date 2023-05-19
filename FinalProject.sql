@@ -99,6 +99,56 @@ go
 alter table LoginData add constraint fk_LoginData_provinceName_Province foreign key(contactAddress) references Province(provinceName)
 go
 
+create procedure InsertManagerLoginData
+    @fullName nvarchar(500),
+    @emailAddress varchar(500),
+    @contactAddress nvarchar(500),
+	@phoneNumber varchar(10),
+    @userName varchar(500),
+    @userPassword varchar(500)
+as
+begin
+    declare @newUserID char(8)
+	declare @maxUserID varchar(500)
+	set @newUserID = 'MID00001'
+	select @maxUserID = cast(max(cast(substring(userID, 4, 8) as int)) + 1 as varchar) from LoginData where substring(userID, 1, 3) = 'MID'
+	if (cast(@maxUserID as int) > cast(substring(@newUserID, 4, 8) as int))
+	begin
+		while (len(@maxUserID) < 5)
+		begin
+			set @maxUserID = '0' + @maxUserID
+		end
+		set @newUserID = 'MID' + @maxUserID 
+	end
+    insert into LoginData (userID, fullName, emailAddress, contactAddress, phoneNumber, userName, userPassword, userRole) values (@newUserID, @fullName, @emailAddress, @contactAddress, @phoneNumber, @userName, @userPassword, 'manager')
+end
+go
+
+create procedure InsertStaffLoginData
+    @fullName nvarchar(500),
+    @emailAddress varchar(500),
+    @contactAddress nvarchar(500),
+	@phoneNumber varchar(10),
+    @userName varchar(500),
+    @userPassword varchar(500)
+as
+begin
+    declare @newUserID char(8)
+	declare @maxUserID varchar(500)
+	set @newUserID = 'SID00001'
+	select @maxUserID = cast(max(cast(substring(userID, 4, 8) as int)) + 1 as varchar) from LoginData where substring(userID, 1, 3) = 'SID'
+	if (cast(@maxUserID as int) > cast(substring(@newUserID, 4, 8) as int))
+	begin
+		while (len(@maxUserID) < 5)
+		begin
+			set @maxUserID = '0' + @maxUserID
+		end
+		set @newUserID = 'SID' + @maxUserID 
+	end
+    insert into LoginData (userID, fullName, emailAddress, contactAddress, phoneNumber, userName, userPassword, userRole) values (@newUserID, @fullName, @emailAddress, @contactAddress, @phoneNumber, @userName, @userPassword, 'staff')
+end
+go
+
 create procedure InsertUserLoginData
     @fullName nvarchar(500),
     @emailAddress varchar(500),

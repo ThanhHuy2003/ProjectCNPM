@@ -44,6 +44,8 @@
             this.cbRole = new Krypton.Toolkit.KryptonComboBox();
             this.btnSave = new Krypton.Toolkit.KryptonButton();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.timeNS = new Krypton.Toolkit.KryptonDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.cbAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbRole)).BeginInit();
             this.SuspendLayout();
@@ -107,7 +109,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(121, 610);
+            this.label7.Location = new System.Drawing.Point(121, 696);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 25);
@@ -117,7 +119,7 @@
             // txtFullname
             // 
             this.txtFullname.Location = new System.Drawing.Point(333, 119);
-            this.txtFullname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFullname.Margin = new System.Windows.Forms.Padding(4);
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(725, 47);
             this.txtFullname.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -129,7 +131,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(333, 196);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(725, 47);
             this.txtEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -141,7 +143,7 @@
             // txtPhonenumber
             // 
             this.txtPhonenumber.Location = new System.Drawing.Point(333, 358);
-            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhonenumber.Name = "txtPhonenumber";
             this.txtPhonenumber.Size = new System.Drawing.Size(725, 47);
             this.txtPhonenumber.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -168,7 +170,7 @@
             this.cbAddress.DropDownWidth = 524;
             this.cbAddress.IntegralHeight = false;
             this.cbAddress.Location = new System.Drawing.Point(333, 281);
-            this.cbAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAddress.Margin = new System.Windows.Forms.Padding(4);
             this.cbAddress.Name = "cbAddress";
             this.cbAddress.Size = new System.Drawing.Size(725, 45);
             this.cbAddress.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -181,7 +183,7 @@
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(333, 437);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(725, 47);
             this.txtUsername.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -193,7 +195,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(333, 516);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(725, 47);
             this.txtPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -213,8 +215,8 @@
             "staff",
             "user",
             "manage"});
-            this.cbRole.Location = new System.Drawing.Point(333, 598);
-            this.cbRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRole.Location = new System.Drawing.Point(333, 684);
+            this.cbRole.Margin = new System.Windows.Forms.Padding(4);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(725, 45);
             this.cbRole.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -227,8 +229,8 @@
             // btnSave
             // 
             this.btnSave.CornerRoundingRadius = 30F;
-            this.btnSave.Location = new System.Drawing.Point(501, 687);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(508, 756);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(220, 71);
             this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -254,12 +256,37 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Thông tin cá nhân";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.Location = new System.Drawing.Point(121, 616);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 25);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Ngày sinh:";
+            // 
+            // timeNS
+            // 
+            this.timeNS.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
+            this.timeNS.CornerRoundingRadius = -1F;
+            this.timeNS.Location = new System.Drawing.Point(333, 607);
+            this.timeNS.Margin = new System.Windows.Forms.Padding(4);
+            this.timeNS.Name = "timeNS";
+            this.timeNS.ShowUpDown = true;
+            this.timeNS.Size = new System.Drawing.Size(725, 34);
+            this.timeNS.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeNS.TabIndex = 67;
+            // 
             // EditTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(1245, 801);
+            this.ClientSize = new System.Drawing.Size(1245, 840);
+            this.Controls.Add(this.timeNS);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cbRole);
@@ -277,7 +304,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditTK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Chỉnh sửa tài khoản";
@@ -306,5 +333,7 @@
         private Krypton.Toolkit.KryptonComboBox cbRole;
         private Krypton.Toolkit.KryptonButton btnSave;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private Krypton.Toolkit.KryptonDateTimePicker timeNS;
     }
 }

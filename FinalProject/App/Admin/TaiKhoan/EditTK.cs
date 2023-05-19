@@ -63,6 +63,7 @@ namespace FinalProject.App.Admin.TaiKhoan
                     newUser.userPassword = txtPassword.Text;
                     newUser.userName = txtUsername.Text;
                     newUser.userRole = cbRole.Text;
+                    newUser.userDateOfBirth = timeNS.ToString();
                     ehe.addUser(newUser);
                 }
             }

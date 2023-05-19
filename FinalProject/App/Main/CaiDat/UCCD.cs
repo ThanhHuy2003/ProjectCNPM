@@ -1,5 +1,7 @@
 ﻿using FinalProject.App.Main.CaiDat;
+using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
+using FinalProject.DAL;
 using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
@@ -8,6 +10,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -36,12 +39,66 @@ namespace FinalProject.App.Main.CaiDat
             this.id = id;
         }
         Func Func= new Func();
+        public Image resizeImage(Image image, int width, int height)
+        {
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceCopy;
+                graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new System.Drawing.Imaging.ImageAttributes())
+                {
+                    wrapMode.SetWrapMode(System.Drawing.Drawing2D.WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                }
+            }
+
+            return destImage;
+        }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tabControl1.SelectedIndex == 1)
             {
-                label13.Select();
-                Func.togglePanel(panelDH, "CardDH");
+                HistoryDataBLL data = new HistoryDataBLL();
+                if (data.getHistoryData(id) != null)
+                {
+                    foreach (DataRow row in data.getHistoryData(id).Rows)
+                    {
+                        FinalProject.DTO.HistoryUserData newMenuItem = new FinalProject.DTO.HistoryUserData();
+
+                        newMenuItem.orderUserID = row["orderUserID"].ToString();
+                        newMenuItem.userID = row["userID"].ToString();
+                        newMenuItem.orderPicture = row["orderPicture"].ToString();
+                        newMenuItem.totalDish = int.Parse(row["totalDish"].ToString());
+                        newMenuItem.totalCash = int.Parse(row["totalCash"].ToString());
+                        newMenuItem.orderDate = row["orderDate"].ToString();
+                        newMenuItem.condition = row["condition"].ToString();
+
+                        CardDH Item = new CardDH();
+                        var request = WebRequest.Create(newMenuItem.orderPicture);
+
+                        using (var response = request.GetResponse())
+                        using (var stream = response.GetResponseStream())
+                        {
+                            Item.Picture = Bitmap.FromStream(stream);
+                            Item.Picture = resizeImage(Item.Picture, 255, 143);
+                        }
+                        Item.Soluong = newMenuItem.totalDish.ToString();
+                        Item.Date = newMenuItem.orderDate;
+                        Item.Price = newMenuItem.totalCash;
+                        Item.Status = newMenuItem.condition;
+
+                        panelDH.Controls.Add(Item);
+                    }
+                }
             }
         }
         private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -90,7 +147,6 @@ namespace FinalProject.App.Main.CaiDat
             newUser.userDateOfBirth = txtNS.Text;
             newUser.phoneNumber = txtSDT.Text;
             newUser.emailAddress = txtEmail.Text;
-            MessageBox.Show(CBQQ);
             /*newUser.contactAddress = CBQQ.SelectedValue.Text;*/
             AdminUserBLL userBLL = new AdminUserBLL();
             userBLL.updateUser(newUser);

@@ -533,5 +533,19 @@ namespace FinalProject.DAL
             conn.Close();
             MessageBox.Show("Xóa thành công");
         }
+        //HistoryUserData
+        public DataTable getAllHistoryUserData_DA_DAL(String id)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from HistoryUserData where userID=@id";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
     }
 }
