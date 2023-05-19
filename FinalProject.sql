@@ -780,3 +780,8 @@ select * from UserAddress
 
 select distinct LoginData.*,UserAddress.storeID from LoginData,UserAddress 
 Where (fullName like '%%' or fullName like '%') and UserAddress.storeID = 'SID00001'and LoginData.userID= UserAddress.userID 
+
+
+update LoginData
+set    userDateOfBirth = '2023-04-20'
+Where  userID = ''

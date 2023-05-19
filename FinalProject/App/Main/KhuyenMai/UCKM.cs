@@ -1,7 +1,9 @@
-﻿using FinalProject.App.Main;
+﻿using FinalProject.App.Admin;
+using FinalProject.App.Main;
 using FinalProject.App.Main.KhuyenMai;
 using FinalProject.App.Main.ThucDon;
 using FinalProject.BLL;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +16,14 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Rectangle = System.Drawing.Rectangle;
 
 namespace FinalProject.App
 {
     public partial class UCKM : UserControl
     {
+        PromotionTableBLL listBLL = new PromotionTableBLL();
+        System.Data.DataTable list;
         public UCKM()
         {
             File ehe = new File();
@@ -51,34 +56,36 @@ namespace FinalProject.App
         }
         private void SearchTextbox_Leave(object sender, EventArgs e)
         {
-            if (SearchTextbox.Text == "")
+            if (tbSearch.Text == "")
             {
-                SearchTextbox.Text = "Search";
-                SearchTextbox.ForeColor = Color.Silver;
+                tbSearch.Text = "Search";
+                tbSearch.ForeColor = Color.Silver;
             }
         }
         private void SearchTextbox_Enter(object sender, EventArgs e)
         {
-            if (SearchTextbox.Text == "Search")
+            if (tbSearch.Text == "Search")
             {
-                SearchTextbox.Text = "";
-                SearchTextbox.ForeColor = Color.Black;
+                tbSearch.Text = "";
+                tbSearch.ForeColor = Color.Black;
             }
         }
         private void UCKM_Load(object sender, EventArgs e)
         {
-            populatePromotionData_PromotionTable_UCKM();
+            populatePromotionData_PromotionTable_UCKM(false);
         }
-        private void populatePromotionData_PromotionTable_UCKM()
+        private void populatePromotionData_PromotionTable_UCKM(Boolean flag)
         {
-            PromotionTableBLL promotionTableBLL = new PromotionTableBLL();
-
-            if (promotionTableBLL.populatePromotionData_PromotionTable_BLL() != null)
+            this.flowLayoutPanel1.Controls.Clear();
+            if (flag)
+                this.list = listBLL.searchPromotion(tbSearch.Text);
+            else
+                this.list = listBLL.populatePromotionData_PromotionTable_BLL();
+            if (this.list != null)
             {
-                foreach (DataRow row in promotionTableBLL.populatePromotionData_PromotionTable_BLL().Rows)
+                foreach (DataRow row in this.list.Rows)
                 {
                     FinalProject.DTO.PromotionItem newPromotionItem = new FinalProject.DTO.PromotionItem();
-
                     newPromotionItem.promotionID = row["promotionID"].ToString();
                     newPromotionItem.promotionPicture = row["promotionPicture"].ToString();
                     newPromotionItem.promotionName = row["promotionName"].ToString();
@@ -86,27 +93,38 @@ namespace FinalProject.App
                     newPromotionItem.promotionDate = row["promotionDate"].ToString();
                     newPromotionItem.promotionPercent = int.Parse(row["promotionPercent"].ToString());
 
-                    CardKMForDisplay Item = new CardKMForDisplay();
-
-                    var request = WebRequest.Create(newPromotionItem.promotionPicture);
-
-                    using (var response = request.GetResponse())
-                    using (var stream = response.GetResponseStream())
+                    try
                     {
-                        Item.Picture = Bitmap.FromStream(stream);
-                        Item.Picture = resizeImage(Item.Picture, 228, 187);
-                    }
+                        CardKMForDisplay Item = new CardKMForDisplay();
 
-                    Item.Title = newPromotionItem.promotionName;
-                    Item.Description = newPromotionItem.promotionDescription;
-                    
-                    this.flowLayoutPanel1.Controls.Add(Item);
+                        var request = WebRequest.Create(newPromotionItem.promotionPicture);
+
+                        using (var response = request.GetResponse())
+                        using (var stream = response.GetResponseStream())
+                        {
+                            Item.Picture = Bitmap.FromStream(stream);
+                            Item.Picture = resizeImage(Item.Picture, 228, 187);
+                        }
+                        Item.Title = newPromotionItem.promotionName;
+                        Item.Description = newPromotionItem.promotionDescription;
+                        this.flowLayoutPanel1.Controls.Add(Item);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Không tìm được poster của khuyến mãi id: " + newPromotionItem.promotionID + "| name:" + newPromotionItem.promotionName);
+                        listBLL.deletePromotion(newPromotionItem.promotionID);
+                    }
                 }
             }
             else
             {
                 MessageBox.Show("Không có dữ liệu PromotionData");
             }
+        }
+
+        private void picSearch_Click(object sender, EventArgs e)
+        {
+            populatePromotionData_PromotionTable_UCKM(true);
         }
     }
 }

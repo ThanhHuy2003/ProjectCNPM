@@ -57,6 +57,7 @@ namespace FinalProject.BLL
                 newUser.userName = row["userID"].ToString();
                 newUser.userPassword = row["userPassword"].ToString();
                 newUser.userRole = row["userRole"].ToString();
+                newUser.userDateOfBirth = row["userDateOfBirth"].ToString();
             }
             return newUser;
         }

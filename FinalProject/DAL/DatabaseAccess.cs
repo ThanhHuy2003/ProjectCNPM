@@ -317,22 +317,23 @@ namespace FinalProject.DAL
         }
         public void updateUser_DA_BLL(User user)
         {
-            MessageBox.Show("Update id :" + user.userID);
-            try
-            {
+            MessageBox.Show(user.fullName +", " + user.emailAddress + ", " + user.contactAddress + ", " + user.phoneNumber + ", " + user.userName + ", " + user.userID);
+            
                 SqlConnection conn = new SqlConnection(strConn);
                 conn.Open();
-                String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone,userName=@username where userID=@id";
+                String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone where userID=@id";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 cmd.Parameters.AddWithValue("@name", user.fullName);
                 cmd.Parameters.AddWithValue("@email", user.emailAddress);
                 cmd.Parameters.AddWithValue("@contact", user.contactAddress);
                 cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
-                cmd.Parameters.AddWithValue("@username", user.userName);
                 cmd.Parameters.AddWithValue("@id", user.userID);
+            MessageBox.Show(sSQL);
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Successfuly");
+            try
+            {
             }catch(Exception ex)
             {
                 MessageBox.Show("Sai tỉnh thành");

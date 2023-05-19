@@ -117,11 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabBMDK</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabBMDK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabBMDK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabBMDK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1593, 950</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabBMDK.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabBMDK.Text" xml:space="preserve">
+    <value>Bảo mật và điều khoản</value>
+  </data>
+  <data name="&gt;&gt;tabBMDK.Name" xml:space="preserve">
+    <value>tabBMDK</value>
+  </data>
+  <data name="&gt;&gt;tabBMDK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabBMDK.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabBMDK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>231, 103</value>
   </data>
@@ -146,36 +186,62 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabBMDK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabBMDK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabBMDK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1593, 950</value>
-  </data>
-  <data name="tabBMDK.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tabBMDK.Text" xml:space="preserve">
-    <value>Bảo mật và điều khoản</value>
-  </data>
-  <data name="&gt;&gt;tabBMDK.Name" xml:space="preserve">
-    <value>tabBMDK</value>
-  </data>
-  <data name="&gt;&gt;tabBMDK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabBMDK.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabBMDK.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="tabDH.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tabDH</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelDH.Name" xml:space="preserve">
+    <value>panelDH</value>
+  </data>
+  <data name="&gt;&gt;panelDH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelDH.Parent" xml:space="preserve">
+    <value>tabDH</value>
+  </data>
+  <data name="&gt;&gt;panelDH.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabDH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabDH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabDH.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabDH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1593, 950</value>
+  </data>
+  <data name="tabDH.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabDH.Text" xml:space="preserve">
+    <value>Đơn hàng</value>
+  </data>
+  <data name="&gt;&gt;tabDH.Name" xml:space="preserve">
+    <value>tabDH</value>
+  </data>
+  <data name="&gt;&gt;tabDH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDH.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabDH.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>452, 34</value>
@@ -222,35 +288,29 @@
   <data name="&gt;&gt;panelDH.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabDH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
+  <data name="timeDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 333</value>
   </data>
-  <data name="tabDH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="timeDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabDH.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="timeDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>683, 34</value>
   </data>
-  <data name="tabDH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1593, 950</value>
+  <data name="timeDate.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
   </data>
-  <data name="tabDH.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;timeDate.Name" xml:space="preserve">
+    <value>timeDate</value>
   </data>
-  <data name="tabDH.Text" xml:space="preserve">
-    <value>Đơn hàng</value>
+  <data name="&gt;&gt;timeDate.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonDateTimePicker, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
-  <data name="&gt;&gt;tabDH.Name" xml:space="preserve">
-    <value>tabDH</value>
+  <data name="&gt;&gt;timeDate.Parent" xml:space="preserve">
+    <value>tabTTCN</value>
   </data>
-  <data name="&gt;&gt;tabDH.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabDH.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabDH.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;timeDate.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnSignOut.Location" type="System.Drawing.Point, System.Drawing">
     <value>927, 89</value>
@@ -274,7 +334,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;btnSignOut.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -307,7 +367,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="CBQQ.Location" type="System.Drawing.Point, System.Drawing">
     <value>357, 617</value>
@@ -331,7 +391,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;CBQQ.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -364,7 +424,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="kryptonComboBox1.Items" xml:space="preserve">
     <value>Tiếng Việt</value>
@@ -394,7 +454,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;kryptonComboBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lblQQ.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -427,7 +487,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;lblQQ.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lblNS.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -460,7 +520,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;lblNS.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -490,7 +550,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btnSDT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -520,7 +580,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;btnSDT.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txtSDT.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -547,7 +607,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;txtSDT.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btnEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -577,7 +637,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;btnEmail.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="txtEmail.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -604,64 +664,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btnNS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnNS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1131, 324</value>
-  </data>
-  <data name="btnNS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="btnNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 41</value>
-  </data>
-  <data name="btnNS.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="btnNS.Values.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btnNS.Name" xml:space="preserve">
-    <value>btnNS</value>
-  </data>
-  <data name="&gt;&gt;btnNS.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;btnNS.Parent" xml:space="preserve">
-    <value>tabTTCN</value>
-  </data>
-  <data name="&gt;&gt;btnNS.ZOrder" xml:space="preserve">
     <value>12</value>
-  </data>
-  <data name="txtNS.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtNS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 321</value>
-  </data>
-  <data name="txtNS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="txtNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>840, 46</value>
-  </data>
-  <data name="txtNS.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;txtNS.Name" xml:space="preserve">
-    <value>txtNS</value>
-  </data>
-  <data name="&gt;&gt;txtNS.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonTextBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;txtNS.Parent" xml:space="preserve">
-    <value>tabTTCN</value>
-  </data>
-  <data name="&gt;&gt;txtNS.ZOrder" xml:space="preserve">
-    <value>13</value>
   </data>
   <data name="btnHoTen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -691,7 +694,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;btnHoTen.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="txtHoten.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -718,7 +721,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;txtHoten.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="lblSDT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -751,7 +754,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;lblSDT.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -784,7 +787,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="labelHoten.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -817,7 +820,7 @@
     <value>tabTTCN</value>
   </data>
   <data name="&gt;&gt;labelHoten.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="tabTTCN.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 34</value>

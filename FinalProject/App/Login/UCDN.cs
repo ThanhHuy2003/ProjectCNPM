@@ -121,26 +121,26 @@ namespace FinalProject.App
                 if (ehe.getIdByUsername(tk.userName).ToString().Contains('A'))
                 {
                     MainAdmin newMain = new MainAdmin(ehe.getIdByUsername(tk.userName).ToString());
+                    this.Parent.Parent.Hide();
                     newMain.ShowDialog();
-                    ((Form)this.TopLevelControl).Close();
                 }
                 else if (ehe.getIdByUsername(tk.userName).ToString().Contains('U'))
                 {
                     MainUser newMain = new MainUser(ehe.getIdByUsername(tk.userName).ToString());
+                    this.Parent.Parent.Hide();
                     newMain.ShowDialog();
-                    ((Form)this.TopLevelControl).Close();
                 }
                 else if (ehe.getIdByUsername(tk.userName).ToString().Contains('S'))
                 {
                     MainStaff newMain = new MainStaff(ehe.getIdByUsername(tk.userName).ToString());
+                    this.Parent.Parent.Hide();
                     newMain.ShowDialog();
-                    ((Form)this.TopLevelControl).Close();
                 }
                 else if (ehe.getIdByUsername(tk.userName).ToString().Contains('M'))
                 {
                     MainManager newMain = new MainManager(ehe.getIdByUsername(tk.userName).ToString());
+                    this.Parent.Parent.Hide();
                     newMain.ShowDialog();
-                    ((Form)this.TopLevelControl).Close();
                 }
                 return;
             }

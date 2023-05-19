@@ -1,4 +1,5 @@
-﻿using FinalProject.BLL;
+﻿using FinalProject.App.Admin;
+using FinalProject.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace FinalProject.App.Main.GioHang
     public partial class ADKM : Form
     {
         private string userIDLogin;
+        PromotionTableBLL listBLL = new PromotionTableBLL();
+        System.Data.DataTable list;
         public ADKM()
         {
             InitializeComponent();
@@ -26,7 +29,7 @@ namespace FinalProject.App.Main.GioHang
         }
         private void ADKM_Load(object sender, EventArgs e)
         {
-            populatePromotionData_PromotionTable_UCKM();
+            populatePromotionData_PromotionTable_UCKM(false);
             LabelNhapKM.Select();
         }
         public Image resizeImage(Image image, int width, int height)
@@ -53,16 +56,18 @@ namespace FinalProject.App.Main.GioHang
 
             return destImage;
         }
-        private void populatePromotionData_PromotionTable_UCKM()
+        private void populatePromotionData_PromotionTable_UCKM(Boolean flag)
         {
-            PromotionTableBLL promotionTableBLL = new PromotionTableBLL();
-
-            if (promotionTableBLL.populatePromotionData_PromotionTable_BLL() != null)
+            this.flowLayoutPanel1.Controls.Clear();
+            if (flag)
+                this.list = listBLL.searchPromotion(tbSearch.Text);
+            else
+                this.list = listBLL.populatePromotionData_PromotionTable_BLL();
+            if (this.list != null)
             {
-                foreach (DataRow row in promotionTableBLL.populatePromotionData_PromotionTable_BLL().Rows)
+                foreach (DataRow row in this.list.Rows)
                 {
                     FinalProject.DTO.PromotionItem newPromotionItem = new FinalProject.DTO.PromotionItem();
-
                     newPromotionItem.promotionID = row["promotionID"].ToString();
                     newPromotionItem.promotionPicture = row["promotionPicture"].ToString();
                     newPromotionItem.promotionName = row["promotionName"].ToString();
@@ -70,29 +75,39 @@ namespace FinalProject.App.Main.GioHang
                     newPromotionItem.promotionDate = row["promotionDate"].ToString();
                     newPromotionItem.promotionPercent = int.Parse(row["promotionPercent"].ToString());
 
-                    CardKM Item = new CardKM();
-
-                    var request = WebRequest.Create(newPromotionItem.promotionPicture);
-
-                    using (var response = request.GetResponse())
-                    using (var stream = response.GetResponseStream())
+                    try
                     {
-                        Item.Picture = Bitmap.FromStream(stream);
-                        Item.Picture = resizeImage(Item.Picture, 228, 187);
-                    }
+                        CardKM Item = new CardKM();
 
-                    Item.Title = newPromotionItem.promotionName;
-                    Item.Description = newPromotionItem.promotionDescription;
-                    Item.Percent = newPromotionItem.promotionPercent;
-                    Item.UserID = userIDLogin;
-                    Item.PromotionID = newPromotionItem.promotionID;
-                    this.flowLayoutPanel1.Controls.Add(Item);
+                        var request = WebRequest.Create(newPromotionItem.promotionPicture);
+
+                        using (var response = request.GetResponse())
+                        using (var stream = response.GetResponseStream())
+                        {
+                            Item.Picture = Bitmap.FromStream(stream);
+                            Item.Picture = resizeImage(Item.Picture, 228, 187);
+                        }
+                        Item.PromotionID = newPromotionItem.promotionID;
+                        Item.Title = newPromotionItem.promotionName;
+                        Item.Description = newPromotionItem.promotionDescription;
+                        this.flowLayoutPanel1.Controls.Add(Item);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Không tìm được poster của khuyến mãi id: " + newPromotionItem.promotionID + "| name:" + newPromotionItem.promotionName);
+                        listBLL.deletePromotion(newPromotionItem.promotionID);
+                    }
                 }
             }
             else
             {
                 MessageBox.Show("Không có dữ liệu PromotionData");
             }
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            populatePromotionData_PromotionTable_UCKM(true);
         }
     }
 }
