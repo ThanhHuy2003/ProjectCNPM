@@ -183,7 +183,6 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // CBQQ
             // 
@@ -206,7 +205,6 @@
             resources.ApplyResources(this.label12, "label12");
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.label12.Name = "label12";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // kryptonComboBox1
             // 
@@ -233,14 +231,12 @@
             resources.ApplyResources(this.lblQQ, "lblQQ");
             this.lblQQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.lblQQ.Name = "lblQQ";
-            this.lblQQ.Click += new System.EventHandler(this.lblQQ_Click);
             // 
             // lblNS
             // 
             resources.ApplyResources(this.lblNS, "lblNS");
             this.lblNS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.lblNS.Name = "lblNS";
-            this.lblNS.Click += new System.EventHandler(this.lblNS_Click);
             // 
             // btnSave
             // 
@@ -293,7 +289,6 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSDT.StateCommon.Border.Rounding = 20F;
             this.txtSDT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged);
             // 
             // btnEmail
             // 
@@ -324,7 +319,6 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtEmail.StateCommon.Border.Rounding = 20F;
             this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // btnNS
             // 
@@ -355,7 +349,6 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtNS.StateCommon.Border.Rounding = 20F;
             this.txtNS.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNS.TextChanged += new System.EventHandler(this.txtNS_TextChanged);
             // 
             // btnHoTen
             // 
@@ -386,28 +379,24 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtHoten.StateCommon.Border.Rounding = 20F;
             this.txtHoten.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoten.TextChanged += new System.EventHandler(this.txtHoten_TextChanged);
             // 
             // lblSDT
             // 
             resources.ApplyResources(this.lblSDT, "lblSDT");
             this.lblSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Click += new System.EventHandler(this.lblSDT_Click);
             // 
             // lblEmail
             // 
             resources.ApplyResources(this.lblEmail, "lblEmail");
             this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Click += new System.EventHandler(this.lblEmail_Click);
             // 
             // labelHoten
             // 
             resources.ApplyResources(this.labelHoten, "labelHoten");
             this.labelHoten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.labelHoten.Name = "labelHoten";
-            this.labelHoten.Click += new System.EventHandler(this.labelHoten_Click);
             // 
             // tabDH
             // 
@@ -416,7 +405,6 @@
             this.tabDH.Controls.Add(this.label13);
             this.tabDH.Controls.Add(this.panelDH);
             this.tabDH.Name = "tabDH";
-            this.tabDH.Click += new System.EventHandler(this.tabDH_Click);
             // 
             // label13
             // 
@@ -429,7 +417,6 @@
             resources.ApplyResources(this.panelDH, "panelDH");
             this.panelDH.BackColor = System.Drawing.Color.White;
             this.panelDH.Name = "panelDH";
-            this.panelDH.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDH_Paint);
             // 
             // tabPTTT
             // 
@@ -438,7 +425,6 @@
             this.tabPTTT.Controls.Add(this.panel3);
             this.tabPTTT.Controls.Add(this.panel1);
             this.tabPTTT.Name = "tabPTTT";
-            this.tabPTTT.Click += new System.EventHandler(this.tabPTTT_Click);
             // 
             // panel3
             // 
@@ -452,13 +438,11 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Name = "panel3";
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // radbtnMoney
             // 
@@ -474,31 +458,26 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
             this.panel4.Name = "panel4";
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // panel1
             // 
@@ -513,7 +492,6 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Name = "panel1";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // radbtnMomo
             // 
@@ -528,52 +506,44 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(25)))));
             this.panel2.Name = "panel2";
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // tabBMDK
             // 
             resources.ApplyResources(this.tabBMDK, "tabBMDK");
             this.tabBMDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.tabBMDK.Name = "tabBMDK";
-            this.tabBMDK.Click += new System.EventHandler(this.tabBMDK_Click);
             // 
             // UCCD
             // 

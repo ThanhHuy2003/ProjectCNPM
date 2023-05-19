@@ -101,10 +101,6 @@ namespace FinalProject.App.Admin
                 MessageBox.Show("Không có dữ liệu PromotionData");
             }
         }
-        private void btnAddKM_Click(object sender, EventArgs e)
-        {
-            frm.ShowDialog();
-        }
         private void ChildControl_ButtonClicked(object sender, EventArgs e)
         {
             populatePromotionData_PromotionTable_UCKM(false);
@@ -119,6 +115,10 @@ namespace FinalProject.App.Admin
         private void UCKMAdmin_Load(object sender, EventArgs e)
         {
             populatePromotionData_PromotionTable_UCKM(false);
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frm.ShowDialog();
         }
     }
 }

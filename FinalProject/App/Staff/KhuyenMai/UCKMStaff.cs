@@ -45,10 +45,10 @@ namespace FinalProject.App.Staff.KhuyenMai
         }
         private void SearchTextbox_Leave(object sender, EventArgs e)
         {
-            if (SearchTextbox.Text == "")
+            if (tbSearch.Text == "")
             {
-                SearchTextbox.Text = "Search";
-                SearchTextbox.ForeColor = Color.Silver;
+                tbSearch.Text = "Search";
+                tbSearch.ForeColor = Color.Silver;
             }
         }
         private void SearchTextbox_Enter(object sender, EventArgs e)
@@ -57,15 +57,24 @@ namespace FinalProject.App.Staff.KhuyenMai
         }
         private void UCKM_Load(object sender, EventArgs e)
         {
-            populatePromotionData_PromotionTable_UCKM();
+            populatePromotionData_PromotionTable_UCKM(false);
         }
-        private void populatePromotionData_PromotionTable_UCKM()
+        PromotionTableBLL promotionTableBLL = new PromotionTableBLL();
+        private void populatePromotionData_PromotionTable_UCKM(Boolean flag)
         {
-            PromotionTableBLL promotionTableBLL = new PromotionTableBLL();
-
-            if (promotionTableBLL.populatePromotionData_PromotionTable_BLL() != null)
+            this.flowLayoutPanel1.Controls.Clear();
+            DataTable list;
+            if (flag)
             {
-                foreach (DataRow row in promotionTableBLL.populatePromotionData_PromotionTable_BLL().Rows)
+                list = promotionTableBLL.searchPromotion(tbSearch.Text);
+            }
+            else
+            {
+                list = promotionTableBLL.populatePromotionData_PromotionTable_BLL();
+            }
+            if (list != null)
+            {
+                foreach (DataRow row in list.Rows)
                 {
                     FinalProject.DTO.PromotionItem newPromotionItem = new FinalProject.DTO.PromotionItem();
 
@@ -86,10 +95,8 @@ namespace FinalProject.App.Staff.KhuyenMai
                         Item.Picture = Bitmap.FromStream(stream);
                         Item.Picture = resizeImage(Item.Picture, 228, 187);
                     }
-
                     Item.Title = newPromotionItem.promotionName;
                     Item.Description = newPromotionItem.promotionDescription;
-
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
@@ -101,7 +108,7 @@ namespace FinalProject.App.Staff.KhuyenMai
 
         private void picSearch_Click(object sender, EventArgs e)
         {
-
+            populatePromotionData_PromotionTable_UCKM(true);
         }
     }
 }

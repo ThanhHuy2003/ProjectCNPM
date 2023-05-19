@@ -68,16 +68,11 @@ namespace FinalProject.App.Main.CaiDat
             user = ehe.getUserByID(this.id);
             txtHoten.Text = user.fullName;
             txtEmail.Text = user.emailAddress;
-            txtNS.Text = "database chua co dcm";
+            txtNS.Text = user.userDateOfBirth;
             txtSDT.Text = user.phoneNumber;
             CBQQ.SelectedIndex = CBQQ.FindStringExact(user.contactAddress);
         }
         private void btnSighOut_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -87,199 +82,57 @@ namespace FinalProject.App.Main.CaiDat
 
         }
 
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblQQ_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNS_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            User newUser = new User();
+            newUser.userID=this.id;
+            newUser.fullName=txtHoten.Text;
+            newUser.userDateOfBirth = txtNS.Text;
+            newUser.phoneNumber = txtSDT.Text;
+            newUser.emailAddress = txtEmail.Text;
+            MessageBox.Show(CBQQ);
+            /*newUser.contactAddress = CBQQ.SelectedValue.Text;*/
+            AdminUserBLL userBLL = new AdminUserBLL();
+            userBLL.updateUser(newUser);
+            this.tabTTCN.Refresh();
         }
 
         private void btnSDT_Click(object sender, EventArgs e)
         {
-
+            txtSDT.Enabled = true;
+            btnSave.Enabled = true;
         }
 
-        private void txtSDT_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnEmail_Click(object sender, EventArgs e)
         {
-
+            txtEmail.Enabled= true;
+            btnSave.Enabled = true;
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnNS_Click(object sender, EventArgs e)
         {
-
+            txtNS.Enabled= true;
+            btnSave.Enabled = true;
         }
 
-        private void txtNS_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnHoTen_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtHoten_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSDT_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblEmail_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelHoten_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabDH_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelDH_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnDHHT_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLS_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPTTT_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
+            txtHoten.Enabled = true;
+            btnSave.Enabled = true;
         }
 
         private void radbtnMoney_CheckedChanged(object sender, EventArgs e)
         {
 
         }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+      
         private void radbtnMomo_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tabBMDK_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

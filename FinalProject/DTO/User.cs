@@ -16,5 +16,6 @@ namespace FinalProject.DTO
         public string userName { get; set; }
         public string userPassword { get; set; }
         public string userRole { get; set; }
+        public string userDateOfBirth { get; set; }
     }
 }

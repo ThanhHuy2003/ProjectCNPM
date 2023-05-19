@@ -30,6 +30,7 @@
         {
             this.tabTTCN = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtQQ = new Krypton.Toolkit.KryptonTextBox();
             this.btnSignOut = new Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.lblQQ = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.TabLS = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtQQ = new Krypton.Toolkit.KryptonTextBox();
             this.tabTTCN.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.TabLS.SuspendLayout();
@@ -55,7 +55,7 @@
             this.tabTTCN.Controls.Add(this.tabPage1);
             this.tabTTCN.Controls.Add(this.TabLS);
             this.tabTTCN.Location = new System.Drawing.Point(0, 7);
-            this.tabTTCN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabTTCN.Margin = new System.Windows.Forms.Padding(4);
             this.tabTTCN.Name = "tabTTCN";
             this.tabTTCN.SelectedIndex = 0;
             this.tabTTCN.Size = new System.Drawing.Size(1623, 976);
@@ -78,18 +78,32 @@
             this.tabPage1.Controls.Add(this.labelHoten);
             this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1615, 947);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thông tin cá nhân";
+            // 
+            // txtQQ
+            // 
+            this.txtQQ.Enabled = false;
+            this.txtQQ.Location = new System.Drawing.Point(391, 646);
+            this.txtQQ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtQQ.Name = "txtQQ";
+            this.txtQQ.Size = new System.Drawing.Size(840, 46);
+            this.txtQQ.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtQQ.StateCommon.Border.Rounding = 20F;
+            this.txtQQ.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQQ.TabIndex = 93;
             // 
             // btnSignOut
             // 
             this.btnSignOut.CornerRoundingRadius = 30F;
             this.btnSignOut.Location = new System.Drawing.Point(1337, 23);
-            this.btnSignOut.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnSignOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -144,6 +158,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSignOut.TabIndex = 92;
             this.btnSignOut.Values.Text = "Đăng xuất";
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // label3
             // 
@@ -280,9 +295,9 @@
             this.TabLS.Controls.Add(this.label13);
             this.TabLS.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold);
             this.TabLS.Location = new System.Drawing.Point(4, 25);
-            this.TabLS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabLS.Margin = new System.Windows.Forms.Padding(4);
             this.TabLS.Name = "TabLS";
-            this.TabLS.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabLS.Padding = new System.Windows.Forms.Padding(4);
             this.TabLS.Size = new System.Drawing.Size(1615, 947);
             this.TabLS.TabIndex = 1;
             this.TabLS.Text = "Lịch sử đơn hàng";
@@ -290,7 +305,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(51, 139);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1560, 804);
             this.flowLayoutPanel1.TabIndex = 73;
@@ -308,29 +323,16 @@
             this.label13.TabIndex = 72;
             this.label13.Text = "LỊCH SỬ ĐƠN HÀNG";
             // 
-            // txtQQ
-            // 
-            this.txtQQ.Enabled = false;
-            this.txtQQ.Location = new System.Drawing.Point(391, 646);
-            this.txtQQ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtQQ.Name = "txtQQ";
-            this.txtQQ.Size = new System.Drawing.Size(840, 46);
-            this.txtQQ.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtQQ.StateCommon.Border.Rounding = 20F;
-            this.txtQQ.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQQ.TabIndex = 93;
-            // 
             // UCCDStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tabTTCN);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCCDStaff";
             this.Size = new System.Drawing.Size(1627, 985);
+            this.Load += new System.EventHandler(this.UCCDStaff_Load);
             this.tabTTCN.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

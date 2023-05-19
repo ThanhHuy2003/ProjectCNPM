@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.SearchTextbox = new Krypton.Toolkit.KryptonTextBox();
+            this.tbSearch = new Krypton.Toolkit.KryptonTextBox();
             this.LabelNhapKM = new Krypton.Toolkit.KryptonLabel();
             this.picSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
@@ -44,23 +44,23 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1593, 828);
             this.flowLayoutPanel1.TabIndex = 13;
             // 
-            // SearchTextbox
+            // tbSearch
             // 
-            this.SearchTextbox.Location = new System.Drawing.Point(28, 71);
-            this.SearchTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SearchTextbox.Name = "SearchTextbox";
-            this.SearchTextbox.Size = new System.Drawing.Size(1541, 47);
-            this.SearchTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.SearchTextbox.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.tbSearch.Location = new System.Drawing.Point(28, 71);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(1541, 47);
+            this.tbSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tbSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.SearchTextbox.StateCommon.Border.Rounding = 30F;
-            this.SearchTextbox.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.SearchTextbox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchTextbox.TabIndex = 10;
-            this.SearchTextbox.Text = "Search";
-            this.SearchTextbox.Enter += new System.EventHandler(this.SearchTextbox_Leave);
-            this.SearchTextbox.Leave += new System.EventHandler(this.SearchTextbox_Leave);
+            this.tbSearch.StateCommon.Border.Rounding = 30F;
+            this.tbSearch.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
+            this.tbSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.TabIndex = 10;
+            this.tbSearch.Text = "Search";
+            this.tbSearch.Enter += new System.EventHandler(this.SearchTextbox_Leave);
+            this.tbSearch.Leave += new System.EventHandler(this.SearchTextbox_Leave);
             // 
             // LabelNhapKM
             // 
@@ -79,7 +79,7 @@
             this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
             this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.picSearch.Location = new System.Drawing.Point(1497, 78);
-            this.picSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picSearch.Margin = new System.Windows.Forms.Padding(4);
             this.picSearch.Name = "picSearch";
             this.picSearch.Size = new System.Drawing.Size(47, 39);
             this.picSearch.TabIndex = 11;
@@ -93,9 +93,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.SearchTextbox);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.LabelNhapKM);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCKMStaff";
             this.Size = new System.Drawing.Size(1627, 985);
             this.Load += new System.EventHandler(this.UCKM_Load);
@@ -109,7 +109,7 @@
 
         private System.Windows.Forms.PictureBox picSearch;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Krypton.Toolkit.KryptonTextBox SearchTextbox;
+        private Krypton.Toolkit.KryptonTextBox tbSearch;
         private Krypton.Toolkit.KryptonLabel LabelNhapKM;
     }
 }

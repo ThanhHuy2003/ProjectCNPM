@@ -435,7 +435,7 @@ namespace FinalProject
                     case "CDStaff":
                         if (uCCDStaff == null)
                         {
-                            uCCDStaff = new UCCDStaff();
+                            uCCDStaff = new UCCDStaff(mainStaff.userIDLogin);
                             panel.Controls.Add(uCCDStaff);
                             uCCDStaff.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCCDStaff.Location = new System.Drawing.Point(0, 0);
