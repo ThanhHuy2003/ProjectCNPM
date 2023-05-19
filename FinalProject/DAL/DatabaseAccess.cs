@@ -336,6 +336,19 @@ namespace FinalProject.DAL
             conn.Close();
             MessageBox.Show("Successfuly");
         }
+        public DataTable getUserById_DA_DAL(String id)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from LoginData where userID =@id";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
         //StoreAddress
         public DataTable getAllStoreAdress()
         {

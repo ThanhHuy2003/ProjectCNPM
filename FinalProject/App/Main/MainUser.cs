@@ -25,6 +25,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProject.App.Staff;
 using FinalProject.App.Staff.CaiDat;
+using FinalProject.App.Manager.DoanhThu;
+using FinalProject.App.Manager.ThucDon;
 
 namespace FinalProject
 {
@@ -147,6 +149,7 @@ namespace FinalProject
             //Manager
             private static UCNV uCNV;
             private static UCLuong uCLuong;
+            private static UCDTManager uCDTManager;
             public void togglePanel(Panel panel, String panelName)
             {
                 
@@ -235,7 +238,7 @@ namespace FinalProject
                     case "CD":
                         if (uCCD == null)
                         {
-                            uCCD = new UCCD();
+                            uCCD = new UCCD(main.userIDLogin);
                             panel.Controls.Add(uCCD);
                             uCCD.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCCD.Location = new System.Drawing.Point(0, 0);
@@ -472,6 +475,21 @@ namespace FinalProject
                         else
                         {
                             panel.Controls.Add(uCLuong);
+                        }
+                        break;
+                    case "DTManager":
+                        if (uCDTManager == null)
+                        {
+                            uCDTManager = new UCDTManager();
+                            panel.Controls.Add(uCDTManager);
+                            uCDTManager.Dock = System.Windows.Forms.DockStyle.Fill;
+                            uCDTManager.Location = new System.Drawing.Point(0, 0);
+                            uCDTManager.Name = "uCDTManager";
+                            uCDTManager.TabIndex = 0;
+                        }
+                        else
+                        {
+                            panel.Controls.Add(uCDTManager);
                         }
                         break;
                     default:

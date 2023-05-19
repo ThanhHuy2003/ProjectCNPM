@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dtgvDT = new Krypton.Toolkit.KryptonDataGridView();
+            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timeEnd = new Krypton.Toolkit.KryptonDateTimePicker();
             this.timeStart = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblDT2 = new System.Windows.Forms.Label();
@@ -36,17 +38,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSearch = new Krypton.Toolkit.KryptonButton();
+            this.btnExcel = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgvDT
             // 
             this.dtgvDT.ColumnHeadersHeight = 36;
+            this.dtgvDT.DataSource = this.revenueBindingSource;
             this.dtgvDT.Location = new System.Drawing.Point(64, 276);
-            this.dtgvDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgvDT.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvDT.Name = "dtgvDT";
             this.dtgvDT.RowHeadersWidth = 51;
-            this.dtgvDT.Size = new System.Drawing.Size(1313, 684);
+            this.dtgvDT.Size = new System.Drawing.Size(1313, 422);
             this.dtgvDT.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.dtgvDT.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dtgvDT.StateCommon.DataCell.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -74,12 +79,16 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtgvDT.TabIndex = 16;
             // 
+            // revenueBindingSource
+            // 
+            this.revenueBindingSource.DataSource = typeof(FinalProject.DTO.Revenue);
+            // 
             // timeEnd
             // 
             this.timeEnd.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.timeEnd.CornerRoundingRadius = -1F;
             this.timeEnd.Location = new System.Drawing.Point(468, 145);
-            this.timeEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.timeEnd.Margin = new System.Windows.Forms.Padding(4);
             this.timeEnd.Name = "timeEnd";
             this.timeEnd.ShowUpDown = true;
             this.timeEnd.Size = new System.Drawing.Size(304, 34);
@@ -91,7 +100,7 @@
             this.timeStart.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.timeStart.CornerRoundingRadius = -1F;
             this.timeStart.Location = new System.Drawing.Point(65, 145);
-            this.timeStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.timeStart.Margin = new System.Windows.Forms.Padding(4);
             this.timeStart.Name = "timeStart";
             this.timeStart.ShowUpDown = true;
             this.timeStart.Size = new System.Drawing.Size(301, 34);
@@ -148,7 +157,7 @@
             // 
             this.btnSearch.CornerRoundingRadius = 30F;
             this.btnSearch.Location = new System.Drawing.Point(860, 135);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSearch.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -200,11 +209,69 @@
             this.btnSearch.Values.Text = "Tra cứu";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // btnExcel
+            // 
+            this.btnExcel.CornerRoundingRadius = 30F;
+            this.btnExcel.Location = new System.Drawing.Point(535, 768);
+            this.btnExcel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExcel.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExcel.Size = new System.Drawing.Size(160, 50);
+            this.btnExcel.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExcel.StateCommon.Border.Rounding = 30F;
+            this.btnExcel.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnExcel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnExcel.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExcel.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExcel.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnExcel.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExcel.TabIndex = 63;
+            this.btnExcel.Values.Text = "In Excel";
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // UCDTManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -213,10 +280,11 @@
             this.Controls.Add(this.timeStart);
             this.Controls.Add(this.lblDT2);
             this.Controls.Add(this.lblDT1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCDTManager";
             this.Size = new System.Drawing.Size(1440, 985);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +299,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Krypton.Toolkit.KryptonButton btnSearch;
+        private System.Windows.Forms.BindingSource revenueBindingSource;
+        private Krypton.Toolkit.KryptonButton btnExcel;
     }
 }

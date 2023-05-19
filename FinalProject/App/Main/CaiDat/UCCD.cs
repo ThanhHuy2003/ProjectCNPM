@@ -1,5 +1,6 @@
 ﻿using FinalProject.App.Main.CaiDat;
 using FinalProject.BLL;
+using FinalProject.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,11 +18,22 @@ namespace FinalProject.App.Main.CaiDat
 {
     public partial class UCCD : UserControl
     {
-        public UCCD()
+        private String id;
+        public UCCD(string id)
         {
             File ehe = new File();
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(ehe.readLanguage());
             InitializeComponent();
+            Dictionary<string, string> comboSource = new Dictionary<string, string>();
+            ProvinceBLL storeBLL = new ProvinceBLL();
+            foreach (DataRow row in storeBLL.getAllProvince().Rows)
+            {
+                comboSource.Add(row["provinceID"].ToString(), row["provinceName"].ToString());
+            }
+            CBQQ.DataSource = new BindingSource(comboSource, null);
+            CBQQ.DisplayMember = "Value";
+            CBQQ.ValueMember = "Key";
+            this.id = id;
         }
         Func Func= new Func();
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,12 +61,17 @@ namespace FinalProject.App.Main.CaiDat
                     break;
             }
         }
-
-        private void tabTTCN_Click(object sender, EventArgs e)
+        private void UCCD_Load(object sender, EventArgs e)
         {
-
+            AdminUserBLL ehe = new AdminUserBLL();
+            User user = new User();
+            user = ehe.getUserByID(this.id);
+            txtHoten.Text = user.fullName;
+            txtEmail.Text = user.emailAddress;
+            txtNS.Text = "database chua co dcm";
+            txtSDT.Text = user.phoneNumber;
+            CBQQ.SelectedIndex = CBQQ.FindStringExact(user.contactAddress);
         }
-
         private void btnSighOut_Click(object sender, EventArgs e)
         {
 

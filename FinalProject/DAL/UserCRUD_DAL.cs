@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FinalProject.DAL
 {
@@ -34,6 +35,10 @@ namespace FinalProject.DAL
         public String getIdByUsername_DAL(String name)
         {
             return getIdByUsername_DA_DAL(name);
+        }
+        public DataTable getUserByID(String id)
+        {
+            return getUserById_DA_DAL(id);
         }
     }
 }

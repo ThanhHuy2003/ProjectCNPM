@@ -44,5 +44,21 @@ namespace FinalProject.BLL
             UserCRUD_DAL data = new UserCRUD_DAL();
             return data.getIdByUsername_DAL(name);
         }
+        public User getUserByID(String id)
+        {
+            UserCRUD_DAL data = new UserCRUD_DAL();
+            User newUser = new User();
+            foreach(DataRow row in data.getUserByID(id).Rows)
+            {
+                newUser.fullName = row["fullName"].ToString();
+                newUser.emailAddress = row["emailAddress"].ToString();
+                newUser.contactAddress = row["contactAddress"].ToString();
+                newUser.phoneNumber = row["phoneNumber"].ToString();
+                newUser.userName = row["userID"].ToString();
+                newUser.userPassword = row["userPassword"].ToString();
+                newUser.userRole = row["userRole"].ToString();
+            }
+            return newUser;
+        }
     }
 }

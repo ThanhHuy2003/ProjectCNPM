@@ -41,5 +41,10 @@ namespace FinalProject.App.Manager
         {
             Func.togglePanel(pnlManager, "Luong");
         }
+
+        private void btnCH_Click(object sender, EventArgs e)
+        {
+            Func.togglePanel(pnlManager, "DTManager");
+        }
     }
 }
