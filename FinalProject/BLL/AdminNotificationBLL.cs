@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,6 +26,11 @@ namespace FinalProject.BLL
         {
             NotificationDAL ehe = new NotificationDAL();
             return ehe.searchNotification_DAL(key);
+        }
+        public void deleteNotification(String id)
+        {
+            NotificationDAL ehe = new NotificationDAL();
+            ehe.deleteNotification_DAL(id);
         }
     }
 }

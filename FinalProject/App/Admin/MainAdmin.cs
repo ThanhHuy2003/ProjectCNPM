@@ -27,7 +27,6 @@ namespace FinalProject.App.Admin
         {
             InitializeComponent();
             Func = new Func(this);
-            MessageBox.Show(userIDLogin);
             this.userIDLogin = userIDLogin;
         }
         private void MainAdmin_Load(object sender, EventArgs e)

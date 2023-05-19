@@ -61,7 +61,6 @@ namespace FinalProject.App.Staff.GioHang
 
             CartTableBLL cartTableBLL = new CartTableBLL();
             int totalCash = 0;
-            int shipCash = 0;
             int promotionCash = 0;
             if (cartTableBLL.populateCartData_CartTable_BLL(userIDLogin) != null)
             {
@@ -99,30 +98,14 @@ namespace FinalProject.App.Staff.GioHang
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
-            /*label14.Text = promotionCash.ToString();
-            label12.Text = totalCash.ToString();
-            shipCash = int.Parse(label13.Text);
-            totalCash = totalCash + shipCash - promotionCash;
-            label3.Text = totalCash.ToString();*/
+        
+            totalCash = totalCash - promotionCash;
+            tbCash.Text = totalCash.ToString();
         }
 
         private void UCGHStaff_Load(object sender, EventArgs e)
         {
             LoginBLL newLoginBLL = new LoginBLL();
-            /*if (newLoginBLL.populateInformationUser_Login_BLL(userIDLogin) != null)
-            {
-                foreach (DataRow row in newLoginBLL.populateInformationUser_Login_BLL(userIDLogin).Rows)
-                {
-                    txtFullName.Text = row["fullName"].ToString();
-                    txtSDT.Text = row["phoneNumber"].ToString();
-                    kryptonTextBox1.Text = row["contactAddress"].ToString();
-                    break;
-                }
-            }
-            if (kryptonTextBox1.Text != "Hồ Chí Minh")
-            {
-                label13.Text = "100000";
-            }*/
             populateCartData_CartTable_UCTD();
         }
     }

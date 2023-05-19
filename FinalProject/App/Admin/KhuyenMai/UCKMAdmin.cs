@@ -1,5 +1,6 @@
 ﻿using FinalProject.App.Admin.KhuyenMai;
 using FinalProject.App.Login;
+using FinalProject.App.Main;
 using FinalProject.App.Main.KhuyenMai;
 using FinalProject.BLL;
 using System;
@@ -9,6 +10,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,9 +55,9 @@ namespace FinalProject.App.Admin
         }
         private void populatePromotionData_PromotionTable_UCKM(Boolean flag)
         {
+            this.flowLayoutPanel1.Controls.Clear();
             if (flag)
             {
-                this.flowLayoutPanel1.Controls.Clear();
                 this.list = this.listBLL.searchPromotion(tbSearch.Text);
             }
             if (this.list != null)
@@ -82,10 +84,10 @@ namespace FinalProject.App.Admin
                             Item.Picture = Bitmap.FromStream(stream);
                             Item.Picture = resizeImage(Item.Picture, 228, 187);
                         }
-
+                        Item.PromotionID = newPromotionItem.promotionID;
                         Item.Title = newPromotionItem.promotionName;
                         Item.Description = newPromotionItem.promotionDescription;
-
+                        Item.ButtonClicked += ChildControl_ButtonClicked;
                         this.flowLayoutPanel1.Controls.Add(Item);
                     }
                     catch
@@ -103,7 +105,10 @@ namespace FinalProject.App.Admin
         {
             frm.ShowDialog();
         }
-
+        private void ChildControl_ButtonClicked(object sender, EventArgs e)
+        {
+            populatePromotionData_PromotionTable_UCKM(false);
+        }
         private void picSearch_Click(object sender, EventArgs e)
         {
             //Search method

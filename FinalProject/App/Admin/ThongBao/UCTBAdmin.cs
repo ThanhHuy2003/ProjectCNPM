@@ -52,14 +52,13 @@ namespace FinalProject.App.Admin.ThongBao
         }
         private void populateNotification_UCTB(Boolean flag)
         {
+            this.flowLayoutPanel1.Controls.Clear();
             if (flag)
             {
-                this.flowLayoutPanel1.Controls.Clear();
                 this.list = this.listBLL.searchNotification(tbSearch.Text);
             }
             else
             {
-                this.flowLayoutPanel1.Controls.Clear();
                 this.list = this.listBLL.getAllNotification();
             }
             if (this.list != null)
@@ -72,7 +71,7 @@ namespace FinalProject.App.Admin.ThongBao
                     newItem.notificationName = row["notificationName"].ToString();
                     newItem.notificationDate = row["notificationDate"].ToString();
 
-                    CardTB Item = new CardTB();
+                    CardTBAdmin Item = new CardTBAdmin();
                     Item.ID = newItem.notificationID;
                     var request = WebRequest.Create(newItem.notificationPicture);
 
@@ -84,7 +83,7 @@ namespace FinalProject.App.Admin.ThongBao
                     }
 
                     Item.Title = newItem.notificationName;
-                    Item.Date = newItem.notificationDate.Split(' ')[0];
+                    Item.ButtonClicked += ChildControl_ButtonClicked;
 
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
@@ -93,6 +92,10 @@ namespace FinalProject.App.Admin.ThongBao
             {
                 MessageBox.Show("Không có dữ liệu MenuData");
             }
+        }
+        private void ChildControl_ButtonClicked(object sender, EventArgs e)
+        {
+            populateNotification_UCTB(false);
         }
         private void UCTBAdmin_Load(object sender, EventArgs e)
         {

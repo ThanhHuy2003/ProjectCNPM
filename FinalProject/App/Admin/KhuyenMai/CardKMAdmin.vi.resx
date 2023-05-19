@@ -153,25 +153,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>916, 110</value>
+    <value>1233, 120</value>
   </data>
   <data name="btnDelete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 70</value>
-  </data>
-  <data name="btnUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 110</value>
-  </data>
-  <data name="btnUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="btnUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 70</value>
+    <value>170, 58</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
@@ -180,6 +168,6 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1148, 197</value>
+    <value>1580, 197</value>
   </data>
 </root>

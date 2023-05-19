@@ -27,5 +27,9 @@ namespace FinalProject.DAL
         {
             return searchNotification_DA_DAL(key);
         }
+        public void deleteNotification_DAL(String id)
+        {
+            deleteNotification_DA_DAL(id);
+        }
     }
 }

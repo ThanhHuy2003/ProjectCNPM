@@ -128,7 +128,7 @@
     <value>Chỉnh sửa</value>
   </data>
   <data name="&gt;&gt;kryptonLabel35.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;btnUpdate.Parent" xml:space="preserve">
     <value>$this</value>
@@ -155,7 +155,7 @@
     <value />
   </data>
   <data name="&gt;&gt;kryptonLabel36.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btnDrink.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
@@ -220,7 +220,7 @@
     <value>392, 100</value>
   </data>
   <data name="&gt;&gt;pictureBox12.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;kryptonButton1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -331,7 +331,7 @@
     <value>16</value>
   </data>
   <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;kryptonLabel35.Name" xml:space="preserve">
     <value>kryptonLabel35</value>

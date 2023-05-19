@@ -33,5 +33,9 @@ namespace FinalProject.BLL
         {
             promotionTableDAL.addPromotion_DAL(item);
         }
+        public void deletePromotion(String id)
+        {
+            promotionTableDAL.deletePromotion_DAL(id);
+        }
     }
 }

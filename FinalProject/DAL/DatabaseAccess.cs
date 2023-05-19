@@ -444,6 +444,28 @@ namespace FinalProject.DAL
             conn.Close();
             return dt;
         }
+        public void deleteNotificationDataDetail(String id)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "delete from NotificationDataDetail where notificationID = @id";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public void deleteNotification_DA_DAL(String id)
+        {
+            deleteNotificationDataDetail(id);
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "delete from NotificationData where notificationID = @id";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Xóa thành công");
+        }
         //Province
         public DataTable getAllProvince_DA_DAL()
         {
@@ -486,6 +508,17 @@ namespace FinalProject.DAL
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Thêm thành công");
+        }
+        public void deletePromotion_DA_DAL(String id)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "delete from PromotionData where promotionID = @id";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Xóa thành công");
         }
     }
 }

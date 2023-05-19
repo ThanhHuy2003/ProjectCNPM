@@ -19,7 +19,7 @@ namespace FinalProject.App.Staff.ThucDon
 
         public UCTDStaff(string userIDLogin)
         {
-            MessageBox.Show(userIDLogin);
+            MessageBox.Show("fdgsfdg");
             this.userIDLogin = userIDLogin;
             InitializeComponent();
         }

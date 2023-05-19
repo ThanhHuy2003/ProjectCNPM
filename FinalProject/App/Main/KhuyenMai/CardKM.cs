@@ -43,7 +43,6 @@ namespace FinalProject.App.Main
         public event EventHandler ButtonClicked;
         private void ButtonKM1_Click(object sender, EventArgs e)
         {
-            
             CartTableBLL newCartTableBLL = new CartTableBLL();
             newCartTableBLL.updateCartDataPromotion_CartTable_BLL(this.PromotionID, this.Percent.ToString(), this.UserID);
             MessageBox.Show("Đã áp dụng khuyến mãi vừa chọn");

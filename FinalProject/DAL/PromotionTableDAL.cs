@@ -23,5 +23,9 @@ namespace FinalProject.DAL
         {
             addPromotion_DA_DAL(item);
         }
+        public void deletePromotion_DAL(String id)
+        {
+            deletePromotion_DA_DAL(id);
+        }
     }
 }
