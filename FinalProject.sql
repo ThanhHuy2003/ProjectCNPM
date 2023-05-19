@@ -644,11 +644,11 @@ create table HistoryUserData
 (
 	orderUserID varchar(8) not null,
 	userID varchar(8) not null,
-	orderPicture varchar(500) not null,
+	orderPicture varchar(500) not null default 'https://timviec365.vn/pictures/images/KFC-la-gi-1-min.jpg',
 	totalDish int not null,
 	totalCash int not null,
 	orderDate datetime default current_timestamp,
-	condition nvarchar(500) not null,
+	condition nvarchar(500) not null default N'Đã thanh toán',
 	primary key(orderUserID),
 	foreign key(userID) references LoginData(userID)
 )
@@ -659,23 +659,14 @@ create table HistoryUserDataDetail
 	orderUserID varchar(8),
 	dishID varchar(8) not null,
 	dishPicture varchar(500) not null,
-	orderDate datetime not null,
     dishName nvarchar(500) not null,
-    dishDescription nvarchar(500) not null,
     dishPrice int not null,
-	dishType varchar(500) not null,
 	dishTotal int not null,
+	promotionCash int,
 	foreign key(orderUserID) references HistoryUserData(orderUserID),
 	foreign key(dishID) references MenuData(dishID),
 	primary key(orderUserID, dishID)
 )
-go
-
-insert into HistoryUserData(orderUserID, userID, orderPicture, totalDish, totalCash, condition) values ('OUID0001', 'UID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', 4, 300000, N'Món ăn đã được giao')
-go
-
-insert into HistoryUserDataDetail values ('OUID0001', 'DID00001', 'https://static.kfcvietnam.com.vn/images/items/lg/Wed(R).jpg?v=46kppg', '2023-05-15 01:25:48.627', N'Khoai Tây Múi Cau', N'Khoai tây chiên cắt múi cau đậm vị', 100000, 'food', 3)
-insert into HistoryUserDataDetail values ('OUID0001', 'DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', '2023-05-15 01:25:48.627', N'Combo Đùi Gà Rán', N'Combo kết hợp 2 miếng đùi gá + 1 khoai tây chiên + 1 coca', 150000, 'combo', 1)
 go
 
 create table CartData
@@ -699,21 +690,68 @@ insert into CartData(dishID, dishPicture, dishName, dishPrice, totalQuantity, us
 ('DID00002', 'https://static.kfcvietnam.com.vn/images/items/lg/D1-new.jpg?v=46kppg', N'Combo Đùi Gà Rán', 120000, 2, 'UID00001')
 go
 
+create procedure PayMoney
+    @userID varchar(8),
+	@totalCash int
+as
+begin
+	declare @check int
+	select @check = count(dishID) from CartData where userID = @userID
+	if @check > 0
+	begin
+		declare @orderUserID char(8)
+		declare @maxOrderUserID varchar(500)
+		set @orderUserID = 'OUID0001'
+		select @maxOrderUserID = cast(max(cast(substring(orderUserID, 5, 8) as int)) + 1 as varchar) from HistoryUserData
+		if (cast(@maxOrderUserID as int) > cast(substring(@orderUserID, 5, 8) as int))
+		begin
+			while (len(@maxOrderUserID) < 4)
+			begin
+				set @maxOrderUserID = '0' + @maxOrderUserID
+			end
+			set @orderUserID = 'OUID' + @maxOrderUserID 
+		end
+		declare @totalDish int
+		select @totalDish = sum(totalQuantity) from CartData where userID = @userID
+		insert into HistoryUserData(orderUserID, userID, totalDish, totalCash) values (@orderUserID, @userID, @totalDish, @totalCash)
+		declare @i int = 0
+		declare @loop int
+		select @loop = count(dishID) from CartData where userID = @userID
+		while @i < @loop
+		begin
+			declare @dishID varchar(8)
+			select @dishID = dishID from CartData where userID = @userID
+			declare @dishPicture varchar(500)
+			select @dishPicture = dishPicture from CartData where userID = @userID
+			declare @dishName varchar(500)
+			select @dishName = dishName from CartData where userID = @userID
+			declare @dishPrice int
+			select @dishPrice = dishPrice from CartData where userID = @userID
+			declare @totalQuantity int
+			select @totalQuantity = totalQuantity from CartData where userID = @userID
+			declare @promotionCash int
+			select @promotionCash = promotionCash from CartData where userID = @userID
+			insert into HistoryUserDataDetail values (@orderUserID, @dishID, @dishPicture, @dishName, @dishPrice, @totalQuantity, @promotionCash)
+			delete from CartData where userID = @userID and dishID = @dishID
+			set @i = @i + 1
+		end
+	end
+end
+go
+
+update CartData set promotionCash = 50 where promotionCash = 0
+exec PayMoney 'UID00001', 540000
+go
+
 select * from CartData
 select * from HistoryUserData
 select * from HistoryUserDataDetail
-
 select * from LoginData
--- proc InsertLoginData
 select * from MenuData
--- proc InsertMenuData
 select * from NotificationData
--- proc InsertNotificationData
 select * from NotificationDataDetail
 select * from PromotionData
--- proc InsertPromotionData
 select * from Province
 select * from revenue
 select * from StoreAddress
--- proc InsertStoreAddress
 go

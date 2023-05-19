@@ -61,7 +61,6 @@ namespace FinalProject.App.Main.GioHang
 
             CartTableBLL cartTableBLL = new CartTableBLL();
             int totalCash = 0;
-            int shipCash = 0;
             int promotionCash = 0;
             if (cartTableBLL.populateCartData_CartTable_BLL(userIDLogin) != null)
             {
@@ -101,8 +100,7 @@ namespace FinalProject.App.Main.GioHang
             }
             label14.Text = promotionCash.ToString();
             label12.Text = totalCash.ToString();
-            shipCash = int.Parse(label13.Text);
-            totalCash = totalCash + shipCash - promotionCash;
+            totalCash = totalCash - promotionCash;
             label3.Text = totalCash.ToString();
         }
         private void ChildControl_ButtonClicked(object sender, EventArgs e)
@@ -112,6 +110,7 @@ namespace FinalProject.App.Main.GioHang
         }
         private void UCGH_Load(object sender, EventArgs e)
         {
+            RadbtnMoney.Checked = true;
             LoginBLL newLoginBLL = new LoginBLL();
             if (newLoginBLL.populateInformationUser_Login_BLL(userIDLogin) != null)
             {
@@ -122,10 +121,6 @@ namespace FinalProject.App.Main.GioHang
                     kryptonTextBox1.Text = row["contactAddress"].ToString();
                     break;
                 }
-            }
-            if (kryptonTextBox1.Text != "Hồ Chí Minh")
-            {
-                label13.Text = "100000";
             }
             populateCartData_CartTable_UCTD();
         }
