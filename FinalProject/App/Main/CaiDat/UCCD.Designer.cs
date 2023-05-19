@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCD));
             this.tabBMDK = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabDH = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.panelDH = new System.Windows.Forms.Panel();
@@ -46,15 +47,13 @@
             this.txtSDT = new Krypton.Toolkit.KryptonTextBox();
             this.btnEmail = new Krypton.Toolkit.KryptonButton();
             this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
-            this.btnNS = new Krypton.Toolkit.KryptonButton();
-            this.txtNS = new Krypton.Toolkit.KryptonTextBox();
             this.btnHoTen = new Krypton.Toolkit.KryptonButton();
             this.txtHoten = new Krypton.Toolkit.KryptonTextBox();
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.labelHoten = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label1 = new System.Windows.Forms.Label();
+            this.timeDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.tabBMDK.SuspendLayout();
             this.tabDH.SuspendLayout();
             this.tabTTCN.SuspendLayout();
@@ -69,6 +68,11 @@
             this.tabBMDK.Controls.Add(this.label1);
             resources.ApplyResources(this.tabBMDK, "tabBMDK");
             this.tabBMDK.Name = "tabBMDK";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // tabDH
             // 
@@ -93,6 +97,7 @@
             // tabTTCN
             // 
             this.tabTTCN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tabTTCN.Controls.Add(this.timeDate);
             this.tabTTCN.Controls.Add(this.btnSignOut);
             this.tabTTCN.Controls.Add(this.label3);
             this.tabTTCN.Controls.Add(this.CBQQ);
@@ -105,8 +110,6 @@
             this.tabTTCN.Controls.Add(this.txtSDT);
             this.tabTTCN.Controls.Add(this.btnEmail);
             this.tabTTCN.Controls.Add(this.txtEmail);
-            this.tabTTCN.Controls.Add(this.btnNS);
-            this.tabTTCN.Controls.Add(this.txtNS);
             this.tabTTCN.Controls.Add(this.btnHoTen);
             this.tabTTCN.Controls.Add(this.txtHoten);
             this.tabTTCN.Controls.Add(this.lblSDT);
@@ -171,6 +174,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSignOut.Values.Text = resources.GetString("btnSignOut.Values.Text");
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // label3
             // 
@@ -308,34 +312,6 @@
             this.txtEmail.StateCommon.Border.Rounding = 20F;
             this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btnNS
-            // 
-            this.btnNS.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
-            this.btnNS.CornerRoundingRadius = 0F;
-            resources.ApplyResources(this.btnNS, "btnNS");
-            this.btnNS.Name = "btnNS";
-            this.btnNS.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnNS.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnNS.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnNS.StateCommon.Border.Rounding = 0F;
-            this.btnNS.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnNS.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnNS.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNS.Values.Text = resources.GetString("btnNS.Values.Text");
-            this.btnNS.Click += new System.EventHandler(this.btnNS_Click);
-            // 
-            // txtNS
-            // 
-            resources.ApplyResources(this.txtNS, "txtNS");
-            this.txtNS.Name = "txtNS";
-            this.txtNS.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtNS.StateCommon.Border.Rounding = 20F;
-            this.txtNS.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // btnHoTen
             // 
             this.btnHoTen.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
@@ -392,10 +368,14 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
-            // label1
+            // timeDate
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            this.timeDate.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
+            this.timeDate.CornerRoundingRadius = -1F;
+            resources.ApplyResources(this.timeDate, "timeDate");
+            this.timeDate.Name = "timeDate";
+            this.timeDate.ShowUpDown = true;
+            this.timeDate.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // UCCD
             // 
@@ -436,8 +416,6 @@
         private Krypton.Toolkit.KryptonTextBox txtSDT;
         private Krypton.Toolkit.KryptonButton btnEmail;
         private Krypton.Toolkit.KryptonTextBox txtEmail;
-        private Krypton.Toolkit.KryptonButton btnNS;
-        private Krypton.Toolkit.KryptonTextBox txtNS;
         private Krypton.Toolkit.KryptonButton btnHoTen;
         private Krypton.Toolkit.KryptonTextBox txtHoten;
         private System.Windows.Forms.Label lblSDT;
@@ -445,5 +423,6 @@
         private System.Windows.Forms.Label labelHoten;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label label1;
+        private Krypton.Toolkit.KryptonDateTimePicker timeDate;
     }
 }

@@ -46,5 +46,10 @@ namespace FinalProject.App.Manager
         {
             Func.togglePanel(pnlManager, "DTManager");
         }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

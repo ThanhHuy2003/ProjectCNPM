@@ -23,6 +23,7 @@ namespace FinalProject.App.Staff.CaiDat
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
+            Application.Restart();
         }
 
         private void UCCDStaff_Load(object sender, EventArgs e)

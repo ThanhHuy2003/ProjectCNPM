@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Net;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -118,6 +119,22 @@ namespace FinalProject.App.Main.CaiDat
                     break;
             }
         }
+        public String convertBirthDate(String key)
+        {
+            string date = key.Split(' ')[0].Replace("-", "/");
+            string[] tmp = date.Split('/');
+            string result ="";
+            for (int i=0;i<tmp.Length;i++)
+            {
+                if (tmp[i].Length == 1)
+                    tmp[i] = tmp[i].Replace(tmp[i], "0" + tmp[i]);
+                if(i==0)
+                    result = tmp[i];
+                else
+                    result = result +"/"+ tmp[i];
+            }
+            return result;
+        }
         private void UCCD_Load(object sender, EventArgs e)
         {
             AdminUserBLL ehe = new AdminUserBLL();
@@ -125,7 +142,7 @@ namespace FinalProject.App.Main.CaiDat
             user = ehe.getUserByID(this.id);
             txtHoten.Text = user.fullName;
             txtEmail.Text = user.emailAddress;
-            txtNS.Text = user.userDateOfBirth;
+            timeDate.Value = DateTime.ParseExact(convertBirthDate(user.userDateOfBirth), "MM/dd/yyyy", CultureInfo.InvariantCulture);
             txtSDT.Text = user.phoneNumber;
             CBQQ.SelectedIndex = CBQQ.FindStringExact(user.contactAddress);
         }
@@ -144,10 +161,10 @@ namespace FinalProject.App.Main.CaiDat
             User newUser = new User();
             newUser.userID=this.id;
             newUser.fullName=txtHoten.Text;
-            newUser.userDateOfBirth = txtNS.Text;
+            newUser.userDateOfBirth = timeDate.Value.ToString();
             newUser.phoneNumber = txtSDT.Text;
             newUser.emailAddress = txtEmail.Text;
-            /*newUser.contactAddress = CBQQ.SelectedValue.Text;*/
+            newUser.contactAddress = CBQQ.SelectedItem.ToString().Replace(", ", ",").Split(',')[1].Replace("]", "");
             AdminUserBLL userBLL = new AdminUserBLL();
             userBLL.updateUser(newUser);
             this.tabTTCN.Refresh();
@@ -163,13 +180,6 @@ namespace FinalProject.App.Main.CaiDat
         private void btnEmail_Click(object sender, EventArgs e)
         {
             txtEmail.Enabled= true;
-            btnSave.Enabled = true;
-        }
-
-
-        private void btnNS_Click(object sender, EventArgs e)
-        {
-            txtNS.Enabled= true;
             btnSave.Enabled = true;
         }
 
@@ -190,5 +200,9 @@ namespace FinalProject.App.Main.CaiDat
 
         }
 
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

@@ -30,7 +30,8 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.LabelNhapKM = new Krypton.Toolkit.KryptonLabel();
-            this.SearchTextbox = new Krypton.Toolkit.KryptonTextBox();
+            this.tbSearch = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -52,28 +53,39 @@
             this.LabelNhapKM.TabIndex = 8;
             this.LabelNhapKM.Values.Text = "Nhập mã khuyến mãi:";
             // 
-            // SearchTextbox
+            // tbSearch
             // 
-            this.SearchTextbox.Location = new System.Drawing.Point(20, 48);
-            this.SearchTextbox.Margin = new System.Windows.Forms.Padding(4);
-            this.SearchTextbox.Name = "SearchTextbox";
-            this.SearchTextbox.Size = new System.Drawing.Size(1399, 47);
-            this.SearchTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.SearchTextbox.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.tbSearch.Location = new System.Drawing.Point(20, 48);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(1399, 47);
+            this.tbSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.tbSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.SearchTextbox.StateCommon.Border.Rounding = 30F;
-            this.SearchTextbox.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.SearchTextbox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchTextbox.TabIndex = 9;
-            this.SearchTextbox.Text = "Search";
+            this.tbSearch.StateCommon.Border.Rounding = 30F;
+            this.tbSearch.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
+            this.tbSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.TabIndex = 9;
+            this.tbSearch.Text = "Search";
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.CornerRoundingRadius = -1F;
+            this.kryptonButton1.Location = new System.Drawing.Point(1309, 48);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(90, 47);
+            this.kryptonButton1.TabIndex = 10;
+            this.kryptonButton1.Values.Text = "kryptonButton1";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // ADKM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1432, 713);
-            this.Controls.Add(this.SearchTextbox);
+            this.Controls.Add(this.kryptonButton1);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.LabelNhapKM);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ADKM";
@@ -89,6 +101,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Krypton.Toolkit.KryptonLabel LabelNhapKM;
-        private Krypton.Toolkit.KryptonTextBox SearchTextbox;
+        private Krypton.Toolkit.KryptonTextBox tbSearch;
+        private Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }

@@ -37,6 +37,7 @@
             this.menu_active = new Krypton.Toolkit.KryptonPanel();
             this.btnNV = new Krypton.Toolkit.KryptonButton();
             this.pnlManager = new System.Windows.Forms.Panel();
+            this.btnSignOut = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.panel)).BeginInit();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).BeginInit();
@@ -44,6 +45,7 @@
             // 
             // panel
             // 
+            this.panel.Controls.Add(this.btnSignOut);
             this.panel.Controls.Add(this.btnNL);
             this.panel.Controls.Add(this.btnlogo);
             this.panel.Controls.Add(this.btnKM);
@@ -52,7 +54,7 @@
             this.panel.Controls.Add(this.menu_active);
             this.panel.Controls.Add(this.btnNV);
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel.Margin = new System.Windows.Forms.Padding(4);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(356, 988);
             this.panel.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -62,7 +64,7 @@
             // 
             this.btnNL.CornerRoundingRadius = -1F;
             this.btnNL.Location = new System.Drawing.Point(32, 474);
-            this.btnNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNL.Margin = new System.Windows.Forms.Padding(4);
             this.btnNL.Name = "btnNL";
             this.btnNL.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnNL.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -95,7 +97,7 @@
             // 
             this.btnlogo.CornerRoundingRadius = -1F;
             this.btnlogo.Location = new System.Drawing.Point(1, 0);
-            this.btnlogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnlogo.Margin = new System.Windows.Forms.Padding(4);
             this.btnlogo.Name = "btnlogo";
             this.btnlogo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnlogo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -148,7 +150,7 @@
             // 
             this.btnKM.CornerRoundingRadius = -1F;
             this.btnKM.Location = new System.Drawing.Point(32, 246);
-            this.btnKM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKM.Margin = new System.Windows.Forms.Padding(4);
             this.btnKM.Name = "btnKM";
             this.btnKM.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnKM.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -181,7 +183,7 @@
             // 
             this.btnTB.CornerRoundingRadius = -1F;
             this.btnTB.Location = new System.Drawing.Point(32, 361);
-            this.btnTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTB.Margin = new System.Windows.Forms.Padding(4);
             this.btnTB.Name = "btnTB";
             this.btnTB.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTB.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -212,7 +214,7 @@
             // 
             this.btnCH.CornerRoundingRadius = -1F;
             this.btnCH.Location = new System.Drawing.Point(28, 586);
-            this.btnCH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCH.Margin = new System.Windows.Forms.Padding(4);
             this.btnCH.Name = "btnCH";
             this.btnCH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -244,7 +246,7 @@
             // menu_active
             // 
             this.menu_active.Location = new System.Drawing.Point(1, 135);
-            this.menu_active.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menu_active.Margin = new System.Windows.Forms.Padding(4);
             this.menu_active.Name = "menu_active";
             this.menu_active.Size = new System.Drawing.Size(32, 110);
             this.menu_active.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
@@ -254,7 +256,7 @@
             // 
             this.btnNV.CornerRoundingRadius = -1F;
             this.btnNV.Location = new System.Drawing.Point(32, 135);
-            this.btnNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNV.Margin = new System.Windows.Forms.Padding(4);
             this.btnNV.Name = "btnNV";
             this.btnNV.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnNV.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -289,10 +291,47 @@
             // 
             this.pnlManager.BackColor = System.Drawing.Color.White;
             this.pnlManager.Location = new System.Drawing.Point(356, 0);
-            this.pnlManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlManager.Margin = new System.Windows.Forms.Padding(4);
             this.pnlManager.Name = "pnlManager";
             this.pnlManager.Size = new System.Drawing.Size(1440, 985);
             this.pnlManager.TabIndex = 3;
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.CornerRoundingRadius = -1F;
+            this.btnSignOut.Location = new System.Drawing.Point(28, 878);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnSignOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnSignOut.Size = new System.Drawing.Size(324, 110);
+            this.btnSignOut.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSignOut.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSignOut.StateNormal.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
+            this.btnSignOut.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.btnSignOut.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnSignOut.StateNormal.Content.Padding = new System.Windows.Forms.Padding(50, -1, -1, -1);
+            this.btnSignOut.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnSignOut.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnSignOut.StatePressed.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
+            this.btnSignOut.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnSignOut.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StatePressed.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnSignOut.StateTracking.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
+            this.btnSignOut.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnSignOut.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnSignOut.TabIndex = 16;
+            this.btnSignOut.Values.Text = "Đăng Xuất";
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // MainManager
             // 
@@ -301,7 +340,7 @@
             this.ClientSize = new System.Drawing.Size(1799, 986);
             this.Controls.Add(this.pnlManager);
             this.Controls.Add(this.panel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainManager";
@@ -324,5 +363,6 @@
         private Krypton.Toolkit.KryptonPanel menu_active;
         private Krypton.Toolkit.KryptonButton btnNV;
         private System.Windows.Forms.Panel pnlManager;
+        private Krypton.Toolkit.KryptonButton btnSignOut;
     }
 }
