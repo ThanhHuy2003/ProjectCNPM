@@ -295,7 +295,6 @@ namespace FinalProject.DAL
             else
             {
                 String sSQL = "select distinct LoginData.*,UserAddress.storeID from LoginData,UserAddress  Where (fullName like '%" + key+ "%' or fullName like '"+key+ "%') and UserAddress.storeID = '" + cn+ "'and LoginData.userID= UserAddress.userID  ";
-                MessageBox.Show(sSQL);
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
@@ -343,10 +342,6 @@ namespace FinalProject.DAL
         {
             MessageBox.Show("add user :" + user.fullName);
             SqlConnection conn = new SqlConnection(strConn);
-            conn.Open();
-            String sSQL2 = "Insert into UserAddress values(@userID,@storeID)";
-            SqlCommand cmd2 = new SqlCommand(sSQL2, conn);
-            cmd2.Parameters.AddWithValue("@storeID", cn);
             String sSQL = "exec @proc @name,@email,@contact,@phone,@username,@userpassword";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@name", user.fullName);
@@ -355,39 +350,64 @@ namespace FinalProject.DAL
             cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
             cmd.Parameters.AddWithValue("@username", user.userName);
             cmd.Parameters.AddWithValue("@userpassword", user.userPassword);
-            try
+            conn.Open();
+            if (cn[0] == 'M')
             {
-                if (user.userRole.Equals("user"))
+                cmd.Parameters.AddWithValue("@proc", "InsertStaffLoginData");
+                try
                 {
-                    cmd.Parameters.AddWithValue("@proc", "InsertUserLoginData");
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Successfuly");
-                }
-                else if (user.userRole.Equals("admin"))
-                {
-                    cmd.Parameters.AddWithValue("@proc", "InsertAdminLoginData");
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Successfuly");
-                }
-                else if (user.userRole.Equals("staff"))
-                {
-                    cmd.Parameters.AddWithValue("@proc", "InsertStaffLoginData");
-                    cmd.ExecuteNonQuery();
+                    String sSQL2 = "insert into UserAddress values(@userID,(Select UserAddress.storeID from UserAddress where UserAddress.userID=@managerID))";
+                    SqlCommand cmd2 = new SqlCommand(sSQL2, conn);
                     cmd2.Parameters.AddWithValue("@userID", getIdByUsername_DA_DAL(user.userName));
+                    cmd2.Parameters.AddWithValue("@managerID", cn);
                     cmd2.ExecuteNonQuery();
-                    MessageBox.Show("Successfuly");
+                    MessageBox.Show("Thêm thành công");
                 }
-                else
+                catch
                 {
-                    cmd.Parameters.AddWithValue("@proc", "InsertManagerLoginData");
-                    cmd.ExecuteNonQuery();
-                    cmd2.Parameters.AddWithValue("@userID", getIdByUsername_DA_DAL(user.userName));
-                    cmd2.ExecuteNonQuery();
-                    MessageBox.Show("Successfuly");
+                    MessageBox.Show("Tài khoản đã tồn tại");
                 }
             }
-             catch {
-                MessageBox.Show("Tài khoản đã tồn tại");
+            else
+            {
+                String sSQL2 = "Insert into UserAddress values(@userID,@storeID)";
+                SqlCommand cmd2 = new SqlCommand(sSQL2, conn);
+                cmd2.Parameters.AddWithValue("@storeID", cn);
+                try
+                {
+                    if (user.userRole.Equals("user"))
+                    {
+                        cmd.Parameters.AddWithValue("@proc", "InsertUserLoginData");
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Successfuly");
+                    }
+                    else if (user.userRole.Equals("admin"))
+                    {
+                        cmd.Parameters.AddWithValue("@proc", "InsertAdminLoginData");
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Successfuly");
+                    }
+                    else if (user.userRole.Equals("staff"))
+                    {
+                        cmd.Parameters.AddWithValue("@proc", "InsertStaffLoginData");
+                        cmd.ExecuteNonQuery();
+                        cmd2.Parameters.AddWithValue("@userID", getIdByUsername_DA_DAL(user.userName));
+                        cmd2.ExecuteNonQuery();
+                        MessageBox.Show("Successfuly");
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@proc", "InsertManagerLoginData");
+                        cmd.ExecuteNonQuery();
+                        cmd2.Parameters.AddWithValue("@userID", getIdByUsername_DA_DAL(user.userName));
+                        cmd2.ExecuteNonQuery();
+                        MessageBox.Show("Successfuly");
+                    }
+                }
+                 catch {
+                    MessageBox.Show("Tài khoản đã tồn tại");
+                }
             }
             conn.Close();
         }
@@ -398,6 +418,20 @@ namespace FinalProject.DAL
             String sSQL = "select * from LoginData where userID =@id";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@id", id);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        
+        public DataTable getAllUserOfStore_DA_DAL(String key)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select LoginData.* from LoginData, UserAddress where UserAddress.userID=LoginData.userID and UserAddress.storeId = (select storeID from UserAddress where UserAddress.userID=@key)";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@key", key);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -436,6 +470,19 @@ namespace FinalProject.DAL
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
             String sSQL = "select * from revenue where storeID=@id";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            cmd.Parameters.AddWithValue("@id", key);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public DataTable getAllRevenueByIdManager_DA_DAL(String key)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select revenue.* from revenue, UserAddress where UserAddress.userID=@id and revenue.storeId = UserAddress.storeID";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@id", key);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

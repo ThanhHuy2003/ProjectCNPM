@@ -14,11 +14,13 @@ namespace FinalProject.App.Manager.DoanhThu
 {
     public partial class UCDTManager : UserControl
     {
-        public UCDTManager()
+        public String id;
+        public UCDTManager(string id)
         {
+            this.id = id;
             InitializeComponent();
             AdminRevenueBLL ehe = new AdminRevenueBLL();
-            dtgvDT.DataSource = ehe.getAllRevenue();
+            dtgvDT.DataSource = ehe.getAllRevenueByIdManagerBLL(this.id);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

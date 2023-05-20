@@ -40,5 +40,9 @@ namespace FinalProject.DAL
         {
             return getUserById_DA_DAL(id);
         }
+        public DataTable getUserOfStore_DAL(String key)
+        {
+            return getAllUserOfStore_DA_DAL(key);
+        }
     }
 }

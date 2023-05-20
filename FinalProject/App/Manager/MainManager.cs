@@ -13,12 +13,11 @@ namespace FinalProject.App.Manager
 {
     public partial class MainManager : Form
     {
-        private String userIDLogin;
+        public String userIDLogin;
         public MainManager()
         {
             InitializeComponent();
             Func.togglePanel(pnlManager, "NV");
-
         }
         public MainManager(string userIDLogin)
         {

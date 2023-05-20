@@ -778,10 +778,13 @@ select * from Province
 select * from StoreAddress
 select * from UserAddress
 
+select revenue.* from revenue, UserAddress where UserAddress.userID='MID00001' and revenue.storeId = UserAddress.storeID
+
+select LoginData.* from LoginData, UserAddress where UserAddress.userID=LoginData.userID and UserAddress.storeId = (select storeID from UserAddress where UserAddress.userID='MID00001')
+
 select distinct LoginData.*,UserAddress.storeID from LoginData,UserAddress 
 Where (fullName like '%%' or fullName like '%') and UserAddress.storeID = 'SID00001'and LoginData.userID= UserAddress.userID 
 
-
 update LoginData
 set    userDateOfBirth = '2023-04-20'
-Where  userID = ''
+Where  userID = 'UID00001'

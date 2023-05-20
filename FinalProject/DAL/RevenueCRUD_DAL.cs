@@ -21,5 +21,9 @@ namespace FinalProject.DAL
         {
             return getAllRevenueByTime_DA_DAL(start,end,id);
         }
+        public DataTable getAllRevenueByIDManager_DAL(String key)
+        {
+            return getAllRevenueByIdManager_DA_DAL(key);
+        }
     }
 }

@@ -626,8 +626,6 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "UCCD";
             this.Load += new System.EventHandler(this.UCCD_Load);
-            this.tabBMDK.ResumeLayout(false);
-            this.tabBMDK.PerformLayout();
             this.tabDH.ResumeLayout(false);
             this.tabDH.PerformLayout();
             this.tabTTCN.ResumeLayout(false);

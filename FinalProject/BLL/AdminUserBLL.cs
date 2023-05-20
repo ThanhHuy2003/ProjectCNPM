@@ -24,6 +24,11 @@ namespace FinalProject.BLL
             UserCRUD_DAL data = new UserCRUD_DAL();
             return data.searchUser_DAL(key,cn);
         }
+        public DataTable getAllUserOfStore(String key)
+        {
+            UserCRUD_DAL data = new UserCRUD_DAL();
+            return data.getUserOfStore_DAL(key);
+        }
         public void deleteUser(String id)
         {
             UserCRUD_DAL data = new UserCRUD_DAL();
@@ -44,6 +49,7 @@ namespace FinalProject.BLL
             UserCRUD_DAL data = new UserCRUD_DAL();
             return data.getIdByUsername_DAL(name);
         }
+
         public User getUserByID(String id)
         {
             UserCRUD_DAL data = new UserCRUD_DAL();

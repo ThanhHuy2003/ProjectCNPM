@@ -19,7 +19,7 @@ namespace FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainStaff("UID00001"));
+            Application.Run(new MainManager("MID00001"));
         }
     }
 }

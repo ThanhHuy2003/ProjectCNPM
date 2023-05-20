@@ -34,7 +34,6 @@ namespace FinalProject.App.Admin
         Form edit = new EditTK();
         private void picSearch_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cbCNN.SelectedValue.ToString());
             AdminUserBLL ehe = new AdminUserBLL();
             dtgvTK.DataSource = ehe.searchUser(tbSearch.Text,cbCNN.SelectedValue.ToString());
         }
