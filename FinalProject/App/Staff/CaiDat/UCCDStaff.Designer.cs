@@ -42,18 +42,13 @@
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.labelHoten = new System.Windows.Forms.Label();
-            this.TabLS = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
             this.tabTTCN.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.TabLS.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabTTCN
             // 
             this.tabTTCN.Controls.Add(this.tabPage1);
-            this.tabTTCN.Controls.Add(this.TabLS);
             this.tabTTCN.Location = new System.Drawing.Point(0, 7);
             this.tabTTCN.Margin = new System.Windows.Forms.Padding(4);
             this.tabTTCN.Name = "tabTTCN";
@@ -288,41 +283,6 @@
             this.labelHoten.TabIndex = 74;
             this.labelHoten.Text = "Họ tên: ";
             // 
-            // TabLS
-            // 
-            this.TabLS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.TabLS.Controls.Add(this.flowLayoutPanel1);
-            this.TabLS.Controls.Add(this.label13);
-            this.TabLS.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold);
-            this.TabLS.Location = new System.Drawing.Point(4, 25);
-            this.TabLS.Margin = new System.Windows.Forms.Padding(4);
-            this.TabLS.Name = "TabLS";
-            this.TabLS.Padding = new System.Windows.Forms.Padding(4);
-            this.TabLS.Size = new System.Drawing.Size(1615, 947);
-            this.TabLS.TabIndex = 1;
-            this.TabLS.Text = "Lịch sử đơn hàng";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(51, 139);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1560, 804);
-            this.flowLayoutPanel1.TabIndex = 73;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Black", 20.75F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(653, 38);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(370, 47);
-            this.label13.TabIndex = 72;
-            this.label13.Text = "LỊCH SỬ ĐƠN HÀNG";
-            // 
             // UCCDStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -336,8 +296,6 @@
             this.tabTTCN.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.TabLS.ResumeLayout(false);
-            this.TabLS.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -346,7 +304,6 @@
 
         private System.Windows.Forms.TabControl tabTTCN;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage TabLS;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblQQ;
         private System.Windows.Forms.Label lblNS;
@@ -357,8 +314,6 @@
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label labelHoten;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label13;
         private Krypton.Toolkit.KryptonButton btnSignOut;
         private Krypton.Toolkit.KryptonTextBox txtQQ;
     }

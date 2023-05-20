@@ -45,10 +45,11 @@
             this.dtgvNV.AllowUserToOrderColumns = true;
             this.dtgvNV.ColumnHeadersHeight = 36;
             this.dtgvNV.DataSource = this.userBindingSource;
-            this.dtgvNV.Location = new System.Drawing.Point(63, 188);
+            this.dtgvNV.Location = new System.Drawing.Point(84, 231);
+            this.dtgvNV.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvNV.Name = "dtgvNV";
             this.dtgvNV.RowHeadersWidth = 51;
-            this.dtgvNV.Size = new System.Drawing.Size(955, 571);
+            this.dtgvNV.Size = new System.Drawing.Size(1273, 703);
             this.dtgvNV.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.dtgvNV.StateCommon.Background.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.dtgvNV.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -83,9 +84,10 @@
             // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(63, 76);
+            this.tbSearch.Location = new System.Drawing.Point(84, 94);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(285, 43);
+            this.tbSearch.Size = new System.Drawing.Size(380, 47);
             this.tbSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.tbSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -99,7 +101,8 @@
             // btnAdd
             // 
             this.btnAdd.CornerRoundingRadius = 30F;
-            this.btnAdd.Location = new System.Drawing.Point(644, 131);
+            this.btnAdd.Location = new System.Drawing.Point(859, 161);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAdd.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -115,7 +118,7 @@
             this.btnAdd.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdd.Size = new System.Drawing.Size(120, 41);
+            this.btnAdd.Size = new System.Drawing.Size(160, 50);
             this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAdd.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAdd.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -154,7 +157,8 @@
             // btnDelete
             // 
             this.btnDelete.CornerRoundingRadius = 30F;
-            this.btnDelete.Location = new System.Drawing.Point(785, 131);
+            this.btnDelete.Location = new System.Drawing.Point(1047, 161);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -170,7 +174,7 @@
             this.btnDelete.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDelete.Size = new System.Drawing.Size(120, 41);
+            this.btnDelete.Size = new System.Drawing.Size(160, 50);
             this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDelete.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -210,16 +214,17 @@
             this.picSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
             this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.picSearch.Location = new System.Drawing.Point(298, 81);
+            this.picSearch.Location = new System.Drawing.Point(397, 100);
+            this.picSearch.Margin = new System.Windows.Forms.Padding(4);
             this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(36, 32);
+            this.picSearch.Size = new System.Drawing.Size(48, 39);
             this.picSearch.TabIndex = 15;
             this.picSearch.TabStop = false;
             this.picSearch.Click += new System.EventHandler(this.picSearch_Click);
             // 
             // UCNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
@@ -228,8 +233,9 @@
             this.Controls.Add(this.dtgvNV);
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.tbSearch);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCNV";
-            this.Size = new System.Drawing.Size(1080, 800);
+            this.Size = new System.Drawing.Size(1440, 985);
             this.Load += new System.EventHandler(this.UCNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();

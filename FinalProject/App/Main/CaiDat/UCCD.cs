@@ -85,6 +85,7 @@ namespace FinalProject.App.Main.CaiDat
                         newMenuItem.condition = row["condition"].ToString();
 
                         CardDH Item = new CardDH();
+                        Item.OrderUserID = newMenuItem.orderUserID;
                         var request = WebRequest.Create(newMenuItem.orderPicture);
 
                         using (var response = request.GetResponse())

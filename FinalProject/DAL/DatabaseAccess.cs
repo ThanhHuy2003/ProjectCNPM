@@ -18,6 +18,18 @@ namespace FinalProject.DAL
     internal class DatabaseAccess
     {
         String strConn = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
+        public DataTable populateHistoryDetail_DA_DAL(string orderUserID)
+        {
+            SqlConnection conn = new SqlConnection(strConn);
+            conn.Open();
+            String sSQL = "select * from HistoryUserDataDetail where orderUserID = '" + orderUserID + "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
         public DataTable populateStoreAddress_DA_DAL()
         {
             SqlConnection conn = new SqlConnection(strConn);
