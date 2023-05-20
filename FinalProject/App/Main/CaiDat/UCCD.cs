@@ -150,7 +150,7 @@ namespace FinalProject.App.Main.CaiDat
         }
         private void btnSighOut_Click(object sender, EventArgs e)
         {
-
+            Application.Restart();
         }
 
         private void CBQQ_SelectedIndexChanged(object sender, EventArgs e)

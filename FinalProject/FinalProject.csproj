@@ -502,6 +502,9 @@
     <EmbeddedResource Include="App\Login\UCDK.resx">
       <DependentUpon>UCDK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\CaiDat\CardDH.en.resx">
+      <DependentUpon>CardDH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Main\CaiDat\CardDH.resx">
       <DependentUpon>CardDH.cs</DependentUpon>
     </EmbeddedResource>
@@ -591,6 +594,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\ThucDon\UCTD.vi.resx">
       <DependentUpon>UCTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Main\UCMain.en.resx">
+      <DependentUpon>UCMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Main\UCMain.resx">
       <DependentUpon>UCMain.cs</DependentUpon>

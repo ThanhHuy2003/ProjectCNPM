@@ -121,8 +121,8 @@
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1197, 710</value>
   </data>
-  <data name="&gt;&gt;btnCombo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnAll.Values.ExtraText" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;btnFood.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
@@ -149,31 +149,31 @@
   <data name="&gt;&gt;btnDrink.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
-  <data name="btnCombo.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnFood.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnDrink.Values.ExtraText" xml:space="preserve">
-    <value />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
   </data>
   <data name="btnCombo.Values.Text" xml:space="preserve">
     <value>Combo</value>
   </data>
-  <data name="&gt;&gt;btnCombo.Name" xml:space="preserve">
-    <value>btnCombo</value>
+  <data name="btnFood.Location" type="System.Drawing.Point, System.Drawing">
+    <value>628, 28</value>
   </data>
   <data name="btnFood.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="btnCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>500, 28</value>
+  <data name="&gt;&gt;btnDrink.Name" xml:space="preserve">
+    <value>btnDrink</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1220, 818</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
@@ -201,8 +201,8 @@
   <data name="&gt;&gt;btnFood.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnAll.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -210,14 +210,14 @@
   <data name="&gt;&gt;btnDrink.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnCombo.Name" xml:space="preserve">
+    <value>btnCombo</value>
   </data>
   <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="btnFood.Location" type="System.Drawing.Point, System.Drawing">
-    <value>628, 28</value>
+  <data name="&gt;&gt;btnAll.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -225,8 +225,8 @@
   <data name="btnAll.Values.Text" xml:space="preserve">
     <value>Tất cả</value>
   </data>
-  <data name="btnFood.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;btnCombo.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -234,14 +234,17 @@
   <data name="btnFood.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
-  <data name="btnDrink.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="btnDrink.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFood.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 41</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnFood.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 41</value>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCombo.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonButton, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
@@ -249,17 +252,11 @@
   <data name="&gt;&gt;btnAll.Name" xml:space="preserve">
     <value>btnAll</value>
   </data>
-  <data name="&gt;&gt;btnAll.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnDrink.Name" xml:space="preserve">
-    <value>btnDrink</value>
-  </data>
   <data name="btnDrink.Values.Text" xml:space="preserve">
     <value>Nước</value>
   </data>
-  <data name="btnAll.Values.ExtraText" xml:space="preserve">
-    <value />
+  <data name="btnCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 41</value>
   </data>
   <data name="&gt;&gt;btnFood.Parent" xml:space="preserve">
     <value>$this</value>
@@ -273,29 +270,32 @@
   <data name="btnDrink.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
-  <data name="btnDrink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 28</value>
+  <data name="&gt;&gt;btnCombo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="btnCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 41</value>
+  <data name="btnCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 28</value>
   </data>
   <data name="btnFood.Values.ExtraText" xml:space="preserve">
     <value />
   </data>
-  <data name="btnCombo.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
+  <data name="btnDrink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>756, 28</value>
   </data>
-  <data name="btnCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnDrink.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="btnAll.Location" type="System.Drawing.Point, System.Drawing">
     <value>372, 28</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="btnAll.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btnCombo.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -46,6 +46,8 @@
             this.lblVND.Name = "lblVND";
             this.lblVND.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblVND.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
+            this.lblVND.Values.ExtraText = resources.GetString("lblVND.Values.ExtraText");
+            this.lblVND.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("lblVND.Values.ImageTransparentColor")));
             this.lblVND.Values.Text = resources.GetString("lblVND.Values.Text");
             // 
             // lblPrice
@@ -54,12 +56,14 @@
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblPrice.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
+            this.lblPrice.Values.ExtraText = resources.GetString("lblPrice.Values.ExtraText");
+            this.lblPrice.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("lblPrice.Values.ImageTransparentColor")));
             this.lblPrice.Values.Text = resources.GetString("lblPrice.Values.Text");
             // 
             // SubItem1
             // 
-            this.SubItem1.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.SubItem1, "SubItem1");
+            this.SubItem1.CornerRoundingRadius = -1F;
             this.SubItem1.Name = "SubItem1";
             this.SubItem1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.SubItem1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -91,13 +95,15 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.SubItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.SubItem1.Values.ExtraText = resources.GetString("SubItem1.Values.ExtraText");
+            this.SubItem1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("SubItem1.Values.ImageTransparentColor")));
             this.SubItem1.Values.Text = resources.GetString("SubItem1.Values.Text");
             this.SubItem1.Click += new System.EventHandler(this.SubItem1_Click);
             // 
             // PlusItem1
             // 
-            this.PlusItem1.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.PlusItem1, "PlusItem1");
+            this.PlusItem1.CornerRoundingRadius = -1F;
             this.PlusItem1.Name = "PlusItem1";
             this.PlusItem1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.PlusItem1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -139,6 +145,8 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.PlusItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.PlusItem1.Values.ExtraText = resources.GetString("PlusItem1.Values.ExtraText");
+            this.PlusItem1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("PlusItem1.Values.ImageTransparentColor")));
             this.PlusItem1.Values.Text = resources.GetString("PlusItem1.Values.Text");
             this.PlusItem1.Click += new System.EventHandler(this.PlusItem1_Click);
             // 
@@ -147,6 +155,8 @@
             resources.ApplyResources(this.CountItem1, "CountItem1");
             this.CountItem1.Name = "CountItem1";
             this.CountItem1.StateCommon.ShortText.Font = new System.Drawing.Font("Dubai Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CountItem1.Values.ExtraText = resources.GetString("CountItem1.Values.ExtraText");
+            this.CountItem1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("CountItem1.Values.ImageTransparentColor")));
             this.CountItem1.Values.Text = resources.GetString("CountItem1.Values.Text");
             // 
             // lblName
@@ -155,12 +165,14 @@
             this.lblName.Name = "lblName";
             this.lblName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Values.ExtraText = resources.GetString("lblName.Values.ExtraText");
+            this.lblName.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("lblName.Values.ImageTransparentColor")));
             this.lblName.Values.Text = resources.GetString("lblName.Values.Text");
             // 
             // btnTVG
             // 
-            this.btnTVG.CornerRoundingRadius = -1F;
             resources.ApplyResources(this.btnTVG, "btnTVG");
+            this.btnTVG.CornerRoundingRadius = -1F;
             this.btnTVG.Name = "btnTVG";
             this.btnTVG.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTVG.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -206,13 +218,15 @@
             this.btnTVG.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnTVG.Values.ExtraText = resources.GetString("btnTVG.Values.ExtraText");
+            this.btnTVG.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnTVG.Values.ImageTransparentColor")));
             this.btnTVG.Values.Text = resources.GetString("btnTVG.Values.Text");
             this.btnTVG.Click += new System.EventHandler(this.btnTVG_Click);
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::FinalProject.Properties.Resources.image_1;
             resources.ApplyResources(this.pictureBox9, "pictureBox9");
+            this.pictureBox9.Image = global::FinalProject.Properties.Resources.image_1;
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.TabStop = false;
             // 

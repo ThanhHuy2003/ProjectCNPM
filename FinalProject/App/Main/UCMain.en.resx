@@ -117,50 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblVND.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblVND.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
   </data>
-  <data name="lblPrice.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblPrice.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
-  </data>
-  <data name="SubItem1.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SubItem1.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
-  </data>
-  <data name="PlusItem1.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PlusItem1.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
-  </data>
-  <data name="CountItem1.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="CountItem1.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
-  </data>
-  <data name="lblName.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblName.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
-  </data>
-  <data name="btnTVG.Values.ExtraText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnTVG.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value />
-  </data>
-  <data name="btnTVG.Values.Text" xml:space="preserve">
-    <value>Add to cart</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>MENU TODAY</value>
   </data>
 </root>
