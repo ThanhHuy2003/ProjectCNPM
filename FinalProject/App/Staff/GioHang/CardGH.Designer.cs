@@ -35,6 +35,7 @@
             this.CountItem1 = new Krypton.Toolkit.KryptonLabel();
             this.lblName = new Krypton.Toolkit.KryptonLabel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btnClear = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             this.SubItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.SubItem1.TabIndex = 52;
             this.SubItem1.Values.Text = "-";
+            this.SubItem1.Click += new System.EventHandler(this.SubItem1_Click);
             // 
             // PlusItem1
             // 
@@ -121,6 +123,7 @@
             this.PlusItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.PlusItem1.TabIndex = 51;
             this.PlusItem1.Values.Text = "+";
+            this.PlusItem1.Click += new System.EventHandler(this.PlusItem1_Click);
             // 
             // CountItem1
             // 
@@ -155,11 +158,34 @@
             this.pictureBox9.TabIndex = 48;
             this.pictureBox9.TabStop = false;
             // 
+            // btnClear
+            // 
+            this.btnClear.CornerRoundingRadius = 30F;
+            this.btnClear.Location = new System.Drawing.Point(1470, 16);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(51, 37);
+            this.btnClear.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnClear.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnClear.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.StateCommon.Border.Rounding = 30F;
+            this.btnClear.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnClear.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnClear.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClear.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnClear.StateCommon.Content.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnClear.TabIndex = 56;
+            this.btnClear.Values.Text = "x";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // CardGH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblVND);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.SubItem1);
@@ -167,7 +193,7 @@
             this.Controls.Add(this.CountItem1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox9);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CardGH";
             this.Size = new System.Drawing.Size(1540, 177);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -185,5 +211,6 @@
         private Krypton.Toolkit.KryptonLabel CountItem1;
         private Krypton.Toolkit.KryptonLabel lblName;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private Krypton.Toolkit.KryptonButton btnClear;
     }
 }

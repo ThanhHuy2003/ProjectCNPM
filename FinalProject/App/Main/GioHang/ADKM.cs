@@ -87,9 +87,11 @@ namespace FinalProject.App.Main.GioHang
                             Item.Picture = Bitmap.FromStream(stream);
                             Item.Picture = resizeImage(Item.Picture, 228, 187);
                         }
-                        Item.PromotionID = newPromotionItem.promotionID;
                         Item.Title = newPromotionItem.promotionName;
                         Item.Description = newPromotionItem.promotionDescription;
+                        Item.Percent = newPromotionItem.promotionPercent;
+                        Item.UserID = userIDLogin;
+                        Item.PromotionID = newPromotionItem.promotionID;
                         this.flowLayoutPanel1.Controls.Add(Item);
                     }
                     catch

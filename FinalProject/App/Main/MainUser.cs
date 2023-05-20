@@ -403,9 +403,10 @@ namespace FinalProject
                         }
                         break;
                     case "KMStaff":
+                        uCKMStaff = null;
                         if (uCKMStaff == null)
                         {
-                            uCKMStaff = new UCKMStaff();
+                            uCKMStaff = new UCKMStaff(mainStaff.userIDLogin);
                             panel.Controls.Add(uCKMStaff);
                             uCKMStaff.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCKMStaff.Location = new System.Drawing.Point(0, 0);
