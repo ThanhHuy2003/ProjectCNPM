@@ -24,7 +24,8 @@ namespace FinalProject.App.Manager
         }
         private void UCNV_Load(object sender, EventArgs e)
         {
-
+            AdminUserBLL ehe = new AdminUserBLL();
+            dtgvNV.DataSource = ehe.getAllUserOfStore(id);
         }
 
         private void btnAdd_Click_1(object sender, EventArgs e)

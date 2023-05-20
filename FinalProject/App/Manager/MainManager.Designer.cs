@@ -54,21 +54,19 @@
             this.panel.Controls.Add(this.menu_active);
             this.panel.Controls.Add(this.btnNV);
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(4);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(356, 988);
+            this.panel.Size = new System.Drawing.Size(267, 803);
             this.panel.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.panel.TabIndex = 2;
             // 
             // btnSignOut
             // 
             this.btnSignOut.CornerRoundingRadius = -1F;
-            this.btnSignOut.Location = new System.Drawing.Point(28, 878);
-            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignOut.Location = new System.Drawing.Point(21, 713);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnSignOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnSignOut.Size = new System.Drawing.Size(324, 110);
+            this.btnSignOut.Size = new System.Drawing.Size(243, 89);
             this.btnSignOut.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSignOut.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnSignOut.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -100,12 +98,11 @@
             // btnNL
             // 
             this.btnNL.CornerRoundingRadius = -1F;
-            this.btnNL.Location = new System.Drawing.Point(32, 474);
-            this.btnNL.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNL.Location = new System.Drawing.Point(24, 385);
             this.btnNL.Name = "btnNL";
             this.btnNL.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnNL.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnNL.Size = new System.Drawing.Size(324, 110);
+            this.btnNL.Size = new System.Drawing.Size(243, 89);
             this.btnNL.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnNL.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnNL.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -135,7 +132,6 @@
             // 
             this.btnlogo.CornerRoundingRadius = -1F;
             this.btnlogo.Location = new System.Drawing.Point(1, 0);
-            this.btnlogo.Margin = new System.Windows.Forms.Padding(4);
             this.btnlogo.Name = "btnlogo";
             this.btnlogo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnlogo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -144,7 +140,7 @@
             this.btnlogo.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnlogo.Size = new System.Drawing.Size(356, 110);
+            this.btnlogo.Size = new System.Drawing.Size(267, 89);
             this.btnlogo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnlogo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnlogo.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
@@ -187,12 +183,11 @@
             // btnKM
             // 
             this.btnKM.CornerRoundingRadius = -1F;
-            this.btnKM.Location = new System.Drawing.Point(32, 246);
-            this.btnKM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKM.Location = new System.Drawing.Point(24, 200);
             this.btnKM.Name = "btnKM";
             this.btnKM.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnKM.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnKM.Size = new System.Drawing.Size(324, 110);
+            this.btnKM.Size = new System.Drawing.Size(243, 89);
             this.btnKM.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnKM.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnKM.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -220,12 +215,11 @@
             // btnTB
             // 
             this.btnTB.CornerRoundingRadius = -1F;
-            this.btnTB.Location = new System.Drawing.Point(32, 361);
-            this.btnTB.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTB.Location = new System.Drawing.Point(24, 293);
             this.btnTB.Name = "btnTB";
             this.btnTB.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTB.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnTB.Size = new System.Drawing.Size(324, 110);
+            this.btnTB.Size = new System.Drawing.Size(243, 89);
             this.btnTB.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTB.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnTB.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
@@ -252,12 +246,11 @@
             // btnCH
             // 
             this.btnCH.CornerRoundingRadius = -1F;
-            this.btnCH.Location = new System.Drawing.Point(28, 586);
-            this.btnCH.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCH.Location = new System.Drawing.Point(21, 476);
             this.btnCH.Name = "btnCH";
             this.btnCH.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCH.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnCH.Size = new System.Drawing.Size(324, 110);
+            this.btnCH.Size = new System.Drawing.Size(243, 89);
             this.btnCH.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCH.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnCH.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -284,22 +277,20 @@
             // 
             // menu_active
             // 
-            this.menu_active.Location = new System.Drawing.Point(1, 135);
-            this.menu_active.Margin = new System.Windows.Forms.Padding(4);
+            this.menu_active.Location = new System.Drawing.Point(1, 110);
             this.menu_active.Name = "menu_active";
-            this.menu_active.Size = new System.Drawing.Size(32, 110);
+            this.menu_active.Size = new System.Drawing.Size(24, 89);
             this.menu_active.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.menu_active.TabIndex = 2;
             // 
             // btnNV
             // 
             this.btnNV.CornerRoundingRadius = -1F;
-            this.btnNV.Location = new System.Drawing.Point(32, 135);
-            this.btnNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNV.Location = new System.Drawing.Point(24, 110);
             this.btnNV.Name = "btnNV";
             this.btnNV.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnNV.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnNV.Size = new System.Drawing.Size(324, 110);
+            this.btnNV.Size = new System.Drawing.Size(243, 89);
             this.btnNV.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnNV.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.btnNV.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
@@ -329,20 +320,18 @@
             // pnlManager
             // 
             this.pnlManager.BackColor = System.Drawing.Color.White;
-            this.pnlManager.Location = new System.Drawing.Point(356, 0);
-            this.pnlManager.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlManager.Location = new System.Drawing.Point(267, 0);
             this.pnlManager.Name = "pnlManager";
-            this.pnlManager.Size = new System.Drawing.Size(1600, 985);
+            this.pnlManager.Size = new System.Drawing.Size(1200, 800);
             this.pnlManager.TabIndex = 3;
             // 
             // MainManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1799, 986);
+            this.ClientSize = new System.Drawing.Size(1469, 801);
             this.Controls.Add(this.pnlManager);
             this.Controls.Add(this.panel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainManager";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardCH));
             this.kryptonLabel36 = new Krypton.Toolkit.KryptonLabel();
             this.ButtonKM1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel35 = new Krypton.Toolkit.KryptonLabel();
@@ -42,22 +43,19 @@
             // 
             // kryptonLabel36
             // 
-            this.kryptonLabel36.Location = new System.Drawing.Point(178, 2);
-            this.kryptonLabel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel36, "kryptonLabel36");
             this.kryptonLabel36.Name = "kryptonLabel36";
-            this.kryptonLabel36.Size = new System.Drawing.Size(175, 23);
             this.kryptonLabel36.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel36.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.kryptonLabel36.TabIndex = 12;
-            this.kryptonLabel36.Values.Text = "Lotteria Nam Sài Gòn";
+            this.kryptonLabel36.Values.ExtraText = resources.GetString("kryptonLabel36.Values.ExtraText");
+            this.kryptonLabel36.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel36.Values.ImageTransparentColor")));
+            this.kryptonLabel36.Values.Text = resources.GetString("kryptonLabel36.Values.Text");
             // 
             // ButtonKM1
             // 
+            resources.ApplyResources(this.ButtonKM1, "ButtonKM1");
             this.ButtonKM1.CornerRoundingRadius = 15F;
-            this.ButtonKM1.Location = new System.Drawing.Point(933, 97);
-            this.ButtonKM1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonKM1.Name = "ButtonKM1";
-            this.ButtonKM1.Size = new System.Drawing.Size(149, 46);
             this.ButtonKM1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.ButtonKM1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.ButtonKM1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -67,92 +65,81 @@
             this.ButtonKM1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.ButtonKM1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.ButtonKM1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonKM1.TabIndex = 14;
-            this.ButtonKM1.Values.Text = "Bản đồ";
+            this.ButtonKM1.Values.ExtraText = resources.GetString("ButtonKM1.Values.ExtraText");
+            this.ButtonKM1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("ButtonKM1.Values.ImageTransparentColor")));
+            this.ButtonKM1.Values.Text = resources.GetString("ButtonKM1.Values.Text");
             this.ButtonKM1.Click += new System.EventHandler(this.ButtonKM1_Click);
             // 
             // kryptonLabel35
             // 
-            this.kryptonLabel35.AutoSize = false;
-            this.kryptonLabel35.Location = new System.Drawing.Point(264, 29);
-            this.kryptonLabel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel35, "kryptonLabel35");
             this.kryptonLabel35.Name = "kryptonLabel35";
-            this.kryptonLabel35.Size = new System.Drawing.Size(822, 27);
             this.kryptonLabel35.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel35.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.kryptonLabel35.TabIndex = 15;
-            this.kryptonLabel35.Values.Text = "Lotte Mart, Tầng Trệt, 469 Đ. Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Thành phố Hồ Chí " +
-    "Minh, Việt Nam";
+            this.kryptonLabel35.Values.ExtraText = resources.GetString("kryptonLabel35.Values.ExtraText");
+            this.kryptonLabel35.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel35.Values.ImageTransparentColor")));
+            this.kryptonLabel35.Values.Text = resources.GetString("kryptonLabel35.Values.Text");
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(332, 64);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel1, "kryptonLabel1");
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(123, 28);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.kryptonLabel1.TabIndex = 16;
-            this.kryptonLabel1.Values.Text = "8:00 - 21:00";
+            this.kryptonLabel1.Values.ExtraText = resources.GetString("kryptonLabel1.Values.ExtraText");
+            this.kryptonLabel1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel1.Values.ImageTransparentColor")));
+            this.kryptonLabel1.Values.Text = resources.GetString("kryptonLabel1.Values.Text");
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(178, 28);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel2, "kryptonLabel2");
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(82, 28);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.kryptonLabel2.TabIndex = 17;
-            this.kryptonLabel2.Values.Text = "Địa chỉ:";
+            this.kryptonLabel2.Values.ExtraText = resources.GetString("kryptonLabel2.Values.ExtraText");
+            this.kryptonLabel2.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel2.Values.ImageTransparentColor")));
+            this.kryptonLabel2.Values.Text = resources.GetString("kryptonLabel2.Values.Text");
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(177, 64);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel3, "kryptonLabel3");
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(124, 28);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.kryptonLabel3.TabIndex = 18;
-            this.kryptonLabel3.Values.Text = "Giờ mở cửa:";
+            this.kryptonLabel3.Values.ExtraText = resources.GetString("kryptonLabel3.Values.ExtraText");
+            this.kryptonLabel3.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel3.Values.ImageTransparentColor")));
+            this.kryptonLabel3.Values.Text = resources.GetString("kryptonLabel3.Values.Text");
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(178, 105);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel4, "kryptonLabel4");
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(83, 28);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.kryptonLabel4.TabIndex = 19;
-            this.kryptonLabel4.Values.Text = "Hotline:";
+            this.kryptonLabel4.Values.ExtraText = resources.GetString("kryptonLabel4.Values.ExtraText");
+            this.kryptonLabel4.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel4.Values.ImageTransparentColor")));
+            this.kryptonLabel4.Values.Text = resources.GetString("kryptonLabel4.Values.Text");
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(332, 105);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel5, "kryptonLabel5");
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(139, 28);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.kryptonLabel5.TabIndex = 20;
-            this.kryptonLabel5.Values.Text = "1900 636 357 ";
+            this.kryptonLabel5.Values.ExtraText = resources.GetString("kryptonLabel5.Values.ExtraText");
+            this.kryptonLabel5.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel5.Values.ImageTransparentColor")));
+            this.kryptonLabel5.Values.Text = resources.GetString("kryptonLabel5.Values.Text");
             // 
             // pictureBox12
             // 
+            resources.ApplyResources(this.pictureBox12, "pictureBox12");
             this.pictureBox12.Image = global::FinalProject.Properties.Resources.HinhKM1;
-            this.pictureBox12.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(172, 158);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
             // 
             // CardCH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonLabel5);
             this.Controls.Add(this.kryptonLabel4);
@@ -163,9 +150,7 @@
             this.Controls.Add(this.ButtonKM1);
             this.Controls.Add(this.kryptonLabel36);
             this.Controls.Add(this.pictureBox12);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardCH";
-            this.Size = new System.Drawing.Size(1087, 160);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

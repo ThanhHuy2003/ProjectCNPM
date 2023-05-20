@@ -115,7 +115,7 @@
             this.btnDetails.CornerRoundingRadius = 30F;
             this.btnDetails.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDetails.Location = new System.Drawing.Point(1048, 107);
-            this.btnDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(2);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDetails.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.label6);
