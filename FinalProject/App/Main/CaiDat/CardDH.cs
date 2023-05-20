@@ -17,11 +17,14 @@ namespace FinalProject.App.Main.CaiDat
             InitializeComponent();
         }
         #region Properties
+        private string _orderUserID;
         private string _soluong;
         private string _date;
         private int _price;
         private string _status;
         private Image _pic;
+        [Category("Custom Props")]
+        public string OrderUserID { get { return _orderUserID; } set { _orderUserID = value; } }
         [Category("Custom Props")]
         public string Soluong { get { return _soluong; } set { _soluong = value; lblSoluong.Text = value; } }
         [Category("Custom Props")]
@@ -33,5 +36,11 @@ namespace FinalProject.App.Main.CaiDat
         [Category("Custom Props")]
         public Image Picture { get { return _pic; } set { _pic = value; pictureBox1.Image = value; } }
         #endregion
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            OrderDetails details = new OrderDetails(this.OrderUserID);
+            details.ShowDialog();
+        }
     }
 }
