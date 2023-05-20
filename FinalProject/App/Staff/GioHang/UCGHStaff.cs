@@ -98,7 +98,7 @@ namespace FinalProject.App.Staff.GioHang
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
-        
+            label4.Text = promotionCash.ToString();
             totalCash = totalCash - promotionCash;
             tbCash.Text = totalCash.ToString();
         }

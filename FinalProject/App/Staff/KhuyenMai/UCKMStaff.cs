@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,9 +16,15 @@ namespace FinalProject.App.Staff.KhuyenMai
 {
     public partial class UCKMStaff : UserControl
     {
+        private string userIDLogin;
         public UCKMStaff()
         {
             InitializeComponent();
+        }
+        public UCKMStaff(string userIDLogin)
+        {
+            InitializeComponent();
+            this.userIDLogin = userIDLogin;
         }
         public Image resizeImage(Image image, int width, int height)
         {
@@ -50,10 +57,6 @@ namespace FinalProject.App.Staff.KhuyenMai
                 tbSearch.Text = "Search";
                 tbSearch.ForeColor = Color.Silver;
             }
-        }
-        private void SearchTextbox_Enter(object sender, EventArgs e)
-        {
-
         }
         private void UCKM_Load(object sender, EventArgs e)
         {
@@ -97,6 +100,10 @@ namespace FinalProject.App.Staff.KhuyenMai
                     }
                     Item.Title = newPromotionItem.promotionName;
                     Item.Description = newPromotionItem.promotionDescription;
+                    Item.Percent = newPromotionItem.promotionPercent;
+                    Item.UserID = userIDLogin;
+                    Item.ButtonClicked += ChildControl_ButtonClicked;
+                    Item.PromotionID = newPromotionItem.promotionID;
                     this.flowLayoutPanel1.Controls.Add(Item);
                 }
             }
@@ -109,6 +116,10 @@ namespace FinalProject.App.Staff.KhuyenMai
         private void picSearch_Click(object sender, EventArgs e)
         {
             populatePromotionData_PromotionTable_UCKM(true);
+        }
+        private void ChildControl_ButtonClicked(object sender, EventArgs e)
+        {
+            //populatePromotionData_PromotionTable_UCKM(false);
         }
     }
 }

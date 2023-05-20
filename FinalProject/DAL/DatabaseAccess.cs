@@ -564,7 +564,7 @@ namespace FinalProject.DAL
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
             DataTable dt = new DataTable();
-            if (key == null || key.Equals(""))
+            if (key == null || key.Equals("") || key.Equals("Search"))
             {
                 String sSQL = "select * from PromotionData";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
