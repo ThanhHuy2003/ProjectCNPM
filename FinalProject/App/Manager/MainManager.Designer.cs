@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel = new Krypton.Toolkit.KryptonPanel();
+            this.btnSignOut = new Krypton.Toolkit.KryptonButton();
             this.btnNL = new Krypton.Toolkit.KryptonButton();
             this.btnlogo = new Krypton.Toolkit.KryptonButton();
             this.btnKM = new Krypton.Toolkit.KryptonButton();
@@ -37,7 +38,6 @@
             this.menu_active = new Krypton.Toolkit.KryptonPanel();
             this.btnNV = new Krypton.Toolkit.KryptonButton();
             this.pnlManager = new System.Windows.Forms.Panel();
-            this.btnSignOut = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.panel)).BeginInit();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_active)).BeginInit();
@@ -59,6 +59,43 @@
             this.panel.Size = new System.Drawing.Size(356, 988);
             this.panel.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
             this.panel.TabIndex = 2;
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.CornerRoundingRadius = -1F;
+            this.btnSignOut.Location = new System.Drawing.Point(28, 878);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnSignOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
+            this.btnSignOut.Size = new System.Drawing.Size(324, 110);
+            this.btnSignOut.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnSignOut.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSignOut.StateNormal.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
+            this.btnSignOut.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.btnSignOut.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnSignOut.StateNormal.Content.Padding = new System.Windows.Forms.Padding(50, -1, -1, -1);
+            this.btnSignOut.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnSignOut.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnSignOut.StatePressed.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
+            this.btnSignOut.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnSignOut.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StatePressed.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnSignOut.StateTracking.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
+            this.btnSignOut.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.btnSignOut.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.btnSignOut.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnSignOut.TabIndex = 16;
+            this.btnSignOut.Values.Text = "Đăng Xuất";
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // btnNL
             // 
@@ -92,6 +129,7 @@
             this.btnNL.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnNL.TabIndex = 15;
             this.btnNL.Values.Text = "Nguyên liệu";
+            this.btnNL.Click += new System.EventHandler(this.btnNL_Click);
             // 
             // btnlogo
             // 
@@ -209,6 +247,7 @@
             this.btnTB.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnTB.TabIndex = 10;
             this.btnTB.Values.Text = "Thực đơn";
+            this.btnTB.Click += new System.EventHandler(this.btnTB_Click);
             // 
             // btnCH
             // 
@@ -293,45 +332,8 @@
             this.pnlManager.Location = new System.Drawing.Point(356, 0);
             this.pnlManager.Margin = new System.Windows.Forms.Padding(4);
             this.pnlManager.Name = "pnlManager";
-            this.pnlManager.Size = new System.Drawing.Size(1440, 985);
+            this.pnlManager.Size = new System.Drawing.Size(1600, 985);
             this.pnlManager.TabIndex = 3;
-            // 
-            // btnSignOut
-            // 
-            this.btnSignOut.CornerRoundingRadius = -1F;
-            this.btnSignOut.Location = new System.Drawing.Point(28, 878);
-            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnSignOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
-            this.btnSignOut.Size = new System.Drawing.Size(324, 110);
-            this.btnSignOut.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSignOut.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSignOut.StateNormal.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
-            this.btnSignOut.StateNormal.Back.ImageAlign = Krypton.Toolkit.PaletteRectangleAlign.Local;
-            this.btnSignOut.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.btnSignOut.StateNormal.Content.Padding = new System.Windows.Forms.Padding(50, -1, -1, -1);
-            this.btnSignOut.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.btnSignOut.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignOut.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.btnSignOut.StatePressed.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
-            this.btnSignOut.StatePressed.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnSignOut.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StatePressed.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnSignOut.StateTracking.Back.Image = global::FinalProject.Properties.Resources.SignOut2;
-            this.btnSignOut.StateTracking.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btnSignOut.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.btnSignOut.StateTracking.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.btnSignOut.TabIndex = 16;
-            this.btnSignOut.Values.Text = "Đăng Xuất";
-            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // MainManager
             // 

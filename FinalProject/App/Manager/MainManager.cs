@@ -39,16 +39,28 @@ namespace FinalProject.App.Manager
         private void btnKM_Click(object sender, EventArgs e)
         {
             Func.togglePanel(pnlManager, "Luong");
+            MessageBox.Show("Mua vip để mở tính năng này");
         }
 
         private void btnCH_Click(object sender, EventArgs e)
         {
             Func.togglePanel(pnlManager, "DTManager");
+
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+
+        private void btnTB_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Mua vip để mở tính năng này");
+        }
+
+        private void btnNL_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Mua vip để mở tính năng này");
         }
     }
 }
