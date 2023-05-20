@@ -68,12 +68,12 @@
             // 
             // tabBMDK
             // 
-            resources.ApplyResources(this.tabBMDK, "tabBMDK");
             this.tabBMDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.tabBMDK.Controls.Add(this.label5);
             this.tabBMDK.Controls.Add(this.panel1);
             this.tabBMDK.Controls.Add(this.label4);
             this.tabBMDK.Controls.Add(this.label1);
+            resources.ApplyResources(this.tabBMDK, "tabBMDK");
             this.tabBMDK.Name = "tabBMDK";
             // 
             // label5
@@ -83,8 +83,8 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // label4
@@ -101,10 +101,10 @@
             // 
             // tabDH
             // 
-            resources.ApplyResources(this.tabDH, "tabDH");
             this.tabDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.tabDH.Controls.Add(this.flowLayoutPanel1);
             this.tabDH.Controls.Add(this.label2);
+            resources.ApplyResources(this.tabDH, "tabDH");
             this.tabDH.Name = "tabDH";
             // 
             // flowLayoutPanel1
@@ -120,7 +120,6 @@
             // 
             // tabTTCN
             // 
-            resources.ApplyResources(this.tabTTCN, "tabTTCN");
             this.tabTTCN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.tabTTCN.Controls.Add(this.btnSDT);
             this.tabTTCN.Controls.Add(this.btnEmail);
@@ -141,13 +140,14 @@
             this.tabTTCN.Controls.Add(this.lblSDT);
             this.tabTTCN.Controls.Add(this.lblEmail);
             this.tabTTCN.Controls.Add(this.labelHoten);
+            resources.ApplyResources(this.tabTTCN, "tabTTCN");
             this.tabTTCN.Name = "tabTTCN";
             // 
             // btnSDT
             // 
-            resources.ApplyResources(this.btnSDT, "btnSDT");
             this.btnSDT.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
             this.btnSDT.CornerRoundingRadius = 0F;
+            resources.ApplyResources(this.btnSDT, "btnSDT");
             this.btnSDT.Name = "btnSDT";
             this.btnSDT.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnSDT.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -193,16 +193,14 @@
             this.btnSDT.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSDT.Values.ExtraText = resources.GetString("btnSDT.Values.ExtraText");
-            this.btnSDT.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnSDT.Values.ImageTransparentColor")));
             this.btnSDT.Values.Text = resources.GetString("btnSDT.Values.Text");
             this.btnSDT.Click += new System.EventHandler(this.btnSDT_Click);
             // 
             // btnEmail
             // 
-            resources.ApplyResources(this.btnEmail, "btnEmail");
             this.btnEmail.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
             this.btnEmail.CornerRoundingRadius = 0F;
+            resources.ApplyResources(this.btnEmail, "btnEmail");
             this.btnEmail.Name = "btnEmail";
             this.btnEmail.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnEmail.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -248,15 +246,13 @@
             this.btnEmail.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnEmail.Values.ExtraText = resources.GetString("btnEmail.Values.ExtraText");
-            this.btnEmail.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnEmail.Values.ImageTransparentColor")));
             this.btnEmail.Values.Text = resources.GetString("btnEmail.Values.Text");
             this.btnEmail.Click += new System.EventHandler(this.btnEmail_Click);
             // 
             // btnSignOut
             // 
-            resources.ApplyResources(this.btnSignOut, "btnSignOut");
             this.btnSignOut.CornerRoundingRadius = 30F;
+            resources.ApplyResources(this.btnSignOut, "btnSignOut");
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnSignOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -308,15 +304,13 @@
             this.btnSignOut.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSignOut.Values.ExtraText = resources.GetString("btnSignOut.Values.ExtraText");
-            this.btnSignOut.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnSignOut.Values.ImageTransparentColor")));
             this.btnSignOut.Values.Text = resources.GetString("btnSignOut.Values.Text");
             this.btnSignOut.Click += new System.EventHandler(this.btnSighOut_Click);
             // 
             // btnDMK
             // 
-            resources.ApplyResources(this.btnDMK, "btnDMK");
             this.btnDMK.CornerRoundingRadius = 30F;
+            resources.ApplyResources(this.btnDMK, "btnDMK");
             this.btnDMK.Name = "btnDMK";
             this.btnDMK.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDMK.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -368,14 +362,12 @@
             this.btnDMK.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDMK.Values.ExtraText = resources.GetString("btnDMK.Values.ExtraText");
-            this.btnDMK.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnDMK.Values.ImageTransparentColor")));
             this.btnDMK.Values.Text = resources.GetString("btnDMK.Values.Text");
             // 
             // btnSave
             // 
-            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.CornerRoundingRadius = 30F;
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnSave.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -427,16 +419,14 @@
             this.btnSave.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSave.Values.ExtraText = resources.GetString("btnSave.Values.ExtraText");
-            this.btnSave.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnSave.Values.ImageTransparentColor")));
             this.btnSave.Values.Text = resources.GetString("btnSave.Values.Text");
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // timeDate
             // 
-            resources.ApplyResources(this.timeDate, "timeDate");
             this.timeDate.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.timeDate.CornerRoundingRadius = 20F;
+            resources.ApplyResources(this.timeDate, "timeDate");
             this.timeDate.Name = "timeDate";
             this.timeDate.ShowUpDown = true;
             this.timeDate.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -453,11 +443,11 @@
             // 
             // CBQQ
             // 
-            resources.ApplyResources(this.CBQQ, "CBQQ");
             this.CBQQ.CornerRoundingRadius = 30F;
             this.CBQQ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBQQ.DropDownWidth = 610;
             this.CBQQ.IntegralHeight = false;
+            resources.ApplyResources(this.CBQQ, "CBQQ");
             this.CBQQ.Name = "CBQQ";
             this.CBQQ.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Silver;
             this.CBQQ.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -475,7 +465,6 @@
             // 
             // kryptonComboBox1
             // 
-            resources.ApplyResources(this.kryptonComboBox1, "kryptonComboBox1");
             this.kryptonComboBox1.CornerRoundingRadius = 20F;
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 91;
@@ -484,6 +473,7 @@
             this.kryptonComboBox1.Items.AddRange(new object[] {
             resources.GetString("kryptonComboBox1.Items"),
             resources.GetString("kryptonComboBox1.Items1")});
+            resources.ApplyResources(this.kryptonComboBox1, "kryptonComboBox1");
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2010Silver;
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -527,9 +517,9 @@
             // 
             // btnHoTen
             // 
-            resources.ApplyResources(this.btnHoTen, "btnHoTen");
             this.btnHoTen.ButtonStyle = Krypton.Toolkit.ButtonStyle.Gallery;
             this.btnHoTen.CornerRoundingRadius = 0F;
+            resources.ApplyResources(this.btnHoTen, "btnHoTen");
             this.btnHoTen.Name = "btnHoTen";
             this.btnHoTen.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnHoTen.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -575,8 +565,6 @@
             this.btnHoTen.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHoTen.Values.ExtraText = resources.GetString("btnHoTen.Values.ExtraText");
-            this.btnHoTen.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnHoTen.Values.ImageTransparentColor")));
             this.btnHoTen.Values.Text = resources.GetString("btnHoTen.Values.Text");
             this.btnHoTen.Click += new System.EventHandler(this.btnHoTen_Click);
             // 
@@ -610,22 +598,24 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabTTCN);
             this.tabControl1.Controls.Add(this.tabDH);
             this.tabControl1.Controls.Add(this.tabBMDK);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // UCCD
             // 
-            resources.ApplyResources(this, "$this");
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
             this.Name = "UCCD";
             this.Load += new System.EventHandler(this.UCCD_Load);
+            this.tabBMDK.ResumeLayout(false);
+            this.tabBMDK.PerformLayout();
             this.tabDH.ResumeLayout(false);
             this.tabDH.PerformLayout();
             this.tabTTCN.ResumeLayout(false);

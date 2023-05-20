@@ -66,6 +66,7 @@ namespace FinalProject.App.Main.CaiDat
         }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            flowLayoutPanel1.Controls.Clear();
             if (tabControl1.SelectedIndex == 1)
             {
                 HistoryDataBLL data = new HistoryDataBLL();

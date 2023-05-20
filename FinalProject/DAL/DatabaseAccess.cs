@@ -316,8 +316,6 @@ namespace FinalProject.DAL
         }
         public void updateUser_DA_BLL(User user)
         {
-            MessageBox.Show(user.fullName +", " + user.emailAddress + ", " + user.contactAddress + ", " + user.phoneNumber + ", " + user.userName + ", " + user.userID);
-            
                 SqlConnection conn = new SqlConnection(strConn);
                 conn.Open();
                 String sSQL = "update LoginData set fullName=@name, emailAddress=@email, contactAddress=@contact, phoneNumber=@phone where userID=@id";
@@ -327,7 +325,6 @@ namespace FinalProject.DAL
                 cmd.Parameters.AddWithValue("@contact", user.contactAddress);
                 cmd.Parameters.AddWithValue("@phone", user.phoneNumber);
                 cmd.Parameters.AddWithValue("@id", user.userID);
-            MessageBox.Show(sSQL);
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Successfuly");
