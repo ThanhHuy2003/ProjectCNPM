@@ -117,59 +117,106 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="kryptonButton1.Values.Text" xml:space="preserve">
-    <value>Sign out</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>While we know that these Terms of Service are easy to ignore, we need to clearly state our responsibilities as well as your responsibilities during your use of Lotteria's services.
+
+        - Our responsibilities: This is a description of how we provide and develop our services
+        - Your responsibilities: This section outlines some rules that you must follow when using our services
+        - Content in Google services: This section describes the intellectual property rights to the content you see in our services, regardless of whether the content belongs to you, Google, or someone else.
+        - In the event of a problem or disagreement: This section describes other legal rights you have and what you should know in case someone violates these terms
+
+It is very important to understand these terms because by using our services you agree to these terms.
+In addition to these terms, we also publish a Privacy Policy. While not covered by these terms, it is a policy you should read to better understand how you can update, manage, export, and delete your information.</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>When using our services, you trust us with your information. We understand that this is a big responsibility and we work hard to protect your information and keep you in control.
+
+This Privacy Policy is intended to help you understand what information we collect, why we collect it, and how you can update, manage, export and delete your information.
+</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 21</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 38</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Privacy and terms</value>
+  </data>
+  <data name="tabBMDK.Text" xml:space="preserve">
+    <value>Privacy and terms</value>
+  </data>
+  <data name="tabDH.Text" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 29</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 38</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Orders History</value>
+  </data>
+  <data name="tabTTCN.Text" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="btnSDT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>847, 444</value>
+  </data>
+  <data name="btnEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>848, 366</value>
+  </data>
+  <data name="btnSignOut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>961, 95</value>
+  </data>
+  <data name="btnSignOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 45</value>
+  </data>
+  <data name="btnSignOut.Values.Text" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="btnDMK.Values.Text" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="btnSave.Values.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>471, 46</value>
+    <value>374, 37</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Change Personal Information</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 32</value>
+    <value>150, 25</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Select language:</value>
   </data>
   <data name="lblQQ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 32</value>
+    <value>89, 25</value>
   </data>
   <data name="lblQQ.Text" xml:space="preserve">
     <value>Province:</value>
   </data>
   <data name="lblNS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 32</value>
+    <value>122, 25</value>
   </data>
   <data name="lblNS.Text" xml:space="preserve">
     <value>Date of birth:</value>
   </data>
-  <data name="btnSave.Values.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
   <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 32</value>
+    <value>141, 25</value>
   </data>
   <data name="lblSDT.Text" xml:space="preserve">
     <value>Phone number:</value>
   </data>
   <data name="labelHoten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 32</value>
+    <value>98, 25</value>
   </data>
   <data name="labelHoten.Text" xml:space="preserve">
     <value>Full name:</value>
-  </data>
-  <data name="tabTTCN.Text" xml:space="preserve">
-    <value>Personal Information</value>
-  </data>
-  <data name="tabDH.Text" xml:space="preserve">
-    <value>Orders</value>
-  </data>
-  <data name="tabPTTT.Text" xml:space="preserve">
-    <value>Payment Method</value>
-  </data>
-  <data name="tabBMDK.Text" xml:space="preserve">
-    <value>Privacy and terms</value>
   </data>
 </root>

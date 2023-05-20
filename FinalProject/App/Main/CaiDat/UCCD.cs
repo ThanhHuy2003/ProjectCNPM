@@ -97,7 +97,7 @@ namespace FinalProject.App.Main.CaiDat
                         Item.Price = newMenuItem.totalCash;
                         Item.Status = newMenuItem.condition;
 
-                        panelDH.Controls.Add(Item);
+                        flowLayoutPanel1.Controls.Add(Item);
                     }
                 }
             }

@@ -31,23 +31,25 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.LabelNhapKM = new Krypton.Toolkit.KryptonLabel();
             this.tbSearch = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.picSearch = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 135);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 110);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1435, 632);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1076, 514);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // LabelNhapKM
             // 
-            this.LabelNhapKM.Location = new System.Drawing.Point(648, 11);
-            this.LabelNhapKM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LabelNhapKM.Location = new System.Drawing.Point(486, 9);
+            this.LabelNhapKM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LabelNhapKM.Name = "LabelNhapKM";
-            this.LabelNhapKM.Size = new System.Drawing.Size(251, 31);
+            this.LabelNhapKM.Size = new System.Drawing.Size(202, 26);
             this.LabelNhapKM.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.LabelNhapKM.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNhapKM.TabIndex = 8;
@@ -55,10 +57,9 @@
             // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(20, 48);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSearch.Location = new System.Drawing.Point(15, 39);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(1399, 47);
+            this.tbSearch.Size = new System.Drawing.Size(1049, 43);
             this.tbSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.tbSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -68,30 +69,36 @@
             this.tbSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSearch.TabIndex = 9;
             this.tbSearch.Text = "Search";
+            this.tbSearch.Enter += new System.EventHandler(this.tbSearch_Enter);
+            this.tbSearch.Leave += new System.EventHandler(this.tbSearch_Leave);
             // 
-            // kryptonButton1
+            // picSearch
             // 
-            this.kryptonButton1.CornerRoundingRadius = -1F;
-            this.kryptonButton1.Location = new System.Drawing.Point(1309, 48);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(90, 47);
-            this.kryptonButton1.TabIndex = 10;
-            this.kryptonButton1.Values.Text = "kryptonButton1";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.picSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
+            this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
+            this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.picSearch.Location = new System.Drawing.Point(1011, 44);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(35, 32);
+            this.picSearch.TabIndex = 10;
+            this.picSearch.TabStop = false;
+            this.picSearch.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // ADKM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1432, 713);
-            this.Controls.Add(this.kryptonButton1);
+            this.ClientSize = new System.Drawing.Size(1074, 579);
+            this.Controls.Add(this.picSearch);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.LabelNhapKM);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ADKM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ADKM";
             this.Load += new System.EventHandler(this.ADKM_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +109,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Krypton.Toolkit.KryptonLabel LabelNhapKM;
         private Krypton.Toolkit.KryptonTextBox tbSearch;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.PictureBox picSearch;
     }
 }

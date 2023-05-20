@@ -36,15 +36,18 @@ namespace FinalProject.App.Admin
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvDT = new Krypton.Toolkit.KryptonDataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeEnd = new Krypton.Toolkit.KryptonDateTimePicker();
             this.timeStart = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblDT2 = new System.Windows.Forms.Label();
             this.lblDT1 = new System.Windows.Forms.Label();
             this.revenueBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.cbCNN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource2)).BeginInit();
@@ -142,7 +145,7 @@ namespace FinalProject.App.Admin
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.label2.Location = new System.Drawing.Point(405, 17);
+            this.label2.Location = new System.Drawing.Point(494, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(280, 30);
             this.label2.TabIndex = 69;
@@ -153,7 +156,7 @@ namespace FinalProject.App.Admin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.label1.Location = new System.Drawing.Point(375, 226);
+            this.label1.Location = new System.Drawing.Point(475, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(332, 30);
             this.label1.TabIndex = 68;
@@ -163,14 +166,14 @@ namespace FinalProject.App.Admin
             // 
             this.dtgvDT.ColumnHeadersHeight = 36;
             this.dtgvDT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
             this.dtgvDT.DataSource = this.revenueBindingSource;
-            this.dtgvDT.Location = new System.Drawing.Point(10, 282);
+            this.dtgvDT.Location = new System.Drawing.Point(58, 286);
             this.dtgvDT.Name = "dtgvDT";
             this.dtgvDT.RowHeadersWidth = 51;
-            this.dtgvDT.Size = new System.Drawing.Size(1200, 499);
+            this.dtgvDT.Size = new System.Drawing.Size(1101, 499);
             this.dtgvDT.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
             this.dtgvDT.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dtgvDT.StateCommon.DataCell.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
@@ -198,10 +201,32 @@ namespace FinalProject.App.Admin
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtgvDT.TabIndex = 67;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "storeId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "storeId";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 383;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "amount";
+            this.dataGridViewTextBoxColumn2.HeaderText = "amount";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 383;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "dateCreate";
+            this.dataGridViewTextBoxColumn3.HeaderText = "dateCreate";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 383;
+            // 
             // timeEnd
             // 
             this.timeEnd.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.timeEnd.CornerRoundingRadius = -1F;
+            this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.timeEnd.Location = new System.Drawing.Point(360, 171);
             this.timeEnd.Name = "timeEnd";
             this.timeEnd.ShowUpDown = true;
@@ -213,6 +238,7 @@ namespace FinalProject.App.Admin
             // 
             this.timeStart.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             this.timeStart.CornerRoundingRadius = -1F;
+            this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.timeStart.Location = new System.Drawing.Point(58, 171);
             this.timeStart.Name = "timeStart";
             this.timeStart.ShowUpDown = true;
@@ -244,26 +270,26 @@ namespace FinalProject.App.Admin
             // 
             this.revenueBindingSource.DataSource = typeof(FinalProject.DTO.Revenue);
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "storeId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "storeId";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 383;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "storeId";
+            this.dataGridViewTextBoxColumn4.HeaderText = "storeId";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 350;
             // 
-            // dataGridViewTextBoxColumn2
+            // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "amount";
-            this.dataGridViewTextBoxColumn2.HeaderText = "amount";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 383;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "amount";
+            this.dataGridViewTextBoxColumn5.HeaderText = "amount";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 350;
             // 
-            // dataGridViewTextBoxColumn3
+            // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "dateCreate";
-            this.dataGridViewTextBoxColumn3.HeaderText = "dateCreate";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 383;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "dateCreate";
+            this.dataGridViewTextBoxColumn6.HeaderText = "dateCreate";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 350;
             // 
             // UCDTAdmin
             // 
@@ -308,5 +334,8 @@ namespace FinalProject.App.Admin
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
     }
 }

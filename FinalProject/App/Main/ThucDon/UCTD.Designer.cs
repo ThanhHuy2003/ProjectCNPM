@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTD));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAll = new Krypton.Toolkit.KryptonButton();
             this.btnFood = new Krypton.Toolkit.KryptonButton();
@@ -37,18 +38,13 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 88);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1197, 710);
-            this.flowLayoutPanel1.TabIndex = 45;
             // 
             // btnAll
             // 
+            resources.ApplyResources(this.btnAll, "btnAll");
             this.btnAll.CornerRoundingRadius = 30F;
-            this.btnAll.Location = new System.Drawing.Point(372, 28);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnAll.Name = "btnAll";
             this.btnAll.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAll.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -64,7 +60,6 @@
             this.btnAll.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAll.Size = new System.Drawing.Size(120, 41);
             this.btnAll.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAll.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAll.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -96,15 +91,15 @@
             this.btnAll.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAll.TabIndex = 61;
-            this.btnAll.Values.Text = "Tất cả";
+            this.btnAll.Values.ExtraText = resources.GetString("btnAll.Values.ExtraText");
+            this.btnAll.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnAll.Values.ImageTransparentColor")));
+            this.btnAll.Values.Text = resources.GetString("btnAll.Values.Text");
             this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnFood
             // 
+            resources.ApplyResources(this.btnFood, "btnFood");
             this.btnFood.CornerRoundingRadius = 30F;
-            this.btnFood.Location = new System.Drawing.Point(628, 28);
-            this.btnFood.Margin = new System.Windows.Forms.Padding(4);
             this.btnFood.Name = "btnFood";
             this.btnFood.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnFood.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -120,7 +115,6 @@
             this.btnFood.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnFood.Size = new System.Drawing.Size(120, 41);
             this.btnFood.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnFood.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnFood.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -152,15 +146,15 @@
             this.btnFood.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnFood.TabIndex = 60;
-            this.btnFood.Values.Text = "Thức ăn";
+            this.btnFood.Values.ExtraText = resources.GetString("btnFood.Values.ExtraText");
+            this.btnFood.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnFood.Values.ImageTransparentColor")));
+            this.btnFood.Values.Text = resources.GetString("btnFood.Values.Text");
             this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // btnDrink
             // 
+            resources.ApplyResources(this.btnDrink, "btnDrink");
             this.btnDrink.CornerRoundingRadius = 30F;
-            this.btnDrink.Location = new System.Drawing.Point(756, 28);
-            this.btnDrink.Margin = new System.Windows.Forms.Padding(4);
             this.btnDrink.Name = "btnDrink";
             this.btnDrink.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDrink.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -176,7 +170,6 @@
             this.btnDrink.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDrink.Size = new System.Drawing.Size(120, 41);
             this.btnDrink.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDrink.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDrink.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -208,15 +201,15 @@
             this.btnDrink.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDrink.TabIndex = 59;
-            this.btnDrink.Values.Text = "Nước";
+            this.btnDrink.Values.ExtraText = resources.GetString("btnDrink.Values.ExtraText");
+            this.btnDrink.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnDrink.Values.ImageTransparentColor")));
+            this.btnDrink.Values.Text = resources.GetString("btnDrink.Values.Text");
             this.btnDrink.Click += new System.EventHandler(this.btnDrink_Click);
             // 
             // btnCombo
             // 
+            resources.ApplyResources(this.btnCombo, "btnCombo");
             this.btnCombo.CornerRoundingRadius = 30F;
-            this.btnCombo.Location = new System.Drawing.Point(500, 28);
-            this.btnCombo.Margin = new System.Windows.Forms.Padding(4);
             this.btnCombo.Name = "btnCombo";
             this.btnCombo.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCombo.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -232,7 +225,6 @@
             this.btnCombo.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnCombo.Size = new System.Drawing.Size(120, 41);
             this.btnCombo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCombo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnCombo.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -264,24 +256,22 @@
             this.btnCombo.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnCombo.TabIndex = 58;
-            this.btnCombo.Values.Text = "Combo";
+            this.btnCombo.Values.ExtraText = resources.GetString("btnCombo.Values.ExtraText");
+            this.btnCombo.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("btnCombo.Values.ImageTransparentColor")));
+            this.btnCombo.Values.Text = resources.GetString("btnCombo.Values.Text");
             this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
             // 
             // UCTD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnFood);
             this.Controls.Add(this.btnCombo);
             this.Controls.Add(this.btnDrink);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCTD";
-            this.Size = new System.Drawing.Size(1220, 818);
             this.Load += new System.EventHandler(this.UCTD_Load);
             this.ResumeLayout(false);
 

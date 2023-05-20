@@ -59,7 +59,7 @@ namespace FinalProject.App
             if (tbSearch.Text == "")
             {
                 tbSearch.Text = "Search";
-                tbSearch.ForeColor = Color.Silver;
+                tbSearch.StateActive.Content.Color1 = Color.Silver;
             }
         }
         private void SearchTextbox_Enter(object sender, EventArgs e)
@@ -67,7 +67,7 @@ namespace FinalProject.App
             if (tbSearch.Text == "Search")
             {
                 tbSearch.Text = "";
-                tbSearch.ForeColor = Color.Black;
+                tbSearch.StateActive.Content.Color1 = Color.Black;
             }
         }
         private void UCKM_Load(object sender, EventArgs e)
