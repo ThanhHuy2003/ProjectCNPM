@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCD));
             this.tabBMDK = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabDH = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.panelDH = new System.Windows.Forms.Panel();
             this.tabTTCN = new System.Windows.Forms.TabPage();
+            this.timeDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.btnSignOut = new Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.CBQQ = new Krypton.Toolkit.KryptonComboBox();
@@ -53,8 +53,6 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.labelHoten = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.timeDate = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.tabBMDK.SuspendLayout();
             this.tabDH.SuspendLayout();
             this.tabTTCN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CBQQ)).BeginInit();
@@ -65,14 +63,8 @@
             // tabBMDK
             // 
             this.tabBMDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
-            this.tabBMDK.Controls.Add(this.label1);
             resources.ApplyResources(this.tabBMDK, "tabBMDK");
             this.tabBMDK.Name = "tabBMDK";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // tabDH
             // 
@@ -117,6 +109,15 @@
             this.tabTTCN.Controls.Add(this.labelHoten);
             resources.ApplyResources(this.tabTTCN, "tabTTCN");
             this.tabTTCN.Name = "tabTTCN";
+            // 
+            // timeDate
+            // 
+            this.timeDate.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
+            this.timeDate.CornerRoundingRadius = -1F;
+            resources.ApplyResources(this.timeDate, "timeDate");
+            this.timeDate.Name = "timeDate";
+            this.timeDate.ShowUpDown = true;
+            this.timeDate.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnSignOut
             // 
@@ -368,15 +369,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
-            // timeDate
-            // 
-            this.timeDate.CalendarTodayDate = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
-            this.timeDate.CornerRoundingRadius = -1F;
-            resources.ApplyResources(this.timeDate, "timeDate");
-            this.timeDate.Name = "timeDate";
-            this.timeDate.ShowUpDown = true;
-            this.timeDate.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // UCCD
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
@@ -385,8 +377,6 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "UCCD";
             this.Load += new System.EventHandler(this.UCCD_Load);
-            this.tabBMDK.ResumeLayout(false);
-            this.tabBMDK.PerformLayout();
             this.tabDH.ResumeLayout(false);
             this.tabTTCN.ResumeLayout(false);
             this.tabTTCN.PerformLayout();
@@ -422,7 +412,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label labelHoten;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Label label1;
         private Krypton.Toolkit.KryptonDateTimePicker timeDate;
     }
 }

@@ -451,7 +451,7 @@ namespace FinalProject
                     case "NV":
                         if (uCNV == null)
                         {
-                            uCNV = new UCNV();
+                            uCNV = new UCNV(mainManager.userIDLogin);
                             panel.Controls.Add(uCTBAdmin);
                             uCNV.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCNV.Location = new System.Drawing.Point(0, 0);
@@ -481,7 +481,7 @@ namespace FinalProject
                     case "DTManager":
                         if (uCDTManager == null)
                         {
-                            uCDTManager = new UCDTManager();
+                            uCDTManager = new UCDTManager(mainManager.userIDLogin);
                             panel.Controls.Add(uCDTManager);
                             uCDTManager.Dock = System.Windows.Forms.DockStyle.Fill;
                             uCDTManager.Location = new System.Drawing.Point(0, 0);

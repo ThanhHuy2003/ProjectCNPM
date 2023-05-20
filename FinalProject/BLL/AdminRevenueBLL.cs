@@ -25,5 +25,10 @@ namespace FinalProject.BLL
             RevenueCRUD_DAL ehe = new RevenueCRUD_DAL();
             return ehe.getAllRevenueByTime_DAL(start, end,id);
         }
+        public DataTable getAllRevenueByIdManagerBLL(String id)
+        {
+            RevenueCRUD_DAL ehe = new RevenueCRUD_DAL();
+            return ehe.getAllRevenueByIDManager_DAL(id);
+        }
     }
 }

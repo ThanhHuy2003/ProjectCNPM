@@ -46,7 +46,7 @@
             this.dtgvNV.ColumnHeadersHeight = 36;
             this.dtgvNV.DataSource = this.userBindingSource;
             this.dtgvNV.Location = new System.Drawing.Point(84, 231);
-            this.dtgvNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgvNV.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvNV.Name = "dtgvNV";
             this.dtgvNV.RowHeadersWidth = 51;
             this.dtgvNV.Size = new System.Drawing.Size(1273, 703);
@@ -85,7 +85,7 @@
             // tbSearch
             // 
             this.tbSearch.Location = new System.Drawing.Point(84, 94);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(380, 47);
             this.tbSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(229)))));
@@ -101,8 +101,8 @@
             // btnAdd
             // 
             this.btnAdd.CornerRoundingRadius = 30F;
-            this.btnAdd.Location = new System.Drawing.Point(1031, 161);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(859, 161);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnAdd.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -152,12 +152,13 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnAdd.TabIndex = 59;
             this.btnAdd.Values.Text = "Thêm";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // btnDelete
             // 
             this.btnDelete.CornerRoundingRadius = 30F;
-            this.btnDelete.Location = new System.Drawing.Point(1199, 161);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Location = new System.Drawing.Point(1047, 161);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -214,11 +215,12 @@
             this.picSearch.Image = global::FinalProject.Properties.Resources.searchh;
             this.picSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.picSearch.Location = new System.Drawing.Point(397, 100);
-            this.picSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picSearch.Margin = new System.Windows.Forms.Padding(4);
             this.picSearch.Name = "picSearch";
             this.picSearch.Size = new System.Drawing.Size(48, 39);
             this.picSearch.TabIndex = 15;
             this.picSearch.TabStop = false;
+            this.picSearch.Click += new System.EventHandler(this.picSearch_Click);
             // 
             // UCNV
             // 
@@ -231,9 +233,10 @@
             this.Controls.Add(this.dtgvNV);
             this.Controls.Add(this.picSearch);
             this.Controls.Add(this.tbSearch);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCNV";
             this.Size = new System.Drawing.Size(1440, 985);
+            this.Load += new System.EventHandler(this.UCNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
