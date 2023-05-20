@@ -122,5 +122,23 @@ namespace FinalProject.App.Admin
         {
             frm.ShowDialog();
         }
+
+        private void tbSearch_Enter(object sender, EventArgs e)
+        {
+            if (tbSearch.Text == "Search")
+            {
+                tbSearch.Text = "";
+                tbSearch.StateActive.Content.Color1 = Color.Black;
+            }
+        }
+
+        private void tbSearch_Leave(object sender, EventArgs e)
+        {
+            if (tbSearch.Text == "")
+            {
+                tbSearch.Text = "Search";
+                tbSearch.StateActive.Content.Color1 = Color.Silver;
+            }
+        }
     }
 }

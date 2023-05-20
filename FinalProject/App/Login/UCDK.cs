@@ -113,16 +113,16 @@ namespace FinalProject.App.Login
         }
         private void Eye2_Click(object sender, EventArgs e)
         {
-            if (PasswordText.Text.Length > 0)
+            if (UserNameText.Text.Length > 0)
             {
                 Blind2.BringToFront();
-                PasswordText.UseSystemPasswordChar = false;
+                UserNameText.UseSystemPasswordChar = false;
             }
         }
         private void Blind2_Click(object sender, EventArgs e)
         {
             Eye2.BringToFront();
-            PasswordText.UseSystemPasswordChar = true;
+            UserNameText.UseSystemPasswordChar = true;
         }
         private void UCDK_Load(object sender, EventArgs e)
         {
@@ -144,7 +144,7 @@ namespace FinalProject.App.Login
         {
             lblSignUp.Select();
         }
-        private void kryptonButton2_Click(object sender, EventArgs e)
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
             User newTK = new User();
 
@@ -160,9 +160,9 @@ namespace FinalProject.App.Login
                 newTK.contactAddress = ContactCB.SelectedItem.ToString();
 
             }
-            newTK.phoneNumber = PhoneNumberText.Text;
-            newTK.userName = UserNameText.Text;
-            newTK.userPassword = PasswordText.Text;
+            newTK.phoneNumber = PasswordText.Text;
+            newTK.userName = PhoneNumberText.Text;
+            newTK.userPassword = UserNameText.Text;
 
             LoginBLL newTKBLL = new LoginBLL();
 

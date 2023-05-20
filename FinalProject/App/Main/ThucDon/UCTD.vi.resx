@@ -118,12 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAll.Values.Text" xml:space="preserve">
-    <value>Tất cả</value>
+    <value>Tất cả </value>
   </data>
   <data name="btnFood.Values.Text" xml:space="preserve">
-    <value>Thức ăn</value>
+    <value>Thức ăn </value>
   </data>
   <data name="btnDrink.Values.Text" xml:space="preserve">
-    <value>Nước</value>
+    <value>Nước </value>
+  </data>
+  <data name="btnCombo.Values.Text" xml:space="preserve">
+    <value>Combo </value>
   </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardTD));
             this.lblVND = new Krypton.Toolkit.KryptonLabel();
             this.lblPrice = new Krypton.Toolkit.KryptonLabel();
             this.SubItem1 = new Krypton.Toolkit.KryptonButton();
@@ -41,33 +42,39 @@
             // 
             // lblVND
             // 
-            this.lblVND.Location = new System.Drawing.Point(145, 187);
-            this.lblVND.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.lblVND, "lblVND");
             this.lblVND.Name = "lblVND";
-            this.lblVND.Size = new System.Drawing.Size(65, 32);
             this.lblVND.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblVND.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
-            this.lblVND.TabIndex = 38;
-            this.lblVND.Values.Text = "VND";
+            this.lblVND.Values.Text = resources.GetString("lblVND.Values.Text");
             // 
             // lblPrice
             // 
-            this.lblPrice.Location = new System.Drawing.Point(31, 187);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.lblPrice, "lblPrice");
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(96, 32);
             this.lblPrice.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.lblPrice.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 18.25F, System.Drawing.FontStyle.Italic);
-            this.lblPrice.TabIndex = 35;
-            this.lblPrice.Values.Text = "100,000";
+            this.lblPrice.Values.Text = resources.GetString("lblPrice.Values.Text");
             // 
             // SubItem1
             // 
             this.SubItem1.CornerRoundingRadius = -1F;
-            this.SubItem1.Location = new System.Drawing.Point(65, 223);
-            this.SubItem1.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.SubItem1, "SubItem1");
             this.SubItem1.Name = "SubItem1";
-            this.SubItem1.Size = new System.Drawing.Size(37, 31);
+            this.SubItem1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
+            this.SubItem1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
+            this.SubItem1.OverrideDefault.Border.Color1 = System.Drawing.Color.Red;
+            this.SubItem1.OverrideDefault.Border.Color2 = System.Drawing.Color.Red;
+            this.SubItem1.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.SubItem1.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.SubItem1.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.SubItem1.OverrideFocus.Border.Color1 = System.Drawing.Color.Red;
+            this.SubItem1.OverrideFocus.Border.Color2 = System.Drawing.Color.Red;
+            this.SubItem1.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.SubItem1.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.SubItem1.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.SubItem1.StateNormal.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -84,17 +91,28 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.SubItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.SubItem1.TabIndex = 34;
-            this.SubItem1.Values.Text = "-";
+            this.SubItem1.Values.Text = resources.GetString("SubItem1.Values.Text");
             this.SubItem1.Click += new System.EventHandler(this.SubItem1_Click);
             // 
             // PlusItem1
             // 
             this.PlusItem1.CornerRoundingRadius = -1F;
-            this.PlusItem1.Location = new System.Drawing.Point(145, 223);
-            this.PlusItem1.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.PlusItem1, "PlusItem1");
             this.PlusItem1.Name = "PlusItem1";
-            this.PlusItem1.Size = new System.Drawing.Size(37, 31);
+            this.PlusItem1.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
+            this.PlusItem1.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
+            this.PlusItem1.OverrideDefault.Border.Color1 = System.Drawing.Color.Red;
+            this.PlusItem1.OverrideDefault.Border.Color2 = System.Drawing.Color.Red;
+            this.PlusItem1.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PlusItem1.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.PlusItem1.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
+            this.PlusItem1.OverrideFocus.Border.Color1 = System.Drawing.Color.Red;
+            this.PlusItem1.OverrideFocus.Border.Color2 = System.Drawing.Color.Red;
+            this.PlusItem1.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.PlusItem1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.PlusItem1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.PlusItem1.StateNormal.Back.Color1 = System.Drawing.Color.White;
@@ -121,37 +139,28 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.PlusItem1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.PlusItem1.TabIndex = 33;
-            this.PlusItem1.Values.Text = "+";
+            this.PlusItem1.Values.Text = resources.GetString("PlusItem1.Values.Text");
             this.PlusItem1.Click += new System.EventHandler(this.PlusItem1_Click);
             // 
             // CountItem1
             // 
-            this.CountItem1.Location = new System.Drawing.Point(116, 223);
-            this.CountItem1.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.CountItem1, "CountItem1");
             this.CountItem1.Name = "CountItem1";
-            this.CountItem1.Size = new System.Drawing.Size(21, 32);
             this.CountItem1.StateCommon.ShortText.Font = new System.Drawing.Font("Dubai Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CountItem1.TabIndex = 31;
-            this.CountItem1.Values.Text = "0";
+            this.CountItem1.Values.Text = resources.GetString("CountItem1.Values.Text");
             // 
             // lblName
             // 
-            this.lblName.AutoSize = false;
-            this.lblName.Location = new System.Drawing.Point(31, 151);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.lblName, "lblName");
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(188, 53);
             this.lblName.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.TabIndex = 32;
-            this.lblName.Values.Text = "Gà rán";
+            this.lblName.Values.Text = resources.GetString("lblName.Values.Text");
             // 
             // btnTVG
             // 
             this.btnTVG.CornerRoundingRadius = -1F;
-            this.btnTVG.Location = new System.Drawing.Point(1, 260);
-            this.btnTVG.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.btnTVG, "btnTVG");
             this.btnTVG.Name = "btnTVG";
             this.btnTVG.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTVG.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -167,7 +176,6 @@
             this.btnTVG.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTVG.Size = new System.Drawing.Size(256, 37);
             this.btnTVG.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTVG.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
             this.btnTVG.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(66)))));
@@ -198,24 +206,19 @@
             this.btnTVG.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTVG.TabIndex = 60;
-            this.btnTVG.Values.Text = "Thêm vào giỏ hàng";
+            this.btnTVG.Values.Text = resources.GetString("btnTVG.Values.Text");
             this.btnTVG.Click += new System.EventHandler(this.btnTVG_Click);
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::FinalProject.Properties.Resources.image_1;
-            this.pictureBox9.Location = new System.Drawing.Point(1, 4);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(255, 143);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox9.TabIndex = 30;
             this.pictureBox9.TabStop = false;
             // 
             // CardTD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnTVG);
@@ -226,9 +229,7 @@
             this.Controls.Add(this.CountItem1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox9);
-            this.Margin = new System.Windows.Forms.Padding(20, 3, 3, 40);
             this.Name = "CardTD";
-            this.Size = new System.Drawing.Size(257, 297);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

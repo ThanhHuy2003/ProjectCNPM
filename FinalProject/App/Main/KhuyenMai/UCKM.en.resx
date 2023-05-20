@@ -119,9 +119,9 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LabelNhapKM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 26</value>
+    <value>135, 26</value>
   </data>
   <data name="LabelNhapKM.Values.Text" xml:space="preserve">
-    <value>Search voucher:</value>
+    <value>Find Voucher:</value>
   </data>
 </root>

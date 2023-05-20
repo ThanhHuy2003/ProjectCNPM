@@ -117,62 +117,97 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Dù biết rằng bạn rất dễ bỏ qua những Điều khoản dịch vụ này, nhưng chúng tôi cần phải nêu rõ trách nhiệm của chúng tôi cũng như trách nhiệm của bạn trong quá trình bạn sử dụng các dịch vụ của Lotteria.
+
+       - Trách nhiệm của chúng tôi: Đây là phần mô tả cách chúng tôi cung cấp và phát triển các dịch vụ của mình
+       - Trách nhiệm của bạn: Phần này nêu ra một số quy tắc mà bạn phải tuân theo khi sử dụng các dịch vụ của chúng tôi
+       - Nội dung trong các dịch vụ của Google: Phần này mô tả quyền sở hữu trí tuệ đối với nội dung mà bạn thấy trong các dịch vụ của chúng tôi, bất kể nội dung đó thuộc về bạn, Google hay người khác
+       - Trong trường hợp xảy ra vấn đề hoặc bất đồng: Phần này mô tả các quyền hợp pháp khác mà bạn có và những điều bạn nên biết trong trường hợp có người vi phạm các điều khoản này
+ 
+Việc hiểu rõ các điều khoản này là rất quan trọng vì bằng việc sử dụng các dịch vụ của chúng tôi, bạn đồng ý với các điều khoản này.
+Bên cạnh các điều khoản này, chúng tôi cũng ban hành Chính sách quyền riêng tư. Mặc dù không nằm trong các điều khoản này, nhưng đây là một chính sách bạn nên đọc để hiểu rõ hơn cách bạn có thể cập nhật, quản lý, xuất và xóa thông tin của mình.</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Khi sử dụng dịch vụ của chúng tôi, bạn tin tưởng cung cấp thông tin của bạn cho chúng tôi. Chúng tôi hiểu rằng đây là một trách nhiệm lớn và chúng tôi nỗ lực bảo vệ thông tin của bạn cũng như để bạn nắm quyền kiểm soát.
+
+Chính sách bảo mật này nhằm mục đích giúp bạn hiểu rõ những thông tin chúng tôi thu thập, lý do chúng tôi thu thập và cách bạn có thể cập nhật, quản lý, xuất và xóa thông tin của mình. 
+</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabBMDK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 38</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>LỊCH SỬ ĐƠN HÀNG </value>
+  </data>
   <data name="tabDH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="panelDH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="btnSDT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>846, 447</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnSDT.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 20.75pt, style=Bold</value>
+  <data name="kryptonButton1.Values.Text" xml:space="preserve">
+    <value />
   </data>
-  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btnEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>846, 365</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 42</value>
+  <data name="btnEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
   </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="kryptonButton1.Values.ExtraText1" xml:space="preserve">
+    <value />
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 47</value>
+  <data name="kryptonButton1.Values.ImageTransparentColor1" type="System.Drawing.Color, System.Drawing">
+    <value />
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>LỊCH SỬ ĐƠN HÀNG</value>
-  </data>
-  <data name="tabTTCN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="kryptonComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="CBQQ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="kryptonButton1.Values.Text1" xml:space="preserve">
+    <value />
   </data>
   <data name="btnSignOut.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSignOut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1236, 110</value>
-  </data>
-  <data name="btnSignOut.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>934, 100</value>
   </data>
   <data name="btnSignOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 46</value>
+    <value>199, 37</value>
+  </data>
+  <data name="btnSignOut.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="kryptonButton1.Values.ExtraText2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonButton1.Values.ImageTransparentColor2" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonButton1.Values.Text2" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CBQQ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="kryptonComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="btnHoTen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>846, 183</value>
+  </data>
+  <data name="tabTTCN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
